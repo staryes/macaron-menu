@@ -1,0 +1,117 @@
+/* 基本樣式 */
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* 添加錨點滾動填充 */
+html {
+  scroll-padding-top: 40px; /* 根據導航欄的高度調整 */
+}
+
+/* 平板裝置響應式設計 */
+@media (max-width: 768px) {
+  .h-screen {
+    height: auto !important;
+    min-height: 100vh !important;
+  }
+  
+  .ml-48 {
+    margin-left: 0 !important;
+  }
+  
+  .w-1\/3, .w-1\/2 {
+    width: 90% !important;
+    margin: 0 auto !important;
+  }
+  
+  nav .space-x-6 {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 10px !important;
+  }
+  
+  nav .flex.justify-between {
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 15px !important;
+  }
+  
+  .grid {
+    grid-template-columns: 1fr !important;
+  }
+  
+  table {
+    font-size: 12px !important;
+  }
+  
+  th, td {
+    padding: 4px !important;
+  }
+}
+
+/* 小型手機響應式設計 (iPhone SE 等) */
+@media (max-width: 400px) {
+  /* 導航欄調整 */
+  nav {
+    padding: 8px 0 !important;
+  }
+  
+  nav .max-w-\[1450px\] {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+  
+  /* 調整 hero 區塊 */
+  #hero {
+    padding: 20px !important;
+  }
+  
+  #hero .relative {
+    width: 100% !important;
+    margin: 0 !important;
+  }
+  
+  /* 字體大小調整 */
+  h1 {
+    font-size: 1.5rem !important;
+  }
+  
+  h2 {
+    font-size: 1.3rem !important;
+  }
+  
+  h3 {
+    font-size: 1.1rem !important;
+  }
+  
+  p, a {
+    font-size: 0.9rem !important;
+  }
+  
+  /* 表格處理 */
+  table {
+    display: block !important;
+    width: 100% !important;
+    overflow-x: auto !important;
+    font-size: 10px !important;
+  }
+  
+  /* 圓角和間距調整 */
+  .rounded-lg {
+    border-radius: 0.5rem !important;
+  }
+  
+  .p-8 {
+    padding: 1rem !important;
+  }
+  
+  /* 表單調整 */
+  form {
+    padding: 1rem !important;
+  }
+  
+  /* 網格間距調整 */
+  .gap-8 {
+    gap: 1rem !important;
+  }
+} 
