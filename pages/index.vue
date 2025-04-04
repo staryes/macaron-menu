@@ -2,22 +2,26 @@
   <div class="bg-white text-gray-800">
     <!-- Navigation Bar -->
     <nav class="sticky top-0 w-full bg-[#FFF8EB] shadow-md z-50">
-        <div class="max-w-[1450px] mx-auto px-6 py-3 flex justify-between items-center">
+        <div class="max-w-[1450px] mx-auto px-6 py-3 flex flex-col md:flex-row justify-between items-center">
             <!-- Logo and Brand Name -->
             <div class="flex items-center space-x-3">
                 <img src="/logo.png" alt="Enki Atelier Logo" class="h-16 w-32 object-contain">
             </div>
-            <!-- Navigation Links -->
-            <div class="space-x-6 md:space-x-6 sm:space-y-2">
-                <a href="#hero" class="hover:text-orange-500">Home</a>
-                <a href="#about" class="hover:text-orange-500">About</a>
-                <a href="#themes" class="hover:text-orange-500">Products</a>
-                <a href="#pens" class="hover:text-orange-500">Guide</a>
-                <a href="#cta" class="hover:text-orange-500">Buy Now</a>
-                <a href="#contact" class="hover:text-orange-500">Contact Us</a>
+            
+            <!-- Navigation Links (在小螢幕上顯示在 logo 下方，大螢幕上顯示在右側) -->
+            <div class="flex flex-wrap justify-center gap-2 md:gap-6 mt-3 md:mt-0">
+                <a href="#hero" class="hover:text-orange-500 text-sm md:text-base">Home</a>
+                <a href="#about" class="hover:text-orange-500 text-sm md:text-base">About</a>
+                <a href="#themes" class="hover:text-orange-500 text-sm md:text-base">Products</a>
+                <a href="#pens" class="hover:text-orange-500 text-sm md:text-base">Guide</a>
+                <a href="#cta" class="hover:text-orange-500 text-sm md:text-base">Buy Now</a>
+                <a href="#contact" class="hover:text-orange-500 text-sm md:text-base">Contact Us</a>
             </div>
         </div>
     </nav>
+    
+    <!-- Mobile Side Navigation Menu -->
+    <!-- 已移除側邊欄導航 -->
 
     <!-- Hero Section -->
     <section id="hero" class="h-screen bg-gradient-to-r from-[#DCBFDB] to-[#DC9F33] flex items-center justify-start text-left px-10 relative">
@@ -66,72 +70,72 @@
 
     <!-- Pen Comparison Section -->
     <section id="pens" class="py-20 bg-[#FFF8EB]">
-        <div class="max-w-7xl mx-auto text-center">
-            <h2 class="text-3xl font-bold text-gray-800 mb-6">Which 3D Printing Pen is Good for My Kid?</h2>
-            <div class="overflow-x-auto">
-                <table class="w-full table-auto border-separate border-spacing-4 mx-auto">
+        <div class="max-w-7xl mx-auto text-center px-4">
+            <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-6">Which 3D Printing Pen is Good for My Kid?</h2>
+            <div class="overflow-x-auto shadow-md rounded-lg">
+                <table class="w-full table-auto border-collapse text-xs md:text-sm">
                     <thead>
                         <tr class="bg-[#DCBFDB] text-gray-800">
-                            <th class="px-6 py-3 bg-[#FFF8EB]">Feature</th>
-                            <th class="px-6 py-3">3Doodler Start+</th>
-                            <th class="px-6 py-3">MYNT3D Professional</th>
-                            <th class="px-6 py-3">MYNT3D Super</th>
-                            <th class="px-6 py-3">SCRIB3D P1</th>
-                            <th class="px-6 py-3">Pika3D Junior</th>
+                            <th class="px-2 py-2 md:px-4 md:py-3 bg-[#FFF8EB] text-left">Feature</th>
+                            <th class="px-2 py-2 md:px-4 md:py-3 text-left whitespace-nowrap">3Doodler Start+</th>
+                            <th class="px-2 py-2 md:px-4 md:py-3 text-left whitespace-nowrap">MYNT3D Pro</th>
+                            <th class="px-2 py-2 md:px-4 md:py-3 text-left whitespace-nowrap">MYNT3D Super</th>
+                            <th class="px-2 py-2 md:px-4 md:py-3 text-left whitespace-nowrap">SCRIB3D P1</th>
+                            <th class="px-2 py-2 md:px-4 md:py-3 text-left whitespace-nowrap">Pika3D Junior</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr class="bg-[#FFF8EB]">
-                            <td class="px-6 py-3 border-b">Recommended Age</td>
-                            <td class="px-6 py-3 border-b" style="font-size: 14px;">6-13 years</td>
-                            <td class="px-6 py-3 border-b" style="font-size: 14px;">Teens & Adults</td>
-                            <td class="px-6 py-3 border-b" style="font-size: 14px;">Older Kids & Adults</td>
-                            <td class="px-6 py-3 border-b" style="font-size: 14px;">Older Kids & Adults</td>
-                            <td class="px-6 py-3 border-b" style="font-size: 14px;">6+ years</td>
+                        <tr class="border-b">
+                            <td class="px-2 py-2 md:px-4 md:py-3 font-medium">Age</td>
+                            <td class="px-2 py-2 md:px-4 md:py-3">6-13 years</td>
+                            <td class="px-2 py-2 md:px-4 md:py-3">Teens & Adults</td>
+                            <td class="px-2 py-2 md:px-4 md:py-3">Older Kids+</td>
+                            <td class="px-2 py-2 md:px-4 md:py-3">Older Kids+</td>
+                            <td class="px-2 py-2 md:px-4 md:py-3">6+ years</td>
                         </tr>
-                        <tr class="bg-[#FFF8EB]">
-                            <td class="px-6 py-3 border-b">Safety</td>
-                            <td class="px-6 py-3 border-b" style="font-size: 14px;">No hot parts, safe for kids</td>
-                            <td class="px-6 py-3 border-b" style="font-size: 14px;">High temp, requires supervision</td>
-                            <td class="px-6 py-3 border-b" style="font-size: 14px;">High temp, requires supervision</td>
-                            <td class="px-6 py-3 border-b" style="font-size: 14px;">High temp, requires supervision</td>
-                            <td class="px-6 py-3 border-b" style="font-size: 14px;">No hot parts, safe for kids</td>
+                        <tr class="border-b">
+                            <td class="px-2 py-2 md:px-4 md:py-3 font-medium">Safety</td>
+                            <td class="px-2 py-2 md:px-4 md:py-3">No hot parts</td>
+                            <td class="px-2 py-2 md:px-4 md:py-3">High temp</td>
+                            <td class="px-2 py-2 md:px-4 md:py-3">High temp</td>
+                            <td class="px-2 py-2 md:px-4 md:py-3">High temp</td>
+                            <td class="px-2 py-2 md:px-4 md:py-3">No hot parts</td>
                         </tr>
-                        <tr class="bg-[#FFF8EB]">
-                            <td class="px-6 py-3 border-b">Power Source</td>
-                            <td class="px-6 py-3 border-b" style="font-size: 14px;">Wireless, rechargeable</td>
-                            <td class="px-6 py-3 border-b" style="font-size: 14px;">Plug-in</td>
-                            <td class="px-6 py-3 border-b" style="font-size: 14px;">Plug-in</td>
-                            <td class="px-6 py-3 border-b" style="font-size: 14px;">Plug-in</td>
-                            <td class="px-6 py-3 border-b" style="font-size: 14px;">Wireless, rechargeable</td>
+                        <tr class="border-b">
+                            <td class="px-2 py-2 md:px-4 md:py-3 font-medium">Power</td>
+                            <td class="px-2 py-2 md:px-4 md:py-3">Rechargeable</td>
+                            <td class="px-2 py-2 md:px-4 md:py-3">Plug-in</td>
+                            <td class="px-2 py-2 md:px-4 md:py-3">Plug-in</td>
+                            <td class="px-2 py-2 md:px-4 md:py-3">Plug-in</td>
+                            <td class="px-2 py-2 md:px-4 md:py-3">Rechargeable</td>
                         </tr>
-                        <tr class="bg-[#FFF8EB]">
-                            <td class="px-6 py-3 border-b">Filament Type</td>
-                            <td class="px-6 py-3 border-b" style="font-size: 14px;">Eco-friendly PCL</td>
-                            <td class="px-6 py-3 border-b" style="font-size: 14px;">ABS, PLA</td>
-                            <td class="px-6 py-3 border-b" style="font-size: 14px;">ABS, PLA</td>
-                            <td class="px-6 py-3 border-b" style="font-size: 14px;">ABS, PLA</td>
-                            <td class="px-6 py-3 border-b" style="font-size: 14px;">Low-temp PCL</td>
+                        <tr class="border-b">
+                            <td class="px-2 py-2 md:px-4 md:py-3 font-medium">Filament</td>
+                            <td class="px-2 py-2 md:px-4 md:py-3">Eco PCL</td>
+                            <td class="px-2 py-2 md:px-4 md:py-3">ABS, PLA</td>
+                            <td class="px-2 py-2 md:px-4 md:py-3">ABS, PLA</td>
+                            <td class="px-2 py-2 md:px-4 md:py-3">ABS, PLA</td>
+                            <td class="px-2 py-2 md:px-4 md:py-3">Low-temp PCL</td>
                         </tr>
-                        <tr class="bg-[#FFF8EB]">
-                            <td class="px-6 py-3 border-b">Approximate Price</td>
-                            <td class="px-6 py-3 border-b" style="font-size: 14px;">$49.99</td>
-                            <td class="px-6 py-3 border-b" style="font-size: 14px;">$59.99</td>
-                            <td class="px-6 py-3 border-b" style="font-size: 14px;">$39.99</td>
-                            <td class="px-6 py-3 border-b" style="font-size: 14px;">$36.99</td>
-                            <td class="px-6 py-3 border-b" style="font-size: 14px;">$39.99</td>
+                        <tr class="border-b">
+                            <td class="px-2 py-2 md:px-4 md:py-3 font-medium">Price</td>
+                            <td class="px-2 py-2 md:px-4 md:py-3">$49.99</td>
+                            <td class="px-2 py-2 md:px-4 md:py-3">$59.99</td>
+                            <td class="px-2 py-2 md:px-4 md:py-3">$39.99</td>
+                            <td class="px-2 py-2 md:px-4 md:py-3">$36.99</td>
+                            <td class="px-2 py-2 md:px-4 md:py-3">$39.99</td>
                         </tr>
-                        <tr class="bg-[#FFF8EB]">
-                            <td class="px-6 py-3 border-b">Where to Buy</td>
-                            <td class="px-6 py-3 border-b" style="font-size: 14px;"><a href="https://amzn.to/3R1SQLB" target="_blank" rel="noopener noreferrer" class="text-orange-500 font-semibold hover:underline">Buy on Amazon</a></td>
-                            <td class="px-6 py-3 border-b" style="font-size: 14px;"><a href="https://amzn.to/3Ry7avz" target="_blank" rel="noopener noreferrer" class="text-orange-500 font-semibold hover:underline">Buy on Amazon</a></td>
-                            <td class="px-6 py-3 border-b" style="font-size: 14px;"><a href="https://amzn.to/3G7Ick4" target="_blank" rel="noopener noreferrer" class="text-orange-500 font-semibold hover:underline">Buy on Amazon</a></td>
-                            <td class="px-6 py-3 border-b" style="font-size: 14px;"><a href="https://amzn.to/4hX7KxB" target="_blank" rel="noopener noreferrer" class="text-orange-500 font-semibold hover:underline">Buy on Amazon</a></td>
-                            <td class="px-6 py-3 border-b" style="font-size: 14px;"><a href="https://amzn.to/3E7aryP" target="_blank" rel="noopener noreferrer" class="text-orange-500 font-semibold hover:underline">Buy on Amazon</a></td>
+                        <tr class="border-b">
+                            <td class="px-2 py-2 md:px-4 md:py-3 font-medium">Buy</td>
+                            <td class="px-2 py-2 md:px-4 md:py-3"><a href="https://amzn.to/3R1SQLB" target="_blank" rel="noopener noreferrer" class="text-orange-500 font-semibold hover:underline">Amazon</a></td>
+                            <td class="px-2 py-2 md:px-4 md:py-3"><a href="https://amzn.to/3Ry7avz" target="_blank" rel="noopener noreferrer" class="text-orange-500 font-semibold hover:underline">Amazon</a></td>
+                            <td class="px-2 py-2 md:px-4 md:py-3"><a href="https://amzn.to/3G7Ick4" target="_blank" rel="noopener noreferrer" class="text-orange-500 font-semibold hover:underline">Amazon</a></td>
+                            <td class="px-2 py-2 md:px-4 md:py-3"><a href="https://amzn.to/4hX7KxB" target="_blank" rel="noopener noreferrer" class="text-orange-500 font-semibold hover:underline">Amazon</a></td>
+                            <td class="px-2 py-2 md:px-4 md:py-3"><a href="https://amzn.to/3E7aryP" target="_blank" rel="noopener noreferrer" class="text-orange-500 font-semibold hover:underline">Amazon</a></td>
                         </tr>
-                        <!-- Disclaimer Section Below Table -->
-                        <tr class="bg-[#FFF8EB]">
-                            <td colspan="6" class="px-6 py-3 text-xs text-gray-600 text-right">
+                        <!-- Disclaimer -->
+                        <tr>
+                            <td colspan="6" class="px-2 py-2 md:px-4 text-xs text-gray-600 text-right">
                                 We might receive commissions if you click on our links and make purchases.
                             </td>
                         </tr>
@@ -177,7 +181,10 @@
 </template>
 
 <script setup>
-import { onMounted } from 'vue';
+import { onMounted, ref } from 'vue';
+
+// 移除不再需要的移動端選單狀態變數
+// const isMenuOpen = ref(false);
 
 // 頁面渲染後綁定平滑捲動功能
 onMounted(() => {
@@ -198,32 +205,5 @@ html {
   font-family: Arial, sans-serif;
 }
 
-/* 移動裝置響應式設計 */
-@media (max-width: 768px) {
-  .h-screen {
-    height: auto;
-    min-height: 100vh;
-  }
-  
-  .ml-48 {
-    margin-left: 0;
-  }
-  
-  .w-1\/3, .w-1\/2 {
-    width: 90%;
-    margin: 0 auto;
-  }
-  
-  .space-x-6 {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-  
-  .flex.justify-between {
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-  }
-}
+/* 完全移除媒體查詢，改用 Tailwind 的響應式類別實現 */
 </style> 
