@@ -67,7 +67,7 @@
                     <thead>
                         <tr class="bg-[#DCBFDB] text-gray-800">
                             <th class="px-2 py-2 md:px-4 md:py-3 bg-[#FFF8EB] text-left">Feature</th>
-                            <th v-for="(pen, index) in pens" :key="index" class="px-2 py-2 md:px-4 md:py-3 text-left whitespace-nowrap">{{ pen.name }}</th>
+                            <th v-for="(pen, index) in pens" :key="index" class="px-2 py-2 md:px-4 md:py-3 whitespace-nowrap">{{ pen.name }}</th>
                         </tr>
                     </thead>
                     <tbody>
