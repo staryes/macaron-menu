@@ -48,21 +48,11 @@
         <div class="max-w-7xl mx-auto text-center px-4">
             <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-6">Our Products</h2>
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-8">
-                <!-- Example of theme card -->
-                <div class="bg-white p-4 md:p-6 rounded-lg shadow-lg">
-                    <h3 class="text-xl font-semibold text-gray-800 mb-4">Luxury Starter Kit: Ignite Creativity!</h3>
-                    <p class="text-sm md:text-base text-gray-600">Kickstart your child's 3D printing adventure with 100+ carefully selected items! This all-in-one kit includes a heat-resistant silicone mat, finger caps for safety, and a variety of craft materials—everything needed for endless creativity right out of the box!</p>
-                    <img src="/starter-kit.png" alt="Luxury Starter Kit" class="mt-4 rounded-lg shadow-md w-2/3 mx-auto">
-                </div>
-                <div class="bg-white p-4 md:p-6 rounded-lg shadow-lg">
-                    <h3 class="text-xl font-semibold text-gray-800 mb-4">Balance: <br>Play, Learn, and Explore Stability!</h3>
-                    <p class="text-sm md:text-base text-gray-600">Explore the science of balance with this engaging educational pack. Packed with handouts, paper molds, and accessories, it guides kids through fun activities that teach stability and equilibrium—making learning a hands-on adventure.</p>
-                    <img src="/balance.png" alt="Balance" class="mt-4 rounded-lg shadow-md w-2/3 mx-auto">
-                </div>
-                <div class="bg-white p-4 md:p-6 rounded-lg shadow-lg">
-                    <h3 class="text-xl font-semibold text-gray-800 mb-4">Spatial Geometry: <br>Build, Explore, Understand!</h3>
-                    <p class="text-sm md:text-base text-gray-600">Transform geometry into a creative adventure with this interactive curriculum guide. Through handouts, paper molds, and accessories, kids build and explore 3D shapes, making spatial reasoning both fun and educational.</p>
-                    <img src="/spatial-geometry.png" alt="Spatial Geometry" class="mt-4 rounded-lg shadow-md w-2/3 mx-auto">
+                <!-- 使用 v-for 迴圈動態渲染產品卡片 -->
+                <div v-for="(product, index) in products" :key="index" class="bg-white p-4 md:p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4" v-html="product.title"></h3>
+                    <p class="text-sm md:text-base text-gray-600">{{ product.description }}</p>
+                    <img :src="product.image" :alt="product.title" class="mt-4 rounded-lg shadow-md w-2/3 mx-auto">
                 </div>
             </div>
         </div>
@@ -77,61 +67,35 @@
                     <thead>
                         <tr class="bg-[#DCBFDB] text-gray-800">
                             <th class="px-2 py-2 md:px-4 md:py-3 bg-[#FFF8EB] text-left">Feature</th>
-                            <th class="px-2 py-2 md:px-4 md:py-3 text-left whitespace-nowrap">3Doodler Start+</th>
-                            <th class="px-2 py-2 md:px-4 md:py-3 text-left whitespace-nowrap">MYNT3D Pro</th>
-                            <th class="px-2 py-2 md:px-4 md:py-3 text-left whitespace-nowrap">MYNT3D Super</th>
-                            <th class="px-2 py-2 md:px-4 md:py-3 text-left whitespace-nowrap">SCRIB3D P1</th>
-                            <th class="px-2 py-2 md:px-4 md:py-3 text-left whitespace-nowrap">Pika3D Junior</th>
+                            <th v-for="(pen, index) in pens" :key="index" class="px-2 py-2 md:px-4 md:py-3 whitespace-nowrap">{{ pen.name }}</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr class="border-b">
                             <td class="px-2 py-2 md:px-4 md:py-3 font-medium">Age</td>
-                            <td class="px-2 py-2 md:px-4 md:py-3">6-13 years</td>
-                            <td class="px-2 py-2 md:px-4 md:py-3">Teens & Adults</td>
-                            <td class="px-2 py-2 md:px-4 md:py-3">Older Kids+</td>
-                            <td class="px-2 py-2 md:px-4 md:py-3">Older Kids+</td>
-                            <td class="px-2 py-2 md:px-4 md:py-3">6+ years</td>
+                            <td v-for="(pen, index) in pens" :key="index" class="px-2 py-2 md:px-4 md:py-3">{{ pen.age }}</td>
                         </tr>
                         <tr class="border-b">
                             <td class="px-2 py-2 md:px-4 md:py-3 font-medium">Safety</td>
-                            <td class="px-2 py-2 md:px-4 md:py-3">No hot parts</td>
-                            <td class="px-2 py-2 md:px-4 md:py-3">High temp</td>
-                            <td class="px-2 py-2 md:px-4 md:py-3">High temp</td>
-                            <td class="px-2 py-2 md:px-4 md:py-3">High temp</td>
-                            <td class="px-2 py-2 md:px-4 md:py-3">No hot parts</td>
+                            <td v-for="(pen, index) in pens" :key="index" class="px-2 py-2 md:px-4 md:py-3">{{ pen.safety }}</td>
                         </tr>
                         <tr class="border-b">
                             <td class="px-2 py-2 md:px-4 md:py-3 font-medium">Power</td>
-                            <td class="px-2 py-2 md:px-4 md:py-3">Rechargeable</td>
-                            <td class="px-2 py-2 md:px-4 md:py-3">Plug-in</td>
-                            <td class="px-2 py-2 md:px-4 md:py-3">Plug-in</td>
-                            <td class="px-2 py-2 md:px-4 md:py-3">Plug-in</td>
-                            <td class="px-2 py-2 md:px-4 md:py-3">Rechargeable</td>
+                            <td v-for="(pen, index) in pens" :key="index" class="px-2 py-2 md:px-4 md:py-3">{{ pen.power }}</td>
                         </tr>
                         <tr class="border-b">
                             <td class="px-2 py-2 md:px-4 md:py-3 font-medium">Filament</td>
-                            <td class="px-2 py-2 md:px-4 md:py-3">Eco PCL</td>
-                            <td class="px-2 py-2 md:px-4 md:py-3">ABS, PLA</td>
-                            <td class="px-2 py-2 md:px-4 md:py-3">ABS, PLA</td>
-                            <td class="px-2 py-2 md:px-4 md:py-3">ABS, PLA</td>
-                            <td class="px-2 py-2 md:px-4 md:py-3">Low-temp PCL</td>
+                            <td v-for="(pen, index) in pens" :key="index" class="px-2 py-2 md:px-4 md:py-3">{{ pen.filament }}</td>
                         </tr>
                         <tr class="border-b">
                             <td class="px-2 py-2 md:px-4 md:py-3 font-medium">Price</td>
-                            <td class="px-2 py-2 md:px-4 md:py-3">$49.99</td>
-                            <td class="px-2 py-2 md:px-4 md:py-3">$59.99</td>
-                            <td class="px-2 py-2 md:px-4 md:py-3">$39.99</td>
-                            <td class="px-2 py-2 md:px-4 md:py-3">$36.99</td>
-                            <td class="px-2 py-2 md:px-4 md:py-3">$39.99</td>
+                            <td v-for="(pen, index) in pens" :key="index" class="px-2 py-2 md:px-4 md:py-3">{{ pen.price }}</td>
                         </tr>
                         <tr class="border-b">
                             <td class="px-2 py-2 md:px-4 md:py-3 font-medium">Buy</td>
-                            <td class="px-2 py-2 md:px-4 md:py-3"><a href="https://amzn.to/3R1SQLB" target="_blank" rel="noopener noreferrer" class="text-orange-500 font-semibold hover:underline">Amazon</a></td>
-                            <td class="px-2 py-2 md:px-4 md:py-3"><a href="https://amzn.to/3Ry7avz" target="_blank" rel="noopener noreferrer" class="text-orange-500 font-semibold hover:underline">Amazon</a></td>
-                            <td class="px-2 py-2 md:px-4 md:py-3"><a href="https://amzn.to/3G7Ick4" target="_blank" rel="noopener noreferrer" class="text-orange-500 font-semibold hover:underline">Amazon</a></td>
-                            <td class="px-2 py-2 md:px-4 md:py-3"><a href="https://amzn.to/4hX7KxB" target="_blank" rel="noopener noreferrer" class="text-orange-500 font-semibold hover:underline">Amazon</a></td>
-                            <td class="px-2 py-2 md:px-4 md:py-3"><a href="https://amzn.to/3E7aryP" target="_blank" rel="noopener noreferrer" class="text-orange-500 font-semibold hover:underline">Amazon</a></td>
+                            <td v-for="(pen, index) in pens" :key="index" class="px-2 py-2 md:px-4 md:py-3">
+                                <a :href="pen.buyLink" target="_blank" rel="noopener noreferrer" class="text-orange-500 font-semibold hover:underline">Amazon</a>
+                            </td>
                         </tr>
                         <!-- Disclaimer -->
                         <tr>
@@ -183,8 +147,74 @@
 <script setup>
 import { onMounted, ref } from 'vue';
 
-// 移除不再需要的移動端選單狀態變數
-// const isMenuOpen = ref(false);
+// 產品資料
+const products = ref([
+  {
+    title: "Luxury Starter Kit: Ignite Creativity!",
+    description: "Kickstart your child's 3D printing adventure with 100+ carefully selected items! This all-in-one kit includes a heat-resistant silicone mat, finger caps for safety, and a variety of craft materials—everything needed for endless creativity right out of the box!",
+    image: "/starter-kit.png"
+  },
+  {
+    title: "Balance: <br>Play, Learn, and Explore Stability!",
+    description: "Explore the science of balance with this engaging educational pack. Packed with handouts, paper molds, and accessories, it guides kids through fun activities that teach stability and equilibrium—making learning a hands-on adventure.",
+    image: "/balance.png"
+  },
+  {
+    title: "Spatial Geometry: <br>Build, Explore, Understand!",
+    description: "Transform geometry into a creative adventure with this interactive curriculum guide. Through handouts, paper molds, and accessories, kids build and explore 3D shapes, making spatial reasoning both fun and educational.",
+    image: "/spatial-geometry.png"
+  }
+]);
+
+// 3D 列印筆資料
+const pens = ref([
+  {
+    name: "3Doodler Start+",
+    age: "6-13 years",
+    safety: "No hot parts",
+    power: "Rechargeable",
+    filament: "Eco PCL",
+    price: "$49.99",
+    buyLink: "https://amzn.to/3R1SQLB"
+  },
+  {
+    name: "MYNT3D Pro",
+    age: "Teens & Adults",
+    safety: "High temp",
+    power: "Plug-in",
+    filament: "ABS, PLA",
+    price: "$59.99",
+    buyLink: "https://amzn.to/3Ry7avz"
+  },
+  {
+    name: "MYNT3D Super",
+    age: "Older Kids+",
+    safety: "High temp",
+    power: "Plug-in",
+    filament: "ABS, PLA",
+    price: "$39.99",
+    buyLink: "https://amzn.to/3G7Ick4"
+  },
+  {
+    name: "SCRIB3D P1",
+    age: "Older Kids+",
+    safety: "High temp",
+    power: "Plug-in",
+    filament: "ABS, PLA",
+    price: "$36.99",
+    buyLink: "https://amzn.to/4hX7KxB"
+  }
+//   ,
+//   {
+//     name: "Pika3D Junior",
+//     age: "6+ years",
+//     safety: "No hot parts",
+//     power: "Rechargeable",
+//     filament: "Low-temp PCL",
+//     price: "$39.99",
+//     buyLink: "https://amzn.to/3E7aryP"
+//   }
+]);
 
 // 頁面渲染後綁定平滑捲動功能
 onMounted(() => {
