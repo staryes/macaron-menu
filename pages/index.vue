@@ -147,12 +147,9 @@
                             </tr>
                             <!-- 免責聲明 - 橫跨所有列 (colspan="6") -->
                             <tr>
-                                <td colspan="6" class="p-[2px] xs:px-1 xs:py-1 sm:px-2 text-[7px] xs:text-[8px] sm:text-xs text-gray-600 text-right">
-                                    <!-- 小螢幕顯示簡短版本的免責聲明 -->
-                                    <span class="inline sm:hidden">Commissions may be earned.</span>
-                                    <!-- 大螢幕顯示完整版本的免責聲明 -->
-                                    <span class="hidden sm:inline">We might receive commissions if you click on our links and make purchases.</span>
-                                </td>
+                                <td colspan="6" class="p-[2px] xs:px-1 xs:py-1 sm:px-2 text-[9px] sm:text-xs text-gray-600 text-right">
+                                <!-- 免責聲明 -->
+                                <span>We might receive commissions if you click on our links and make purchases.</span>                                </td>
                             </tr>
                         </tbody>
                     </table>
