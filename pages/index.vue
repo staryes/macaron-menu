@@ -63,15 +63,15 @@
         <div class="max-w-7xl mx-auto text-center px-2 sm:px-4">
             <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-6">Which 3D Printing Pen is Good for My Kid?</h2>
             <div class="flex justify-center">
-                <div class="overflow-x-auto shadow-md rounded-lg w-full max-w-[375px] sm:max-w-4xl mx-auto">
+                <div class="overflow-x-auto shadow-md rounded-lg w-full max-w-full sm:max-w-full mx-auto">
                     <!-- 
                       表格設計說明：
                       1. 使用 table-auto 自動佈局表格，讓瀏覽器根據內容自動調整列寬
                       2. 響應式文字策略：
                          - 在最小螢幕上使用 9px 字體 
-                         - xs 螢幕 (375px+) 使用 10px 字體
-                         - sm 螢幕 (640px+) 使用 xs (12px) 字體
-                         - md 螢幕 (768px+) 使用 sm (14px) 字體
+                         - xs 螢幕 (375px+) 使用 12px 字體
+                         - sm 螢幕 (640px+) 使用 14px 字體
+                         - md 螢幕 (768px+) 使用 16px 字體
                       3. 響應式內容：
                          - 小螢幕顯示縮寫版本 (inline sm:hidden)
                          - 大螢幕顯示完整版本 (hidden sm:inline)
@@ -81,21 +81,20 @@
                          - sm: px-2 py-2 (左右上下各 0.5rem)
                          - md: px-4 py-3 (左右 1rem，上下 0.75rem)
                       5. 表格容器設置：
-                         - 小螢幕限制寬度為 375px
-                         - 大螢幕最大寬度為 4xl (56rem)
+                         - 小螢幕和大螢幕都撐滿容器寬度
                          - overflow-x-auto 允許在需要時水平捲動
                     -->
-                    <table class="w-full table-auto border-collapse text-[9px] xs:text-[10px] sm:text-xs md:text-sm">
-                        <thead>
+                    <table class="w-full table-auto border-collapse text-[9px] xs:text-[12px] sm:text-[14px] md:text-[16px] mx-auto">
+                        <thead class="w-full">
                             <!-- 表頭行：使用淺紫色背景，Feature 欄位使用淺黃背景區分 -->
-                            <tr class="bg-[#DCBFDB] text-gray-800">
+                            <tr class="bg-[#DCBFDB] text-gray-800 w-full">
                                 <!-- Feature 標題列居中對齊 -->
-                                <th class="p-[2px] xs:px-1 xs:py-1 sm:px-2 sm:py-2 md:px-4 md:py-3 bg-[#FFF8EB] text-center">Feature</th>
+                                <th class="p-[2px] xs:px-1 xs:py-1 sm:px-2 sm:py-2 md:px-4 md:py-3 bg-[#FFF8EB] text-center w-1/5">Feature</th>
                                 <!-- 筆品牌名稱：使用 whitespace-nowrap 防止文字換行 -->
-                                <th v-for="(pen, index) in pens" :key="index" class="p-[2px] xs:px-1 xs:py-1 sm:px-2 sm:py-2 md:px-4 md:py-3 whitespace-nowrap text-[8px] xs:text-[9px] sm:text-xs">{{ pen.name }}</th>
+                                <th v-for="(pen, index) in pens" :key="index" class="p-[2px] xs:px-1 xs:py-1 sm:px-2 sm:py-2 md:px-4 md:py-3 whitespace-nowrap w-1/5">{{ pen.name }}</th>
                             </tr>
                         </thead>
-                        <tbody>
+                        <tbody class="w-full">
                             <!-- 年齡範圍行 -->
                             <tr class="border-b">
                                 <!-- 特性名稱使用 font-medium 稍微增強顯示 -->
