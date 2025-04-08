@@ -60,51 +60,66 @@
 
     <!-- Pen Comparison Section -->
     <section id="pens" class="py-20 bg-[#FFF8EB]">
-        <div class="max-w-7xl mx-auto text-center px-4">
+        <div class="max-w-7xl mx-auto text-center px-2 sm:px-4">
             <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-6">Which 3D Printing Pen is Good for My Kid?</h2>
-            <div class="overflow-x-auto shadow-md rounded-lg">
-                <table class="w-full table-auto border-collapse text-xs md:text-sm">
-                    <thead>
-                        <tr class="bg-[#DCBFDB] text-gray-800">
-                            <th class="px-2 py-2 md:px-4 md:py-3 bg-[#FFF8EB] text-left">Feature</th>
-                            <th v-for="(pen, index) in pens" :key="index" class="px-2 py-2 md:px-4 md:py-3 whitespace-nowrap">{{ pen.name }}</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr class="border-b">
-                            <td class="px-2 py-2 md:px-4 md:py-3 font-medium">Age</td>
-                            <td v-for="(pen, index) in pens" :key="index" class="px-2 py-2 md:px-4 md:py-3">{{ pen.age }}</td>
-                        </tr>
-                        <tr class="border-b">
-                            <td class="px-2 py-2 md:px-4 md:py-3 font-medium">Safety</td>
-                            <td v-for="(pen, index) in pens" :key="index" class="px-2 py-2 md:px-4 md:py-3">{{ pen.safety }}</td>
-                        </tr>
-                        <tr class="border-b">
-                            <td class="px-2 py-2 md:px-4 md:py-3 font-medium">Power</td>
-                            <td v-for="(pen, index) in pens" :key="index" class="px-2 py-2 md:px-4 md:py-3">{{ pen.power }}</td>
-                        </tr>
-                        <tr class="border-b">
-                            <td class="px-2 py-2 md:px-4 md:py-3 font-medium">Filament</td>
-                            <td v-for="(pen, index) in pens" :key="index" class="px-2 py-2 md:px-4 md:py-3">{{ pen.filament }}</td>
-                        </tr>
-                        <tr class="border-b">
-                            <td class="px-2 py-2 md:px-4 md:py-3 font-medium">Price</td>
-                            <td v-for="(pen, index) in pens" :key="index" class="px-2 py-2 md:px-4 md:py-3">{{ pen.price }}</td>
-                        </tr>
-                        <tr class="border-b">
-                            <td class="px-2 py-2 md:px-4 md:py-3 font-medium">Buy</td>
-                            <td v-for="(pen, index) in pens" :key="index" class="px-2 py-2 md:px-4 md:py-3">
-                                <a :href="pen.buyLink" target="_blank" rel="noopener noreferrer" class="text-orange-500 font-semibold hover:underline">Amazon</a>
-                            </td>
-                        </tr>
-                        <!-- Disclaimer -->
-                        <tr>
-                            <td colspan="6" class="px-2 py-2 md:px-4 text-xs text-gray-600 text-right">
-                                We might receive commissions if you click on our links and make purchases.
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+            <div class="flex justify-center">
+                <div class="overflow-x-auto shadow-md rounded-lg w-full max-w-[375px] sm:max-w-4xl mx-auto">
+                    <table class="w-full table-auto border-collapse text-[9px] xs:text-[10px] sm:text-xs md:text-sm">
+                        <thead>
+                            <tr class="bg-[#DCBFDB] text-gray-800">
+                                <th class="p-[2px] xs:px-1 xs:py-1 sm:px-2 sm:py-2 md:px-4 md:py-3 bg-[#FFF8EB] text-left">Feature</th>
+                                <th v-for="(pen, index) in pens" :key="index" class="p-[2px] xs:px-1 xs:py-1 sm:px-2 sm:py-2 md:px-4 md:py-3 whitespace-nowrap text-[8px] xs:text-[9px] sm:text-xs">{{ pen.name }}</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border-b">
+                                <td class="p-[2px] xs:px-1 xs:py-1 sm:px-2 sm:py-2 md:px-4 md:py-3 font-medium">Age</td>
+                                <td v-for="(pen, index) in pens" :key="index" class="p-[2px] xs:px-1 xs:py-1 sm:px-2 sm:py-2 md:px-4 md:py-3">
+                                    <span class="inline sm:hidden">{{ pen.age.short }}</span>
+                                    <span class="hidden sm:inline">{{ pen.age.full }}</span>
+                                </td>
+                            </tr>
+                            <tr class="border-b">
+                                <td class="p-[2px] xs:px-1 xs:py-1 sm:px-2 sm:py-2 md:px-4 md:py-3 font-medium">Safety</td>
+                                <td v-for="(pen, index) in pens" :key="index" class="p-[2px] xs:px-1 xs:py-1 sm:px-2 sm:py-2 md:px-4 md:py-3">
+                                    <span class="inline sm:hidden">{{ pen.safety.short }}</span>
+                                    <span class="hidden sm:inline">{{ pen.safety.full }}</span>
+                                </td>
+                            </tr>
+                            <tr class="border-b">
+                                <td class="p-[2px] xs:px-1 xs:py-1 sm:px-2 sm:py-2 md:px-4 md:py-3 font-medium">Power</td>
+                                <td v-for="(pen, index) in pens" :key="index" class="p-[2px] xs:px-1 xs:py-1 sm:px-2 sm:py-2 md:px-4 md:py-3">
+                                    <span class="inline sm:hidden">{{ pen.power.short }}</span>
+                                    <span class="hidden sm:inline">{{ pen.power.full }}</span>
+                                </td>
+                            </tr>
+                            <tr class="border-b">
+                                <td class="p-[2px] xs:px-1 xs:py-1 sm:px-2 sm:py-2 md:px-4 md:py-3 font-medium">Filament</td>
+                                <td v-for="(pen, index) in pens" :key="index" class="p-[2px] xs:px-1 xs:py-1 sm:px-2 sm:py-2 md:px-4 md:py-3">
+                                    <span class="inline sm:hidden">{{ pen.filament.short }}</span>
+                                    <span class="hidden sm:inline">{{ pen.filament.full }}</span>
+                                </td>
+                            </tr>
+                            <tr class="border-b">
+                                <td class="p-[2px] xs:px-1 xs:py-1 sm:px-2 sm:py-2 md:px-4 md:py-3 font-medium">Price</td>
+                                <td v-for="(pen, index) in pens" :key="index" class="p-[2px] xs:px-1 xs:py-1 sm:px-2 sm:py-2 md:px-4 md:py-3">{{ pen.price }}</td>
+                            </tr>
+                            <tr class="border-b">
+                                <td class="p-[2px] xs:px-1 xs:py-1 sm:px-2 sm:py-2 md:px-4 md:py-3 font-medium">Buy</td>
+                                <td v-for="(pen, index) in pens" :key="index" class="p-[2px] xs:px-1 xs:py-1 sm:px-2 sm:py-2 md:px-4 md:py-3">
+                                    <a :href="pen.buyLink" target="_blank" rel="noopener noreferrer" class="text-orange-500 font-semibold hover:underline">Amazon</a>
+                                </td>
+                            </tr>
+                            <!-- Disclaimer -->
+                            <tr>
+                                <td colspan="6" class="p-[2px] xs:px-1 xs:py-1 sm:px-2 text-[7px] xs:text-[8px] sm:text-xs text-gray-600 text-right">
+                                    <span class="inline sm:hidden">Commissions may be earned.</span>
+                                    <span class="hidden sm:inline">We might receive commissions if you click on our links and make purchases.</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
     </section>
@@ -170,37 +185,37 @@ const products = ref([
 const pens = ref([
   {
     name: "3Doodler Start+",
-    age: "6-13 years",
-    safety: "No hot parts",
-    power: "Rechargeable",
-    filament: "Eco PCL",
+    age: { short: "6-13y", full: "6-13 years" },
+    safety: { short: "No hot", full: "No hot parts" },
+    power: { short: "Recharge", full: "Rechargeable" },
+    filament: { short: "Eco PCL", full: "Eco PCL" },
     price: "$49.99",
     buyLink: "https://amzn.to/3R1SQLB"
   },
   {
     name: "MYNT3D Pro",
-    age: "Teens & Adults",
-    safety: "High temp",
-    power: "Plug-in",
-    filament: "ABS, PLA",
+    age: { short: "Teens+", full: "Teens & Adults" },
+    safety: { short: "High temp", full: "High temp" },
+    power: { short: "Plug-in", full: "Plug-in" },
+    filament: { short: "ABS/PLA", full: "ABS, PLA" },
     price: "$59.99",
     buyLink: "https://amzn.to/3Ry7avz"
   },
   {
     name: "MYNT3D Super",
-    age: "Older Kids+",
-    safety: "High temp",
-    power: "Plug-in",
-    filament: "ABS, PLA",
+    age: { short: "Older Kids+", full: "Older Kids+" },
+    safety: { short: "High temp", full: "High temp" },
+    power: { short: "Plug-in", full: "Plug-in" },
+    filament: { short: "ABS/PLA", full: "ABS, PLA" },
     price: "$39.99",
     buyLink: "https://amzn.to/3G7Ick4"
   },
   {
     name: "SCRIB3D P1",
-    age: "Older Kids+",
-    safety: "High temp",
-    power: "Plug-in",
-    filament: "ABS, PLA",
+    age: { short: "Older Kids+", full: "Older Kids+" },
+    safety: { short: "High temp", full: "High temp" },
+    power: { short: "Plug-in", full: "Plug-in" },
+    filament: { short: "ABS/PLA", full: "ABS, PLA" },
     price: "$36.99",
     buyLink: "https://amzn.to/4hX7KxB"
   }
@@ -235,5 +250,27 @@ html {
   font-family: Arial, sans-serif;
 }
 
-/* 完全移除媒體查詢，改用 Tailwind 的響應式類別實現 */
+/* 自定義響應式斷點 */
+@media (min-width: 375px) {
+  .xs\:text-xs {
+    font-size: 0.75rem;
+  }
+  .xs\:text-\[8px\] {
+    font-size: 8px;
+  }
+  .xs\:text-\[9px\] {
+    font-size: 9px;
+  }
+  .xs\:text-\[10px\] {
+    font-size: 10px;
+  }
+  .xs\:px-1 {
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+  }
+  .xs\:py-1 {
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+  }
+}
 </style> 
