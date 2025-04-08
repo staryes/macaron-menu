@@ -64,28 +64,61 @@
             <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-6">Which 3D Printing Pen is Good for My Kid?</h2>
             <div class="flex justify-center">
                 <div class="overflow-x-auto shadow-md rounded-lg w-full max-w-[375px] sm:max-w-4xl mx-auto">
+                    <!-- 
+                      表格設計說明：
+                      1. 使用 table-auto 自動佈局表格，讓瀏覽器根據內容自動調整列寬
+                      2. 響應式文字策略：
+                         - 在最小螢幕上使用 9px 字體 
+                         - xs 螢幕 (375px+) 使用 10px 字體
+                         - sm 螢幕 (640px+) 使用 xs (12px) 字體
+                         - md 螢幕 (768px+) 使用 sm (14px) 字體
+                      3. 響應式內容：
+                         - 小螢幕顯示縮寫版本 (inline sm:hidden)
+                         - 大螢幕顯示完整版本 (hidden sm:inline)
+                      4. 內邊距響應式設計：
+                         - 最小螢幕: p-[2px] (非常小的內邊距)
+                         - xs: px-1 py-1 (左右上下各 0.25rem)
+                         - sm: px-2 py-2 (左右上下各 0.5rem)
+                         - md: px-4 py-3 (左右 1rem，上下 0.75rem)
+                      5. 表格容器設置：
+                         - 小螢幕限制寬度為 375px
+                         - 大螢幕最大寬度為 4xl (56rem)
+                         - overflow-x-auto 允許在需要時水平捲動
+                    -->
                     <table class="w-full table-auto border-collapse text-[9px] xs:text-[10px] sm:text-xs md:text-sm">
                         <thead>
+                            <!-- 表頭行：使用淺紫色背景，Feature 欄位使用淺黃背景區分 -->
                             <tr class="bg-[#DCBFDB] text-gray-800">
+                                <!-- Feature 標題列居中對齊 -->
                                 <th class="p-[2px] xs:px-1 xs:py-1 sm:px-2 sm:py-2 md:px-4 md:py-3 bg-[#FFF8EB] text-center">Feature</th>
+                                <!-- 筆品牌名稱：使用 whitespace-nowrap 防止文字換行 -->
                                 <th v-for="(pen, index) in pens" :key="index" class="p-[2px] xs:px-1 xs:py-1 sm:px-2 sm:py-2 md:px-4 md:py-3 whitespace-nowrap text-[8px] xs:text-[9px] sm:text-xs">{{ pen.name }}</th>
                             </tr>
                         </thead>
                         <tbody>
+                            <!-- 年齡範圍行 -->
                             <tr class="border-b">
+                                <!-- 特性名稱使用 font-medium 稍微增強顯示 -->
                                 <td class="p-[2px] xs:px-1 xs:py-1 sm:px-2 sm:py-2 md:px-4 md:py-3 font-medium">Age</td>
+                                <!-- 循環渲染每支筆的資訊 -->
                                 <td v-for="(pen, index) in pens" :key="index" class="p-[2px] xs:px-1 xs:py-1 sm:px-2 sm:py-2 md:px-4 md:py-3">
+                                    <!-- 小螢幕顯示短版本 (6-13y)，大螢幕隱藏 -->
                                     <span class="inline sm:hidden">{{ pen.age.short }}</span>
+                                    <!-- 小螢幕隱藏，大螢幕顯示完整版本 (6-13 years) -->
                                     <span class="hidden sm:inline">{{ pen.age.full }}</span>
                                 </td>
                             </tr>
+                            <!-- 安全性行 -->
                             <tr class="border-b">
                                 <td class="p-[2px] xs:px-1 xs:py-1 sm:px-2 sm:py-2 md:px-4 md:py-3 font-medium">Safety</td>
                                 <td v-for="(pen, index) in pens" :key="index" class="p-[2px] xs:px-1 xs:py-1 sm:px-2 sm:py-2 md:px-4 md:py-3">
+                                    <!-- 小螢幕顯示短版本，大螢幕隱藏 -->
                                     <span class="inline sm:hidden">{{ pen.safety.short }}</span>
+                                    <!-- 小螢幕隱藏，大螢幕顯示完整版本 -->
                                     <span class="hidden sm:inline">{{ pen.safety.full }}</span>
                                 </td>
                             </tr>
+                            <!-- 電源類型行 -->
                             <tr class="border-b">
                                 <td class="p-[2px] xs:px-1 xs:py-1 sm:px-2 sm:py-2 md:px-4 md:py-3 font-medium">Power</td>
                                 <td v-for="(pen, index) in pens" :key="index" class="p-[2px] xs:px-1 xs:py-1 sm:px-2 sm:py-2 md:px-4 md:py-3">
@@ -93,6 +126,7 @@
                                     <span class="hidden sm:inline">{{ pen.power.full }}</span>
                                 </td>
                             </tr>
+                            <!-- 耗材類型行 -->
                             <tr class="border-b">
                                 <td class="p-[2px] xs:px-1 xs:py-1 sm:px-2 sm:py-2 md:px-4 md:py-3 font-medium">Filament</td>
                                 <td v-for="(pen, index) in pens" :key="index" class="p-[2px] xs:px-1 xs:py-1 sm:px-2 sm:py-2 md:px-4 md:py-3">
@@ -100,20 +134,24 @@
                                     <span class="hidden sm:inline">{{ pen.filament.full }}</span>
                                 </td>
                             </tr>
+                            <!-- 價格行 -->
                             <tr class="border-b">
                                 <td class="p-[2px] xs:px-1 xs:py-1 sm:px-2 sm:py-2 md:px-4 md:py-3 font-medium">Price</td>
                                 <td v-for="(pen, index) in pens" :key="index" class="p-[2px] xs:px-1 xs:py-1 sm:px-2 sm:py-2 md:px-4 md:py-3">{{ pen.price }}</td>
                             </tr>
+                            <!-- 購買鏈接行 -->
                             <tr class="border-b">
                                 <td class="p-[2px] xs:px-1 xs:py-1 sm:px-2 sm:py-2 md:px-4 md:py-3 font-medium">Buy</td>
                                 <td v-for="(pen, index) in pens" :key="index" class="p-[2px] xs:px-1 xs:py-1 sm:px-2 sm:py-2 md:px-4 md:py-3">
                                     <a :href="pen.buyLink" target="_blank" rel="noopener noreferrer" class="text-orange-500 font-semibold hover:underline">Amazon</a>
                                 </td>
                             </tr>
-                            <!-- Disclaimer -->
+                            <!-- 免責聲明 - 橫跨所有列 (colspan="6") -->
                             <tr>
                                 <td colspan="6" class="p-[2px] xs:px-1 xs:py-1 sm:px-2 text-[7px] xs:text-[8px] sm:text-xs text-gray-600 text-right">
+                                    <!-- 小螢幕顯示簡短版本的免責聲明 -->
                                     <span class="inline sm:hidden">Commissions may be earned.</span>
+                                    <!-- 大螢幕顯示完整版本的免責聲明 -->
                                     <span class="hidden sm:inline">We might receive commissions if you click on our links and make purchases.</span>
                                 </td>
                             </tr>
@@ -162,7 +200,11 @@
 <script setup>
 import { onMounted, ref } from 'vue';
 
-// 產品資料
+// 產品資料 - 這是我們的產品展示資訊
+// 資料結構：
+// - title: 產品名稱 (支援 HTML 標籤用於換行)
+// - description: 產品描述文字
+// - image: 產品圖片路徑
 const products = ref([
   {
     title: "Luxury Starter Kit: Ignite Creativity!",
@@ -181,7 +223,15 @@ const products = ref([
   }
 ]);
 
-// 3D 列印筆資料
+// 3D 列印筆資料 - 用於比較表格
+// 資料結構：
+// - name: 筆的品牌名稱
+// - age: 適合年齡 {short: 小螢幕顯示, full: 大螢幕顯示}
+// - safety: 安全性描述 {short: 小螢幕顯示, full: 大螢幕顯示}
+// - power: 電源類型 {short: 小螢幕顯示, full: 大螢幕顯示}
+// - filament: 耗材類型 {short: 小螢幕顯示, full: 大螢幕顯示}
+// - price: 價格顯示文字
+// - buyLink: 亞馬遜購買連結 (含聯盟行銷代碼)
 const pens = ref([
   {
     name: "3Doodler Start+",
@@ -232,6 +282,7 @@ const pens = ref([
 ]);
 
 // 頁面渲染後綁定平滑捲動功能
+// 使所有內部連結 (#hero, #about 等) 點擊後平滑捲動到目標位置
 onMounted(() => {
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
