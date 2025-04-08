@@ -1,1 +1,0 @@
-export { default } from "file:///Users/pac/codes/macaron-menu/node_modules/@nuxt/vite-builder/dist/runtime/client.manifest.mjs"

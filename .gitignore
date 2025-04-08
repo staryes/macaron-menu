@@ -1,5 +1,5 @@
+.nuxt/
 node_modules
-.nuxt/*
 .env
 .env.local
 .env.development
