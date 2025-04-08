@@ -67,7 +67,7 @@
                     <table class="w-full table-auto border-collapse text-[9px] xs:text-[10px] sm:text-xs md:text-sm">
                         <thead>
                             <tr class="bg-[#DCBFDB] text-gray-800">
-                                <th class="p-[2px] xs:px-1 xs:py-1 sm:px-2 sm:py-2 md:px-4 md:py-3 bg-[#FFF8EB] text-left">Feature</th>
+                                <th class="p-[2px] xs:px-1 xs:py-1 sm:px-2 sm:py-2 md:px-4 md:py-3 bg-[#FFF8EB] text-center">Feature</th>
                                 <th v-for="(pen, index) in pens" :key="index" class="p-[2px] xs:px-1 xs:py-1 sm:px-2 sm:py-2 md:px-4 md:py-3 whitespace-nowrap text-[8px] xs:text-[9px] sm:text-xs">{{ pen.name }}</th>
                             </tr>
                         </thead>
