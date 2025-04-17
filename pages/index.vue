@@ -245,7 +245,7 @@ const pens = ref([
     power: { short: "Plug-in", full: "Plug-in" },
     filament: { short: "ABS/PLA", full: "ABS, PLA" },
     price: "$59.99",
-    buyLink: "https://amzn.to/3Ry7avz"
+    buyLink: "https://amzn.to/43YOZXy"
   },
   {
     name: "MYNT3D Super",
