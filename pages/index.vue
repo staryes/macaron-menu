@@ -29,7 +29,7 @@
         <div class="relative w-full md:w-1/2 lg:w-1/3 space-y-4 text-left bg-white/10 p-4 md:p-8 rounded-lg shadow-lg mx-4 md:ml-48">
             <h1 class="text-2xl md:text-4xl font-bold text-[#FFFFFF]">Enki Atelier: Where Curiosity Meets Heartfelt Creation</h1>
             <p class="text-base md:text-lg text-[#FFFFFF]">As parents, we know the magic of watching our children's eyes light up with discovery. Those moments of wonder inspire everything we do at <strong>Enki Atelier</strong>. Founded by three PhD engineers and an art teacher, we create STEAM activity toys designed with love to nurture curiosity and spark creativity.</p>
-            <p class="text-base md:text-lg text-[#FFFFFF]">Our mission is simple: to inspire a lifelong love of learning. Through hands-on play and thoughtful educational materials, we aim to create experiences that empower kids to explore, create, and dream—all while discovering the world around them.</p>
+            <p class="text-base md:text-lg text-[#FFFFFF]">Our mission is simple: to inspire a lifelong love of learning. Through hands-on play and thoughtful educational materials, we aim to create experiences that empower kids to explore, create, and dream-all while discovering the world around them.</p>
         </div>
     </section>
 
@@ -38,7 +38,7 @@
         <div class="relative w-full sm:w-3/4 md:w-1/2 max-w-7xl mx-auto text-center px-4">
             <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-6">Unlock Creativity & Innovation with Hands-On STEAM Adventures!</h2>
             <p class="text-base md:text-lg text-gray-700 mb-6">Designed for curious minds grades K-5, the Enki Atelier <strong>3D Discovery Kits</strong> turn learning into an exciting, hands-on adventure. Using a 3D printing pen, kids explore engineering, design, and problem-solving in a fun, interactive way.</p>
-            <p class="text-base md:text-lg text-gray-700 mb-6">In a world increasingly shaped by AI, hands-on creativity and problem-solving are more valuable than ever. Our kits empower kids with the skills AI can't replace—curiosity, adaptability, and the ability to bring ideas to life. More than just learning how things work, they'll learn how to think, create, and innovate, gaining the confidence to shape the future.</p>
+            <p class="text-base md:text-lg text-gray-700 mb-6">In a world increasingly shaped by AI, hands-on creativity and problem-solving are more valuable than ever. Our kits empower kids with the skills AI can't replace-curiosity, adaptability, and the ability to bring ideas to life. More than just learning how things work, they'll learn how to think, create, and innovate, gaining the confidence to shape the future.</p>
             <p class="text-base md:text-lg text-gray-700">Let's build, explore, and invent together!</p>
         </div>
     </section>
@@ -162,7 +162,15 @@
     <section id="cta" class="py-20 bg-gradient-to-r from-[#DC9F33] to-[#603B1D] text-center text-white px-4">
         <h2 class="text-2xl md:text-3xl font-bold mb-6">Get Started Today!</h2>
         <p class="text-base md:text-lg mb-6">Empower kids with creative STEAM learning activities.</p>
-        <a class="inline-block px-6 py-3 bg-white text-orange-500 font-semibold rounded-md hover:bg-gray-200">Coming Soon</a>
+        <a 
+          href="https://a.co/d/gWaXyfY"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-block px-6 py-3 bg-white text-orange-500 font-semibold rounded-md hover:bg-gray-200"
+          >
+          Buy on Amazon
+        </a>
+
     </section>
 
     <!-- Contact Us Section -->
@@ -204,12 +212,12 @@ import { onMounted, ref } from 'vue';
 const products = ref([
   {
     title: "Luxury Starter Kit: Ignite Creativity!",
-    description: "Kickstart your child's 3D printing adventure with 100+ carefully selected items! This all-in-one kit includes a heat-resistant silicone mat, finger caps for safety, and a variety of craft materials—everything needed for endless creativity right out of the box!",
+    description: "Kickstart your child's 3D printing adventure with 100+ carefully selected items! This all-in-one kit includes a heat-resistant silicone mat, finger caps for safety, and a variety of craft materials-everything needed for endless creativity right out of the box!",
     image: "/starter-kit.png"
   },
   {
     title: "Balance: <br>Play, Learn, and Explore Stability!",
-    description: "Explore the science of balance with this engaging educational pack. Packed with handouts, paper molds, and accessories, it guides kids through fun activities that teach stability and equilibrium—making learning a hands-on adventure.",
+    description: "Explore the science of balance with this engaging educational pack. Packed with handouts, paper molds, and accessories, it guides kids through fun activities that teach stability and equilibrium-making learning a hands-on adventure.",
     image: "/balance.png"
   },
   {
