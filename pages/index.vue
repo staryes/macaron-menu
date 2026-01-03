@@ -213,7 +213,7 @@ const products = ref([
   {
     title: "Luxury Starter Kit: Ignite Creativity!",
     description: "Kickstart your child's 3D printing adventure with 100+ carefully selected items! This all-in-one kit includes a heat-resistant silicone mat, finger caps for safety, and a variety of craft materials-everything needed for endless creativity right out of the box!",
-    image: "/starter-kit.png"
+    image: "/starter-kit.jpg"
   },
   {
     title: "Balance: <br>Play, Learn, and Explore Stability!",
