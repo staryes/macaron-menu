@@ -211,10 +211,9 @@ import { onMounted, ref } from 'vue';
 // - image: 產品圖片路徑
 const products = ref([
   {
-    title: "Luxury Starter Kit: Ignite Creativity!",
-    description: "Kickstart your child's 3D printing adventure with 100+ carefully selected items! This all-in-one kit includes a heat-resistant silicone mat, finger caps for safety, and a variety of craft materials-everything needed for endless creativity right out of the box!",
+    title: "90+ Piece Premium Starter Kit: Ignite Creativity!",
+    description: "The Enki Atelier Introductory Volume STEAM kit is put together with carefully chosen tools and materials, including a heat-resistant silicone mat, safety glasses, finger caps (child and adult sizes), thread scissors, tweezers, and over 60 colorful crafting components to boost any 3D pen project.",
     image: "/starter-kit.jpg",
-    link: "https://a.co/d/gWaXyfY"
   },
   {
     title: "Balance: <br>Play, Learn, and Explore Stability!",
