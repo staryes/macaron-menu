@@ -13,8 +13,8 @@
                 <a href="#hero" class="hover:text-orange-500 text-sm md:text-base">Home</a>
                 <a href="#about" class="hover:text-orange-500 text-sm md:text-base">About</a>
                 <a href="#themes" class="hover:text-orange-500 text-sm md:text-base">Products</a>
-                <a href="#pens" class="hover:text-orange-500 text-sm md:text-base">Guide</a>
                 <a href="#cta" class="hover:text-orange-500 text-sm md:text-base">Buy Now</a>
+                <a href="#pens" class="hover:text-orange-500 text-sm md:text-base">Guide</a>
                 <a href="#contact" class="hover:text-orange-500 text-sm md:text-base">Contact Us</a>
             </div>
         </div>
@@ -58,6 +58,21 @@
         </div>
     </section>
 
+    <!-- Call to Action Section -->
+    <section id="cta" class="py-20 bg-gradient-to-r from-[#DC9F33] to-[#603B1D] text-center text-white px-4">
+        <h2 class="text-2xl md:text-3xl font-bold mb-6">Get Started Today!</h2>
+        <p class="text-base md:text-lg mb-6">Empower kids with creative STEAM learning activities.</p>
+        <a 
+          href="https://a.co/d/gWaXyfY"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-block px-6 py-3 bg-white text-orange-500 font-semibold rounded-md hover:bg-gray-200"
+          >
+          Buy on Amazon
+        </a>
+
+    </section>
+    
     <!-- Pen Comparison Section -->
     <section id="pens" class="py-20 bg-[#FFF8EB]">
         <div class="max-w-7xl mx-auto text-center px-2 sm:px-4">
@@ -158,21 +173,6 @@
         </div>
     </section>
 
-    <!-- Call to Action Section -->
-    <section id="cta" class="py-20 bg-gradient-to-r from-[#DC9F33] to-[#603B1D] text-center text-white px-4">
-        <h2 class="text-2xl md:text-3xl font-bold mb-6">Get Started Today!</h2>
-        <p class="text-base md:text-lg mb-6">Empower kids with creative STEAM learning activities.</p>
-        <a 
-          href="https://a.co/d/gWaXyfY"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="inline-block px-6 py-3 bg-white text-orange-500 font-semibold rounded-md hover:bg-gray-200"
-          >
-          Buy on Amazon
-        </a>
-
-    </section>
-
     <!-- Contact Us Section -->
     <section id="contact" class="py-20 bg-[#FFF8EB]">
         <div class="max-w-4xl mx-auto text-center px-4">
@@ -213,7 +213,8 @@ const products = ref([
   {
     title: "Luxury Starter Kit: Ignite Creativity!",
     description: "Kickstart your child's 3D printing adventure with 100+ carefully selected items! This all-in-one kit includes a heat-resistant silicone mat, finger caps for safety, and a variety of craft materials-everything needed for endless creativity right out of the box!",
-    image: "/starter-kit.jpg"
+    image: "/starter-kit.jpg",
+    link: "https://a.co/d/gWaXyfY"
   },
   {
     title: "Balance: <br>Play, Learn, and Explore Stability!",
