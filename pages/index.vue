@@ -237,15 +237,15 @@ const products = ref([
 // - price: 價格顯示文字
 // - buyLink: 亞馬遜購買連結 (含聯盟行銷代碼)
 const pens = ref([
-  {
-    name: "3Doodler Start+",
-    age: { short: "6-13y", full: "6-13 years" },
-    safety: { short: "No hot", full: "No hot parts" },
-    power: { short: "Recharge", full: "Rechargeable" },
-    filament: { short: "Eco PCL", full: "Eco PCL (May not fit all activities)" },
-    price: "$49.99",
-    buyLink: "https://amzn.to/3R1SQLB"
-  },
+  // {
+  //   name: "3Doodler Start+",
+  //   age: { short: "6-13y", full: "6-13 years" },
+  //   safety: { short: "No hot", full: "No hot parts" },
+  //   power: { short: "Recharge", full: "Rechargeable" },
+  //   filament: { short: "Eco PCL", full: "Eco PCL (May not fit all activities)" },
+  //   price: "$49.99",
+  //   buyLink: "https://amzn.to/3R1SQLB"
+  // },
   {
     name: "MYNT3D Pro",
     age: { short: "Teens+", full: "Teens & Adults" },
