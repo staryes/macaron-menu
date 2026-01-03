@@ -242,7 +242,7 @@ const pens = ref([
     age: { short: "6-13y", full: "6-13 years" },
     safety: { short: "No hot", full: "No hot parts" },
     power: { short: "Recharge", full: "Rechargeable" },
-    filament: { short: "Eco PCL", full: "Eco PCL" },
+    filament: { short: "Eco PCL", full: "Eco PCL (May not fit all activities)" },
     price: "$49.99",
     buyLink: "https://amzn.to/3R1SQLB"
   },
