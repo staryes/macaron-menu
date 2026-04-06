@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>春季活動 - The Rocket Project</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #f8f8f8;
+            display: flex;
+            justify-content: center;
+        }
+
+        .activity-container {
+            position: relative;
+            max-width: 1000px;
+            width: 100%;
+            height: fit-content;
+        }
+
+        .activity-banner {
+            display: block;
+            width: 100%;
+            height: auto;
+            pointer-events: none;
+        }
+
+        .hotspot {
+            position: absolute;
+            cursor: pointer;
+            text-decoration: none;
+            z-index: 10;
+            /* 調試用：取消下面註釋即可顯示紅色區塊，方便校對位置 */
+            /*background: rgba(255, 0, 0, 0.3); border: 1px solid red; */
+        }
+
+        /* 底部右側：網址 (www.enkiatelier.com) */
+        .url-link {
+            top: 92%;
+            left: 62%;
+            width: 34%;
+            height: 6%;
+        }
+
+        /* 中間偏左下：地址 (229 Harvard St.) */
+        .address-link {
+            top: 85%;
+            left: 5%;
+            width: 48%;
+            height: 4%;
+        }
+
+        /* 底部左側：電話 (209) 788-3654 */
+        .phone-link {
+            top: 92%;
+            left: 4%;
+            width: 50%;
+            height: 6%;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="activity-container">
+        <img src="spring-event.jpg" alt="The Rocket Project Spring Event" class="activity-banner">
+        
+        <!-- 連結 1: Home -->
+        <a href="https://www.enkiatelier.com" class="hotspot url-link" title="Go to Homepage"></a>
+        
+        <!-- 連結 2: Google Map -->
+        <a href="https://www.google.com/maps/search/?api=1&query=229+Harvard+St,+Brookline,+MA+02135" 
+           target="_blank" 
+           class="hotspot address-link" 
+           title="View on Google Maps"></a>
+        
+        <!-- 連結 3: Call -->
+        <a href="tel:2097883654" class="hotspot phone-link" title="Call (209) 788-3654"></a>
+    </div>
+
+</body>
+</html>
