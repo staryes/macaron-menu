@@ -13,8 +13,8 @@
                 <a href="#hero" class="hover:text-orange-500 text-sm md:text-base">Home</a>
                 <a href="#about" class="hover:text-orange-500 text-sm md:text-base">About</a>
                 <a href="#themes" class="hover:text-orange-500 text-sm md:text-base">Products</a>
-                <a href="#pens" class="hover:text-orange-500 text-sm md:text-base">Guide</a>
                 <a href="#cta" class="hover:text-orange-500 text-sm md:text-base">Buy Now</a>
+                <a href="#pens" class="hover:text-orange-500 text-sm md:text-base">Guide</a>
                 <a href="#contact" class="hover:text-orange-500 text-sm md:text-base">Contact Us</a>
             </div>
         </div>
@@ -58,6 +58,21 @@
         </div>
     </section>
 
+    <!-- Call to Action Section -->
+    <section id="cta" class="py-20 bg-gradient-to-r from-[#DC9F33] to-[#603B1D] text-center text-white px-4">
+        <h2 class="text-2xl md:text-3xl font-bold mb-6">Get Started Today!</h2>
+        <p class="text-base md:text-lg mb-6">Empower kids with creative STEAM learning activities.</p>
+        <a 
+          href="https://amzn.to/4jmS8G5"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-block px-6 py-3 bg-white text-orange-500 font-semibold rounded-md hover:bg-gray-200"
+          >
+          Buy on Amazon
+        </a>
+
+    </section>
+    
     <!-- Pen Comparison Section -->
     <section id="pens" class="py-20 bg-[#FFF8EB]">
         <div class="max-w-7xl mx-auto text-center px-2 sm:px-4">
@@ -158,21 +173,6 @@
         </div>
     </section>
 
-    <!-- Call to Action Section -->
-    <section id="cta" class="py-20 bg-gradient-to-r from-[#DC9F33] to-[#603B1D] text-center text-white px-4">
-        <h2 class="text-2xl md:text-3xl font-bold mb-6">Get Started Today!</h2>
-        <p class="text-base md:text-lg mb-6">Empower kids with creative STEAM learning activities.</p>
-        <a 
-          href="https://a.co/d/gWaXyfY"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="inline-block px-6 py-3 bg-white text-orange-500 font-semibold rounded-md hover:bg-gray-200"
-          >
-          Buy on Amazon
-        </a>
-
-    </section>
-
     <!-- Contact Us Section -->
     <section id="contact" class="py-20 bg-[#FFF8EB]">
         <div class="max-w-4xl mx-auto text-center px-4">
@@ -211,9 +211,9 @@ import { onMounted, ref } from 'vue';
 // - image: 產品圖片路徑
 const products = ref([
   {
-    title: "Luxury Starter Kit: Ignite Creativity!",
-    description: "Kickstart your child's 3D printing adventure with 100+ carefully selected items! This all-in-one kit includes a heat-resistant silicone mat, finger caps for safety, and a variety of craft materials-everything needed for endless creativity right out of the box!",
-    image: "/starter-kit.png"
+    title: "90+ Piece Premium Starter Kit: Ignite Creativity!",
+    description: "The Enki Atelier Introductory Volume STEAM kit is put together with carefully chosen tools and materials, including a heat-resistant silicone mat, safety glasses, finger caps (child and adult sizes), thread scissors, tweezers, and over 60 colorful crafting components to boost any 3D pen project.",
+    image: "/starter-kit.jpg",
   },
   {
     title: "Balance: <br>Play, Learn, and Explore Stability!",
@@ -242,9 +242,9 @@ const pens = ref([
     age: { short: "6-13y", full: "6-13 years" },
     safety: { short: "No hot", full: "No hot parts" },
     power: { short: "Recharge", full: "Rechargeable" },
-    filament: { short: "Eco PCL", full: "Eco PCL" },
+    filament: { short: "Eco PCL\n(Limited Use)", full: "Eco PCL\n(Not fit all activities)" },
     price: "$49.99",
-    buyLink: "https://amzn.to/3R1SQLB"
+    buyLink: "https://amzn.to/4aIF63E"
   },
   {
     name: "MYNT3D Pro",
@@ -253,7 +253,7 @@ const pens = ref([
     power: { short: "Plug-in", full: "Plug-in" },
     filament: { short: "ABS/PLA", full: "ABS, PLA" },
     price: "$59.99",
-    buyLink: "https://amzn.to/43YOZXy"
+    buyLink: "https://amzn.to/49lsYD6"
   },
   {
     name: "MYNT3D Super",
@@ -262,7 +262,7 @@ const pens = ref([
     power: { short: "Plug-in", full: "Plug-in" },
     filament: { short: "ABS/PLA", full: "ABS, PLA" },
     price: "$39.99",
-    buyLink: "https://amzn.to/3G7Ick4"
+    buyLink: "https://amzn.to/4pl0gYW"
   },
   {
     name: "SCRIB3D P1",
@@ -271,7 +271,7 @@ const pens = ref([
     power: { short: "Plug-in", full: "Plug-in" },
     filament: { short: "ABS/PLA", full: "ABS, PLA" },
     price: "$36.99",
-    buyLink: "https://amzn.to/4hX7KxB"
+    buyLink: "https://amzn.to/3MVjs2e"
   }
 //   ,
 //   {
