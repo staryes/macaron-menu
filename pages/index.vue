@@ -27,19 +27,23 @@
     <section id="hero" class="h-screen bg-gradient-to-r from-[#DCBFDB] to-[#DC9F33] flex items-center justify-start text-left px-10 relative">
         <img src="/brand-story.jpg" alt="Enki Atelier Brand Story" class="absolute inset-0 w-full h-full object-cover opacity-50">
         <div class="relative w-full md:w-1/2 lg:w-1/3 space-y-4 text-left bg-white/10 p-4 md:p-8 rounded-lg shadow-lg mx-4 md:ml-48">
-            <h1 class="text-2xl md:text-4xl font-bold text-[#FFFFFF]">Enki Atelier: Where Curiosity Meets Heartfelt Creation</h1>
-            <p class="text-base md:text-lg text-[#FFFFFF]">As parents, we know the magic of watching our children's eyes light up with discovery. Those moments of wonder inspire everything we do at <strong>Enki Atelier</strong>. Founded by three PhD engineers and an art teacher, we create STEAM activity toys designed with love to nurture curiosity and spark creativity.</p>
-            <p class="text-base md:text-lg text-[#FFFFFF]">Our mission is simple: to inspire a lifelong love of learning. Through hands-on play and thoughtful educational materials, we aim to create experiences that empower kids to explore, create, and dream-all while discovering the world around them.</p>
+            <h1 class="text-2xl md:text-4xl font-bold text-[#FFFFFF]">Enki Atelier: Big Ideas Start with Little Hands.</h1>
+            <p class="text-base md:text-lg text-[#FFFFFF]">We named ourselves after Enki, the ancient Sumerian god of wisdom and creation, because we believe every child is born with that same instinct: to explore, to build, to figure out how things work.</p>
+            <p class="text-base md:text-lg text-[#FFFFFF]">Enki Atelier makes STEAM kits for kids ages 6–12, designed by parents and engineers who refused to settle for "good enough." Hands-on. Genuinely educational. Built with love.</p>
+            <p class="text-base md:text-lg text-[#FFFFFF]">See How It Started ↓</p>
         </div>
     </section>
 
     <!-- About Section -->
     <section id="about" class="py-20 bg-white">
         <div class="relative w-full sm:w-3/4 md:w-1/2 max-w-7xl mx-auto text-center px-4">
-            <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-6">Unlock Creativity & Innovation with Hands-On STEAM Adventures!</h2>
-            <p class="text-base md:text-lg text-gray-700 mb-6">Designed for curious minds grades K-5, the Enki Atelier <strong>3D Discovery Kits</strong> turn learning into an exciting, hands-on adventure. Using a 3D printing pen, kids explore engineering, design, and problem-solving in a fun, interactive way.</p>
-            <p class="text-base md:text-lg text-gray-700 mb-6">In a world increasingly shaped by AI, hands-on creativity and problem-solving are more valuable than ever. Our kits empower kids with the skills AI can't replace-curiosity, adaptability, and the ability to bring ideas to life. More than just learning how things work, they'll learn how to think, create, and innovate, gaining the confidence to shape the future.</p>
-            <p class="text-base md:text-lg text-gray-700">Let's build, explore, and invent together!</p>
+            <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-6">Where Curiosity Becomes Creation</h2>
+            <p class="text-base md:text-lg text-gray-700 mb-6">As parents, we know that feeling — watching your child lock onto a problem, turn it over in their mind, and suddenly <em>get it</em>. That moment isn't just cute. It's the beginning of how innovators are made.</p>
+            <p class="text-base md:text-lg text-gray-700 mb-6">We started Enki Atelier because we couldn't find what we were looking for. Not as parents, and not as engineers. The market was full of kits that looked educational on the outside but didn't go the distance. 3D pen sets that stopped at doodling. STEM kits "for girls" that just swapped in pink and called it inclusive. We knew kids deserved better. So we built it.</p>
+            <p class="text-base md:text-lg text-gray-700 mb-6">Every Enki kit is designed from the ground up by <strong>PhD engineers and an art educator</strong> who are also parents, people who've spent careers thinking about how people learn. We obsess over the balance between free exploration and structured discovery, giving kids just enough to get started and just enough room to surprise us.</p>
+            <p class="text-base md:text-lg text-gray-700 mb-6">We also think about the world our kids are growing up in. AI is changing everything. But curiosity, adaptability, and the ability to bring an idea from your head into your hands? Those are skills no algorithm can replace. That's what we're really teaching.</p>
+            <p class="text-base md:text-lg text-gray-700 mb-6"><strong>Enki was the ancient Sumerian god of wisdom, knowledge, and creation.</strong> We chose that name because it stood for something timeless: the belief that understanding the world, and having the courage to build something new in it, is the greatest gift you can pass on.</p>
+            <p class="text-base md:text-lg text-gray-700 mb-6">Big ideas start with little hands. We can't wait to see what yours will make.</p>
         </div>
     </section>
 
