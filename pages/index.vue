@@ -211,12 +211,14 @@ import { onMounted, ref } from 'vue';
 // - image: 產品圖片路徑
 const products = ref([
   {
-    title: "90+ Piece Premium Starter Kit: Ignite Creativity!",
+    //title: "90+ Piece Premium Starter Kit: Ignite Creativity!",
+    title: "Rocket Launcher STEM Kit for 3D Pens: Ignite Creativity!",
     description: "The Enki Atelier Introductory Volume STEAM kit is put together with carefully chosen tools and materials, including a heat-resistant silicone mat, safety glasses, finger caps (child and adult sizes), thread scissors, tweezers, and over 60 colorful crafting components to boost any 3D pen project.",
     image: "/starter-kit.jpg",
   },
   {
-    title: "Balance: <br>Play, Learn, and Explore Stability!",
+    //title: "Balance: <br>Play, Learn, and Explore Stability!",
+    title: "Balancing Bird & Mobile Engineering Kit: Play, Learn, and Explore Stability!",
     description: "Explore the science of balance with this engaging educational pack. Packed with handouts, paper molds, and accessories, it guides kids through fun activities that teach stability and equilibrium-making learning a hands-on adventure.",
     image: "/balance.png"
   },
