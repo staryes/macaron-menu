@@ -216,8 +216,7 @@ import { onMounted, ref } from 'vue';
 const products = ref([
   {
     //title: "90+ Piece Premium Starter Kit: Ignite Creativity!",
-    title: "<b>Rocket Launcher STEM Kit for 3D Pens</b><br>
-<i>Build a Rocket. Discover the Physics of Projectiles.</i><br>",
+    title: "<b>Rocket Launcher STEM Kit for 3D Pens</b><br><i>Build a Rocket. Discover the Physics of Projectiles.</i><br>",
     description: "Engineer real rockets that actually launch, guided by a Ph.D.-designed curriculum — complete with safety goggles and heat-resistant finger caps for confident, hands-on building.",
     image: "/starter-kit.jpg",
   },
