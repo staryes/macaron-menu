@@ -215,15 +215,13 @@ import { onMounted, ref } from 'vue';
 // - image: 產品圖片路徑
 const products = ref([
   {
-    //title: "90+ Piece Premium Starter Kit: Ignite Creativity!",
     title: "<b>Rocket Launcher STEM Kit for 3D Pens</b><br><i>Build a Rocket. Discover the Physics of Projectiles.</i><br>",
     description: "Engineer real rockets that actually launch, guided by a Ph.D.-designed curriculum — complete with safety goggles and heat-resistant finger caps for confident, hands-on building.",
     image: "/starter-kit.jpg",
   },
   {
-    //title: "Balance: <br>Play, Learn, and Explore Stability!",
-    title: "Balancing Bird & Mobile Engineering Kit: Play, Learn, and Explore Stability!",
-    description: "Explore the science of balance with this engaging educational pack. Packed with handouts, paper molds, and accessories, it guides kids through fun activities that teach stability and equilibrium-making learning a hands-on adventure.",
+    title: "<b>Balancing Bird & Mobile Engineering Kit for 3D Pens</b><br><i>Build to Balance. Discover the Physics of Equilibrium.</i><br>",
+    description: "Engineer gravity-defying birds and hanging mobiles that actually balance, guided by a Ph.D.-designed curriculum that teaches center-of-mass principles through hands-on, screen-free exploration.",
     image: "/balance.png"
   },
   {
