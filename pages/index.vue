@@ -216,8 +216,9 @@ import { onMounted, ref } from 'vue';
 const products = ref([
   {
     //title: "90+ Piece Premium Starter Kit: Ignite Creativity!",
-    title: "Rocket Launcher STEM Kit for 3D Pens: Ignite Creativity!",
-    description: "The Enki Atelier Introductory Volume STEAM kit is put together with carefully chosen tools and materials, including a heat-resistant silicone mat, safety glasses, finger caps (child and adult sizes), thread scissors, tweezers, and over 60 colorful crafting components to boost any 3D pen project.",
+    title: "<b>Rocket Launcher STEM Kit for 3D Pens</b><br>
+<i>Build a Rocket. Discover the Physics of Projectiles.</i><br>",
+    description: "Engineer real rockets that actually launch, guided by a Ph.D.-designed curriculum — complete with safety goggles and heat-resistant finger caps for confident, hands-on building.",
     image: "/starter-kit.jpg",
   },
   {
