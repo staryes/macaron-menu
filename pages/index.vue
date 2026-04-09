@@ -53,11 +53,20 @@
             <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-6">Our Products</h2>
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-8">
                 <!-- 使用 v-for 迴圈動態渲染產品卡片 -->
+                <!--
                 <div v-for="(product, index) in products" :key="index" class="bg-white p-4 md:p-6 rounded-lg shadow-lg">
                     <h3 class="text-xl font-semibold text-gray-800 mb-4" v-html="product.title"></h3>
                     <p class="text-sm md:text-base text-gray-600">{{ product.description }}</p>
                     <img :src="product.image" :alt="product.title" class="mt-4 rounded-lg shadow-md w-2/3 mx-auto">
                 </div>
+                -->
+                <div v-for="(product, index) in products" :key="index" 
+                    class="bg-white p-4 md:p-6 rounded-lg shadow-lg flex flex-col">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4" v-html="product.title"></h3>
+                    <p class="text-sm md:text-base text-gray-600">{{ product.description }}</p>
+                    <img :src="product.image" :alt="product.title" 
+                    class="mt-auto pt-4 rounded-lg shadow-md w-2/3 mx-auto">
+              </div>
             </div>
         </div>
     </section>
