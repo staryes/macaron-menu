@@ -248,7 +248,7 @@
     <!-- Pen Comparison Section -->
     <section id="pens" class="py-20 bg-[#FFF8EB]">
         <div class="max-w-7xl mx-auto text-center px-2 sm:px-4">
-            <h2 class="text-2xl md:text-3xl font-bold text-[#1A1A1A] mb-6">Which 3D Printing Pen is Good for My Kid?</h2>
+            <h2 class="text-2xl md:text-3xl font-bold text-[#1A1A1A] mb-6">If you haven't had a 3D pen before...</h2>
             <p class="text-base text-[#3D3D3D] leading-relaxed max-w-2xl mx-auto mt-6 mb-10">
               Our kits are curriculum and material sets — the 3D pen is your tool, purchased separately.
               This means one pen works across all future Enki kits. Note that pen requirements vary
@@ -556,7 +556,7 @@ const products = ref([
     subTitle: "Build, Explore, Understand.",
     description: "Transform geometry into a creative adventure. Through handouts, paper molds, and accessories, kids build and explore 3D shapes, making spatial reasoning both fun and educational.",
     image: "/spatial-geometry.png",
-    ageTag: "Ages 6–12",
+    ageTag: "Ages 8–12",
     skills: ["Spatial Geometry", "3D Thinking", "Math", "Hands-on Learning"],
     amazonUrl: null,
     includes: [
