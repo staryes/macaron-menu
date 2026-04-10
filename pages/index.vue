@@ -218,10 +218,8 @@
     <!-- Pen Comparison Section -->
     <section id="pens" class="py-20 bg-[#FFF8EB]">
         <div class="max-w-7xl mx-auto text-center px-2 sm:px-4">
-            <h2 class="text-2xl md:text-3xl font-bold text-[#1A1A1A] mb-6">Which 3D Printing Pen is Good for My Kid?</h2>
+            <h2 class="text-2xl md:text-3xl font-bold text-[#1A1A1A] mb-6">If you haven't had a 3D pen before...</h2>
             <p class="text-base text-[#3D3D3D] leading-relaxed max-w-2xl mx-auto mt-6 mb-10">
-              If you haven't had a 3D pen before, start with the 3Doodler Start+. It has no hot parts,
-              making it the safest option for younger kids, and it works well with all of our kits.
               The table below compares the main options if you want to explore further.
             </p>
             <div class="flex justify-center">
@@ -379,7 +377,7 @@ const products = ref([
     subTitle: "Build a Rocket. Discover the Physics of Projectiles.",
     description: "Engineer real rockets that actually launch, guided by a Ph.D.-designed curriculum — complete with safety goggles and heat-resistant finger caps for confident, hands-on building.",
     image: "/starter-kit.jpg",
-    skills: ["Physics", "Engineering", "3D Thinking"],
+    skills: ["Physics", "Projectile", "Engineering", "3D Thinking", "Space", "Ages 8-12"],
     amazonUrl: "https://amazon.com/dp/B0FGYGBL1W",
   },
   {
@@ -387,7 +385,7 @@ const products = ref([
     subTitle: "Build to Balance. Discover the Physics of Equilibrium.",
     description: "Engineer gravity-defying birds and hanging mobiles that actually balance, guided by a Ph.D.-designed curriculum that teaches center-of-mass principles through hands-on, screen-free exploration.",
     image: "/balance.png",
-    skills: ["Equilibrium", "Math", "Spatial Reasoning"],
+    skills: ["Equilibrium", "Math", "Spatial Reasoning", "Space", "Ages 8-12"],
     amazonUrl: "https://amazon.com/dp/B0GV9CVBJ5",
   },
   {
@@ -395,7 +393,7 @@ const products = ref([
     subTitle: "Build, Explore, Understand.",
     description: "Transform geometry into a creative adventure. Through handouts, paper molds, and accessories, kids build and explore 3D shapes, making spatial reasoning both fun and educational.",
     image: "/spatial-geometry.png",
-    skills: ["Geometry", "3D Thinking", "Creativity"],
+    skills: ["Geometry", "3D Thinking", "Creativity", "Ages 8-12"],
     amazonUrl: null,
   },
 ]);
