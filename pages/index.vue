@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-white text-gray-800">
+  <div class="bg-white text-[#1A1A1A]">
     <!-- Navigation Bar -->
     <nav class="sticky top-0 w-full bg-[#FFF8EB] shadow-md z-50">
         <div class="max-w-[1450px] mx-auto px-6 py-3 flex flex-col md:flex-row justify-between items-center">
@@ -10,12 +10,12 @@
             
             <!-- Navigation Links (在小螢幕上顯示在 logo 下方，大螢幕上顯示在右側) -->
             <div class="flex flex-wrap justify-center gap-2 md:gap-6 mt-3 md:mt-0">
-                <a href="#hero" class="hover:text-orange-500 text-sm md:text-base">Home</a>
-                <a href="#about" class="hover:text-orange-500 text-sm md:text-base">About</a>
-                <a href="#themes" class="hover:text-orange-500 text-sm md:text-base">Products</a>
-                <a href="#cta" class="hover:text-orange-500 text-sm md:text-base">Buy Now</a>
-                <a href="#pens" class="hover:text-orange-500 text-sm md:text-base">Guide</a>
-                <a href="#contact" class="hover:text-orange-500 text-sm md:text-base">Contact Us</a>
+                <a href="#hero" class="hover:text-[#E0A939] text-sm md:text-base">Home</a>
+                <a href="#about" class="hover:text-[#E0A939] text-sm md:text-base">About</a>
+                <a href="#themes" class="hover:text-[#E0A939] text-sm md:text-base">Products</a>
+                <a href="#cta" class="hover:text-[#E0A939] text-sm md:text-base">Buy Now</a>
+                <a href="#pens" class="hover:text-[#E0A939] text-sm md:text-base">Guide</a>
+                <a href="#contact" class="hover:text-[#E0A939] text-sm md:text-base">Contact Us</a>
             </div>
         </div>
     </nav>
@@ -24,72 +24,129 @@
     <!-- 已移除側邊欄導航 -->
 
     <!-- Hero Section -->
-    <section id="hero" class="h-screen bg-gradient-to-r from-[#DCBFDB] to-[#DC9F33] flex items-center justify-start text-left px-10 relative">
-        <img src="/brand-story.jpg" alt="Enki Atelier Brand Story" class="absolute inset-0 w-full h-full object-cover opacity-50">
-        <div class="relative w-full md:w-1/2 lg:w-1/3 space-y-4 text-left bg-white/10 p-4 md:p-8 rounded-lg shadow-lg mx-4 md:ml-48">
-            <h1 class="text-2xl md:text-4xl font-bold text-[#FFFFFF]">Enki Atelier: Big Ideas Start with Little Hands.</h1>
-            <p class="text-base md:text-lg text-[#FFFFFF]">We named ourselves after Enki, the ancient Sumerian god of wisdom and creation, because we believe every child is born with that same instinct: to explore, to build, to figure out how things work.</p>
-            <p class="text-base md:text-lg text-[#FFFFFF]">Enki Atelier makes STEAM kits for kids ages 6–12, designed by parents and engineers who refused to settle for "good enough." Hands-on. Genuinely educational. Built with love.</p>
-            <p class="text-base md:text-lg text-[#FFFFFF]">See How It Started ↓</p>
+    <section id="hero" class="relative h-screen flex items-center">
+      <img src="/brand-story.jpg" alt="Enki Atelier Brand Story"
+           class="absolute inset-0 w-full h-full object-cover">
+      <div class="absolute inset-0 bg-gradient-to-r from-[#6B441E]/95 via-[#6B441E]/70 to-transparent"></div>
+      <div class="relative z-10 w-full md:w-1/2 lg:w-2/5 space-y-5 px-10 md:px-20">
+        <p class="text-[#DFC6E0] text-xs font-medium tracking-[2.5px] uppercase">
+          STEAM Kits · Ages 6–12 · PhD-Designed
+        </p>
+        <h1 class="text-4xl md:text-5xl font-bold text-white leading-tight" style="font-family: 'Lora', serif;">
+          Big Ideas Start<br>with Little Hands.
+        </h1>
+        <p class="text-base md:text-lg text-white/70 leading-relaxed max-w-[480px]">
+          Hands-on STEAM kits designed by engineers and educators
+          who refused to settle for "good enough."
+        </p>
+        <div class="flex flex-wrap gap-3 pt-2">
+          <a href="#themes" class="inline-block px-6 py-3 bg-[#E0A939] text-[#1A1A1A] font-bold rounded-full hover:brightness-105 transition-all">
+            Explore Kits
+          </a>
+          <a href="#about" class="inline-block px-6 py-3 border border-white/40 text-white/85 rounded-full hover:bg-white/10 transition-all">
+            Our Story →
+          </a>
         </div>
+      </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="py-20 bg-white">
-        <div class="relative w-full sm:w-3/4 md:w-1/2 max-w-7xl mx-auto text-center px-4">
-            <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-6">Where Curiosity Becomes Creation</h2>
-            <p class="text-base md:text-lg text-gray-700 mb-6">As parents, we know that feeling — watching your child lock onto a problem, turn it over in their mind, and suddenly <em>get it</em>. That moment isn't just cute. It's the beginning of how innovators are made.</p>
-            <p class="text-base md:text-lg text-gray-700 mb-6">We started Enki Atelier because we couldn't find what we were looking for. Not as parents, and not as engineers. The market was full of kits that looked educational on the outside but didn't go the distance. 3D pen sets that stopped at doodling. STEM kits "for girls" that just swapped in pink and called it inclusive. We knew kids deserved better. So we built it.</p>
-            <p class="text-base md:text-lg text-gray-700 mb-6">Every Enki kit is designed from the ground up by <strong>PhD engineers and an art educator</strong> who are also parents, people who've spent careers thinking about how people learn. We obsess over the balance between free exploration and structured discovery, giving kids just enough to get started and just enough room to surprise us.</p>
-            <p class="text-base md:text-lg text-gray-700 mb-6">We also think about the world our kids are growing up in. AI is changing everything. But curiosity, adaptability, and the ability to bring an idea from your head into your hands? Those are skills no algorithm can replace. That's what we're really teaching.</p>
-            <p class="text-base md:text-lg text-gray-700 mb-6"><strong>Enki was the ancient Sumerian god of wisdom, knowledge, and creation.</strong> We chose that name because it stood for something timeless: the belief that understanding the world, and having the courage to build something new in it, is the greatest gift you can pass on.</p>
-            <p class="text-base md:text-lg text-gray-700 mb-6">Big ideas start with little hands. We can't wait to see what yours will make.</p>
+    <!-- Trust Bar -->
+    <div class="bg-[#FFF8EB] border-b border-[#DFC6E0]/30">
+      <div class="max-w-4xl mx-auto px-6 py-6 grid grid-cols-3 divide-x divide-[#DFC6E0]/30">
+        <div class="flex items-center gap-3 justify-center px-6">
+          <span class="text-2xl">🎓</span>
+          <div>
+            <p class="text-sm font-semibold text-[#6B441E]">PhD-Designed</p>
+            <p class="text-xs text-[#3D3D3D]">Curriculum by engineers & educators</p>
+          </div>
         </div>
+        <div class="flex items-center gap-3 justify-center px-6">
+          <span class="text-2xl">🔬</span>
+          <div>
+            <p class="text-sm font-semibold text-[#6B441E]">Real STEAM Concepts</p>
+            <p class="text-xs text-[#3D3D3D]">Physics, math & spatial reasoning</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-3 justify-center px-6">
+          <span class="text-2xl">👐</span>
+          <div>
+            <p class="text-sm font-semibold text-[#6B441E]">Hands-on & Screen-free</p>
+            <p class="text-xs text-[#3D3D3D]">Active building, not passive viewing</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 bg-white">
+      <div class="max-w-5xl mx-auto px-6">
+        <blockquote class="text-2xl md:text-3xl font-semibold text-[#6B441E] leading-snug mb-14 max-w-2xl border-l-4 border-[#E0A939] pl-8"
+                    style="font-family: 'Lora', serif;">
+          "We couldn't find what we were looking for — as parents, or as engineers. So we built it."
+        </blockquote>
+        <div class="grid md:grid-cols-2 gap-10 text-[#3D3D3D] leading-relaxed text-base">
+          <div class="space-y-5">
+            <p>As parents, we know that feeling — watching your child lock onto a problem, turn it over in their mind, and suddenly <em>get it</em>. That moment isn't just cute. It's the beginning of how innovators are made.</p>
+            <p>The market was full of kits that looked educational on the outside but didn't go the distance. 3D pen sets that stopped at doodling. STEM kits "for girls" that just swapped in pink and called it inclusive. We knew kids deserved better.</p>
+          </div>
+          <div class="space-y-5">
+            <p>Every Enki kit is designed from the ground up by <strong class="text-[#6B441E]">PhD engineers and an art educator</strong> who are also parents — people who've spent careers thinking about how people learn.</p>
+            <p>AI is changing everything. But curiosity, adaptability, and the ability to bring an idea from your head into your hands? Those are skills no algorithm can replace. <strong class="text-[#6B441E]">That's what we're really teaching.</strong></p>
+            <p class="text-sm text-[#B586AC] italic">Enki — ancient Sumerian god of wisdom and creation. Because every child is born with that same instinct.</p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Themes Section -->
-    <section id="themes" class="py-20 bg-[#DCBFDB]">
-        <div class="max-w-7xl mx-auto text-center px-4">
-            <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-6">Our Products</h2>
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-8">
-                <!-- 使用 v-for 迴圈動態渲染產品卡片 -->
-                <!--
-                <div v-for="(product, index) in products" :key="index" class="bg-white p-4 md:p-6 rounded-lg shadow-lg">
-                    <h3 class="text-xl font-semibold text-gray-800 mb-4" v-html="product.title"></h3>
-                    <p class="text-sm md:text-base text-gray-600">{{ product.description }}</p>
-                    <img :src="product.image" :alt="product.title" class="mt-4 rounded-lg shadow-md w-2/3 mx-auto">
-                </div>
-                -->
-                <div v-for="(product, index) in products" :key="index" 
-                    class="bg-white p-4 md:p-6 rounded-lg shadow-lg flex flex-col">
-                    <h3 class="text-xl font-semibold text-gray-800 mb-4" v-html="product.title"></h3>
-                    <p class="text-sm md:text-base text-gray-600">{{ product.description }}</p>
-                    <img :src="product.image" :alt="product.title" 
-                    class="mt-auto pt-4 rounded-lg shadow-md w-2/3 mx-auto">
+    <section id="themes" class="py-20 bg-[#DFC6E0]">
+      <div class="max-w-7xl mx-auto text-center px-4">
+        <h2 class="text-2xl md:text-3xl font-bold text-[#1A1A1A] mb-10">Our Products</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-8">
+          <div v-for="(product, index) in products" :key="index"
+               class="bg-white rounded-2xl border border-[#DFC6E0]/40 shadow-sm flex flex-col overflow-hidden
+                      transition-all hover:-translate-y-1 hover:shadow-md">
+            <div class="px-5 pt-5">
+              <span class="text-xs font-semibold bg-[#FFF8EB] text-[#6B441E] border border-[#6B441E]/15 px-3 py-1 rounded-full">
+                Ages 6–12
+              </span>
+            </div>
+            <div class="p-5 flex flex-col flex-1">
+              <h3 class="text-lg font-semibold text-[#1A1A1A] mb-2 leading-snug" v-html="product.title"></h3>
+              <p class="text-sm text-[#3D3D3D] leading-relaxed mb-4">{{ product.description }}</p>
+              <div class="flex flex-wrap gap-1.5 mt-auto mb-4">
+                <span v-for="skill in product.skills" :key="skill"
+                      class="text-xs bg-[#B586AC]/10 text-[#B586AC] border border-[#B586AC]/20 px-2 py-0.5 rounded-full">
+                  {{ skill }}
+                </span>
               </div>
             </div>
+            <img :src="product.image" :alt="product.title"
+                 class="w-full h-52 object-contain bg-[#FFF8EB] px-8 py-4">
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Call to Action Section -->
-    <section id="cta" class="py-20 bg-gradient-to-r from-[#DC9F33] to-[#603B1D] text-center text-white px-4">
-        <h2 class="text-2xl md:text-3xl font-bold mb-6">Get Started Today!</h2>
-        <p class="text-base md:text-lg mb-6">Empower kids with creative STEAM learning activities.</p>
-        <a 
-          href="https://amzn.to/4jmS8G5"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="inline-block px-6 py-3 bg-white text-orange-500 font-semibold rounded-md hover:bg-gray-200"
-          >
-          Buy on Amazon
-        </a>
-
+    <section id="cta" class="py-24 bg-[#6B441E] text-center px-4">
+      <p class="text-[#DFC6E0] text-xs font-medium tracking-[2px] uppercase mb-4">Start the Journey</p>
+      <h2 class="text-3xl md:text-4xl font-bold text-white mb-4" style="font-family: 'Lora', serif;">
+        Get Started Today!
+      </h2>
+      <p class="text-white/65 text-lg mb-8 max-w-md mx-auto">
+        Empower kids with creative STEAM learning activities.
+      </p>
+      <a href="https://amzn.to/4jmS8G5" target="_blank" rel="noopener noreferrer"
+         class="inline-block px-8 py-4 bg-[#E0A939] text-[#1A1A1A] font-bold rounded-full hover:brightness-105 transition-all text-base">
+        Buy on Amazon
+      </a>
     </section>
     
     <!-- Pen Comparison Section -->
     <section id="pens" class="py-20 bg-[#FFF8EB]">
         <div class="max-w-7xl mx-auto text-center px-2 sm:px-4">
-            <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-6">Which 3D Printing Pen is Good for My Kid?</h2>
+            <h2 class="text-2xl md:text-3xl font-bold text-[#1A1A1A] mb-6">Which 3D Printing Pen is Good for My Kid?</h2>
             <div class="flex justify-center">
                 <div class="overflow-x-auto shadow-md rounded-lg w-full max-w-full sm:max-w-full mx-auto">
                     <!-- 
@@ -115,7 +172,7 @@
                     <table class="w-full table-auto border-collapse text-[9px] xs:text-[12px] sm:text-[14px] md:text-[16px] mx-auto">
                         <thead class="w-full">
                             <!-- 表頭行：使用淺紫色背景，Feature 欄位使用淺黃背景區分 -->
-                            <tr class="bg-[#DCBFDB] text-gray-800 w-full">
+                            <tr class="bg-[#DFC6E0] text-[#1A1A1A] w-full">
                                 <!-- Feature 標題列居中對齊 -->
                                 <th class="p-[2px] xs:px-1 xs:py-1 sm:px-2 sm:py-2 md:px-4 md:py-3 bg-[#FFF8EB] text-center w-1/5">Feature</th>
                                 <!-- 筆品牌名稱：使用 whitespace-nowrap 防止文字換行 -->
@@ -170,12 +227,12 @@
                             <tr class="border-b">
                                 <td class="p-[2px] xs:px-1 xs:py-1 sm:px-2 sm:py-2 md:px-4 md:py-3 font-medium">Buy</td>
                                 <td v-for="(pen, index) in pens" :key="index" class="p-[2px] xs:px-1 xs:py-1 sm:px-2 sm:py-2 md:px-4 md:py-3">
-                                    <a :href="pen.buyLink" target="_blank" rel="noopener noreferrer" class="text-orange-500 font-semibold hover:underline">Amazon</a>
+                                    <a :href="pen.buyLink" target="_blank" rel="noopener noreferrer" class="text-[#E0A939] font-semibold hover:underline">Amazon</a>
                                 </td>
                             </tr>
                             <!-- 免責聲明 - 橫跨所有列 (colspan="6") -->
                             <tr>
-                                <td colspan="6" class="p-[2px] xs:px-1 xs:py-1 sm:px-2 text-[9px] sm:text-xs text-gray-600 text-right">
+                                <td colspan="6" class="p-[2px] xs:px-1 xs:py-1 sm:px-2 text-[9px] sm:text-xs text-[#3D3D3D] text-right">
                                 <!-- 免責聲明 -->
                                 <span>We might receive commissions if you click on our links and make purchases.</span>                                </td>
                             </tr>
@@ -187,29 +244,37 @@
     </section>
 
     <!-- Contact Us Section -->
-    <section id="contact" class="py-20 bg-[#FFF8EB]">
-        <div class="max-w-4xl mx-auto text-center px-4">
-            <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-6">Contact Us</h2>
-            <p class="text-base md:text-lg text-gray-600 mb-6">Have questions? Get in touch with us!</p>
+    <section id="contact" class="py-20 bg-white">
+      <div class="max-w-4xl mx-auto text-center px-4">
+        <h2 class="text-2xl md:text-3xl font-bold text-[#1A1A1A] mb-6">Contact Us</h2>
+        <p class="text-base md:text-lg text-[#3D3D3D] mb-6">Have questions? Get in touch with us!</p>
 
-            <form action="https://formspree.io/f/mrbpyakl" method="POST" class="bg-white p-4 md:p-6 rounded-lg shadow-lg max-w-md mx-auto">
-                <label class="block text-left mb-2 text-gray-700 font-semibold">Name:</label>
-                <input type="text" name="name" required class="w-full border rounded-md p-2 mb-4">
+        <form action="https://formspree.io/f/mrbpyakl" method="POST" class="bg-white p-4 md:p-6 rounded-lg shadow-lg max-w-md mx-auto border border-[#DFC6E0]/30">
+          <label class="block text-left mb-2 text-[#3D3D3D] font-semibold">Name:</label>
+          <input type="text" name="name" required class="form-input w-full mb-4">
 
-                <label class="block text-left mb-2 text-gray-700 font-semibold">Email:</label>
-                <input type="email" name="email" required class="w-full border rounded-md p-2 mb-4">
+          <label class="block text-left mb-2 text-[#3D3D3D] font-semibold">Email:</label>
+          <input type="email" name="email" required class="form-input w-full mb-4">
 
-                <label class="block text-left mb-2 text-gray-700 font-semibold">Message:</label>
-                <textarea name="message" required class="w-full border rounded-md p-2 mb-4 h-24"></textarea>
+          <label class="block text-left mb-2 text-[#3D3D3D] font-semibold">Message:</label>
+          <textarea name="message" required class="form-input w-full mb-4 h-24"></textarea>
 
-                <button type="submit" class="w-full bg-orange-400 text-white font-semibold py-2 rounded-md hover:bg-orange-300">Send Message</button>
-            </form>
-        </div>
+          <button type="submit"
+                  class="w-full bg-[#6B441E] text-white font-semibold py-3 rounded-full hover:bg-[#6B441E]/90 transition-colors">
+            Send Message
+          </button>
+        </form>
+      </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-[#603B1D] text-white py-6 text-center px-4">
-        <p class="text-sm md:text-base"><a href="mailto:info@enkiatelier.com?subject=STEAM%20Discovery%20Kit%20Inquiry&body=Hello%2C%0A%0AI%20have%20a%20question%20about%20your%20STEAM%20activity%20products." class="underline hover:text-orange-300">Email Us</a> © 2025 Enki Atelier. All rights reserved. </p>
+    <footer class="bg-[#1A1A1A] text-white py-8 text-center px-4">
+      <p class="text-sm text-white/60">
+        <a href="mailto:info@enkiatelier.com" class="underline hover:text-[#E0A939] transition-colors">
+          Email Us
+        </a>
+        · © 2025 Enki Atelier. All rights reserved.
+      </p>
     </footer>
   </div>
 </template>
@@ -227,16 +292,19 @@ const products = ref([
     title: "<b>Rocket Launcher STEM Kit for 3D Pens</b><br><i>Build a Rocket. Discover the Physics of Projectiles.</i><br>",
     description: "Engineer real rockets that actually launch, guided by a Ph.D.-designed curriculum — complete with safety goggles and heat-resistant finger caps for confident, hands-on building.",
     image: "/starter-kit.jpg",
+    skills: ["Physics", "Engineering", "3D Thinking"],
   },
   {
     title: "<b>Balancing Bird & Mobile Engineering Kit for 3D Pens</b><br><i>Build to Balance. Discover the Physics of Equilibrium.</i><br>",
     description: "Engineer gravity-defying birds and hanging mobiles that actually balance, guided by a Ph.D.-designed curriculum that teaches center-of-mass principles through hands-on, screen-free exploration.",
-    image: "/balance.png"
+    image: "/balance.png",
+    skills: ["Equilibrium", "Math", "Spatial Reasoning"],
   },
   {
     title: "Spatial Geometry: <br>Build, Explore, Understand!",
     description: "Transform geometry into a creative adventure with this interactive curriculum guide. Through handouts, paper molds, and accessories, kids build and explore 3D shapes, making spatial reasoning both fun and educational.",
-    image: "/spatial-geometry.png"
+    image: "/spatial-geometry.png",
+    skills: ["Geometry", "3D Thinking", "Creativity"],
   }
 ]);
 
@@ -313,9 +381,36 @@ onMounted(() => {
 </script>
 
 <style>
+:root {
+  --enki-brown:    #6B441E;
+  --enki-gold:     #E0A939;
+  --enki-lilac:    #DFC6E0;
+  --enki-mauve:    #B586AC;
+  --enki-cream:    #FFF8EB;
+  --enki-charcoal: #3D3D3D;
+  --enki-dark:     #1A1A1A;
+}
+
 html {
-  scroll-padding-top: 40px; /* 根據導航欄的高度調整 */
-  font-family: Arial, sans-serif;
+  font-family: 'DM Sans', sans-serif;
+  scroll-padding-top: 80px;
+}
+h1, h2, h3 {
+  font-family: 'Lora', serif;
+}
+
+/* 聯絡表單樣式 */
+.form-input {
+  border: 1.5px solid rgba(223,198,224,0.6);
+  border-radius: 0.6rem;
+  padding: 0.6rem 0.85rem;
+  display: block;
+  width: 100%;
+}
+.form-input:focus {
+  border-color: #6B441E;
+  box-shadow: 0 0 0 3px rgba(107,68,30,0.1);
+  outline: none;
 }
 
 /* 自定義響應式斷點 */
