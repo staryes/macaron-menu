@@ -77,26 +77,63 @@
       </div>
     </div>
 
-    <!-- About Section -->
-    <section id="about" class="py-24 bg-white">
-      <div class="max-w-5xl mx-auto px-6">
-        <blockquote class="text-2xl md:text-3xl font-semibold text-[#6B441E] leading-snug mb-14 max-w-2xl border-l-4 border-[#E0A939] pl-8"
-                    style="font-family: 'Lora', serif;">
-          "We couldn't find what we were looking for — as parents, or as engineers. So we built it."
-        </blockquote>
-        <div class="grid md:grid-cols-2 gap-10 text-[#3D3D3D] leading-relaxed text-base">
-          <div class="space-y-5">
-            <p>As parents, we know that feeling — watching your child lock onto a problem, turn it over in their mind, and suddenly <em>get it</em>. That moment isn't just cute. It's the beginning of how innovators are made.</p>
-            <p>The market was full of kits that looked educational on the outside but didn't go the distance. 3D pen sets that stopped at doodling. STEM kits "for girls" that just swapped in pink and called it inclusive. We knew kids deserved better.</p>
-          </div>
-          <div class="space-y-5">
-            <p>Every Enki kit is designed from the ground up by <strong class="text-[#6B441E]">PhD engineers and an art educator</strong> who are also parents — people who've spent careers thinking about how people learn.</p>
-            <p>AI is changing everything. But curiosity, adaptability, and the ability to bring an idea from your head into your hands? Those are skills no algorithm can replace. <strong class="text-[#6B441E]">That's what we're really teaching.</strong></p>
-            <p class="text-sm text-[#B586AC] italic">Enki — ancient Sumerian god of wisdom and creation. Because every child is born with that same instinct.</p>
-          </div>
-        </div>
+<!-- About Section -->
+<section id="about" class="py-24 bg-white">
+  <div class="max-w-5xl mx-auto px-6">
+
+    <!-- 引言 -->
+    <blockquote
+      class="text-2xl md:text-3xl font-semibold text-[#6B441E] leading-snug mb-14 max-w-2xl border-l-4 border-[#E0A939] pl-8"
+      style="font-family: 'Lora', serif;"
+    >
+      "It didn't really work. They had a great time. That felt worth paying attention to."
+    </blockquote>
+
+    <!-- 兩欄內文 -->
+    <div class="grid md:grid-cols-2 gap-10 text-[#3D3D3D] leading-relaxed text-base">
+
+      <!-- 左欄：起源故事 -->
+      <div class="space-y-5">
+        <p>
+          It started with a Halloween costume. Our kid wanted legs that could collect candy on their own.
+          We're a little fuzzy on the exact mechanics they had in mind, but we spent a weekend trying to
+          figure it out together anyway.
+        </p>
+        <p>
+          That weekend stuck with us. We started looking for kits that could give them more of that —
+          the building, the figuring-out, the not-quite-working-but-trying-again. We couldn't find what
+          we wanted. The 3D pen sets were fine for doodling and then stopped. The STEM kits "for girls"
+          were just the regular ones in different packaging. Nothing was wrong with them exactly.
+          They just didn't go anywhere.
+        </p>
+        <p>
+          So we made what we wanted to exist.
+        </p>
       </div>
-    </section>
+
+      <!-- 右欄：理念與使命 -->
+      <div class="space-y-5">
+        <p>
+          Every Enki kit is designed by <strong class="text-[#6B441E]">PhD engineers and an art educator
+          who are also parents</strong> — not as a credential, but because it changes how you think about
+          what "too hard" means for a seven-year-old, and where the real engagement lives inside a
+          learning curve.
+        </p>
+        <p>
+          We think about what's coming for our kids. The world they're growing up in is hard to predict,
+          and we're not going to pretend otherwise. What we keep returning to is simpler than it sounds:
+          kids who know how to sit with a problem, get stuck, and keep going tend to be okay. We want to
+          give them more practice at that, while it still feels like play and before the stakes get real.
+        </p>
+        <p class="text-sm text-[#B586AC] italic">
+          The name comes from Enki, the Sumerian god of wisdom and craft. Old, a little obscure,
+          and about the drive to make things rather than just know them. That felt right.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
 
     <!-- Themes Section -->
     <section id="themes" class="py-20 bg-[#DFC6E0]">
