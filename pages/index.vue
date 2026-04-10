@@ -139,19 +139,19 @@
     <section id="themes" class="py-20 bg-[#DFC6E0]">
       <div class="max-w-7xl mx-auto text-center px-4">
         <h2 class="text-2xl md:text-3xl font-bold text-[#1A1A1A] mb-10">Our Products</h2>
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 items-start">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 items-stretch">
           <div
             v-for="(product, index) in products"
             :key="index"
             class="bg-white rounded-2xl border border-[#DFC6E0]/40 shadow-sm flex flex-col overflow-hidden transition-all hover:-translate-y-1 hover:shadow-md"
           >
-            <!-- 圖片區：有 amazonUrl 包 <a>，否則包 <div> -->
+            <!-- 圖片區：固定高度，有連結才包 <a> -->
             <component
               :is="product.amazonUrl ? 'a' : 'div'"
               :href="product.amazonUrl || undefined"
               :target="product.amazonUrl ? '_blank' : undefined"
               :rel="product.amazonUrl ? 'noopener noreferrer' : undefined"
-              class="block w-full h-72 bg-[#FFF8EB] flex items-center justify-center px-6 py-6 group"
+              class="w-full h-64 bg-[#FFF8EB] flex items-center justify-center px-6 py-6 group flex-shrink-0"
               :class="{ 'cursor-pointer': product.amazonUrl }"
             >
               <img
@@ -162,8 +162,8 @@
               >
             </component>
 
-            <!-- 文字區 -->
-            <div class="p-6 flex flex-col flex-1">
+            <!-- 文字區：flex-grow 撐滿，讓所有卡片底部對齊 -->
+            <div class="p-6 flex flex-col flex-grow">
 
               <!-- 主標題 -->
               <h3
@@ -174,12 +174,17 @@
               </h3>
 
               <!-- 副標題 -->
-              <p class="text-sm italic text-[#B586AC] mb-4">
+              <p class="text-sm italic text-[#B586AC] mb-3">
                 {{ product.subTitle }}
               </p>
 
-              <!-- 技能標籤 -->
-              <div class="flex flex-wrap gap-1.5 mt-auto">
+              <!-- 說明文字 -->
+              <p class="text-sm text-[#3D3D3D] leading-relaxed mb-5">
+                {{ product.description }}
+              </p>
+
+              <!-- 技能標籤：mt-auto 推到底部，各卡片對齊 -->
+              <div class="flex flex-wrap gap-1.5 mt-auto pt-2">
                 <span
                   v-for="skill in product.skills"
                   :key="skill"
@@ -189,16 +194,6 @@
                 </span>
               </div>
 
-              <!-- Amazon 購買按鈕（有連結才顯示） -->
-              <a
-                v-if="product.amazonUrl"
-                :href="product.amazonUrl"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="mt-5 block text-center px-4 py-2 bg-[#6B441E] text-white text-sm font-semibold rounded-full hover:bg-[#6B441E]/85 transition-colors"
-              >
-                Buy on Amazon
-              </a>
             </div>
           </div>
         </div>
