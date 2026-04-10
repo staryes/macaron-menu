@@ -140,68 +140,68 @@
       <div class="max-w-7xl mx-auto text-center px-4">
         <h2 class="text-2xl md:text-3xl font-bold text-[#1A1A1A] mb-10">Our Products</h2>
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 items-start">
-  <div
-    v-for="(product, index) in products"
-    :key="index"
-    class="bg-white rounded-2xl border border-[#DFC6E0]/40 shadow-sm flex flex-col overflow-hidden transition-all hover:-translate-y-1 hover:shadow-md"
-  >
-    <!-- 圖片區：加超連結，放大至 h-72，有連結才可點擊 -->
-    <component
-      :is="product.amazonUrl ? 'a' : 'div'"
-      :href="product.amazonUrl || undefined"
-      :target="product.amazonUrl ? '_blank' : undefined"
-      :rel="product.amazonUrl ? 'noopener noreferrer' : undefined"
-      class="block w-full h-72 bg-[#FFF8EB] flex items-center justify-center px-6 py-6 group"
-      :class="{ 'cursor-pointer': product.amazonUrl }"
-    >
-      <img
-        :src="product.image"
-        :alt="product.mainTitle"
-        class="w-full h-full object-contain transition-transform duration-300"
-        :class="{ 'group-hover:scale-105': product.amazonUrl }"
-      >
-    </component>
+          <div
+            v-for="(product, index) in products"
+            :key="index"
+            class="bg-white rounded-2xl border border-[#DFC6E0]/40 shadow-sm flex flex-col overflow-hidden transition-all hover:-translate-y-1 hover:shadow-md"
+          >
+            <!-- 圖片區：有 amazonUrl 包 <a>，否則包 <div> -->
+            <component
+              :is="product.amazonUrl ? 'a' : 'div'"
+              :href="product.amazonUrl || undefined"
+              :target="product.amazonUrl ? '_blank' : undefined"
+              :rel="product.amazonUrl ? 'noopener noreferrer' : undefined"
+              class="block w-full h-72 bg-[#FFF8EB] flex items-center justify-center px-6 py-6 group"
+              :class="{ 'cursor-pointer': product.amazonUrl }"
+            >
+              <img
+                :src="product.image"
+                :alt="product.mainTitle"
+                class="w-full h-full object-contain transition-transform duration-300"
+                :class="{ 'group-hover:scale-105': product.amazonUrl }"
+              >
+            </component>
 
-    <!-- 文字區：精簡為三層 -->
-    <div class="p-6 flex flex-col flex-1">
+            <!-- 文字區 -->
+            <div class="p-6 flex flex-col flex-1">
 
-      <!-- 主標題 -->
-      <h3
-        class="text-lg font-bold text-[#1A1A1A] mb-1 leading-snug"
-        style="font-family: 'Lora', serif;"
-      >
-        {{ product.mainTitle }}
-      </h3>
+              <!-- 主標題 -->
+              <h3
+                class="text-lg font-bold text-[#1A1A1A] mb-1 leading-snug"
+                style="font-family: 'Lora', serif;"
+              >
+                {{ product.mainTitle }}
+              </h3>
 
-      <!-- 副標題 -->
-      <p class="text-sm italic text-[#B586AC] mb-4">
-        {{ product.subTitle }}
-      </p>
+              <!-- 副標題 -->
+              <p class="text-sm italic text-[#B586AC] mb-4">
+                {{ product.subTitle }}
+              </p>
 
-      <!-- 技能標籤 -->
-      <div class="flex flex-wrap gap-1.5 mt-auto">
-        <span
-          v-for="skill in product.skills"
-          :key="skill"
-          class="text-xs bg-[#B586AC]/10 text-[#B586AC] border border-[#B586AC]/20 px-2 py-0.5 rounded-full"
-        >
-          {{ skill }}
-        </span>
-      </div>
+              <!-- 技能標籤 -->
+              <div class="flex flex-wrap gap-1.5 mt-auto">
+                <span
+                  v-for="skill in product.skills"
+                  :key="skill"
+                  class="text-xs bg-[#B586AC]/10 text-[#B586AC] border border-[#B586AC]/20 px-2 py-0.5 rounded-full"
+                >
+                  {{ skill }}
+                </span>
+              </div>
 
-      <!-- Amazon 按鈕（有連結才顯示） -->
-      
-        v-if="product.amazonUrl"
-        :href="product.amazonUrl"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="mt-5 inline-block text-center px-4 py-2 bg-[#6B441E] text-white text-sm font-semibold rounded-full hover:bg-[#6B441E]/85 transition-colors"
-      >
-        Buy on Amazon
-      </a>
-    </div>
-  </div>
-</div>
+              <!-- Amazon 購買按鈕（有連結才顯示） -->
+              <a
+                v-if="product.amazonUrl"
+                :href="product.amazonUrl"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="mt-5 block text-center px-4 py-2 bg-[#6B441E] text-white text-sm font-semibold rounded-full hover:bg-[#6B441E]/85 transition-colors"
+              >
+                Buy on Amazon
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -224,6 +224,11 @@
     <section id="pens" class="py-20 bg-[#FFF8EB]">
         <div class="max-w-7xl mx-auto text-center px-2 sm:px-4">
             <h2 class="text-2xl md:text-3xl font-bold text-[#1A1A1A] mb-6">Which 3D Printing Pen is Good for My Kid?</h2>
+            <p class="text-base text-[#3D3D3D] leading-relaxed max-w-2xl mx-auto mt-6 mb-10">
+              If you haven't had a 3D pen before, start with the 3Doodler Start+. It has no hot parts,
+              making it the safest option for younger kids, and it works well with all of our kits.
+              The table below compares the main options if you want to explore further.
+            </p>
             <div class="flex justify-center">
                 <div class="overflow-x-auto shadow-md rounded-lg w-full max-w-full sm:max-w-full mx-auto">
                     <!-- 
@@ -304,7 +309,14 @@
                             <tr class="border-b">
                                 <td class="p-[2px] xs:px-1 xs:py-1 sm:px-2 sm:py-2 md:px-4 md:py-3 font-medium">Buy</td>
                                 <td v-for="(pen, index) in pens" :key="index" class="p-[2px] xs:px-1 xs:py-1 sm:px-2 sm:py-2 md:px-4 md:py-3">
-                                    <a :href="pen.buyLink" target="_blank" rel="noopener noreferrer" class="text-[#E0A939] font-semibold hover:underline">Amazon</a>
+                                    <a
+                                      :href="pen.buyLink"
+                                      target="_blank"
+                                      rel="noopener noreferrer"
+                                      class="inline-block px-3 py-1.5 bg-[#6B441E] text-white text-xs font-semibold rounded-full hover:bg-[#6B441E]/85 transition-colors whitespace-nowrap"
+                                    >
+                                      Buy on Amazon
+                                    </a>
                                 </td>
                             </tr>
                             <!-- 免責聲明 - 橫跨所有列 (colspan="6") -->
@@ -361,9 +373,11 @@ import { onMounted, ref } from 'vue';
 
 // 產品資料 - 這是我們的產品展示資訊
 // 資料結構：
-// - title: 產品名稱 (支援 HTML 標籤用於換行)
+// - mainTitle: 產品主標題（純文字）
+// - subTitle: 產品副標題（純文字）
 // - description: 產品描述文字
 // - image: 產品圖片路徑
+// - skills: 技能標籤陣列
 const products = ref([
   {
     mainTitle: "Rocket Launcher STEM Kit for 3D Pens",
@@ -387,7 +401,7 @@ const products = ref([
     description: "Transform geometry into a creative adventure. Through handouts, paper molds, and accessories, kids build and explore 3D shapes, making spatial reasoning both fun and educational.",
     image: "/spatial-geometry.png",
     skills: ["Geometry", "3D Thinking", "Creativity"],
-    amazonUrl: null,  // 尚無 listing，連結不顯示
+    amazonUrl: null,
   },
 ]);
 
