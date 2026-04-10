@@ -187,6 +187,26 @@
                 {{ product.description }}
               </p>
 
+              <!-- Kit 內容清單 -->
+              <div class="mt-3 mb-4 pt-3 border-t border-[#DFC6E0]/40">
+                <p class="text-xs font-semibold text-[#6B441E] uppercase tracking-wide mb-2">
+                  What's Included
+                </p>
+                <ul class="space-y-1">
+                  <li
+                    v-for="item in product.includes"
+                    :key="item"
+                    class="text-xs text-[#3D3D3D] flex items-start gap-1.5"
+                  >
+                    <span class="text-[#E0A939] mt-0.5 flex-shrink-0">✓</span>
+                    {{ item }}
+                  </li>
+                </ul>
+                <p class="text-xs text-[#B586AC] italic mt-2">
+                  3D pen required, purchased separately.
+                </p>
+              </div>
+
               <!-- 技能標籤：mt-auto 推到底部，各卡片對齊 -->
               <div class="flex flex-wrap gap-1.5 mt-auto pt-2">
                 <span
@@ -224,9 +244,11 @@
         <div class="max-w-7xl mx-auto text-center px-2 sm:px-4">
             <h2 class="text-2xl md:text-3xl font-bold text-[#1A1A1A] mb-6">Which 3D Printing Pen is Good for My Kid?</h2>
             <p class="text-base text-[#3D3D3D] leading-relaxed max-w-2xl mx-auto mt-6 mb-10">
-              If you haven't had a 3D pen before, start with the 3Doodler Start+. It has no hot parts,
-              making it the safest option for younger kids, and it works well with all of our kits.
-              The table below compares the main options if you want to explore further.
+              Our kits are curriculum and material sets — the 3D pen is your tool, purchased separately.
+              This way, you choose the pen that fits your child's age and skill level, and you can use it
+              across all future Enki kits without buying hardware again. If you're new to 3D pens,
+              the 3Doodler Start+ is our top pick for ages 6–9 (no hot parts, rechargeable).
+              For older kids, any standard PLA or ABS pen works well.
             </p>
             <div class="flex justify-center">
                 <div class="overflow-x-auto shadow-md rounded-lg w-full max-w-full sm:max-w-full mx-auto">
@@ -342,61 +364,78 @@
         </div>
 
         <div class="space-y-4">
+
           <details class="faq-item" open>
+            <summary class="faq-question">
+              Does the rocket actually fly, or is it just a decoration?
+            </summary>
+            <p class="faq-answer">
+              It really flies. The rocket uses an elastic launch mechanism to teach projectile motion —
+              it's a functional experiment, not a static decoration. If it's not taking off right away,
+              it usually just needs a small alignment tweak in the assembly. That troubleshooting moment
+              is actually a great part of the learning. Our curriculum guide includes pro flight setup
+              tips on pages 14–16.
+            </p>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">
+              The kit requires a 3D pen — which one should I get?
+            </summary>
+            <p class="faq-answer">
+              For kids ages 6–9, we recommend the 3Doodler Start+. It has no hot parts, making it
+              the safest option, and it's rechargeable. For older kids (10+), any standard pen that
+              uses PLA or ABS filament works well — the MYNT3D Super and SCRIB3D P1 are solid
+              mid-range options. See our full comparison guide on this page.
+            </p>
+          </details>
+
+          <details class="faq-item">
             <summary class="faq-question">
               What age are Enki STEAM kits designed for?
             </summary>
             <p class="faq-answer">
-              Enki kits are designed for kids ages 6–12. The curriculum is structured so that younger kids
-              can work through activities with light parental guidance, while older kids (10–12) can work
-              more independently. Each kit builds skills progressively, so there's always a next challenge.
+              Our kits are designed for ages 6–12. The Rocket Launcher kit is best suited for ages 8–12.
+              Younger kids can join in with light parental guidance — the step-by-step photo instructions
+              make it easy to follow along together. Each kit builds skills progressively, so there's
+              always a next challenge as kids grow.
             </p>
           </details>
 
           <details class="faq-item">
             <summary class="faq-question">
-              Which 3D pen works best with Enki kits?
+              How is this different from regular 3D pen stencils?
             </summary>
             <p class="faq-answer">
-              Our kits are compatible with most standard 3D pens that use PLA or ABS filament. For kids
-              ages 6–9, we recommend the 3Doodler Start+ — it has no hot parts, making it the safest
-              option. For older kids, the MYNT3D Super or SCRIB3D P1 offer more precision. See our
-              full comparison guide on this page.
+              Most 3D pen stencils are shapes to trace — kids finish in 20 minutes and there's nowhere
+              to go. Enki kits are built around real science concepts. The Rocket Launcher kit teaches
+              projectile motion and structural stability. The Balancing Bird kit teaches center-of-mass
+              principles. Kids don't just make something — they understand why it works, and the
+              curriculum is designed by PhD engineers to get them there step by step.
             </p>
           </details>
 
           <details class="faq-item">
             <summary class="faq-question">
-              Do kids need prior experience with 3D pens to use these kits?
+              Do kids need prior experience with 3D pens?
             </summary>
             <p class="faq-answer">
               No experience needed. Each kit includes a warm-up section that introduces 3D pen basics
-              before moving into the main project. The PhD-designed curriculum is built to meet kids
-              where they are and guide them step by step.
+              before moving into the main project. The photo-guided curriculum is designed to meet kids
+              where they are and build confidence as they go.
             </p>
           </details>
 
           <details class="faq-item">
             <summary class="faq-question">
-              How is Enki different from other STEM kits or 3D pen stencils?
+              What exactly is included in the kit?
             </summary>
             <p class="faq-answer">
-              Most 3D pen stencils are just shapes to trace — there's no learning structure, and kids
-              finish in 20 minutes with nowhere to go. Enki kits are built around real physics and
-              engineering concepts, with a curriculum designed by PhD engineers and an art educator.
-              Kids don't just make something — they understand why it works.
-            </p>
-          </details>
-
-          <details class="faq-item">
-            <summary class="faq-question">
-              What skills do kids develop with Enki kits?
-            </summary>
-            <p class="faq-answer">
-              Depending on the kit, kids develop skills in physics (projectile motion, center of mass,
-              spatial geometry), engineering design, 3D thinking, and hands-on problem solving. These
-              are screen-free, active learning experiences — the kind that build the habits of mind
-              that matter long-term.
+              The Rocket Launcher kit includes a full-color step-by-step curriculum guide,
+              a dual-surface heat-resistant silicone mat, safety goggles, heat-resistant finger caps
+              in both child and adult sizes, precision tweezers, thread scissors, and 90+ project
+              materials and components. The 3D pen is not included — you use your own, which means
+              one pen works for all future Enki kits.
             </p>
           </details>
 
@@ -405,10 +444,11 @@
               Where can I buy Enki kits?
             </summary>
             <p class="faq-answer">
-              Enki kits are currently available on Amazon. You can find links to each kit on this page,
-              or search "Enki Atelier" on Amazon.com.
+              Enki kits are available on Amazon. You can find links to each kit in our Products section
+              above, or search "Enki Atelier" on Amazon.com.
             </p>
           </details>
+
         </div>
       </div>
     </section>
@@ -465,8 +505,15 @@ const products = ref([
     subTitle: "Build a Rocket. Discover the Physics of Projectiles.",
     description: "Engineer real rockets that actually launch, guided by a Ph.D.-designed curriculum — complete with safety goggles and heat-resistant finger caps for confident, hands-on building.",
     image: "/starter-kit.jpg",
-    skills: ["Physics", "Engineering", "3D Thinking"],
+    skills: ["Physics", "Projectile", "Engineering", "3D Thinking", "Space", "Ages 8-12"],
     amazonUrl: "https://amazon.com/dp/B0FGYGBL1W",
+    includes: [
+      "Full-color step-by-step curriculum guide",
+      "Dual-surface heat-resistant silicone mat",
+      "Safety goggles + finger caps (child & adult sizes)",
+      "Precision tweezers + thread scissors",
+      "90+ project materials & components",
+    ],
   },
   {
     mainTitle: "Balancing Bird & Mobile Engineering Kit for 3D Pens",
@@ -475,6 +522,12 @@ const products = ref([
     image: "/balance.png",
     skills: ["Equilibrium", "Math", "Spatial Reasoning"],
     amazonUrl: "https://amazon.com/dp/B0GV9CVBJ5",
+    includes: [
+      "Full-color step-by-step curriculum guide",
+      "Heat-resistant silicone mat",
+      "Safety goggles + finger caps",
+      "Project materials & components",
+    ],
   },
   {
     mainTitle: "Spatial Geometry Kit",
@@ -483,6 +536,11 @@ const products = ref([
     image: "/spatial-geometry.png",
     skills: ["Geometry", "3D Thinking", "Creativity"],
     amazonUrl: null,
+    includes: [
+      "Interactive curriculum guide with handouts",
+      "Paper molds for 3D shape building",
+      "Accessories and reference materials",
+    ],
   },
 ]);
 
