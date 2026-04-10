@@ -15,6 +15,7 @@
                 <a href="#themes" class="hover:text-[#E0A939] text-sm md:text-base">Products</a>
                 <a href="#cta" class="hover:text-[#E0A939] text-sm md:text-base">Buy Now</a>
                 <a href="#pens" class="hover:text-[#E0A939] text-sm md:text-base">Guide</a>
+                <a href="#faq" class="hover:text-[#E0A939] text-sm md:text-base">FAQ</a>
                 <a href="#contact" class="hover:text-[#E0A939] text-sm md:text-base">Contact Us</a>
             </div>
         </div>
@@ -35,6 +36,9 @@
         <h1 class="text-4xl md:text-5xl font-bold text-white leading-tight" style="font-family: 'Lora', serif;">
           Big Ideas Start<br>with Little Hands.
         </h1>
+        <p class="text-base md:text-lg font-medium text-white/80 tracking-wide">
+          STEAM Kits for Kids Who Like to Build.
+        </p>
         <p class="text-base md:text-lg text-white/70 leading-relaxed max-w-[480px]">
           Hands-on STEAM kits designed by engineers and educators
           who refused to settle for "good enough."
@@ -156,7 +160,7 @@
             >
               <img
                 :src="product.image"
-                :alt="product.mainTitle"
+                :alt="`${product.mainTitle} — hands-on STEAM kit for kids ages 6-12 | Enki Atelier`"
                 class="w-full h-full object-contain transition-transform duration-300"
                 :class="{ 'group-hover:scale-105': product.amazonUrl }"
               >
@@ -323,6 +327,88 @@
                 </div>
             </div>
         </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-24 bg-white">
+      <div class="max-w-3xl mx-auto px-6">
+        <div class="text-center mb-12">
+          <p class="text-xs font-medium tracking-[2px] uppercase text-[#B586AC] mb-2">Got Questions</p>
+          <h2 class="text-3xl md:text-4xl font-bold text-[#1A1A1A]" style="font-family: 'Lora', serif;">
+            Frequently Asked Questions
+          </h2>
+        </div>
+
+        <div class="space-y-4">
+          <details class="faq-item" open>
+            <summary class="faq-question">
+              What age are Enki STEAM kits designed for?
+            </summary>
+            <p class="faq-answer">
+              Enki kits are designed for kids ages 6–12. The curriculum is structured so that younger kids
+              can work through activities with light parental guidance, while older kids (10–12) can work
+              more independently. Each kit builds skills progressively, so there's always a next challenge.
+            </p>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">
+              Which 3D pen works best with Enki kits?
+            </summary>
+            <p class="faq-answer">
+              Our kits are compatible with most standard 3D pens that use PLA or ABS filament. For kids
+              ages 6–9, we recommend the 3Doodler Start+ — it has no hot parts, making it the safest
+              option. For older kids, the MYNT3D Super or SCRIB3D P1 offer more precision. See our
+              full comparison guide on this page.
+            </p>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">
+              Do kids need prior experience with 3D pens to use these kits?
+            </summary>
+            <p class="faq-answer">
+              No experience needed. Each kit includes a warm-up section that introduces 3D pen basics
+              before moving into the main project. The PhD-designed curriculum is built to meet kids
+              where they are and guide them step by step.
+            </p>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">
+              How is Enki different from other STEM kits or 3D pen stencils?
+            </summary>
+            <p class="faq-answer">
+              Most 3D pen stencils are just shapes to trace — there's no learning structure, and kids
+              finish in 20 minutes with nowhere to go. Enki kits are built around real physics and
+              engineering concepts, with a curriculum designed by PhD engineers and an art educator.
+              Kids don't just make something — they understand why it works.
+            </p>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">
+              What skills do kids develop with Enki kits?
+            </summary>
+            <p class="faq-answer">
+              Depending on the kit, kids develop skills in physics (projectile motion, center of mass,
+              spatial geometry), engineering design, 3D thinking, and hands-on problem solving. These
+              are screen-free, active learning experiences — the kind that build the habits of mind
+              that matter long-term.
+            </p>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">
+              Where can I buy Enki kits?
+            </summary>
+            <p class="faq-answer">
+              Enki kits are currently available on Amazon. You can find links to each kit on this page,
+              or search "Enki Atelier" on Amazon.com.
+            </p>
+          </details>
+        </div>
+      </div>
     </section>
 
     <!-- Contact Us Section -->
@@ -501,6 +587,49 @@ h1, h2, h3 {
   border-color: #6B441E;
   box-shadow: 0 0 0 3px rgba(107,68,30,0.1);
   outline: none;
+}
+
+/* ─── FAQ ─── */
+.faq-item {
+  border: 0.5px solid rgba(223,198,224,0.5);
+  border-radius: 0.75rem;
+  overflow: hidden;
+  transition: box-shadow 0.2s;
+}
+.faq-item[open] {
+  box-shadow: 0 2px 12px rgba(107,68,30,0.06);
+}
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.1rem 1.25rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--enki-dark);
+  cursor: pointer;
+  list-style: none;
+  background: var(--enki-cream);
+  gap: 1rem;
+}
+.faq-question::-webkit-details-marker { display: none; }
+.faq-question::after {
+  content: '+';
+  font-size: 1.25rem;
+  font-weight: 300;
+  color: var(--enki-brown);
+  flex-shrink: 0;
+  transition: transform 0.2s;
+}
+.faq-item[open] .faq-question::after {
+  transform: rotate(45deg);
+}
+.faq-answer {
+  padding: 0.75rem 1.25rem 1.25rem;
+  font-size: 0.9rem;
+  color: var(--enki-charcoal);
+  line-height: 1.7;
+  background: white;
 }
 
 /* 自定義響應式斷點 */
