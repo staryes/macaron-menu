@@ -53,26 +53,34 @@ export default defineNuxtConfig({
                 "mainEntity": [
                   {
                     "@type": "Question",
-                    "name": "What age are Enki STEAM kits designed for?",
+                    "name": "Does the rocket actually fly, or is it just a decoration?",
                     "acceptedAnswer": {
                       "@type": "Answer",
-                      "text": "Enki kits are designed for kids ages 6–12. The curriculum is structured so that younger kids can work through activities with light parental guidance, while older kids can work more independently."
+                      "text": "It really flies. The rocket uses an elastic launch mechanism to teach projectile motion. It's a functional experiment, not a static decoration. If it's not taking off, it usually just needs a small alignment tweak. The curriculum guide includes pro flight setup tips on pages 14–16."
                     }
                   },
                   {
                     "@type": "Question",
-                    "name": "Which 3D pen works best with Enki kits?",
+                    "name": "The kit requires a 3D pen — which one should I get?",
                     "acceptedAnswer": {
                       "@type": "Answer",
-                      "text": "Our kits are compatible with most standard 3D pens that use PLA or ABS filament. For kids ages 6–9, we recommend the 3Doodler Start+ for safety. For older kids, the MYNT3D Super or SCRIB3D P1 offer more precision."
+                      "text": "For kids ages 6–9, we recommend the 3Doodler Start+ — no hot parts, rechargeable, and safe. For older kids (10+), any standard PLA or ABS pen works well. The MYNT3D Super and SCRIB3D P1 are solid mid-range options."
                     }
                   },
                   {
                     "@type": "Question",
-                    "name": "How is Enki different from other STEM kits or 3D pen stencils?",
+                    "name": "How is this different from regular 3D pen stencils?",
                     "acceptedAnswer": {
                       "@type": "Answer",
-                      "text": "Most 3D pen stencils are just shapes to trace with no learning structure. Enki kits are built around real physics and engineering concepts, with a curriculum designed by PhD engineers and an art educator."
+                      "text": "Most 3D pen stencils are just shapes to trace. Enki kits are built around real science concepts — projectile motion, center-of-mass, spatial geometry — with step-by-step curriculum designed by PhD engineers."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "What exactly is included in the kit?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "The Rocket Launcher kit includes a full-color curriculum guide, dual-surface heat-resistant silicone mat, safety goggles, finger caps in child and adult sizes, precision tweezers, thread scissors, and 90+ project materials. The 3D pen is not included."
                     }
                   },
                   {
