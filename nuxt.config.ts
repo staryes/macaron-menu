@@ -61,10 +61,18 @@ export default defineNuxtConfig({
                   },
                   {
                     "@type": "Question",
-                    "name": "The kit requires a 3D pen — which one should I get?",
+                    "name": "Which 3D pen works with Enki kits?",
                     "acceptedAnswer": {
                       "@type": "Answer",
-                      "text": "For kids ages 6–9, we recommend the 3Doodler Start+ — no hot parts, rechargeable, and safe. For older kids (10+), any standard PLA or ABS pen works well. The MYNT3D Super and SCRIB3D P1 are solid mid-range options."
+                      "text": "It depends on the kit. The Rocket Launcher Kit requires a standard PLA or ABS pen — low-temp PCL pens like the 3Doodler Start+ won't provide enough rigidity for the elastic launch mechanism. The Balancing Bird Kit works with most pens including low-temp options, making it suitable for younger kids with the 3Doodler Start+."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "What age are Enki STEAM kits designed for?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Enki's product line targets kids ages 6–12. Current kits are rated for ages 8–12 based on safety guidelines. Future kits will extend to younger age groups within the 6–12 range."
                     }
                   },
                   {
