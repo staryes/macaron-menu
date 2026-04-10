@@ -169,6 +169,11 @@
             <!-- 文字區：flex-grow 撐滿，讓所有卡片底部對齊 -->
             <div class="p-6 flex flex-col flex-grow">
 
+              <!-- 年齡標籤 -->
+              <span class="text-xs font-semibold bg-[#FFF8EB] text-[#6B441E] border border-[#6B441E]/15 px-3 py-1 rounded-full self-start mb-4">
+                {{ product.ageTag }}
+              </span>
+
               <!-- 主標題 -->
               <h3
                 class="text-lg font-bold text-[#1A1A1A] mb-1 leading-snug"
@@ -212,6 +217,7 @@
                 <span
                   v-for="skill in product.skills"
                   :key="skill"
+                  :aria-label="`STEAM skill: ${skill}`"
                   class="text-xs bg-[#B586AC]/10 text-[#B586AC] border border-[#B586AC]/20 px-2 py-0.5 rounded-full"
                 >
                   {{ skill }}
@@ -245,10 +251,10 @@
             <h2 class="text-2xl md:text-3xl font-bold text-[#1A1A1A] mb-6">If you haven't had a 3D pen before...</h2>
             <p class="text-base text-[#3D3D3D] leading-relaxed max-w-2xl mx-auto mt-6 mb-10">
               Our kits are curriculum and material sets — the 3D pen is your tool, purchased separately.
-              This way, you choose the pen that fits your child's age and skill level, and you can use it
-              across all future Enki kits without buying hardware again. If you're new to 3D pens,
-              the 3Doodler Start+ is our top pick for ages 6–9 (no hot parts, rechargeable).
-              For older kids, any standard PLA or ABS pen works well.
+              This means one pen works across all future Enki kits. Note that pen requirements vary
+              by kit: the Rocket Launcher requires a standard PLA or ABS pen for structural reasons,
+              while the Balancing Bird kit works with most pens including low-temp options.
+              Not sure where to start? The comparison below will help you choose.
             </p>
             <div class="flex justify-center">
                 <div class="overflow-x-auto shadow-md rounded-lg w-full max-w-full sm:max-w-full mx-auto">
@@ -383,10 +389,20 @@
               The kit requires a 3D pen — which one should I get?
             </summary>
             <p class="faq-answer">
-              For kids ages 6–9, we recommend the 3Doodler Start+. It has no hot parts, making it
-              the safest option, and it's rechargeable. For older kids (10+), any standard pen that
-              uses PLA or ABS filament works well — the MYNT3D Super and SCRIB3D P1 are solid
-              mid-range options. See our full comparison guide on this page.
+              It depends on which kit you're using.
+              <br><br>
+              <strong>Rocket Launcher Kit:</strong> The rocket's elastic launch mechanism requires
+              filament with enough rigidity to hold structure under tension. Low-temp PCL filament
+              (used in pens like the 3Doodler Start+) is too flexible for this — it won't hold
+              the shape needed for a successful launch. You'll need a standard pen that uses
+              PLA or ABS filament. The MYNT3D Super ($39.99) and SCRIB3D P1 ($36.99) are
+              solid options for older kids.
+              <br><br>
+              <strong>Balancing Bird & Mobile Kit:</strong> This kit doesn't have the same
+              structural rigidity requirement, so low-temp PCL pens like the 3Doodler Start+
+              work well — making it a great option for younger kids ages 6–9.
+              <br><br>
+              See our full pen comparison guide on this page for more details.
             </p>
           </details>
 
@@ -395,10 +411,14 @@
               What age are Enki STEAM kits designed for?
             </summary>
             <p class="faq-answer">
-              Our kits are designed for ages 6–12. The Rocket Launcher kit is best suited for ages 8–12.
-              Younger kids can join in with light parental guidance — the step-by-step photo instructions
-              make it easy to follow along together. Each kit builds skills progressively, so there's
-              always a next challenge as kids grow.
+              Enki's product line is designed for kids ages 6–12. Our current kits — the
+              Rocket Launcher and Balancing Bird — are rated for ages 8–12 based on safety
+              guidelines for 3D pen use and project complexity. The Balancing Bird kit is
+              on the more accessible end and can work well for younger kids in that range
+              with light parental guidance.
+              <br><br>
+              Future kits will extend to younger age groups, so kids can grow with the
+              Enki curriculum from early exploration through more advanced engineering challenges.
             </p>
           </details>
 
@@ -505,7 +525,8 @@ const products = ref([
     subTitle: "Build a Rocket. Discover the Physics of Projectiles.",
     description: "Engineer real rockets that actually launch, guided by a Ph.D.-designed curriculum — complete with safety goggles and heat-resistant finger caps for confident, hands-on building.",
     image: "/starter-kit.jpg",
-    skills: ["Physics", "Projectile", "Engineering", "3D Thinking", "Space", "Ages 8-12"],
+    ageTag: "Ages 8–12",
+    skills: ["Projectile Motion", "Physics", "3D Pen Engineering", "Hands-on STEM"],
     amazonUrl: "https://amazon.com/dp/B0FGYGBL1W",
     includes: [
       "Full-color step-by-step curriculum guide",
@@ -520,7 +541,8 @@ const products = ref([
     subTitle: "Build to Balance. Discover the Physics of Equilibrium.",
     description: "Engineer gravity-defying birds and hanging mobiles that actually balance, guided by a Ph.D.-designed curriculum that teaches center-of-mass principles through hands-on, screen-free exploration.",
     image: "/balance.png",
-    skills: ["Equilibrium", "Math", "Spatial Reasoning", "Space", "Ages 8-12"],
+    ageTag: "Ages 8–12",
+    skills: ["Center of Mass", "Equilibrium", "3D Pen Engineering", "Spatial Reasoning"],
     amazonUrl: "https://amazon.com/dp/B0GV9CVBJ5",
     includes: [
       "Full-color step-by-step curriculum guide",
@@ -534,7 +556,8 @@ const products = ref([
     subTitle: "Build, Explore, Understand.",
     description: "Transform geometry into a creative adventure. Through handouts, paper molds, and accessories, kids build and explore 3D shapes, making spatial reasoning both fun and educational.",
     image: "/spatial-geometry.png",
-    skills: ["Geometry", "3D Thinking", "Creativity", "Ages 8-12"],
+    ageTag: "Ages 8–12",
+    skills: ["Spatial Geometry", "3D Thinking", "Math", "Hands-on Learning"],
     amazonUrl: null,
     includes: [
       "Interactive curriculum guide with handouts",
