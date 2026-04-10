@@ -140,26 +140,56 @@
       <div class="max-w-7xl mx-auto text-center px-4">
         <h2 class="text-2xl md:text-3xl font-bold text-[#1A1A1A] mb-10">Our Products</h2>
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-8">
-          <div v-for="(product, index) in products" :key="index"
-               class="bg-white rounded-2xl border border-[#DFC6E0]/40 shadow-sm flex flex-col overflow-hidden
-                      transition-all hover:-translate-y-1 hover:shadow-md">
-            <div class="px-5 pt-5">
-              <span class="text-xs font-semibold bg-[#FFF8EB] text-[#6B441E] border border-[#6B441E]/15 px-3 py-1 rounded-full">
+          <div
+            v-for="(product, index) in products"
+            :key="index"
+            class="bg-white rounded-2xl border border-[#DFC6E0]/40 shadow-sm flex flex-col overflow-hidden transition-all hover:-translate-y-1 hover:shadow-md"
+          >
+            <!-- 圖片區：放大置頂，高度 h-64 -->
+            <div class="w-full h-64 bg-[#FFF8EB] flex items-center justify-center px-6 pt-6">
+              <img
+                :src="product.image"
+                :alt="product.mainTitle"
+                class="w-full h-full object-contain"
+              >
+            </div>
+
+            <!-- 文字區 -->
+            <div class="p-6 flex flex-col flex-1">
+              <!-- 年齡標籤 -->
+              <span class="text-xs font-semibold bg-[#FFF8EB] text-[#6B441E] border border-[#6B441E]/15 px-3 py-1 rounded-full self-start mb-4">
                 Ages 6–12
               </span>
-            </div>
-            <div class="p-5 flex flex-col flex-1">
-              <h3 class="text-lg font-semibold text-[#1A1A1A] mb-2 leading-snug" v-html="product.title"></h3>
-              <p class="text-sm text-[#3D3D3D] leading-relaxed mb-4">{{ product.description }}</p>
-              <div class="flex flex-wrap gap-1.5 mt-auto mb-4">
-                <span v-for="skill in product.skills" :key="skill"
-                      class="text-xs bg-[#B586AC]/10 text-[#B586AC] border border-[#B586AC]/20 px-2 py-0.5 rounded-full">
+
+              <!-- 主標題：Lora serif、大、深色 -->
+              <h3
+                class="text-xl font-bold text-[#1A1A1A] mb-1 leading-snug"
+                style="font-family: 'Lora', serif;"
+              >
+                {{ product.mainTitle }}
+              </h3>
+
+              <!-- 副標題：小、斜體、暗紫，與主標題明顯區隔 -->
+              <p class="text-sm italic text-[#B586AC] mb-3">
+                {{ product.subTitle }}
+              </p>
+
+              <!-- 說明文字 -->
+              <p class="text-sm text-[#3D3D3D] leading-relaxed mb-5">
+                {{ product.description }}
+              </p>
+
+              <!-- 技能標籤 -->
+              <div class="flex flex-wrap gap-1.5 mt-auto">
+                <span
+                  v-for="skill in product.skills"
+                  :key="skill"
+                  class="text-xs bg-[#B586AC]/10 text-[#B586AC] border border-[#B586AC]/20 px-2 py-0.5 rounded-full"
+                >
                   {{ skill }}
                 </span>
               </div>
             </div>
-            <img :src="product.image" :alt="product.title"
-                 class="w-full h-52 object-contain bg-[#FFF8EB] px-8 py-4">
           </div>
         </div>
       </div>
@@ -184,6 +214,11 @@
     <section id="pens" class="py-20 bg-[#FFF8EB]">
         <div class="max-w-7xl mx-auto text-center px-2 sm:px-4">
             <h2 class="text-2xl md:text-3xl font-bold text-[#1A1A1A] mb-6">Which 3D Printing Pen is Good for My Kid?</h2>
+            <p class="text-base text-[#3D3D3D] leading-relaxed max-w-2xl mx-auto mt-6 mb-10">
+              If you haven't had a 3D pen before, start with the 3Doodler Start+. It has no hot parts,
+              making it the safest option for younger kids, and it works well with all of our kits.
+              The table below compares the main options if you want to explore further.
+            </p>
             <div class="flex justify-center">
                 <div class="overflow-x-auto shadow-md rounded-lg w-full max-w-full sm:max-w-full mx-auto">
                     <!-- 
@@ -264,7 +299,14 @@
                             <tr class="border-b">
                                 <td class="p-[2px] xs:px-1 xs:py-1 sm:px-2 sm:py-2 md:px-4 md:py-3 font-medium">Buy</td>
                                 <td v-for="(pen, index) in pens" :key="index" class="p-[2px] xs:px-1 xs:py-1 sm:px-2 sm:py-2 md:px-4 md:py-3">
-                                    <a :href="pen.buyLink" target="_blank" rel="noopener noreferrer" class="text-[#E0A939] font-semibold hover:underline">Amazon</a>
+                                    <a
+                                      :href="pen.buyLink"
+                                      target="_blank"
+                                      rel="noopener noreferrer"
+                                      class="inline-block px-3 py-1.5 bg-[#6B441E] text-white text-xs font-semibold rounded-full hover:bg-[#6B441E]/85 transition-colors whitespace-nowrap"
+                                    >
+                                      Buy on Amazon
+                                    </a>
                                 </td>
                             </tr>
                             <!-- 免責聲明 - 橫跨所有列 (colspan="6") -->
@@ -321,28 +363,33 @@ import { onMounted, ref } from 'vue';
 
 // 產品資料 - 這是我們的產品展示資訊
 // 資料結構：
-// - title: 產品名稱 (支援 HTML 標籤用於換行)
+// - mainTitle: 產品主標題（純文字）
+// - subTitle: 產品副標題（純文字）
 // - description: 產品描述文字
 // - image: 產品圖片路徑
+// - skills: 技能標籤陣列
 const products = ref([
   {
-    title: "<b>Rocket Launcher STEM Kit for 3D Pens</b><br><i>Build a Rocket. Discover the Physics of Projectiles.</i><br>",
+    mainTitle: "Rocket Launcher STEM Kit for 3D Pens",
+    subTitle: "Build a Rocket. Discover the Physics of Projectiles.",
     description: "Engineer real rockets that actually launch, guided by a Ph.D.-designed curriculum — complete with safety goggles and heat-resistant finger caps for confident, hands-on building.",
     image: "/starter-kit.jpg",
     skills: ["Physics", "Engineering", "3D Thinking"],
   },
   {
-    title: "<b>Balancing Bird & Mobile Engineering Kit for 3D Pens</b><br><i>Build to Balance. Discover the Physics of Equilibrium.</i><br>",
+    mainTitle: "Balancing Bird & Mobile Engineering Kit for 3D Pens",
+    subTitle: "Build to Balance. Discover the Physics of Equilibrium.",
     description: "Engineer gravity-defying birds and hanging mobiles that actually balance, guided by a Ph.D.-designed curriculum that teaches center-of-mass principles through hands-on, screen-free exploration.",
     image: "/balance.png",
     skills: ["Equilibrium", "Math", "Spatial Reasoning"],
   },
   {
-    title: "Spatial Geometry: <br>Build, Explore, Understand!",
-    description: "Transform geometry into a creative adventure with this interactive curriculum guide. Through handouts, paper molds, and accessories, kids build and explore 3D shapes, making spatial reasoning both fun and educational.",
+    mainTitle: "Spatial Geometry Kit",
+    subTitle: "Build, Explore, Understand.",
+    description: "Transform geometry into a creative adventure. Through handouts, paper molds, and accessories, kids build and explore 3D shapes, making spatial reasoning both fun and educational.",
     image: "/spatial-geometry.png",
     skills: ["Geometry", "3D Thinking", "Creativity"],
-  }
+  },
 ]);
 
 // 3D 列印筆資料 - 用於比較表格
