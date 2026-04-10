@@ -139,44 +139,43 @@
     <section id="themes" class="py-20 bg-[#DFC6E0]">
       <div class="max-w-7xl mx-auto text-center px-4">
         <h2 class="text-2xl md:text-3xl font-bold text-[#1A1A1A] mb-10">Our Products</h2>
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-8">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 items-start">
           <div
             v-for="(product, index) in products"
             :key="index"
             class="bg-white rounded-2xl border border-[#DFC6E0]/40 shadow-sm flex flex-col overflow-hidden transition-all hover:-translate-y-1 hover:shadow-md"
           >
-            <!-- 圖片區：放大置頂，高度 h-64 -->
-            <div class="w-full h-64 bg-[#FFF8EB] flex items-center justify-center px-6 pt-6">
+            <!-- 圖片區：有 amazonUrl 包 <a>，否則包 <div> -->
+            <component
+              :is="product.amazonUrl ? 'a' : 'div'"
+              :href="product.amazonUrl || undefined"
+              :target="product.amazonUrl ? '_blank' : undefined"
+              :rel="product.amazonUrl ? 'noopener noreferrer' : undefined"
+              class="block w-full h-72 bg-[#FFF8EB] flex items-center justify-center px-6 py-6 group"
+              :class="{ 'cursor-pointer': product.amazonUrl }"
+            >
               <img
                 :src="product.image"
                 :alt="product.mainTitle"
-                class="w-full h-full object-contain"
+                class="w-full h-full object-contain transition-transform duration-300"
+                :class="{ 'group-hover:scale-105': product.amazonUrl }"
               >
-            </div>
+            </component>
 
             <!-- 文字區 -->
             <div class="p-6 flex flex-col flex-1">
-              <!-- 年齡標籤 -->
-              <span class="text-xs font-semibold bg-[#FFF8EB] text-[#6B441E] border border-[#6B441E]/15 px-3 py-1 rounded-full self-start mb-4">
-                Ages 6–12
-              </span>
 
-              <!-- 主標題：Lora serif、大、深色 -->
+              <!-- 主標題 -->
               <h3
-                class="text-xl font-bold text-[#1A1A1A] mb-1 leading-snug"
+                class="text-lg font-bold text-[#1A1A1A] mb-1 leading-snug"
                 style="font-family: 'Lora', serif;"
               >
                 {{ product.mainTitle }}
               </h3>
 
-              <!-- 副標題：小、斜體、暗紫，與主標題明顯區隔 -->
-              <p class="text-sm italic text-[#B586AC] mb-3">
+              <!-- 副標題 -->
+              <p class="text-sm italic text-[#B586AC] mb-4">
                 {{ product.subTitle }}
-              </p>
-
-              <!-- 說明文字 -->
-              <p class="text-sm text-[#3D3D3D] leading-relaxed mb-5">
-                {{ product.description }}
               </p>
 
               <!-- 技能標籤 -->
@@ -189,6 +188,17 @@
                   {{ skill }}
                 </span>
               </div>
+
+              <!-- Amazon 購買按鈕（有連結才顯示） -->
+              <a
+                v-if="product.amazonUrl"
+                :href="product.amazonUrl"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="mt-5 block text-center px-4 py-2 bg-[#6B441E] text-white text-sm font-semibold rounded-full hover:bg-[#6B441E]/85 transition-colors"
+              >
+                Buy on Amazon
+              </a>
             </div>
           </div>
         </div>
@@ -375,6 +385,7 @@ const products = ref([
     description: "Engineer real rockets that actually launch, guided by a Ph.D.-designed curriculum — complete with safety goggles and heat-resistant finger caps for confident, hands-on building.",
     image: "/starter-kit.jpg",
     skills: ["Physics", "Engineering", "3D Thinking"],
+    amazonUrl: "https://amazon.com/dp/B0FGYGBL1W",
   },
   {
     mainTitle: "Balancing Bird & Mobile Engineering Kit for 3D Pens",
@@ -382,6 +393,7 @@ const products = ref([
     description: "Engineer gravity-defying birds and hanging mobiles that actually balance, guided by a Ph.D.-designed curriculum that teaches center-of-mass principles through hands-on, screen-free exploration.",
     image: "/balance.png",
     skills: ["Equilibrium", "Math", "Spatial Reasoning"],
+    amazonUrl: "https://amazon.com/dp/B0GV9CVBJ5",
   },
   {
     mainTitle: "Spatial Geometry Kit",
@@ -389,6 +401,7 @@ const products = ref([
     description: "Transform geometry into a creative adventure. Through handouts, paper molds, and accessories, kids build and explore 3D shapes, making spatial reasoning both fun and educational.",
     image: "/spatial-geometry.png",
     skills: ["Geometry", "3D Thinking", "Creativity"],
+    amazonUrl: null,
   },
 ]);
 
