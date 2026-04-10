@@ -250,11 +250,11 @@
         <div class="max-w-7xl mx-auto text-center px-2 sm:px-4">
             <h2 class="text-2xl md:text-3xl font-bold text-[#1A1A1A] mb-6">If you haven't had a 3D pen before...</h2>
             <p class="text-base text-[#3D3D3D] leading-relaxed max-w-2xl mx-auto mt-6 mb-10">
-              Our kits are curriculum and material sets — the 3D pen is your tool, purchased separately.
-              This means one pen works across all future Enki kits. Note that pen requirements vary
-              by kit: the Rocket Launcher requires a standard PLA or ABS pen for structural reasons,
-              while the Balancing Bird kit works with most pens including low-temp options.
-              Not sure where to start? The comparison below will help you choose.
+              Our kits are curriculum and material sets. The 3D pen is your tool, purchased
+              separately, and one pen works across all Enki kits in the series. Pen requirements
+              vary by kit: the Rocket Launcher needs a standard PLA or ABS pen for structural
+              reasons, while the Balancing Bird kit works with most pens including low-temp PCL
+              options like the 3Doodler Start+. The comparison below will help you choose.
             </p>
             <div class="flex justify-center">
                 <div class="overflow-x-auto shadow-md rounded-lg w-full max-w-full sm:max-w-full mx-auto">
@@ -376,31 +376,30 @@
               Does the rocket actually fly, or is it just a decoration?
             </summary>
             <p class="faq-answer">
-              It really flies. The rocket uses an elastic launch mechanism to teach projectile motion —
-              it's a functional experiment, not a static decoration. If it's not taking off right away,
-              it usually just needs a small alignment tweak in the assembly. That troubleshooting moment
-              is actually a great part of the learning. Our curriculum guide includes pro flight setup
-              tips on pages 14–16.
+              It really flies. The rocket uses an elastic launch mechanism to teach projectile
+              motion. It is a functional experiment, not a static decoration. If it is not
+              taking off right away, it usually just needs a small alignment tweak in the
+              assembly. That troubleshooting moment is actually a great part of the learning.
+              The curriculum guide includes pro flight setup tips on pages 14 to 16.
             </p>
           </details>
 
           <details class="faq-item">
             <summary class="faq-question">
-              The kit requires a 3D pen — which one should I get?
+              Which 3D pen works with each kit?
             </summary>
             <p class="faq-answer">
-              It depends on which kit you're using.
+              The answer depends on which kit you are using.
               <br><br>
-              <strong>Rocket Launcher Kit:</strong> The rocket's elastic launch mechanism requires
-              filament with enough rigidity to hold structure under tension. Low-temp PCL filament
-              (used in pens like the 3Doodler Start+) is too flexible for this — it won't hold
-              the shape needed for a successful launch. You'll need a standard pen that uses
-              PLA or ABS filament. The MYNT3D Super ($39.99) and SCRIB3D P1 ($36.99) are
-              solid options for older kids.
+              <strong>Rocket Launcher Kit:</strong> The elastic launch mechanism requires
+              filament with enough rigidity to hold structure under tension. Low-temp PCL
+              filament is too flexible for this. You will need a standard pen that uses PLA
+              or ABS filament. The MYNT3D Super ($39.99) and SCRIB3D P1 ($36.99) are solid
+              options for older kids.
               <br><br>
-              <strong>Balancing Bird & Mobile Kit:</strong> This kit doesn't have the same
-              structural rigidity requirement, so low-temp PCL pens like the 3Doodler Start+
-              work well — making it a great option for younger kids ages 6–9.
+              <strong>Balancing Bird &amp; Mobile Kit:</strong> This kit works with any
+              standard PLA or PCL pen, including the 3Doodler Start+. That makes it a great
+              entry point for younger kids or families who already own a low-temp pen.
               <br><br>
               See our full pen comparison guide on this page for more details.
             </p>
@@ -411,14 +410,13 @@
               What age are Enki STEAM kits designed for?
             </summary>
             <p class="faq-answer">
-              Enki's product line is designed for kids ages 6–12. Our current kits — the
-              Rocket Launcher and Balancing Bird — are rated for ages 8–12 based on safety
-              guidelines for 3D pen use and project complexity. The Balancing Bird kit is
-              on the more accessible end and can work well for younger kids in that range
-              with light parental guidance.
-              <br><br>
-              Future kits will extend to younger age groups, so kids can grow with the
-              Enki curriculum from early exploration through more advanced engineering challenges.
+              Enki's product line is designed for kids ages 6 to 12. Our current kits, the
+              Rocket Launcher and Balancing Bird, are rated for ages 8 to 12 based on safety
+              guidelines for 3D pen use and project complexity. The Balancing Bird kit is on
+              the more accessible end and works well for younger kids in that range with light
+              parental guidance. Future kits will extend to younger age groups, so kids can
+              grow with the Enki curriculum from early exploration through more advanced
+              engineering challenges.
             </p>
           </details>
 
@@ -427,11 +425,12 @@
               How is this different from regular 3D pen stencils?
             </summary>
             <p class="faq-answer">
-              Most 3D pen stencils are shapes to trace — kids finish in 20 minutes and there's nowhere
-              to go. Enki kits are built around real science concepts. The Rocket Launcher kit teaches
-              projectile motion and structural stability. The Balancing Bird kit teaches center-of-mass
-              principles. Kids don't just make something — they understand why it works, and the
-              curriculum is designed by PhD engineers to get them there step by step.
+              Most 3D pen stencils are shapes to trace. Kids finish in 20 minutes and there
+              is nowhere to go next. Enki kits are built around real science concepts. The
+              Rocket Launcher kit teaches projectile motion and structural stability. The
+              Balancing Bird kit teaches center-of-mass principles. Kids do not just make
+              something. They understand why it works, guided step by step by a curriculum
+              designed by PhD engineers.
             </p>
           </details>
 
@@ -440,22 +439,40 @@
               Do kids need prior experience with 3D pens?
             </summary>
             <p class="faq-answer">
-              No experience needed. Each kit includes a warm-up section that introduces 3D pen basics
-              before moving into the main project. The photo-guided curriculum is designed to meet kids
-              where they are and build confidence as they go.
+              No experience needed. Each kit includes a warm-up section that introduces 3D
+              pen basics before moving into the main project. The photo-guided curriculum is
+              designed to meet kids where they are and build confidence as they go.
             </p>
           </details>
 
           <details class="faq-item">
             <summary class="faq-question">
-              What exactly is included in the kit?
+              What is included in each kit?
             </summary>
             <p class="faq-answer">
-              The Rocket Launcher kit includes a full-color step-by-step curriculum guide,
-              a dual-surface heat-resistant silicone mat, safety goggles, heat-resistant finger caps
-              in both child and adult sizes, precision tweezers, thread scissors, and 90+ project
-              materials and components. The 3D pen is not included — you use your own, which means
-              one pen works for all future Enki kits.
+              <strong>Rocket Launcher Kit</strong> includes a full-color step-by-step
+              curriculum guide, a dual-surface heat-resistant silicone mat, safety goggles,
+              heat-resistant finger caps in both child and adult sizes, precision tweezers,
+              thread scissors, and 90+ project materials and components.
+              <br><br>
+              <strong>Balancing Bird &amp; Mobile Kit</strong> includes a full-color
+              curriculum guide pre-punched for binders, a custom balancing bird stand,
+              professional-grade acrylic rods, a clear PET building sheet, high-strength
+              fishing line, safety goggles, and finger caps.
+              <br><br>
+              Neither kit includes a 3D pen. You use your own pen, which means one pen
+              works across all Enki kits in the series.
+            </p>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">
+              Is the curriculum guide easy to follow and store?
+            </summary>
+            <p class="faq-answer">
+              Yes. Every guide is printed in full color with real-lab step-by-step photos.
+              The Balancing Bird guide comes pre-punched for binders, so kids can collect
+              each kit's curriculum into a personal science library as the series grows.
             </p>
           </details>
 
@@ -464,8 +481,8 @@
               Where can I buy Enki kits?
             </summary>
             <p class="faq-answer">
-              Enki kits are available on Amazon. You can find links to each kit in our Products section
-              above, or search "Enki Atelier" on Amazon.com.
+              Enki kits are available on Amazon. You can find links to each kit in the
+              Products section above, or search "Enki Atelier" on Amazon.com.
             </p>
           </details>
 
@@ -539,15 +556,18 @@ const products = ref([
   {
     mainTitle: "Balancing Bird & Mobile Engineering Kit for 3D Pens",
     subTitle: "Build to Balance. Discover the Physics of Equilibrium.",
-    description: "Engineer gravity-defying birds and hanging mobiles that actually balance, guided by a Ph.D.-designed curriculum that teaches center-of-mass principles through hands-on, screen-free exploration.",
+    description: "Engineer gravity-defying birds and hanging mobiles that actually balance. A Ph.D.-designed curriculum teaches center-of-mass principles through hands-on, screen-free exploration. Works with any standard PLA or PCL pen, including the 3Doodler Start+.",
     image: "/balance.png",
     ageTag: "Ages 8–12",
     skills: ["Center of Mass", "Equilibrium", "3D Pen Engineering", "Spatial Reasoning"],
     amazonUrl: "https://amazon.com/dp/B0GV9CVBJ5",
     includes: [
-      "Full-color step-by-step curriculum guide",
-      "Heat-resistant silicone mat",
-      "Safety goggles + finger caps",
+      "Full-color curriculum guide (pre-punched for binders)",
+      "Custom balancing bird stand",
+      "Professional-grade acrylic rods",
+      "Clear PET building sheet",
+      "High-strength fishing line",
+      "Safety goggles + finger caps (child & adult sizes)",
       "Project materials & components",
     ],
   },

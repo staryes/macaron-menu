@@ -56,15 +56,15 @@ export default defineNuxtConfig({
                     "name": "Does the rocket actually fly, or is it just a decoration?",
                     "acceptedAnswer": {
                       "@type": "Answer",
-                      "text": "It really flies. The rocket uses an elastic launch mechanism to teach projectile motion. It's a functional experiment, not a static decoration. If it's not taking off, it usually just needs a small alignment tweak. The curriculum guide includes pro flight setup tips on pages 14–16."
+                      "text": "It really flies. The rocket uses an elastic launch mechanism to teach projectile motion. It is a functional experiment, not a static decoration. If it is not taking off, it usually just needs a small alignment tweak. The curriculum guide includes pro flight setup tips on pages 14 to 16."
                     }
                   },
                   {
                     "@type": "Question",
-                    "name": "Which 3D pen works with Enki kits?",
+                    "name": "Which 3D pen works with each Enki kit?",
                     "acceptedAnswer": {
                       "@type": "Answer",
-                      "text": "It depends on the kit. The Rocket Launcher Kit requires a standard PLA or ABS pen — low-temp PCL pens like the 3Doodler Start+ won't provide enough rigidity for the elastic launch mechanism. The Balancing Bird Kit works with most pens including low-temp options, making it suitable for younger kids with the 3Doodler Start+."
+                      "text": "It depends on the kit. The Rocket Launcher Kit requires a standard PLA or ABS pen. Low-temp PCL pens are too flexible for the elastic launch mechanism. The Balancing Bird Kit works with any standard PLA or PCL pen, including the 3Doodler Start+."
                     }
                   },
                   {
@@ -72,7 +72,7 @@ export default defineNuxtConfig({
                     "name": "What age are Enki STEAM kits designed for?",
                     "acceptedAnswer": {
                       "@type": "Answer",
-                      "text": "Enki's product line targets kids ages 6–12. Current kits are rated for ages 8–12 based on safety guidelines. Future kits will extend to younger age groups within the 6–12 range."
+                      "text": "Enki's product line targets kids ages 6 to 12. Current kits are rated for ages 8 to 12 based on safety guidelines. Future kits will extend to younger age groups within the 6 to 12 range."
                     }
                   },
                   {
@@ -80,15 +80,7 @@ export default defineNuxtConfig({
                     "name": "How is this different from regular 3D pen stencils?",
                     "acceptedAnswer": {
                       "@type": "Answer",
-                      "text": "Most 3D pen stencils are just shapes to trace. Enki kits are built around real science concepts — projectile motion, center-of-mass, spatial geometry — with step-by-step curriculum designed by PhD engineers."
-                    }
-                  },
-                  {
-                    "@type": "Question",
-                    "name": "What exactly is included in the kit?",
-                    "acceptedAnswer": {
-                      "@type": "Answer",
-                      "text": "The Rocket Launcher kit includes a full-color curriculum guide, dual-surface heat-resistant silicone mat, safety goggles, finger caps in child and adult sizes, precision tweezers, thread scissors, and 90+ project materials. The 3D pen is not included."
+                      "text": "Most 3D pen stencils are just shapes to trace. Enki kits are built around real science concepts including projectile motion, center-of-mass, and spatial geometry, with step-by-step curriculum designed by PhD engineers."
                     }
                   },
                   {
@@ -96,7 +88,15 @@ export default defineNuxtConfig({
                     "name": "Do kids need prior experience with 3D pens?",
                     "acceptedAnswer": {
                       "@type": "Answer",
-                      "text": "No experience needed. Each kit includes a warm-up section that introduces 3D pen basics before moving into the main project."
+                      "text": "No experience needed. Each kit includes a warm-up section that introduces 3D pen basics before the main project."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "What is included in each kit?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "The Rocket Launcher Kit includes a full-color curriculum guide, silicone mat, safety goggles, finger caps, tweezers, scissors, and 90+ components. The Balancing Bird Kit includes a curriculum guide pre-punched for binders, custom bird stand, acrylic rods, PET sheet, fishing line, goggles, and finger caps. Neither kit includes a 3D pen."
                     }
                   }
                 ]
