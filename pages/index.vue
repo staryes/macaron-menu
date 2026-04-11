@@ -583,7 +583,8 @@ const products = ref([
     includes: [
       "Full-color curriculum guide (pre-punched for binders)",
       "Dual-surface heat-resistant silicone mat",
-      "Safety goggles + Finger caps (child & adult sizes)",
+      "Safety goggles",
+      "Finger caps (child & adult sizes)",
       "Precision tweezers + thread scissors",
       "90+ project materials & components",
     ],
@@ -611,7 +612,7 @@ const products = ref([
     subTitle: "Build, Explore, Understand.",
     description: "Transform geometry into a creative adventure. Through handouts, paper molds, and accessories, kids build and explore 3D shapes, making spatial reasoning both fun and educational.",
     image: "/spatial-geometry.png",
-    ageTag: "Ages 6–12",
+    ageTag: "Ages 8–12",
     skills: ["Spatial Geometry", "3D Thinking", "Math", "Hands-on Learning"],
     amazonUrl: null,
     includes: [
