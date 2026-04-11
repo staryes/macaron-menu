@@ -606,7 +606,7 @@ const products = ref([
   {
     mainTitle: "Balancing Bird & Mobile Engineering Kit for 3D Pens",
     subTitle: "Build to Balance. Discover the Physics of Equilibrium.",
-    description: "A complete engineering journey through the physics of equilibrium. The PhD-designed curriculum guides kids through center-of-mass principles and STEM challenges, teaching them to find the precise balance point in every build. Whether constructing a balancing bird or an elegant hanging mobile, every creation is designed to actually stay upright and function as expected. Works with any standard 3D pen including low-temp PCL options.",
+    description: "A complete engineering journey through the physics of equilibrium. The PhD-designed curriculum guides kids through center-of-mass principles and STEM challenges, teaching them to find the precise balance point in every build. Whether constructing a balancing bird or an elegant hanging mobile, every creation is designed to actually stay upright and function as expected.",
     image: "/balance.png",
     ageTag: "Ages 8–12",
     skills: ["Center of Mass", "Equilibrium", "3D Pen Engineering", "Spatial Reasoning"],
