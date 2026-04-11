@@ -13,7 +13,7 @@
                 <a href="#hero" class="hover:text-[#E0A939] text-sm md:text-base">Home</a>
                 <a href="#about" class="hover:text-[#E0A939] text-sm md:text-base">About</a>
                 <a href="#themes" class="hover:text-[#E0A939] text-sm md:text-base">Products</a>
-                <a href="#cta" class="nav-link">Buy Now</a>
+                <a href="#cta" class="hover:text-[#E0A939] text-sm md:text-base">Buy Now</a>
                 <a href="#pens" class="hover:text-[#E0A939] text-sm md:text-base">Guide</a>
                 <a href="#faq" class="hover:text-[#E0A939] text-sm md:text-base">FAQ</a>
                 <a href="#contact" class="hover:text-[#E0A939] text-sm md:text-base">Contact Us</a>
@@ -278,8 +278,16 @@
           <!-- Rocket Kit -->
           <div class="bg-white rounded-2xl border border-[#DFC6E0]/50 p-6">
             <div class="flex items-start gap-4">
-              <div class="w-10 h-10 rounded-xl bg-[#FFF8EB] border border-[#6B441E]/15 flex items-center justify-center flex-shrink-0 text-lg">
-                🚀
+              <div class="w-10 h-10 rounded-xl bg-[#FFF8EB] border border-[#6B441E]/15 flex items-center justify-center flex-shrink-0">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#6B441E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2z"/>
+                  <path d="M12 6v6l4 2"/>
+                  <circle cx="12" cy="12" r="2" fill="#6B441E"/>
+                  <path d="M16.24 7.76l-1.42 1.42"/>
+                  <path d="M7.76 7.76l1.42 1.42"/>
+                  <path d="M7.76 16.24l1.42-1.42"/>
+                  <path d="M16.24 16.24l-1.42-1.42"/>
+                </svg>
               </div>
               <div class="flex-1">
                 <h3 class="text-base font-bold text-[#1A1A1A] mb-1" style="font-family: 'Lora', serif;">
@@ -314,8 +322,13 @@
           <!-- Balancing Bird Kit -->
           <div class="bg-white rounded-2xl border border-[#DFC6E0]/50 p-6">
             <div class="flex items-start gap-4">
-              <div class="w-10 h-10 rounded-xl bg-[#FFF8EB] border border-[#6B441E]/15 flex items-center justify-center flex-shrink-0 text-lg">
-                🐦
+              <div class="w-10 h-10 rounded-xl bg-[#FFF8EB] border border-[#6B441E]/15 flex items-center justify-center flex-shrink-0">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#6B441E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="3" fill="#6B441E" stroke="none"/>
+                  <ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(0 12 12)"/>
+                  <ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(60 12 12)"/>
+                  <ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(120 12 12)"/>
+                </svg>
               </div>
               <div class="flex-1">
                 <h3 class="text-base font-bold text-[#1A1A1A] mb-1" style="font-family: 'Lora', serif;">
@@ -677,25 +690,6 @@ h1, h2, h3 {
   font-family: 'Lora', serif;
 }
 
-/* 導覽列一般連結 */
-.nav-link {
-  font-size: 0.875rem;
-  color: inherit;
-  transition: color 0.2s;
-}
-.nav-link:hover { color: #E0A939; }
-
-/* 導覽列 CTA 按鈕 */
-.nav-cta {
-  background-color: var(--enki-brown);
-  color: white;
-  font-size: 0.85rem;
-  font-weight: 500;
-  padding: 0.4rem 1.1rem;
-  border-radius: 999px;
-  transition: background-color 0.2s;
-}
-.nav-cta:hover { background-color: #5a3818; }
 
 /* 聯絡表單樣式 */
 .form-input {
