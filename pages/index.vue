@@ -13,7 +13,7 @@
                 <a href="#hero" class="hover:text-[#E0A939] text-sm md:text-base">Home</a>
                 <a href="#about" class="hover:text-[#E0A939] text-sm md:text-base">About</a>
                 <a href="#themes" class="hover:text-[#E0A939] text-sm md:text-base">Products</a>
-                <a href="#cta" class="hover:text-[#E0A939] text-sm md:text-base">Buy Now</a>
+                <a href="#cta" class="nav-cta">Buy Now</a>
                 <a href="#pens" class="hover:text-[#E0A939] text-sm md:text-base">Guide</a>
                 <a href="#faq" class="hover:text-[#E0A939] text-sm md:text-base">FAQ</a>
                 <a href="#contact" class="hover:text-[#E0A939] text-sm md:text-base">Contact Us</a>
@@ -57,22 +57,36 @@
     <!-- Trust Bar -->
     <div class="bg-[#FFF8EB] border-b border-[#DFC6E0]/30">
       <div class="max-w-4xl mx-auto px-6 py-6 grid grid-cols-3 divide-x divide-[#DFC6E0]/30">
+        <!-- Expert-Designed -->
         <div class="flex items-center gap-3 justify-center px-6">
-          <span class="text-2xl flex-shrink-0">✏️</span>
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#6B441E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="flex-shrink-0">
+            <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/>
+          </svg>
           <div>
             <p class="text-sm font-semibold text-[#6B441E]">Expert-Designed</p>
             <p class="text-xs text-[#3D3D3D]">PhD engineers & art educator</p>
           </div>
         </div>
+
+        <!-- Real Science, Real Fun -->
         <div class="flex items-center gap-3 justify-center px-6">
-          <span class="text-2xl flex-shrink-0">🔬</span>
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#6B441E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="flex-shrink-0">
+            <path d="M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v18m0 0h10a2 2 0 0 0 2-2v-4M9 21H5a2 2 0 0 1-2-2v-4m0 0h18"/>
+          </svg>
           <div>
             <p class="text-sm font-semibold text-[#6B441E]">Real Science, Real Fun</p>
             <p class="text-xs text-[#3D3D3D]">STEAM concepts kids actually enjoy</p>
           </div>
         </div>
+
+        <!-- Hands-on & Screen-free -->
         <div class="flex items-center gap-3 justify-center px-6">
-          <span class="text-2xl flex-shrink-0">👐</span>
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#6B441E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="flex-shrink-0">
+            <path d="M18 11V6a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v0"/>
+            <path d="M14 10V4a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v2"/>
+            <path d="M10 10.5V6a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v8"/>
+            <path d="M18 8a2 2 0 1 1 4 0v6a8 8 0 0 1-8 8h-2c-2.8 0-4.5-.86-5.99-2.34l-3.6-3.6a2 2 0 0 1 2.83-2.82L7 15"/>
+          </svg>
           <div>
             <p class="text-sm font-semibold text-[#6B441E]">Hands-on & Screen-free</p>
             <p class="text-xs text-[#3D3D3D]">Active building, not passive viewing</p>
@@ -129,10 +143,12 @@
           fun. The rocket actually launches. The bird actually balances. That moment of "wait,
           it worked" is what keeps kids coming back, and it is where the real learning happens.
         </p>
-        <p class="text-sm text-[#B586AC] italic">
-          The name comes from Enki, the Sumerian god of wisdom and craft. Old, a little obscure,
-          and about the drive to make things rather than just know them. That felt right.
-        </p>
+        <div class="mt-4 px-5 py-4 bg-[#DFC6E0]/30 border-l-2 border-[#B586AC] rounded-r-lg">
+          <p class="text-sm text-[#6B441E] italic leading-relaxed">
+            The name comes from Enki, the Sumerian god of wisdom and craft. Old, a little obscure,
+            and about the drive to make things rather than just know them. That felt right.
+          </p>
+        </div>
       </div>
 
     </div>
@@ -140,7 +156,7 @@
 </section>
 
     <!-- Themes Section -->
-    <section id="themes" class="py-20 bg-[#DFC6E0]">
+    <section id="themes" class="py-24 bg-[#DFC6E0]/60">
       <div class="max-w-7xl mx-auto text-center px-4">
         <h2 class="text-2xl md:text-3xl font-bold text-[#1A1A1A] mb-4">Our Products</h2>
         <p class="text-base text-[#3D3D3D] leading-relaxed max-w-2xl mx-auto mt-4 mb-10 text-center">
@@ -241,6 +257,99 @@
       </div>
     </section>
 
+    <!-- Buying Guide Section -->
+    <section id="pens" class="py-24 bg-[#FFF8EB]">
+      <div class="max-w-3xl mx-auto px-6">
+
+        <!-- 標題 -->
+        <div class="text-center mb-10">
+          <p class="text-xs font-medium tracking-[2px] uppercase text-[#B586AC] mb-2">Buying Guide</p>
+          <h2 class="text-3xl md:text-4xl font-bold text-[#1A1A1A] mb-5" style="font-family: 'Lora', serif;">
+            Choosing a 3D Pen for Your Enki Kit
+          </h2>
+          <p class="text-base text-[#3D3D3D] leading-relaxed max-w-xl mx-auto">
+            Our kits are curriculum and material sets. You bring the 3D pen, and one pen
+            works across all kits in the Enki series. Pen requirements vary by kit, so
+            use the guide below to find the right match.
+          </p>
+        </div>
+
+        <!-- 兩個套件說明卡 -->
+        <div class="space-y-5 mb-10">
+
+          <!-- Rocket Kit -->
+          <div class="bg-white rounded-2xl border border-[#DFC6E0]/50 p-6">
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 rounded-xl bg-[#FFF8EB] border border-[#6B441E]/15 flex items-center justify-center flex-shrink-0 text-lg">
+                🚀
+              </div>
+              <div class="flex-1">
+                <h3 class="text-base font-bold text-[#1A1A1A] mb-1" style="font-family: 'Lora', serif;">
+                  Rocket Launcher Kit
+                </h3>
+                <p class="text-sm text-[#3D3D3D] mb-3">
+                  Requires a pen that uses <strong class="text-[#6B441E]">PLA or ABS filament</strong>.
+                  Low-temp PCL pens cannot provide the rigidity needed for the elastic launch mechanism.
+                </p>
+                <p class="text-xs text-[#B586AC] mb-3">
+                  Compatible with: MYNT3D Super, MYNT3D Pro, SCRIB3D P1, and most standard PLA/ABS pens
+                </p>
+                <div class="flex flex-wrap gap-2">
+                  <a href="https://amzn.to/4pl0gYW" target="_blank" rel="noopener noreferrer"
+                     class="text-xs px-3 py-1.5 bg-[#6B441E] text-white rounded-full hover:bg-[#6B441E]/85 transition-colors">
+                    MYNT3D Super on Amazon
+                  </a>
+                  <a href="https://amzn.to/3MVjs2e" target="_blank" rel="noopener noreferrer"
+                     class="text-xs px-3 py-1.5 bg-[#6B441E] text-white rounded-full hover:bg-[#6B441E]/85 transition-colors">
+                    SCRIB3D P1 on Amazon
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Balancing Bird Kit -->
+          <div class="bg-white rounded-2xl border border-[#DFC6E0]/50 p-6">
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 rounded-xl bg-[#FFF8EB] border border-[#6B441E]/15 flex items-center justify-center flex-shrink-0 text-lg">
+                🐦
+              </div>
+              <div class="flex-1">
+                <h3 class="text-base font-bold text-[#1A1A1A] mb-1" style="font-family: 'Lora', serif;">
+                  Balancing Bird &amp; Mobile Kit
+                </h3>
+                <p class="text-sm text-[#3D3D3D] mb-3">
+                  Works with <strong class="text-[#6B441E]">any standard 3D pen</strong>, including
+                  low-temp PCL options. A flexible starting point for families new to 3D pens.
+                </p>
+                <p class="text-xs text-[#B586AC] mb-3">
+                  Compatible with: most PLA, ABS, and PCL pens including low-temp models
+                </p>
+                <div class="flex flex-wrap gap-2">
+                  <a href="https://amzn.to/4aIF63E" target="_blank" rel="noopener noreferrer"
+                     class="text-xs px-3 py-1.5 bg-[#6B441E] text-white rounded-full hover:bg-[#6B441E]/85 transition-colors">
+                    3Doodler Start+ on Amazon
+                  </a>
+                  <a href="https://amzn.to/4pl0gYW" target="_blank" rel="noopener noreferrer"
+                     class="text-xs px-3 py-1.5 bg-[#6B441E] text-white rounded-full hover:bg-[#6B441E]/85 transition-colors">
+                    MYNT3D Super on Amazon
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- 免責聲明 -->
+        <p class="text-xs text-[#3D3D3D]/50 text-center italic">
+          We may receive commissions if you purchase through our links.
+          These are pens we recommend based on compatibility, not paid partnerships.
+        </p>
+
+      </div>
+    </section>
+
     <!-- Call to Action Section -->
     <section id="cta" class="py-24 bg-[#6B441E] text-center px-4">
       <p class="text-[#DFC6E0] text-xs font-medium tracking-[2px] uppercase mb-4">Start the Journey</p>
@@ -255,115 +364,6 @@
         Buy on Amazon
       </a>
     </section>
-    
-    <!-- Pen Comparison Section -->
-    <section id="pens" class="py-20 bg-[#FFF8EB]">
-        <div class="max-w-7xl mx-auto text-center px-2 sm:px-4">
-            <p class="text-xs font-medium tracking-[2px] uppercase text-[#B586AC] mb-2">Buying Guide</p>
-            <h2 class="text-3xl md:text-4xl font-bold text-[#1A1A1A] mb-6" style="font-family: 'Lora', serif;">
-              Choosing a 3D Pen for Your Enki Kit
-            </h2>
-            <p class="text-base text-[#3D3D3D] leading-relaxed max-w-2xl mx-auto mt-0 mb-10">
-              Our kits are curriculum and material sets. The 3D pen is your tool, purchased
-              separately, and one pen works across all Enki kits in the series. Pen requirements
-              vary by kit: the Rocket Launcher needs a standard PLA or ABS pen for structural
-              reasons, while the Balancing Bird kit works with most pens including low-temp
-              PCL options. The comparison below will help you choose.
-            </p>
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8 max-w-2xl mx-auto text-left">
-              <div class="bg-[#FFF8EB] border border-[#6B441E]/15 rounded-xl p-4">
-                <p class="text-sm font-semibold text-[#6B441E] mb-1">🚀 Rocket Launcher Kit</p>
-                <p class="text-sm text-[#3D3D3D]">Requires PLA or ABS filament pen</p>
-                <p class="text-xs text-[#B586AC] mt-1">Low-temp PCL pens not compatible</p>
-              </div>
-              <div class="bg-[#FFF8EB] border border-[#6B441E]/15 rounded-xl p-4">
-                <p class="text-sm font-semibold text-[#6B441E] mb-1">🐦 Balancing Bird &amp; Mobile Kit</p>
-                <p class="text-sm text-[#3D3D3D]">Works with PLA, ABS, or PCL pens</p>
-                <p class="text-xs text-[#B586AC] mt-1">Compatible with low-temp pens</p>
-              </div>
-            </div>
-
-            <div class="flex justify-center">
-                <div class="overflow-x-auto shadow-md rounded-lg w-full max-w-full sm:max-w-full mx-auto">
-                    <!-- 
-                      表格設計說明：
-                      1. 使用 table-auto 自動佈局表格，讓瀏覽器根據內容自動調整列寬
-                      2. 響應式文字策略：
-                         - 在最小螢幕上使用 9px 字體 
-                         - xs 螢幕 (375px+) 使用 12px 字體
-                         - sm 螢幕 (640px+) 使用 14px 字體
-                         - md 螢幕 (768px+) 使用 16px 字體
-                      3. 響應式內容：
-                         - 小螢幕顯示縮寫版本 (inline sm:hidden)
-                         - 大螢幕顯示完整版本 (hidden sm:inline)
-                      4. 內邊距響應式設計：
-                         - 最小螢幕: p-[2px] (非常小的內邊距)
-                         - xs: px-1 py-1 (左右上下各 0.25rem)
-                         - sm: px-2 py-2 (左右上下各 0.5rem)
-                         - md: px-4 py-3 (左右 1rem，上下 0.75rem)
-                      5. 表格容器設置：
-                         - 小螢幕和大螢幕都撐滿容器寬度
-                         - overflow-x-auto 允許在需要時水平捲動
-                    -->
-                    <table class="w-full table-auto border-collapse text-[9px] xs:text-[12px] sm:text-[14px] md:text-[16px] mx-auto">
-                        <thead class="w-full">
-                            <!-- 表頭行：使用淺紫色背景，Feature 欄位使用淺黃背景區分 -->
-                            <tr class="bg-[#DFC6E0] text-[#1A1A1A] w-full">
-                                <!-- Feature 標題列居中對齊 -->
-                                <th class="table-cell bg-[#FFF8EB] text-[#6B441E] font-semibold text-left p-[2px] xs:px-1 xs:py-1 sm:px-2 sm:py-2 md:px-4 md:py-3 w-1/5">
-                                  3D Pen
-                                </th>
-                                <!-- 筆品牌名稱：使用 whitespace-nowrap 防止文字換行 -->
-                                <th v-for="(pen, index) in pens" :key="index" class="p-[2px] xs:px-1 xs:py-1 sm:px-2 sm:py-2 md:px-4 md:py-3 whitespace-nowrap w-1/5">{{ pen.name }}</th>
-                            </tr>
-                        </thead>
-                        <tbody class="w-full">
-                            <!-- 年齡範圍行 -->
-                            <tr class="border-b">
-                                <!-- 特性名稱使用 font-medium 稍微增強顯示 -->
-                                <td class="p-[2px] xs:px-1 xs:py-1 sm:px-2 sm:py-2 md:px-4 md:py-3 font-medium">Age</td>
-                                <!-- 循環渲染每支筆的資訊 -->
-                                <td v-for="(pen, index) in pens" :key="index" class="p-[2px] xs:px-1 xs:py-1 sm:px-2 sm:py-2 md:px-4 md:py-3">
-                                    <!-- 小螢幕顯示短版本 (6-13y)，大螢幕隱藏 -->
-                                    <span class="inline sm:hidden">{{ pen.age.short }}</span>
-                                    <!-- 小螢幕隱藏，大螢幕顯示完整版本 (6-13 years) -->
-                                    <span class="hidden sm:inline">{{ pen.age.full }}</span>
-                                </td>
-                            </tr>
-                            <!-- 耗材類型行 -->
-                            <tr class="border-b">
-                                <td class="p-[2px] xs:px-1 xs:py-1 sm:px-2 sm:py-2 md:px-4 md:py-3 font-medium">Filament</td>
-                                <td v-for="(pen, index) in pens" :key="index" class="p-[2px] xs:px-1 xs:py-1 sm:px-2 sm:py-2 md:px-4 md:py-3">
-                                    <span class="inline sm:hidden">{{ pen.filament.short }}</span>
-                                    <span class="hidden sm:inline">{{ pen.filament.full }}</span>
-                                </td>
-                            </tr>
-                            <!-- 購買鏈接行 -->
-                            <tr class="border-b">
-                                <td class="p-[2px] xs:px-1 xs:py-1 sm:px-2 sm:py-2 md:px-4 md:py-3 font-medium">Buy</td>
-                                <td v-for="(pen, index) in pens" :key="index" class="p-[2px] xs:px-1 xs:py-1 sm:px-2 sm:py-2 md:px-4 md:py-3">
-                                    <a
-                                      :href="pen.buyLink"
-                                      target="_blank"
-                                      rel="noopener noreferrer"
-                                      class="inline-block px-3 py-1.5 bg-[#6B441E] text-white text-xs font-semibold rounded-full hover:bg-[#6B441E]/85 transition-colors whitespace-nowrap"
-                                    >
-                                      Buy on Amazon
-                                    </a>
-                                </td>
-                            </tr>
-                            <!-- 免責聲明 - 橫跨所有列 (colspan="6") -->
-                            <tr>
-                                <td colspan="6" class="p-[2px] xs:px-1 xs:py-1 sm:px-2 text-[9px] sm:text-xs text-[#3D3D3D] text-right">
-                                <!-- 免責聲明 -->
-                                <span>We might receive commissions if you click on our links and make purchases.</span>                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- FAQ Section -->
     <section id="faq" class="py-24 bg-white">
@@ -377,126 +377,150 @@
 
         <div class="space-y-4">
 
-          <details class="faq-item" open>
-            <summary class="faq-question">
+          <!-- FAQ 0 -->
+          <div class="faq-item">
+            <button class="faq-question w-full text-left" @click="toggleFaq(0)">
               Does the rocket actually fly, or is it just a decoration?
-            </summary>
-            <p class="faq-answer">
-              It really flies. The rocket uses an elastic launch mechanism to teach projectile
-              motion. It is a functional experiment, not a decoration. If it is not taking off
-              right away, it usually just needs a small alignment tweak. That troubleshooting
-              moment is part of the learning. The curriculum guide includes pro flight setup
-              tips on pages 14 to 16.
-            </p>
-          </details>
+            </button>
+            <Transition name="faq">
+              <p v-show="openFaq === 0" class="faq-answer">
+                It really flies. The rocket uses an elastic launch mechanism to teach projectile
+                motion. It is a functional experiment, not a decoration. If it is not taking off
+                right away, it usually just needs a small alignment tweak. That troubleshooting
+                moment is part of the learning. The curriculum guide includes pro flight setup
+                tips on pages 14 to 16.
+              </p>
+            </Transition>
+          </div>
 
-          <details class="faq-item">
-            <summary class="faq-question">
+          <!-- FAQ 1 -->
+          <div class="faq-item">
+            <button class="faq-question w-full text-left" @click="toggleFaq(1)">
               Which 3D pen works with each kit?
-            </summary>
-            <p class="faq-answer">
-              The answer depends on which kit you are using.
-              <br><br>
-              <strong>Rocket Launcher Kit</strong> requires a pen that uses PLA or ABS
-              filament. Low-temp PCL filament is too flexible for the elastic launch
-              mechanism and will not hold the structure needed for a successful launch.
-              Common compatible pens include MYNT3D, SCRIB3D, and most standard PLA pens.
-              <br><br>
-              <strong>Balancing Bird &amp; Mobile Kit</strong> works with any standard
-              3D pen, including low-temp PCL pens. This makes it a flexible choice for
-              families who already own a pen of any type.
-              <br><br>
-              See the pen comparison guide on this page for more details.
-            </p>
-          </details>
+            </button>
+            <Transition name="faq">
+              <p v-show="openFaq === 1" class="faq-answer">
+                The answer depends on which kit you are using.
+                <br><br>
+                <strong>Rocket Launcher Kit</strong> requires a pen that uses PLA or ABS
+                filament. Low-temp PCL filament is too flexible for the elastic launch
+                mechanism and will not hold the structure needed for a successful launch.
+                Common compatible pens include MYNT3D, SCRIB3D, and most standard PLA pens.
+                <br><br>
+                <strong>Balancing Bird &amp; Mobile Kit</strong> works with any standard
+                3D pen, including low-temp PCL pens. This makes it a flexible choice for
+                families who already own a pen of any type.
+                <br><br>
+                See the pen comparison guide on this page for more details.
+              </p>
+            </Transition>
+          </div>
 
-          <details class="faq-item">
-            <summary class="faq-question">
+          <!-- FAQ 2 -->
+          <div class="faq-item">
+            <button class="faq-question w-full text-left" @click="toggleFaq(2)">
               What age are Enki STEAM kits designed for?
-            </summary>
-            <p class="faq-answer">
-              Enki's product line is designed for kids ages 6 to 12. Our current kits are
-              rated for ages 8 and up, based on project complexity and the handling of
-              small components. Future kits will extend to younger age groups, so kids
-              can grow with the Enki curriculum from early exploration through more
-              advanced engineering challenges.
-            </p>
-          </details>
+            </button>
+            <Transition name="faq">
+              <p v-show="openFaq === 2" class="faq-answer">
+                Enki's product line is designed for kids ages 6 to 12. Our current kits are
+                rated for ages 8 and up, based on project complexity and the handling of
+                small components. Future kits will extend to younger age groups, so kids
+                can grow with the Enki curriculum from early exploration through more
+                advanced engineering challenges.
+              </p>
+            </Transition>
+          </div>
 
-          <details class="faq-item">
-            <summary class="faq-question">
+          <!-- FAQ 3 -->
+          <div class="faq-item">
+            <button class="faq-question w-full text-left" @click="toggleFaq(3)">
               How is this different from regular 3D pen stencils?
-            </summary>
-            <p class="faq-answer">
-              Most 3D pen stencils are just shapes to trace. Kids finish in 20 minutes
-              and there is nowhere to go next. Enki kits are built around real science
-              concepts, with curriculum inspired by Common Core State Standards and the
-              Next Generation Science Standards (NGSS). The Rocket Launcher kit teaches
-              projectile motion and structural stability. The Balancing Bird kit explores
-              center-of-mass and equilibrium. Kids do not just make something. They
-              understand why it works.
-            </p>
-          </details>
+            </button>
+            <Transition name="faq">
+              <p v-show="openFaq === 3" class="faq-answer">
+                Most 3D pen stencils are just shapes to trace. Kids finish in 20 minutes
+                and there is nowhere to go next. Enki kits are built around real science
+                concepts, with curriculum inspired by Common Core State Standards and the
+                Next Generation Science Standards (NGSS). The Rocket Launcher kit teaches
+                projectile motion and structural stability. The Balancing Bird kit explores
+                center-of-mass and equilibrium. Kids do not just make something. They
+                understand why it works.
+              </p>
+            </Transition>
+          </div>
 
-          <details class="faq-item">
-            <summary class="faq-question">
+          <!-- FAQ 4 -->
+          <div class="faq-item">
+            <button class="faq-question w-full text-left" @click="toggleFaq(4)">
               Do kids need prior experience with 3D pens?
-            </summary>
-            <p class="faq-answer">
-              No prior experience needed. The curriculum is designed to be accessible
-              to first-time 3D pen users. The step-by-step photo instructions make it
-              easy to follow along, and kids can work at their own pace.
-            </p>
-          </details>
+            </button>
+            <Transition name="faq">
+              <p v-show="openFaq === 4" class="faq-answer">
+                No prior experience needed. The curriculum is designed to be accessible
+                to first-time 3D pen users. The step-by-step photo instructions make it
+                easy to follow along, and kids can work at their own pace.
+              </p>
+            </Transition>
+          </div>
 
-          <details class="faq-item">
-            <summary class="faq-question">
+          <!-- FAQ 5 -->
+          <div class="faq-item">
+            <button class="faq-question w-full text-left" @click="toggleFaq(5)">
               What is included in each kit?
-            </summary>
-            <p class="faq-answer">
-              <strong>Rocket Launcher Kit</strong> includes a full-color curriculum guide
-              (pre-punched for binders), a dual-surface heat-resistant silicone mat,
-              safety goggles, Finger caps in child and adult sizes, precision tweezers,
-              thread scissors, and 90+ project materials and components.
-              <br><br>
-              <strong>Balancing Bird &amp; Mobile Kit</strong> includes a curriculum
-              guide of 60+ pages (pre-punched for binders), a lay-flat template booklet
-              for easy tracing, a clear PET building sheet, a custom balancing bird
-              stand, professional-grade acrylic rods, high-strength fishing line, and
-              project materials and components.
-              <br><br>
-              Neither kit includes a 3D pen. You use your own, and one pen works across
-              all kits in the Enki series.
-            </p>
-          </details>
+            </button>
+            <Transition name="faq">
+              <p v-show="openFaq === 5" class="faq-answer">
+                <strong>Rocket Launcher Kit</strong> includes a full-color curriculum guide
+                (pre-punched for binders), a dual-surface heat-resistant silicone mat,
+                safety goggles, Finger caps in child and adult sizes, precision tweezers,
+                thread scissors, and 90+ project materials and components.
+                <br><br>
+                <strong>Balancing Bird &amp; Mobile Kit</strong> includes a curriculum
+                guide of 60+ pages (pre-punched for binders), a lay-flat template booklet
+                for easy tracing, a clear PET building sheet, a custom balancing bird
+                stand, professional-grade acrylic rods, high-strength fishing line, and
+                project materials and components.
+                <br><br>
+                Neither kit includes a 3D pen. You use your own, and one pen works across
+                all kits in the Enki series.
+              </p>
+            </Transition>
+          </div>
 
-          <details class="faq-item">
-            <summary class="faq-question">
+          <!-- FAQ 6 -->
+          <div class="faq-item">
+            <button class="faq-question w-full text-left" @click="toggleFaq(6)">
               Is the curriculum guide easy to follow and store?
-            </summary>
-            <p class="faq-answer">
-              Yes. Every guide is printed in full color with real step-by-step photos
-              taken in our own lab. All guides are pre-punched for three-ring binders
-              so kids can collect each kit's curriculum as the series grows. The
-              Balancing Bird kit also includes a separate lay-flat template booklet
-              that opens completely flat for easy tracing while referencing the guide.
-            </p>
-          </details>
+            </button>
+            <Transition name="faq">
+              <p v-show="openFaq === 6" class="faq-answer">
+                Yes. Every guide is printed in full color with real step-by-step photos
+                taken in our own lab. All guides are pre-punched for three-ring binders
+                so kids can collect each kit's curriculum as the series grows. The
+                Balancing Bird kit also includes a separate lay-flat template booklet
+                that opens completely flat for easy tracing while referencing the guide.
+              </p>
+            </Transition>
+          </div>
 
-          <details class="faq-item">
-            <summary class="faq-question">
+          <!-- FAQ 7 -->
+          <div class="faq-item">
+            <button class="faq-question w-full text-left" @click="toggleFaq(7)">
               Where can I buy Enki kits?
-            </summary>
-            <p class="faq-answer">
-              Enki kits are available on Amazon. You can find links to each kit in the
-              Products section above, or visit our
-              <a href="https://www.amazon.com/stores/EnkiAtelier/page/518CC82B-0DF3-4C27-8BB5-D45F16EC48A3?lp_asin=B0GV9CVBJ5&ref_=ast_bln"
-                 target="_blank" rel="noopener noreferrer"
-                 class="text-[#6B441E] underline hover:text-[#E0A939] transition-colors">
-                Enki Atelier storefront on Amazon
-              </a>.
-            </p>
-          </details>
+            </button>
+            <Transition name="faq">
+              <p v-show="openFaq === 7" class="faq-answer">
+                Enki kits are available on Amazon. You can find links to each kit in the
+                Products section above, or visit our
+                <a href="https://www.amazon.com/stores/EnkiAtelier/page/518CC82B-0DF3-4C27-8BB5-D45F16EC48A3?lp_asin=B0GV9CVBJ5&ref_=ast_bln"
+                   target="_blank" rel="noopener noreferrer"
+                   class="text-[#6B441E] underline hover:text-[#E0A939] transition-colors">
+                  Enki Atelier storefront on Amazon
+                </a>.
+              </p>
+            </Transition>
+          </div>
 
         </div>
       </div>
@@ -599,51 +623,13 @@ const products = ref([
   },
 ]);
 
-// 3D 列印筆資料 - 用於比較表格
-// 資料結構：
-// - name: 筆的品牌名稱
-// - age: 適合年齡 {short: 小螢幕顯示, full: 大螢幕顯示}
-// - safety: 安全性描述 {short: 小螢幕顯示, full: 大螢幕顯示}
-// - power: 電源類型 {short: 小螢幕顯示, full: 大螢幕顯示}
-// - filament: 耗材類型 {short: 小螢幕顯示, full: 大螢幕顯示}
-// - price: 價格顯示文字
-// - buyLink: 亞馬遜購買連結 (含聯盟行銷代碼)
-const pens = ref([
-  {
-    name: "3Doodler Start+",
-    age: { short: "6-13y", full: "6-13 years" },
-    filament: { short: "Eco PCL\n(Limited Use)", full: "Eco PCL\n(Not fit all activities)" },
-    buyLink: "https://amzn.to/4aIF63E"
-  },
-  {
-    name: "MYNT3D Pro",
-    age: { short: "Teens+", full: "Teens & Adults" },
-    filament: { short: "ABS/PLA", full: "ABS, PLA" },
-    buyLink: "https://amzn.to/49lsYD6"
-  },
-  {
-    name: "MYNT3D Super",
-    age: { short: "Older Kids+", full: "Older Kids+" },
-    filament: { short: "ABS/PLA", full: "ABS, PLA" },
-    buyLink: "https://amzn.to/4pl0gYW"
-  },
-  {
-    name: "SCRIB3D P1",
-    age: { short: "Older Kids+", full: "Older Kids+" },
-    filament: { short: "ABS/PLA", full: "ABS, PLA" },
-    buyLink: "https://amzn.to/3MVjs2e"
-  }
-//   ,
-//   {
-//     name: "Pika3D Junior",
-//     age: "6+ years",
-//     safety: "No hot parts",
-//     power: "Rechargeable",
-//     filament: "Low-temp PCL",
-//     price: "$39.99",
-//     buyLink: "https://amzn.to/3E7aryP"
-//   }
-]);
+
+// FAQ 展開/收合狀態管理
+const openFaq = ref(0) // 預設第一題展開
+
+function toggleFaq(index) {
+  openFaq.value = openFaq.value === index ? null : index
+}
 
 // 頁面渲染後綁定平滑捲動功能
 // 使所有內部連結 (#hero, #about 等) 點擊後平滑捲動到目標位置
@@ -678,6 +664,18 @@ h1, h2, h3 {
   font-family: 'Lora', serif;
 }
 
+/* 導覽列 CTA 按鈕 */
+.nav-cta {
+  background-color: var(--enki-brown);
+  color: white;
+  font-size: 0.85rem;
+  font-weight: 500;
+  padding: 0.4rem 1.1rem;
+  border-radius: 999px;
+  transition: background-color 0.2s;
+}
+.nav-cta:hover { background-color: #5a3818; }
+
 /* 聯絡表單樣式 */
 .form-input {
   border: 1.5px solid rgba(223,198,224,0.6);
@@ -690,6 +688,19 @@ h1, h2, h3 {
   border-color: #6B441E;
   box-shadow: 0 0 0 3px rgba(107,68,30,0.1);
   outline: none;
+}
+
+/* ─── FAQ 過渡動畫 ─── */
+.faq-enter-active,
+.faq-leave-active {
+  transition: opacity 0.2s ease, max-height 0.3s ease;
+  max-height: 500px;
+  overflow: hidden;
+}
+.faq-enter-from,
+.faq-leave-to {
+  opacity: 0;
+  max-height: 0;
 }
 
 /* ─── FAQ ─── */
