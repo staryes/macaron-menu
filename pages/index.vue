@@ -37,10 +37,10 @@
           Big Ideas Start<br>with Little Hands.
         </h1>
         <p class="text-base md:text-lg font-medium text-white/80 tracking-wide">
-          STEM & STEAM Kits for Kids Who Like to Build.
+          Science Kits for Kids Who Like to Build.
         </p>
         <p class="text-base md:text-lg text-white/70 leading-relaxed max-w-[480px]">
-          Hands-on STEM kits designed by engineers and educators
+          Hands-on STEM kits with real science and art, designed by engineers and educators
           who refused to settle for "good enough."
         </p>
         <div class="flex flex-wrap gap-3 pt-2">
@@ -330,24 +330,6 @@
                                     <span class="hidden sm:inline">{{ pen.age.full }}</span>
                                 </td>
                             </tr>
-                            <!-- 安全性行 -->
-                            <tr class="border-b">
-                                <td class="p-[2px] xs:px-1 xs:py-1 sm:px-2 sm:py-2 md:px-4 md:py-3 font-medium">Safety</td>
-                                <td v-for="(pen, index) in pens" :key="index" class="p-[2px] xs:px-1 xs:py-1 sm:px-2 sm:py-2 md:px-4 md:py-3">
-                                    <!-- 小螢幕顯示短版本，大螢幕隱藏 -->
-                                    <span class="inline sm:hidden">{{ pen.safety.short }}</span>
-                                    <!-- 小螢幕隱藏，大螢幕顯示完整版本 -->
-                                    <span class="hidden sm:inline">{{ pen.safety.full }}</span>
-                                </td>
-                            </tr>
-                            <!-- 電源類型行 -->
-                            <tr class="border-b">
-                                <td class="p-[2px] xs:px-1 xs:py-1 sm:px-2 sm:py-2 md:px-4 md:py-3 font-medium">Power</td>
-                                <td v-for="(pen, index) in pens" :key="index" class="p-[2px] xs:px-1 xs:py-1 sm:px-2 sm:py-2 md:px-4 md:py-3">
-                                    <span class="inline sm:hidden">{{ pen.power.short }}</span>
-                                    <span class="hidden sm:inline">{{ pen.power.full }}</span>
-                                </td>
-                            </tr>
                             <!-- 耗材類型行 -->
                             <tr class="border-b">
                                 <td class="p-[2px] xs:px-1 xs:py-1 sm:px-2 sm:py-2 md:px-4 md:py-3 font-medium">Filament</td>
@@ -355,11 +337,6 @@
                                     <span class="inline sm:hidden">{{ pen.filament.short }}</span>
                                     <span class="hidden sm:inline">{{ pen.filament.full }}</span>
                                 </td>
-                            </tr>
-                            <!-- 價格行 -->
-                            <tr class="border-b">
-                                <td class="p-[2px] xs:px-1 xs:py-1 sm:px-2 sm:py-2 md:px-4 md:py-3 font-medium">Price</td>
-                                <td v-for="(pen, index) in pens" :key="index" class="p-[2px] xs:px-1 xs:py-1 sm:px-2 sm:py-2 md:px-4 md:py-3">{{ pen.price }}</td>
                             </tr>
                             <!-- 購買鏈接行 -->
                             <tr class="border-b">
@@ -575,7 +552,7 @@ const products = ref([
   {
     mainTitle: "Rocket Launcher STEM Kit for 3D Pens",
     subTitle: "Build a Rocket. Discover the Physics of Projectiles.",
-    description: "Engineer real rockets that actually launch, guided by a Ph.D.-designed curriculum — complete with safety goggles and heat-resistant finger caps for confident, hands-on building.",
+    description: "Build rockets that actually launch and learn the physics behind why they fly. The PhD-designed curriculum takes kids through projectile motion, structural stability, and experimental thinking with step-by-step full-color photo instructions photographed in our own lab. Every build is calibrated so the rocket stays together and performs as expected. No flimsy designs, no guesswork.",
     image: "/starter-kit.jpg",
     ageTag: "Ages 8–12",
     skills: ["Projectile Motion", "Physics", "3D Pen Engineering", "Hands-on STEM"],
@@ -636,37 +613,25 @@ const pens = ref([
   {
     name: "3Doodler Start+",
     age: { short: "6-13y", full: "6-13 years" },
-    safety: { short: "No hot", full: "No hot parts" },
-    power: { short: "Recharge", full: "Rechargeable" },
     filament: { short: "Eco PCL\n(Limited Use)", full: "Eco PCL\n(Not fit all activities)" },
-    price: "$49.99",
     buyLink: "https://amzn.to/4aIF63E"
   },
   {
     name: "MYNT3D Pro",
     age: { short: "Teens+", full: "Teens & Adults" },
-    safety: { short: "High temp", full: "High temp" },
-    power: { short: "Plug-in", full: "Plug-in" },
     filament: { short: "ABS/PLA", full: "ABS, PLA" },
-    price: "$59.99",
     buyLink: "https://amzn.to/49lsYD6"
   },
   {
     name: "MYNT3D Super",
     age: { short: "Older Kids+", full: "Older Kids+" },
-    safety: { short: "High temp", full: "High temp" },
-    power: { short: "Plug-in", full: "Plug-in" },
     filament: { short: "ABS/PLA", full: "ABS, PLA" },
-    price: "$39.99",
     buyLink: "https://amzn.to/4pl0gYW"
   },
   {
     name: "SCRIB3D P1",
     age: { short: "Older Kids+", full: "Older Kids+" },
-    safety: { short: "High temp", full: "High temp" },
-    power: { short: "Plug-in", full: "Plug-in" },
     filament: { short: "ABS/PLA", full: "ABS, PLA" },
-    price: "$36.99",
     buyLink: "https://amzn.to/3MVjs2e"
   }
 //   ,
