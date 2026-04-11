@@ -37,10 +37,10 @@
           Big Ideas Start<br>with Little Hands.
         </h1>
         <p class="text-base md:text-lg font-medium text-white/80 tracking-wide">
-          STEAM Kits for Kids Who Like to Build.
+          STEM & STEAM Kits for Kids Who Like to Build.
         </p>
         <p class="text-base md:text-lg text-white/70 leading-relaxed max-w-[480px]">
-          Hands-on STEAM kits designed by engineers and educators
+          Hands-on STEM kits designed by engineers and educators
           who refused to settle for "good enough."
         </p>
         <div class="flex flex-wrap gap-3 pt-2">
@@ -58,21 +58,21 @@
     <div class="bg-[#FFF8EB] border-b border-[#DFC6E0]/30">
       <div class="max-w-4xl mx-auto px-6 py-6 grid grid-cols-3 divide-x divide-[#DFC6E0]/30">
         <div class="flex items-center gap-3 justify-center px-6">
-          <span class="text-2xl">🎓</span>
+          <span class="text-2xl flex-shrink-0">✏️</span>
           <div>
-            <p class="text-sm font-semibold text-[#6B441E]">PhD-Designed</p>
-            <p class="text-xs text-[#3D3D3D]">Curriculum by engineers & educators</p>
+            <p class="text-sm font-semibold text-[#6B441E]">Expert-Designed</p>
+            <p class="text-xs text-[#3D3D3D]">PhD engineers & art educator</p>
           </div>
         </div>
         <div class="flex items-center gap-3 justify-center px-6">
-          <span class="text-2xl">🔬</span>
+          <span class="text-2xl flex-shrink-0">🔬</span>
           <div>
-            <p class="text-sm font-semibold text-[#6B441E]">Real STEAM Concepts</p>
-            <p class="text-xs text-[#3D3D3D]">Physics, math & spatial reasoning</p>
+            <p class="text-sm font-semibold text-[#6B441E]">Real Science, Real Fun</p>
+            <p class="text-xs text-[#3D3D3D]">STEAM concepts kids actually enjoy</p>
           </div>
         </div>
         <div class="flex items-center gap-3 justify-center px-6">
-          <span class="text-2xl">👐</span>
+          <span class="text-2xl flex-shrink-0">👐</span>
           <div>
             <p class="text-sm font-semibold text-[#6B441E]">Hands-on & Screen-free</p>
             <p class="text-xs text-[#3D3D3D]">Active building, not passive viewing</p>
@@ -90,7 +90,7 @@
       class="text-2xl md:text-3xl font-semibold text-[#6B441E] leading-snug mb-14 max-w-2xl border-l-4 border-[#E0A939] pl-8"
       style="font-family: 'Lora', serif;"
     >
-      "It didn't really work. They had a great time. That felt worth paying attention to."
+      "They had a great time. And somewhere in that mess, we realized this was the most engaged we'd seen them in months."
     </blockquote>
 
     <!-- 兩欄內文 -->
@@ -124,10 +124,10 @@
           learning curve.
         </p>
         <p>
-          We think about what's coming for our kids. The world they're growing up in is hard to predict,
-          and we're not going to pretend otherwise. What we keep returning to is simpler than it sounds:
-          kids who know how to sit with a problem, get stuck, and keep going tend to be okay. We want to
-          give them more practice at that, while it still feels like play and before the stakes get real.
+          Kids are born curious. They don't need to be convinced to explore — they just need
+          the right invitation. What we build isn't just real science content. It is genuinely
+          fun. The rocket actually launches. The bird actually balances. That moment of "wait,
+          it worked" is what keeps kids coming back, and it is where the real learning happens.
         </p>
         <p class="text-sm text-[#B586AC] italic">
           The name comes from Enki, the Sumerian god of wisdom and craft. Old, a little obscure,
@@ -142,7 +142,13 @@
     <!-- Themes Section -->
     <section id="themes" class="py-20 bg-[#DFC6E0]">
       <div class="max-w-7xl mx-auto text-center px-4">
-        <h2 class="text-2xl md:text-3xl font-bold text-[#1A1A1A] mb-10">Our Products</h2>
+        <h2 class="text-2xl md:text-3xl font-bold text-[#1A1A1A] mb-4">Our Products</h2>
+        <p class="text-base text-[#3D3D3D] leading-relaxed max-w-2xl mx-auto mt-4 mb-10 text-center">
+          Every kit comes with a full-color curriculum guide, printed in the USA with
+          real-lab step-by-step photos taken in our own studio. All guides are
+          pre-punched for three-ring binders so kids can build a personal science
+          library as the series grows.
+        </p>
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 items-stretch">
           <div
             v-for="(product, index) in products"
@@ -170,9 +176,14 @@
             <div class="p-6 flex flex-col flex-grow">
 
               <!-- 年齡標籤 -->
-              <span class="text-xs font-semibold bg-[#FFF8EB] text-[#6B441E] border border-[#6B441E]/15 px-3 py-1 rounded-full self-start mb-4">
-                {{ product.ageTag }}
-              </span>
+              <div class="flex items-center gap-2 mb-4">
+                <span class="text-xs font-semibold bg-[#FFF8EB] text-[#6B441E] border border-[#6B441E]/15 px-3 py-1 rounded-full">
+                  {{ product.ageTag }}
+                </span>
+                <span v-if="!product.amazonUrl" class="text-xs font-medium bg-[#DFC6E0] text-[#6B441E] px-3 py-1 rounded-full">
+                  Coming Soon
+                </span>
+              </div>
 
               <!-- 主標題 -->
               <h3
@@ -239,7 +250,7 @@
       <p class="text-white/65 text-lg mb-8 max-w-md mx-auto">
         Empower kids with creative STEAM learning activities.
       </p>
-      <a href="https://amzn.to/4jmS8G5" target="_blank" rel="noopener noreferrer"
+      <a href="https://www.amazon.com/stores/EnkiAtelier/page/518CC82B-0DF3-4C27-8BB5-D45F16EC48A3?lp_asin=B0GV9CVBJ5&ref_=ast_bln" target="_blank" rel="noopener noreferrer"
          class="inline-block px-8 py-4 bg-[#E0A939] text-[#1A1A1A] font-bold rounded-full hover:brightness-105 transition-all text-base">
         Buy on Amazon
       </a>
@@ -248,14 +259,30 @@
     <!-- Pen Comparison Section -->
     <section id="pens" class="py-20 bg-[#FFF8EB]">
         <div class="max-w-7xl mx-auto text-center px-2 sm:px-4">
-            <h2 class="text-2xl md:text-3xl font-bold text-[#1A1A1A] mb-6">If you haven't had a 3D pen before...</h2>
-            <p class="text-base text-[#3D3D3D] leading-relaxed max-w-2xl mx-auto mt-6 mb-10">
+            <p class="text-xs font-medium tracking-[2px] uppercase text-[#B586AC] mb-2">Buying Guide</p>
+            <h2 class="text-3xl md:text-4xl font-bold text-[#1A1A1A] mb-6" style="font-family: 'Lora', serif;">
+              Choosing a 3D Pen for Your Enki Kit
+            </h2>
+            <p class="text-base text-[#3D3D3D] leading-relaxed max-w-2xl mx-auto mt-0 mb-10">
               Our kits are curriculum and material sets. The 3D pen is your tool, purchased
               separately, and one pen works across all Enki kits in the series. Pen requirements
               vary by kit: the Rocket Launcher needs a standard PLA or ABS pen for structural
-              reasons, while the Balancing Bird kit works with most pens including low-temp PCL
-              options like the 3Doodler Start+. The comparison below will help you choose.
+              reasons, while the Balancing Bird kit works with most pens including low-temp
+              PCL options. The comparison below will help you choose.
             </p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8 max-w-2xl mx-auto text-left">
+              <div class="bg-[#FFF8EB] border border-[#6B441E]/15 rounded-xl p-4">
+                <p class="text-sm font-semibold text-[#6B441E] mb-1">🚀 Rocket Launcher Kit</p>
+                <p class="text-sm text-[#3D3D3D]">Requires PLA or ABS filament pen</p>
+                <p class="text-xs text-[#B586AC] mt-1">Low-temp PCL pens not compatible</p>
+              </div>
+              <div class="bg-[#FFF8EB] border border-[#6B441E]/15 rounded-xl p-4">
+                <p class="text-sm font-semibold text-[#6B441E] mb-1">🐦 Balancing Bird &amp; Mobile Kit</p>
+                <p class="text-sm text-[#3D3D3D]">Works with PLA, ABS, or PCL pens</p>
+                <p class="text-xs text-[#B586AC] mt-1">Compatible with low-temp pens</p>
+              </div>
+            </div>
+
             <div class="flex justify-center">
                 <div class="overflow-x-auto shadow-md rounded-lg w-full max-w-full sm:max-w-full mx-auto">
                     <!-- 
@@ -283,7 +310,9 @@
                             <!-- 表頭行：使用淺紫色背景，Feature 欄位使用淺黃背景區分 -->
                             <tr class="bg-[#DFC6E0] text-[#1A1A1A] w-full">
                                 <!-- Feature 標題列居中對齊 -->
-                                <th class="p-[2px] xs:px-1 xs:py-1 sm:px-2 sm:py-2 md:px-4 md:py-3 bg-[#FFF8EB] text-center w-1/5">Feature</th>
+                                <th class="table-cell bg-[#FFF8EB] text-[#6B441E] font-semibold text-left p-[2px] xs:px-1 xs:py-1 sm:px-2 sm:py-2 md:px-4 md:py-3 w-1/5">
+                                  3D Pen
+                                </th>
                                 <!-- 筆品牌名稱：使用 whitespace-nowrap 防止文字換行 -->
                                 <th v-for="(pen, index) in pens" :key="index" class="p-[2px] xs:px-1 xs:py-1 sm:px-2 sm:py-2 md:px-4 md:py-3 whitespace-nowrap w-1/5">{{ pen.name }}</th>
                             </tr>
@@ -377,10 +406,10 @@
             </summary>
             <p class="faq-answer">
               It really flies. The rocket uses an elastic launch mechanism to teach projectile
-              motion. It is a functional experiment, not a static decoration. If it is not
-              taking off right away, it usually just needs a small alignment tweak in the
-              assembly. That troubleshooting moment is actually a great part of the learning.
-              The curriculum guide includes pro flight setup tips on pages 14 to 16.
+              motion. It is a functional experiment, not a decoration. If it is not taking off
+              right away, it usually just needs a small alignment tweak. That troubleshooting
+              moment is part of the learning. The curriculum guide includes pro flight setup
+              tips on pages 14 to 16.
             </p>
           </details>
 
@@ -391,17 +420,16 @@
             <p class="faq-answer">
               The answer depends on which kit you are using.
               <br><br>
-              <strong>Rocket Launcher Kit:</strong> The elastic launch mechanism requires
-              filament with enough rigidity to hold structure under tension. Low-temp PCL
-              filament is too flexible for this. You will need a standard pen that uses PLA
-              or ABS filament. The MYNT3D Super ($39.99) and SCRIB3D P1 ($36.99) are solid
-              options for older kids.
+              <strong>Rocket Launcher Kit</strong> requires a pen that uses PLA or ABS
+              filament. Low-temp PCL filament is too flexible for the elastic launch
+              mechanism and will not hold the structure needed for a successful launch.
+              Common compatible pens include MYNT3D, SCRIB3D, and most standard PLA pens.
               <br><br>
-              <strong>Balancing Bird &amp; Mobile Kit:</strong> This kit works with any
-              standard PLA or PCL pen, including the 3Doodler Start+. That makes it a great
-              entry point for younger kids or families who already own a low-temp pen.
+              <strong>Balancing Bird &amp; Mobile Kit</strong> works with any standard
+              3D pen, including low-temp PCL pens. This makes it a flexible choice for
+              families who already own a pen of any type.
               <br><br>
-              See our full pen comparison guide on this page for more details.
+              See the pen comparison guide on this page for more details.
             </p>
           </details>
 
@@ -410,13 +438,11 @@
               What age are Enki STEAM kits designed for?
             </summary>
             <p class="faq-answer">
-              Enki's product line is designed for kids ages 6 to 12. Our current kits, the
-              Rocket Launcher and Balancing Bird, are rated for ages 8 to 12 based on safety
-              guidelines for 3D pen use and project complexity. The Balancing Bird kit is on
-              the more accessible end and works well for younger kids in that range with light
-              parental guidance. Future kits will extend to younger age groups, so kids can
-              grow with the Enki curriculum from early exploration through more advanced
-              engineering challenges.
+              Enki's product line is designed for kids ages 6 to 12. Our current kits are
+              rated for ages 8 and up, based on project complexity and the handling of
+              small components. Future kits will extend to younger age groups, so kids
+              can grow with the Enki curriculum from early exploration through more
+              advanced engineering challenges.
             </p>
           </details>
 
@@ -425,12 +451,13 @@
               How is this different from regular 3D pen stencils?
             </summary>
             <p class="faq-answer">
-              Most 3D pen stencils are shapes to trace. Kids finish in 20 minutes and there
-              is nowhere to go next. Enki kits are built around real science concepts. The
-              Rocket Launcher kit teaches projectile motion and structural stability. The
-              Balancing Bird kit teaches center-of-mass principles. Kids do not just make
-              something. They understand why it works, guided step by step by a curriculum
-              designed by PhD engineers.
+              Most 3D pen stencils are just shapes to trace. Kids finish in 20 minutes
+              and there is nowhere to go next. Enki kits are built around real science
+              concepts, with curriculum inspired by Common Core State Standards and the
+              Next Generation Science Standards (NGSS). The Rocket Launcher kit teaches
+              projectile motion and structural stability. The Balancing Bird kit explores
+              center-of-mass and equilibrium. Kids do not just make something. They
+              understand why it works.
             </p>
           </details>
 
@@ -439,9 +466,9 @@
               Do kids need prior experience with 3D pens?
             </summary>
             <p class="faq-answer">
-              No experience needed. Each kit includes a warm-up section that introduces 3D
-              pen basics before moving into the main project. The photo-guided curriculum is
-              designed to meet kids where they are and build confidence as they go.
+              No prior experience needed. The curriculum is designed to be accessible
+              to first-time 3D pen users. The step-by-step photo instructions make it
+              easy to follow along, and kids can work at their own pace.
             </p>
           </details>
 
@@ -450,18 +477,19 @@
               What is included in each kit?
             </summary>
             <p class="faq-answer">
-              <strong>Rocket Launcher Kit</strong> includes a full-color step-by-step
-              curriculum guide, a dual-surface heat-resistant silicone mat, safety goggles,
-              heat-resistant finger caps in both child and adult sizes, precision tweezers,
+              <strong>Rocket Launcher Kit</strong> includes a full-color curriculum guide
+              (pre-punched for binders), a dual-surface heat-resistant silicone mat,
+              safety goggles, Finger caps in child and adult sizes, precision tweezers,
               thread scissors, and 90+ project materials and components.
               <br><br>
-              <strong>Balancing Bird &amp; Mobile Kit</strong> includes a full-color
-              curriculum guide pre-punched for binders, a custom balancing bird stand,
-              professional-grade acrylic rods, a clear PET building sheet, high-strength
-              fishing line, safety goggles, and finger caps.
+              <strong>Balancing Bird &amp; Mobile Kit</strong> includes a curriculum
+              guide of 60+ pages (pre-punched for binders), a lay-flat template booklet
+              for easy tracing, a clear PET building sheet, a custom balancing bird
+              stand, professional-grade acrylic rods, high-strength fishing line, and
+              project materials and components.
               <br><br>
-              Neither kit includes a 3D pen. You use your own pen, which means one pen
-              works across all Enki kits in the series.
+              Neither kit includes a 3D pen. You use your own, and one pen works across
+              all kits in the Enki series.
             </p>
           </details>
 
@@ -470,9 +498,11 @@
               Is the curriculum guide easy to follow and store?
             </summary>
             <p class="faq-answer">
-              Yes. Every guide is printed in full color with real-lab step-by-step photos.
-              The Balancing Bird guide comes pre-punched for binders, so kids can collect
-              each kit's curriculum into a personal science library as the series grows.
+              Yes. Every guide is printed in full color with real step-by-step photos
+              taken in our own lab. All guides are pre-punched for three-ring binders
+              so kids can collect each kit's curriculum as the series grows. The
+              Balancing Bird kit also includes a separate lay-flat template booklet
+              that opens completely flat for easy tracing while referencing the guide.
             </p>
           </details>
 
@@ -482,7 +512,12 @@
             </summary>
             <p class="faq-answer">
               Enki kits are available on Amazon. You can find links to each kit in the
-              Products section above, or search "Enki Atelier" on Amazon.com.
+              Products section above, or visit our
+              <a href="https://www.amazon.com/stores/EnkiAtelier/page/518CC82B-0DF3-4C27-8BB5-D45F16EC48A3?lp_asin=B0GV9CVBJ5&ref_=ast_bln"
+                 target="_blank" rel="noopener noreferrer"
+                 class="text-[#6B441E] underline hover:text-[#E0A939] transition-colors">
+                Enki Atelier storefront on Amazon
+              </a>.
             </p>
           </details>
 
@@ -546,10 +581,10 @@ const products = ref([
     skills: ["Projectile Motion", "Physics", "3D Pen Engineering", "Hands-on STEM"],
     amazonUrl: "https://amazon.com/dp/B0FGYGBL1W",
     includes: [
-      "Full-color step-by-step curriculum guide (pre-punched for binders)",
+      "Full-color curriculum guide (pre-punched for binders)",
       "Dual-surface heat-resistant silicone mat",
       "Safety goggles",
-      "finger caps (child & adult sizes)",
+      "Finger caps (child & adult sizes)",
       "Precision tweezers + thread scissors",
       "90+ project materials & components",
     ],
@@ -557,13 +592,14 @@ const products = ref([
   {
     mainTitle: "Balancing Bird & Mobile Engineering Kit for 3D Pens",
     subTitle: "Build to Balance. Discover the Physics of Equilibrium.",
-    description: "Engineer gravity-defying birds and hanging mobiles that actually balance. A Ph.D.-designed curriculum teaches center-of-mass principles through hands-on, screen-free exploration. Works with any standard PLA or PCL pen, including the 3Doodler Start+.",
+    description: "Engineer gravity-defying birds and hanging mobiles that actually balance. A Ph.D.-designed curriculum teaches center-of-mass principles through hands-on, screen-free exploration. Works with any standard PLA or PCL pen, including low-temp options.",
     image: "/balance.png",
     ageTag: "Ages 8–12",
     skills: ["Center of Mass", "Equilibrium", "3D Pen Engineering", "Spatial Reasoning"],
     amazonUrl: "https://amazon.com/dp/B0GV9CVBJ5",
     includes: [
-      "Full-color curriculum guide (pre-punched for binders)",
+      "Curriculum guide, 60+ pages (pre-punched for binders)",
+      "Template booklet (lay-flat binding for easy tracing)",
       "Clear PET building sheet",
       "Custom balancing bird stand",
       "Professional-grade acrylic rods",
