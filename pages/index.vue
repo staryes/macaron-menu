@@ -13,7 +13,7 @@
                 <a href="#hero" class="hover:text-[#E0A939] text-sm md:text-base">Home</a>
                 <a href="#about" class="hover:text-[#E0A939] text-sm md:text-base">About</a>
                 <a href="#themes" class="hover:text-[#E0A939] text-sm md:text-base">Products</a>
-                <a href="#cta" class="nav-cta">Buy Now</a>
+                <a href="#cta" class="nav-link">Buy Now</a>
                 <a href="#pens" class="hover:text-[#E0A939] text-sm md:text-base">Guide</a>
                 <a href="#faq" class="hover:text-[#E0A939] text-sm md:text-base">FAQ</a>
                 <a href="#contact" class="hover:text-[#E0A939] text-sm md:text-base">Contact Us</a>
@@ -26,7 +26,7 @@
 
     <!-- Hero Section -->
     <section id="hero" class="relative h-screen flex items-center">
-      <img src="/brand-story.jpg" alt="Enki Atelier Brand Story"
+      <img src="/hero-image.jpg" alt="Enki Atelier Brand Story"
            class="absolute inset-0 w-full h-full object-cover">
       <div class="absolute inset-0 bg-gradient-to-r from-[#6B441E]/95 via-[#6B441E]/70 to-transparent"></div>
       <div class="relative z-10 w-full md:w-1/2 lg:w-2/5 space-y-5 px-10 md:px-20">
@@ -143,12 +143,10 @@
           fun. The rocket actually launches. The bird actually balances. That moment of "wait,
           it worked" is what keeps kids coming back, and it is where the real learning happens.
         </p>
-        <div class="mt-4 px-5 py-4 bg-[#DFC6E0]/30 border-l-2 border-[#B586AC] rounded-r-lg">
-          <p class="text-sm text-[#6B441E] italic leading-relaxed">
-            The name comes from Enki, the Sumerian god of wisdom and craft. Old, a little obscure,
-            and about the drive to make things rather than just know them. That felt right.
-          </p>
-        </div>
+        <p class="text-sm text-[#B586AC] italic leading-relaxed mt-4">
+          The name comes from Enki, the Sumerian god of wisdom and craft. Old, a little obscure,
+          and about the drive to make things rather than just know them. That felt right.
+        </p>
       </div>
 
     </div>
@@ -292,16 +290,21 @@
                   Low-temp PCL pens cannot provide the rigidity needed for the elastic launch mechanism.
                 </p>
                 <p class="text-xs text-[#B586AC] mb-3">
-                  Compatible with: MYNT3D Super, MYNT3D Pro, SCRIB3D P1, and most standard PLA/ABS pens
+                  Compatible with: MYNT3D Super, MYNT3D Pro, SCRIB3D P1, 7TECH 3D Pen,
+                  TECBOSS 3D Pen, Dikale 3D Pen, and most standard PLA or ABS pens
                 </p>
                 <div class="flex flex-wrap gap-2">
                   <a href="https://amzn.to/4pl0gYW" target="_blank" rel="noopener noreferrer"
                      class="text-xs px-3 py-1.5 bg-[#6B441E] text-white rounded-full hover:bg-[#6B441E]/85 transition-colors">
-                    MYNT3D Super on Amazon
+                    MYNT3D Super
+                  </a>
+                  <a href="https://amzn.to/49lsYD6" target="_blank" rel="noopener noreferrer"
+                     class="text-xs px-3 py-1.5 bg-[#6B441E] text-white rounded-full hover:bg-[#6B441E]/85 transition-colors">
+                    MYNT3D Pro
                   </a>
                   <a href="https://amzn.to/3MVjs2e" target="_blank" rel="noopener noreferrer"
                      class="text-xs px-3 py-1.5 bg-[#6B441E] text-white rounded-full hover:bg-[#6B441E]/85 transition-colors">
-                    SCRIB3D P1 on Amazon
+                    SCRIB3D P1
                   </a>
                 </div>
               </div>
@@ -323,16 +326,26 @@
                   low-temp PCL options. A flexible starting point for families new to 3D pens.
                 </p>
                 <p class="text-xs text-[#B586AC] mb-3">
-                  Compatible with: most PLA, ABS, and PCL pens including low-temp models
+                  Compatible with: most PLA, ABS, and PCL pens including low-temp models.
+                  Works with 3Doodler Start+, MYNT3D Super, MYNT3D Pro, SCRIB3D P1,
+                  7TECH 3D Pen, TECBOSS 3D Pen, Dikale 3D Pen, and most standard 3D pens
                 </p>
                 <div class="flex flex-wrap gap-2">
                   <a href="https://amzn.to/4aIF63E" target="_blank" rel="noopener noreferrer"
                      class="text-xs px-3 py-1.5 bg-[#6B441E] text-white rounded-full hover:bg-[#6B441E]/85 transition-colors">
-                    3Doodler Start+ on Amazon
+                    3Doodler Start+
                   </a>
                   <a href="https://amzn.to/4pl0gYW" target="_blank" rel="noopener noreferrer"
                      class="text-xs px-3 py-1.5 bg-[#6B441E] text-white rounded-full hover:bg-[#6B441E]/85 transition-colors">
-                    MYNT3D Super on Amazon
+                    MYNT3D Super
+                  </a>
+                  <a href="https://amzn.to/49lsYD6" target="_blank" rel="noopener noreferrer"
+                     class="text-xs px-3 py-1.5 bg-[#6B441E] text-white rounded-full hover:bg-[#6B441E]/85 transition-colors">
+                    MYNT3D Pro
+                  </a>
+                  <a href="https://amzn.to/3MVjs2e" target="_blank" rel="noopener noreferrer"
+                     class="text-xs px-3 py-1.5 bg-[#6B441E] text-white rounded-full hover:bg-[#6B441E]/85 transition-colors">
+                    SCRIB3D P1
                   </a>
                 </div>
               </div>
@@ -576,7 +589,7 @@ const products = ref([
   {
     mainTitle: "Rocket Launcher STEM Kit for 3D Pens",
     subTitle: "Build a Rocket. Discover the Physics of Projectiles.",
-    description: "Build rockets that actually launch and learn the physics behind why they fly. The PhD-designed curriculum takes kids through projectile motion, structural stability, and experimental thinking with step-by-step full-color photo instructions photographed in our own lab. Every build is calibrated so the rocket stays together and performs as expected. No flimsy designs, no guesswork.",
+    description: "A complete engineering journey designed by PhD engineers to master the physics of projectiles. The full-color, photo-guided curriculum takes kids through real science principles and STEM challenges, transforming a 3D pen into a precise engineering tool. Every build is calibrated for structural stability so the rocket actually launches. Screen-free, hands-on, and built for ages 8 and up.",
     image: "/starter-kit.jpg",
     ageTag: "Ages 8–12",
     skills: ["Projectile Motion", "Physics", "3D Pen Engineering", "Hands-on STEM"],
@@ -592,7 +605,7 @@ const products = ref([
   {
     mainTitle: "Balancing Bird & Mobile Engineering Kit for 3D Pens",
     subTitle: "Build to Balance. Discover the Physics of Equilibrium.",
-    description: "Engineer gravity-defying birds and hanging mobiles that actually balance. A Ph.D.-designed curriculum teaches center-of-mass principles through hands-on, screen-free exploration. Works with any standard PLA or PCL pen, including low-temp options.",
+    description: "A complete engineering journey through the physics of equilibrium. The PhD-designed curriculum guides kids through center-of-mass principles and STEM challenges, teaching them to find the precise balance point in every build. Whether constructing a balancing bird or an elegant hanging mobile, every creation is designed to actually stay upright and function as expected. Works with any standard 3D pen including low-temp PCL options.",
     image: "/balance.png",
     ageTag: "Ages 8–12",
     skills: ["Center of Mass", "Equilibrium", "3D Pen Engineering", "Spatial Reasoning"],
@@ -663,6 +676,14 @@ html {
 h1, h2, h3 {
   font-family: 'Lora', serif;
 }
+
+/* 導覽列一般連結 */
+.nav-link {
+  font-size: 0.875rem;
+  color: inherit;
+  transition: color 0.2s;
+}
+.nav-link:hover { color: #E0A939; }
 
 /* 導覽列 CTA 按鈕 */
 .nav-cta {
