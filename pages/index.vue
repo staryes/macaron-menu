@@ -385,7 +385,7 @@
       <p class="text-white/65 text-lg mb-8 max-w-md mx-auto">
         Empower kids with creative STEAM learning activities.
       </p>
-      <a href="https://www.amazon.com/stores/EnkiAtelier/page/518CC82B-0DF3-4C27-8BB5-D45F16EC48A3?lp_asin=B0GV9CVBJ5&ref_=ast_bln" target="_blank" rel="noopener noreferrer"
+      <a href="https://www.amazon.com/stores/page/518CC82B-0DF3-4C27-8BB5-D45F16EC48A3?channel=Official%20Website" target="_blank" rel="noopener noreferrer"
          class="inline-block px-8 py-4 bg-[#E0A939] text-[#1A1A1A] font-bold rounded-full hover:brightness-105 transition-all text-base">
         Buy on Amazon
       </a>
