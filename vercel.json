@@ -1,0 +1,10 @@
+{
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "www.enkiatelier.com" }],
+      "destination": "https://enkiatelier.com/:path*",
+      "permanent": true
+    }
+  ]
+}
