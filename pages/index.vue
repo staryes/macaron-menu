@@ -443,8 +443,9 @@
         <!-- 捲動軌道 -->
         <div
           ref="galleryTrack"
-          class="flex gap-2 overflow-x-auto pb-4 px-16 snap-x snap-mandatory scroll-smooth"
-          style="scrollbar-width: none; -ms-overflow-style: none;"
+          @scroll="updateCenter"
+          class="flex gap-4 overflow-x-auto pb-4 snap-x snap-mandatory scroll-smooth"
+          style="scrollbar-width: none; -ms-overflow-style: none; padding-left: calc(50vw - 160px); padding-right: calc(50vw - 160px);"
         >
           <div
             v-for="(item, index) in galleryItems"
@@ -691,7 +692,7 @@
 </template>
 
 <script setup>
-import { onMounted, nextTick, ref } from 'vue';
+import { onMounted, ref } from 'vue';
 
 // 產品資料 - 這是我們的產品展示資訊
 // 資料結構：
@@ -765,19 +766,48 @@ function scrollGallery(direction) {
   })
 }
 
-onMounted(async () => {
-  await nextTick()
-  setTimeout(() => {
-    if (!galleryTrack.value) return
-    const centerIndex = 4
-    const cards = galleryTrack.value.querySelectorAll('.gallery-card')
-    if (!cards[centerIndex]) return
-    cards[centerIndex].scrollIntoView({
-      behavior: 'instant',
-      block: 'nearest',
-      inline: 'center'
-    })
-  }, 400)
+const currentCenter = ref(4)
+
+function updateCenter() {
+  const track = galleryTrack.value
+  if (!track) return
+  const trackCenter = track.scrollLeft + track.clientWidth / 2
+  const cards = track.querySelectorAll('.gallery-card')
+  let closest = 0
+  let minDist = Infinity
+  cards.forEach((card, i) => {
+    const cardCenter = card.offsetLeft + card.offsetWidth / 2
+    const dist = Math.abs(cardCenter - trackCenter)
+    if (dist < minDist) {
+      minDist = dist
+      closest = i
+    }
+  })
+  currentCenter.value = closest
+}
+
+onMounted(() => {
+  // 等待 DOM 完全渲染後再設定捲動位置
+  const setCenter = () => {
+    const track = galleryTrack.value
+    if (!track) return
+
+    const cards = track.querySelectorAll('.gallery-card')
+    if (cards.length < 5) return
+
+    const centerCard = cards[4]  // Built_by_kids_01，index 4
+    const trackRect = track.getBoundingClientRect()
+    const cardRect = centerCard.getBoundingClientRect()
+
+    // 計算讓第 5 張卡片置中所需的 scrollLeft
+    const offset = cardRect.left - trackRect.left - (trackRect.width / 2) + (cardRect.width / 2)
+    track.scrollLeft += offset
+  }
+
+  // 用三個不同時間點嘗試，確保至少一次成功
+  setTimeout(setCenter, 100)
+  setTimeout(setCenter, 400)
+  setTimeout(setCenter, 800)
 })
 
 const galleryItems = ref([
@@ -955,6 +985,19 @@ h1, h2, h3 {
 /* 隱藏捲軸（Chrome/Safari） */
 #gallery div::-webkit-scrollbar {
   display: none;
+}
+
+/* Gallery 縮放效果：非中心的卡片縮小 */
+.gallery-card {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  transform: scale(0.85);
+  opacity: 0.7;
+}
+
+/* 中心卡片放大還原（用 JS 動態加 class） */
+.gallery-card.is-center {
+  transform: scale(1);
+  opacity: 1;
 }
 
 /* 霧化邊緣：四周透明，中心清晰 */
