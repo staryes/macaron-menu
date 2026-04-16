@@ -445,7 +445,7 @@
           ref="galleryTrack"
           @scroll="updateCenter"
           class="flex gap-4 overflow-x-auto pb-4 snap-x snap-mandatory scroll-smooth"
-          style="scrollbar-width: none; -ms-overflow-style: none; padding-left: calc(50vw - 160px); padding-right: calc(50vw - 160px);"
+          style="scrollbar-width: none; -ms-overflow-style: none; padding-left: calc(50vw - 120px); padding-right: calc(50vw - 120px);"
         >
           <div
             v-for="(item, index) in galleryItems"
@@ -989,9 +989,9 @@ h1, h2, h3 {
 
 /* Gallery 縮放效果：非中心的卡片縮小 */
 .gallery-card {
-  transition: transform 0.3s ease, opacity 0.3s ease;
-  transform: scale(0.85);
-  opacity: 0.7;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+  transform: scale(0.94);
+  opacity: 0.88;
 }
 
 /* 中心卡片放大還原（用 JS 動態加 class） */
