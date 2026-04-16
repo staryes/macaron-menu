@@ -416,12 +416,12 @@
       </div>
 
       <!-- 捲動容器 + 箭頭 -->
-      <div class="relative">
+      <div class="relative px-4 md:px-8">
 
         <!-- 左箭頭 -->
         <button
           @click="scrollGallery(-1)"
-          class="absolute left-4 top-1/2 -translate-y-1/2 z-10 w-10 h-10 rounded-full bg-white border border-[#DFC6E0] shadow-sm flex items-center justify-center hover:bg-[#FFF8EB] transition-colors"
+          class="absolute left-0 top-1/2 -translate-y-1/2 z-10 w-10 h-10 rounded-full bg-white border border-[#DFC6E0] shadow-sm flex items-center justify-center hover:bg-[#FFF8EB] transition-colors"
           aria-label="Scroll left"
         >
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#6B441E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -432,7 +432,7 @@
         <!-- 右箭頭 -->
         <button
           @click="scrollGallery(1)"
-          class="absolute right-4 top-1/2 -translate-y-1/2 z-10 w-10 h-10 rounded-full bg-white border border-[#DFC6E0] shadow-sm flex items-center justify-center hover:bg-[#FFF8EB] transition-colors"
+          class="absolute right-0 top-1/2 -translate-y-1/2 z-10 w-10 h-10 rounded-full bg-white border border-[#DFC6E0] shadow-sm flex items-center justify-center hover:bg-[#FFF8EB] transition-colors"
           aria-label="Scroll right"
         >
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#6B441E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -444,13 +444,16 @@
         <div
           ref="galleryTrack"
           @scroll="onScroll"
-          class="flex gap-4 overflow-x-auto pb-4 snap-x snap-mandatory scroll-smooth"
-          style="scrollbar-width: none; -ms-overflow-style: none; padding-left: calc(50vw - 120px); padding-right: calc(50vw - 120px);"
+          class="flex overflow-x-auto scroll-smooth gap-3"
+          style="scrollbar-width: none; -ms-overflow-style: none;"
         >
+          <!-- 左側佔位：讓第一張可以置中 -->
+          <div ref="leftSpacer" class="flex-shrink-0" style="width: 0px;"></div>
+
           <div
             v-for="(item, index) in galleryItems"
             :key="index"
-            class="gallery-card flex-shrink-0 w-80 snap-start"
+            class="gallery-card flex-shrink-0 w-72 md:w-80"
             :style="getCardStyle(index)"
           >
             <div class="gallery-img-wrap w-full h-72 md:h-80 overflow-hidden">
@@ -464,8 +467,8 @@
             </div>
           </div>
 
-          <!-- 右側 padding -->
-          <div class="flex-shrink-0 w-10"></div>
+          <!-- 右側佔位：讓最後一張可以置中 -->
+          <div ref="rightSpacer" class="flex-shrink-0" style="width: 0px;"></div>
         </div>
       </div>
 
@@ -692,7 +695,7 @@
 </template>
 
 <script setup>
-import { onMounted, ref } from 'vue';
+import { onMounted, nextTick, ref } from 'vue';
 
 // 產品資料 - 這是我們的產品展示資訊
 // 資料結構：
@@ -754,9 +757,23 @@ const products = ref([
 ]);
 
 const galleryTrack = ref(null)
+const leftSpacer = ref(null)
+const rightSpacer = ref(null)
+const centerIndex = ref(4)
 
-const CARD_WIDTH = 320  // w-80
-const GAP = 8           // gap-2
+const CARD_WIDTH = 320   // w-80 在 md 以上
+const GAP = 12           // gap-3
+
+function getCardStyle(index) {
+  const dist = Math.abs(index - centerIndex.value)
+  const scale = Math.max(0.84, 1 - dist * 0.07)
+  const opacity = Math.max(0.75, 1 - dist * 0.10)
+  return {
+    transform: `scale(${scale})`,
+    opacity,
+    transition: 'transform 0.35s ease, opacity 0.35s ease'
+  }
+}
 
 function scrollGallery(direction) {
   if (!galleryTrack.value) return
@@ -764,6 +781,46 @@ function scrollGallery(direction) {
     left: direction * (CARD_WIDTH + GAP),
     behavior: 'smooth'
   })
+}
+
+function onScroll() {
+  const track = galleryTrack.value
+  if (!track) return
+  const trackCenter = track.scrollLeft + track.clientWidth / 2
+  const cards = Array.from(track.querySelectorAll('.gallery-card'))
+  let closest = 4
+  let minDist = Infinity
+  cards.forEach((card, i) => {
+    const cardCenter = card.offsetLeft + card.offsetWidth / 2
+    const dist = Math.abs(cardCenter - trackCenter)
+    if (dist < minDist) {
+      minDist = dist
+      closest = i
+    }
+  })
+  centerIndex.value = closest
+}
+
+function setupSpacersAndCenter() {
+  const track = galleryTrack.value
+  if (!track || !leftSpacer.value || !rightSpacer.value) return
+
+  const trackWidth = track.clientWidth
+  const halfTrack = trackWidth / 2
+  const halfCard = CARD_WIDTH / 2
+
+  // spacer 寬度 = 讓第一張和最後一張可以捲動到畫面正中間
+  const spacerWidth = halfTrack - halfCard
+  leftSpacer.value.style.width = `${spacerWidth}px`
+  rightSpacer.value.style.width = `${spacerWidth}px`
+
+  // 捲動到中心那張（index 4）
+  const centerCard = track.querySelectorAll('.gallery-card')[4]
+  if (centerCard) {
+    const targetScrollLeft = spacerWidth + 4 * (CARD_WIDTH + GAP) - halfTrack + halfCard
+    track.scrollLeft = targetScrollLeft
+    centerIndex.value = 4
+  }
 }
 
 const galleryItems = ref([
@@ -805,56 +862,10 @@ const galleryItems = ref([
   },
 ])
 
-const centerIndex = ref(4)
-
-// 根據與中心 index 的距離計算縮放和透明度
-function getCardStyle(index) {
-  const dist = Math.abs(index - centerIndex.value)
-  const scale = Math.max(0.84, 1 - dist * 0.07)
-  const opacity = Math.max(0.75, 1 - dist * 0.10)
-  return {
-    transform: `scale(${scale})`,
-    opacity,
-    transition: 'transform 0.35s ease, opacity 0.35s ease'
-  }
-}
-
-// 捲動時判斷最接近中心的卡片 index
-function onScroll() {
-  const track = galleryTrack.value
-  if (!track) return
-  const trackCenter = track.scrollLeft + track.clientWidth / 2
-  const cards = Array.from(track.querySelectorAll('.gallery-card'))
-  let closest = 4
-  let minDist = Infinity
-  cards.forEach((card, i) => {
-    const cardCenter = card.offsetLeft + card.offsetWidth / 2
-    const dist = Math.abs(cardCenter - trackCenter)
-    if (dist < minDist) {
-      minDist = dist
-      closest = i
-    }
-  })
-  centerIndex.value = closest
-}
-
-onMounted(() => {
-  const setCenter = () => {
-    const track = galleryTrack.value
-    if (!track) return
-    const cards = track.querySelectorAll('.gallery-card')
-    if (cards.length < 5) return
-    const centerCard = cards[4]
-    const trackRect = track.getBoundingClientRect()
-    const cardRect = centerCard.getBoundingClientRect()
-    const offset = cardRect.left - trackRect.left - (trackRect.width / 2) + (cardRect.width / 2)
-    track.scrollLeft += offset
-    centerIndex.value = 4  // 確保初始縮放以 index 4 為中心
-  }
-
-  setTimeout(setCenter, 100)
-  setTimeout(setCenter, 400)
-  setTimeout(setCenter, 800)
+onMounted(async () => {
+  await nextTick()
+  setTimeout(setupSpacersAndCenter, 150)
+  setTimeout(setupSpacersAndCenter, 500)
 })
 
 // FAQ 展開/收合狀態管理
