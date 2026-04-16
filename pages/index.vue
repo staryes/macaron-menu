@@ -4,7 +4,7 @@
     <nav class="sticky top-0 w-full bg-[#FFF8EB] shadow-sm z-50 border-b border-[#DFC6E0]/40">
 
       <!-- 主列：固定高度 64px，Logo 置左，漢堡置右 -->
-      <div class="relative flex items-center h-16 px-4 md:px-6">
+      <div class="relative flex items-center py-2 px-6 md:px-8">
 
         <!-- Logo -->
         <a href="#hero" class="flex-shrink-0">
@@ -12,7 +12,7 @@
             src="/logo.png"
             alt="Enki Atelier Logo"
             class="object-contain"
-            :style="{ height: logoHeight, width: 'auto' }"
+            :style="{ height: logoHeight, width: 'auto', maxHeight: '100%' }"
           >
         </a>
 
@@ -100,7 +100,8 @@
 
         <div class="flex items-center gap-3 justify-start md:justify-center md:px-6">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#6B441E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="flex-shrink-0">
-            <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/>
+            <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+            <path d="M6 12v5c3 3 9 3 12 0v-5"/>
           </svg>
           <div>
             <p class="text-sm font-semibold text-[#6B441E]">Expert-Designed</p>
@@ -110,7 +111,8 @@
 
         <div class="flex items-center gap-3 justify-start md:justify-center md:px-6">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#6B441E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="flex-shrink-0">
-            <path d="M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v18m0 0h10a2 2 0 0 0 2-2v-4M9 21H5a2 2 0 0 1-2-2v-4m0 0h18"/>
+            <path d="M9 3h6M9 3v8l-4 9h14l-4-9V3"/>
+            <path d="M6 18h.01M10 16h.01"/>
           </svg>
           <div>
             <p class="text-sm font-semibold text-[#6B441E]">Real Science, Real Fun</p>
@@ -343,13 +345,9 @@
             <div class="flex items-start gap-4">
               <div class="w-10 h-10 rounded-xl bg-[#FFF8EB] border border-[#6B441E]/15 flex items-center justify-center flex-shrink-0">
                 <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#6B441E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2z"/>
-                  <path d="M12 6v6l4 2"/>
-                  <circle cx="12" cy="12" r="2" fill="#6B441E"/>
-                  <path d="M16.24 7.76l-1.42 1.42"/>
-                  <path d="M7.76 7.76l1.42 1.42"/>
-                  <path d="M7.76 16.24l1.42-1.42"/>
-                  <path d="M16.24 16.24l-1.42-1.42"/>
+                  <path d="M4.5 16.5c-1.5 1.5-2 5-2 5s3.5-.5 5-2l8-8-3-3-8 8z"/>
+                  <path d="M12 15l-3-3 8-8c1-1 3.5-1.5 5-1.5s-1 4-1.5 5l-8.5 6.5z"/>
+                  <path d="M14.5 9.5l-5 5"/>
                 </svg>
               </div>
               <div class="flex-1">
@@ -387,10 +385,10 @@
             <div class="flex items-start gap-4">
               <div class="w-10 h-10 rounded-xl bg-[#FFF8EB] border border-[#6B441E]/15 flex items-center justify-center flex-shrink-0">
                 <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#6B441E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                  <circle cx="12" cy="12" r="3" fill="#6B441E" stroke="none"/>
-                  <ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(0 12 12)"/>
-                  <ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(60 12 12)"/>
-                  <ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(120 12 12)"/>
+                  <path d="M12 3v18"/>
+                  <path d="M3 9h18"/>
+                  <path d="M3 9l3 6a3 3 0 0 0 6 0l3-6"/>
+                  <path d="M9 9l3 6a3 3 0 0 0 6 0l3-6"/>
                 </svg>
               </div>
               <div class="flex-1">
