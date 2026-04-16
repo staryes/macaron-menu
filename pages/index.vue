@@ -4,7 +4,7 @@
     <nav class="sticky top-0 w-full bg-[#FFF8EB] shadow-sm z-50 border-b border-[#DFC6E0]/40">
 
       <!-- 主列：固定高度 64px，Logo 置左，漢堡置右 -->
-      <div class="relative flex items-center py-2 px-6 md:px-8">
+      <div class="max-w-[1450px] mx-auto w-full relative flex items-center py-2 px-6 md:px-12">
 
         <!-- Logo -->
         <a href="#hero" class="flex-shrink-0">
@@ -345,9 +345,11 @@
             <div class="flex items-start gap-4">
               <div class="w-10 h-10 rounded-xl bg-[#FFF8EB] border border-[#6B441E]/15 flex items-center justify-center flex-shrink-0">
                 <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#6B441E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M4.5 16.5c-1.5 1.5-2 5-2 5s3.5-.5 5-2l8-8-3-3-8 8z"/>
-                  <path d="M12 15l-3-3 8-8c1-1 3.5-1.5 5-1.5s-1 4-1.5 5l-8.5 6.5z"/>
-                  <path d="M14.5 9.5l-5 5"/>
+                  <path d="M12 2c-4 3-5 7-5 10h10c0-3-1-7-5-10z"/>
+                  <circle cx="12" cy="9" r="1.5" fill="#6B441E" stroke="none"/>
+                  <path d="M7 12l-3 5h4"/>
+                  <path d="M17 12l3 5h-4"/>
+                  <path d="M10 17a2 2 0 0 0 4 0"/>
                 </svg>
               </div>
               <div class="flex-1">
@@ -385,10 +387,11 @@
             <div class="flex items-start gap-4">
               <div class="w-10 h-10 rounded-xl bg-[#FFF8EB] border border-[#6B441E]/15 flex items-center justify-center flex-shrink-0">
                 <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#6B441E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M12 3v18"/>
-                  <path d="M3 9h18"/>
-                  <path d="M3 9l3 6a3 3 0 0 0 6 0l3-6"/>
-                  <path d="M9 9l3 6a3 3 0 0 0 6 0l3-6"/>
+                  <line x1="12" y1="3" x2="12" y2="21"/>
+                  <polyline points="4 7 12 3 20 7"/>
+                  <line x1="4" y1="21" x2="20" y2="21"/>
+                  <path d="M4 7l-2 5.5a4 4 0 0 0 8 0z"/>
+                  <path d="M16 7l-2 5.5a4 4 0 0 0 8 0z"/>
                 </svg>
               </div>
               <div class="flex-1">
