@@ -449,7 +449,8 @@
           <div
             v-for="(item, index) in galleryItems"
             :key="index"
-            class="gallery-card flex-shrink-0 w-72 md:w-80 snap-start"
+            class="gallery-card flex-shrink-0 w-80 snap-start"
+            :class="{ 'is-center': currentCenter === index }"
           >
             <div class="gallery-img-wrap w-full h-72 md:h-80 overflow-hidden">
               <img
