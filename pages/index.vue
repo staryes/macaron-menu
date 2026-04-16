@@ -12,7 +12,7 @@
             src="/logo.png"
             alt="Enki Atelier Logo"
             class="object-contain"
-            style="height:44px; width:auto;"
+            :style="{ height: logoHeight, width: 'auto' }"
           >
         </a>
 
@@ -734,12 +734,28 @@
 </template>
 
 <script setup>
-import { onMounted, nextTick, ref } from 'vue';
+import { onMounted, onUnmounted, nextTick, ref } from 'vue';
 
 const mobileMenuOpen = ref(false)
 function toggleMenu() {
   mobileMenuOpen.value = !mobileMenuOpen.value
 }
+
+// Logo 響應式尺寸
+const logoHeight = ref('44px')
+
+function updateLogoSize() {
+  logoHeight.value = window.innerWidth >= 768 ? '64px' : '44px'
+}
+
+onMounted(() => {
+  updateLogoSize()
+  window.addEventListener('resize', updateLogoSize)
+})
+
+onUnmounted(() => {
+  window.removeEventListener('resize', updateLogoSize)
+})
 
 // 產品資料 - 這是我們的產品展示資訊
 // 資料結構：
@@ -901,13 +917,13 @@ const galleryItems = ref([
     position: "center top",
   },
   {
-    src: "/Gallery/Built_by_kids_04.png",
-    alt: "Completed rocket and mobile from Enki Atelier kits",
+    src: "/Gallery/Built_by_kids_02.png",
+    alt: "Balancing bird mobile completed — Enki Atelier STEAM kit",
     position: "center center",
   },
   {
-    src: "/Gallery/Built_by_kids_02.png",
-    alt: "Balancing bird mobile completed — Enki Atelier STEAM kit",
+    src: "/Gallery/Built_by_kids_04.png",
+    alt: "Completed rocket and mobile from Enki Atelier kits",
     position: "center center",
   },
   {
