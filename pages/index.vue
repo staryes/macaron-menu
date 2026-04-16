@@ -769,13 +769,14 @@ onMounted(async () => {
   setTimeout(() => {
     if (!galleryTrack.value) return
     const centerIndex = 4
-    const card = galleryTrack.value.children[centerIndex]
-    if (!card) return
-    const trackWidth = galleryTrack.value.clientWidth
-    const cardLeft = card.offsetLeft
-    const cardWidth = card.offsetWidth
-    galleryTrack.value.scrollLeft = cardLeft - (trackWidth / 2) + (cardWidth / 2)
-  }, 300)
+    const cards = galleryTrack.value.querySelectorAll('.gallery-card')
+    if (!cards[centerIndex]) return
+    cards[centerIndex].scrollIntoView({
+      behavior: 'instant',
+      block: 'nearest',
+      inline: 'center'
+    })
+  }, 400)
 })
 
 const galleryItems = ref([
@@ -784,8 +785,8 @@ const galleryItems = ref([
     alt: "PhD engineer designing rocket trajectory in the lab",
   },
   {
-    src: "/Gallery/Built_by_kids_02.png",
-    alt: "Balancing bird mobile completed — Enki Atelier STEAM kit",
+    src: "/Gallery/Workshop_01.png",
+    alt: "Hands holding completed 3D pen rocket at workshop",
   },
   {
     src: "/Gallery/Workshop_02.png",
@@ -808,8 +809,8 @@ const galleryItems = ref([
     alt: "Completed rocket and mobile from Enki Atelier kits",
   },
   {
-    src: "/Gallery/Workshop_01.png",
-    alt: "Hands holding completed 3D pen rocket at workshop",
+    src: "/Gallery/Built_by_kids_02.png",
+    alt: "Balancing bird mobile completed — Enki Atelier STEAM kit",
   },
 ])
 
@@ -957,8 +958,8 @@ h1, h2, h3 {
 
 /* 霧化邊緣：四周透明，中心清晰 */
 .gallery-img-wrap {
-  -webkit-mask-image: radial-gradient(ellipse 88% 88% at center, black 55%, transparent 92%);
-  mask-image: radial-gradient(ellipse 88% 88% at center, black 55%, transparent 92%);
+  -webkit-mask-image: radial-gradient(ellipse 75% 95% at center, black 55%, transparent 92%);
+  mask-image: radial-gradient(ellipse 75% 95% at center, black 55%, transparent 92%);
 }
 
 /* 基礎暖化：所有圖片統一套用 */
