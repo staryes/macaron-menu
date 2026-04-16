@@ -460,10 +460,6 @@
                 loading="lazy"
               >
             </div>
-            <!-- 分類標籤：低調小字放在圖片下方 -->
-            <p class="text-xs text-[#B586AC] text-center mt-2 tracking-wide">
-              {{ item.label }}
-            </p>
           </div>
 
           <!-- 右側 padding -->
@@ -756,55 +752,60 @@ const products = ref([
 
 const galleryTrack = ref(null)
 
+const CARD_WIDTH = 320  // w-80
+const GAP = 8           // gap-2
+
 function scrollGallery(direction) {
   if (!galleryTrack.value) return
-  const cardWidth = 320 // w-80 = 320px
   galleryTrack.value.scrollBy({
-    left: direction * (cardWidth + 8), // 8px = gap-2
+    left: direction * (CARD_WIDTH + GAP),
     behavior: 'smooth'
   })
 }
 
+onMounted(() => {
+  // 頁面載入後自動捲動到第 5 張（index 4，中心主圖）置中
+  setTimeout(() => {
+    if (!galleryTrack.value) return
+    const centerIndex = 4
+    const trackWidth = galleryTrack.value.clientWidth
+    const scrollTo = centerIndex * (CARD_WIDTH + GAP) - (trackWidth / 2) + (CARD_WIDTH / 2)
+    galleryTrack.value.scrollLeft = scrollTo
+  }, 100)
+})
+
 const galleryItems = ref([
   {
-    src: "/Gallery/Built_by_kids_01.png",
-    alt: "3D pen rocket built by a kid — Enki Atelier STEAM kit",
-    label: "Built by kids",
-  },
-  {
-    src: "/Gallery/Workshop_02.png",
-    alt: "Child using 3D pen with safety goggles and curriculum guide",
-    label: "Workshop",
-  },
-  {
-    src: "/Gallery/Built_by_kids_05.png",
-    alt: "Testing a balancing mobile — Enki Atelier STEAM kit",
-    label: "Built by kids",
-  },
-  {
-    src: "/Gallery/Built_by_kids_04.png",
-    alt: "Completed rocket and mobile from Enki Atelier kits",
-    label: "Built by kids",
+    src: "/Gallery/In_the_lab_01.png",
+    alt: "PhD engineer designing rocket trajectory in the lab",
   },
   {
     src: "/Gallery/Workshop_04.png",
     alt: "Hands using 3D pen with finger caps and rocket template",
-    label: "Workshop",
+  },
+  {
+    src: "/Gallery/Workshop_02.png",
+    alt: "Child using 3D pen with safety goggles and curriculum guide",
+  },
+  {
+    src: "/Gallery/Built_by_kids_05.png",
+    alt: "Testing a balancing mobile — Enki Atelier STEAM kit",
+  },
+  {
+    src: "/Gallery/Built_by_kids_01.png",
+    alt: "3D pen rocket built by a kid — Enki Atelier STEAM kit",
+  },
+  {
+    src: "/Gallery/Built_by_kids_04.png",
+    alt: "Completed rocket and mobile from Enki Atelier kits",
   },
   {
     src: "/Gallery/Built_by_kids_02.png",
     alt: "Balancing bird mobile completed — Enki Atelier STEAM kit",
-    label: "Built by kids",
   },
   {
     src: "/Gallery/Workshop_01.png",
     alt: "Hands holding completed 3D pen rocket at workshop",
-    label: "Workshop",
-  },
-  {
-    src: "/Gallery/In_the_lab_01.png",
-    alt: "PhD engineer designing rocket trajectory in the lab",
-    label: "In the lab",
   },
 ])
 
@@ -952,8 +953,8 @@ h1, h2, h3 {
 
 /* 霧化邊緣：四周透明，中心清晰 */
 .gallery-img-wrap {
-  -webkit-mask-image: radial-gradient(ellipse 85% 85% at center, black 50%, transparent 100%);
-  mask-image: radial-gradient(ellipse 85% 85% at center, black 50%, transparent 100%);
+  -webkit-mask-image: radial-gradient(ellipse 80% 80% at center, black 30%, transparent 80%);
+  mask-image: radial-gradient(ellipse 80% 80% at center, black 30%, transparent 80%);
 }
 
 /* 基礎暖化：所有圖片統一套用 */
