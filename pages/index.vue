@@ -2,15 +2,22 @@
   <div class="bg-white text-[#1A1A1A]">
     <!-- Navigation Bar -->
     <nav class="sticky top-0 w-full bg-[#FFF8EB] shadow-sm z-50 border-b border-[#DFC6E0]/40">
-      <div class="max-w-[1450px] mx-auto px-6 py-3 flex items-center justify-between">
 
-        <!-- Logo：靠左 -->
-        <div class="flex items-center">
-          <img src="/logo.png" alt="Enki Atelier Logo" class="object-contain" style="height: 40px; width: 80px;">
-        </div>
+      <!-- 主列：固定高度 64px，Logo 置左，漢堡置右 -->
+      <div class="relative flex items-center h-16 px-4 md:px-6">
 
-        <!-- 桌機導覽連結：md 以上顯示 -->
-        <div class="hidden md:flex flex-wrap justify-center gap-6">
+        <!-- Logo -->
+        <a href="#hero" class="flex-shrink-0">
+          <img
+            src="/logo.png"
+            alt="Enki Atelier Logo"
+            class="object-contain"
+            style="height:44px; width:auto;"
+          >
+        </a>
+
+        <!-- 桌機連結：絕對置中 -->
+        <div class="hidden md:flex absolute left-1/2 -translate-x-1/2 gap-6">
           <a href="#hero"    class="nav-link">Home</a>
           <a href="#about"   class="nav-link">About</a>
           <a href="#themes"  class="nav-link">Products</a>
@@ -21,35 +28,37 @@
           <a href="#contact" class="nav-link">Contact Us</a>
         </div>
 
-        <!-- 漢堡按鈕：靠右，手機版顯示 -->
+        <!-- 漢堡按鈕：絕對靠右 -->
         <button
           @click="toggleMenu"
-          class="md:hidden flex flex-col justify-center gap-1.5 p-2 ml-auto"
+          class="md:hidden absolute right-4 top-1/2 -translate-y-1/2 p-2"
           aria-label="Toggle menu"
         >
-          <span class="block w-6 h-0.5 bg-[#6B441E] transition-all duration-300"
-                :class="{ 'rotate-45 translate-y-2': mobileMenuOpen }"></span>
-          <span class="block w-6 h-0.5 bg-[#6B441E] transition-all duration-300"
-                :class="{ 'opacity-0': mobileMenuOpen }"></span>
-          <span class="block w-6 h-0.5 bg-[#6B441E] transition-all duration-300"
-                :class="{ '-rotate-45 -translate-y-2': mobileMenuOpen }"></span>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#6B441E" stroke-width="2" stroke-linecap="round">
+            <line v-if="!mobileMenuOpen" x1="3" y1="6"  x2="21" y2="6"/>
+            <line v-if="!mobileMenuOpen" x1="3" y1="12" x2="21" y2="12"/>
+            <line v-if="!mobileMenuOpen" x1="3" y1="18" x2="21" y2="18"/>
+            <line v-if="mobileMenuOpen"  x1="4" y1="4"  x2="20" y2="20"/>
+            <line v-if="mobileMenuOpen"  x1="20" y1="4" x2="4"  y2="20"/>
+          </svg>
         </button>
       </div>
 
-      <!-- 手機版展開選單 -->
+      <!-- 手機展開選單 -->
       <div
         v-show="mobileMenuOpen"
-        class="md:hidden bg-[#FFF8EB] border-t border-[#DFC6E0]/40 px-6 py-4 flex flex-col gap-4"
+        class="md:hidden border-t border-[#DFC6E0]/40 bg-[#FFF8EB] px-6 py-4 flex flex-col gap-4"
       >
-        <a href="#hero"    class="nav-link text-base" @click="mobileMenuOpen = false">Home</a>
-        <a href="#about"   class="nav-link text-base" @click="mobileMenuOpen = false">About</a>
-        <a href="#themes"  class="nav-link text-base" @click="mobileMenuOpen = false">Products</a>
-        <a href="#gallery" class="nav-link text-base" @click="mobileMenuOpen = false">Gallery</a>
-        <a href="#cta"     class="nav-link text-base" @click="mobileMenuOpen = false">Buy Now</a>
-        <a href="#pens"    class="nav-link text-base" @click="mobileMenuOpen = false">Guide</a>
-        <a href="#faq"     class="nav-link text-base" @click="mobileMenuOpen = false">FAQ</a>
-        <a href="#contact" class="nav-link text-base" @click="mobileMenuOpen = false">Contact Us</a>
+        <a href="#hero"    class="nav-link text-base py-1" @click="mobileMenuOpen = false">Home</a>
+        <a href="#about"   class="nav-link text-base py-1" @click="mobileMenuOpen = false">About</a>
+        <a href="#themes"  class="nav-link text-base py-1" @click="mobileMenuOpen = false">Products</a>
+        <a href="#gallery" class="nav-link text-base py-1" @click="mobileMenuOpen = false">Gallery</a>
+        <a href="#cta"     class="nav-link text-base py-1" @click="mobileMenuOpen = false">Buy Now</a>
+        <a href="#pens"    class="nav-link text-base py-1" @click="mobileMenuOpen = false">Guide</a>
+        <a href="#faq"     class="nav-link text-base py-1" @click="mobileMenuOpen = false">FAQ</a>
+        <a href="#contact" class="nav-link text-base py-1" @click="mobileMenuOpen = false">Contact Us</a>
       </div>
+
     </nav>
     
     <!-- Mobile Side Navigation Menu -->
@@ -796,9 +805,6 @@ const leftSpacer = ref(null)
 const rightSpacer = ref(null)
 const centerIndex = ref(4)
 
-const CARD_WIDTH = 320   // w-80 在 md 以上
-const GAP = 12           // gap-3
-
 function getCardStyle(index) {
   const dist = Math.abs(index - centerIndex.value)
   const scale = Math.max(0.84, 1 - dist * 0.07)
@@ -810,56 +816,57 @@ function getCardStyle(index) {
   }
 }
 
+function getCardMeasure() {
+  const track = galleryTrack.value
+  if (!track) return { cardWidth: 256, gap: 12 }
+  const cards = track.querySelectorAll('.gallery-card')
+  if (cards.length < 2) return { cardWidth: 256, gap: 12 }
+  const c0 = cards[0].getBoundingClientRect()
+  const c1 = cards[1].getBoundingClientRect()
+  const cardWidth = c0.width
+  const gap = c1.left - c0.right
+  return { cardWidth, gap }
+}
+
+function getTargetScroll(index) {
+  const track = galleryTrack.value
+  if (!track) return 0
+  const { cardWidth, gap } = getCardMeasure()
+  const spacerWidth = parseFloat(leftSpacer.value?.style.width || '0')
+  return spacerWidth + index * (cardWidth + gap) - track.clientWidth / 2 + cardWidth / 2
+}
+
+function setupSpacersAndCenter() {
+  const track = galleryTrack.value
+  if (!track || track.clientWidth === 0) return false
+
+  const { cardWidth } = getCardMeasure()
+  const spacerWidth = track.clientWidth / 2 - cardWidth / 2
+
+  if (leftSpacer.value)  leftSpacer.value.style.width  = spacerWidth + 'px'
+  if (rightSpacer.value) rightSpacer.value.style.width = spacerWidth + 'px'
+
+  track.scrollLeft = getTargetScroll(4)
+  centerIndex.value = 4
+  return true
+}
+
 function scrollGallery(direction) {
   const track = galleryTrack.value
   if (!track) return
-
   const newIndex = Math.max(0, Math.min(galleryItems.value.length - 1, centerIndex.value + direction))
-  const spacerWidth = parseFloat(leftSpacer.value?.style.width || '0')
-  const targetScroll = spacerWidth + (newIndex * (CARD_WIDTH + GAP)) - (track.clientWidth / 2) + (CARD_WIDTH / 2)
-
-  track.scrollTo({ left: targetScroll, behavior: 'smooth' })
+  track.scrollTo({ left: getTargetScroll(newIndex), behavior: 'smooth' })
   centerIndex.value = newIndex
 }
 
 function onScroll() {
   const track = galleryTrack.value
   if (!track) return
+  const { cardWidth, gap } = getCardMeasure()
+  const spacerWidth = parseFloat(leftSpacer.value?.style.width || '0')
   const trackCenter = track.scrollLeft + track.clientWidth / 2
-  const cards = Array.from(track.querySelectorAll('.gallery-card'))
-  let closest = 4
-  let minDist = Infinity
-  cards.forEach((card, i) => {
-    const cardCenter = card.offsetLeft + card.offsetWidth / 2
-    const dist = Math.abs(cardCenter - trackCenter)
-    if (dist < minDist) {
-      minDist = dist
-      closest = i
-    }
-  })
-  centerIndex.value = closest
-}
-
-function setupSpacersAndCenter() {
-  const track = galleryTrack.value
-  if (!track || !leftSpacer.value || !rightSpacer.value) return
-
-  const trackWidth = track.clientWidth
-  const halfTrack = trackWidth / 2
-  const halfCard = CARD_WIDTH / 2
-
-  // spacer 寬度 = 讓第一張和最後一張可以捲動到畫面正中間
-  const spacerWidth = halfTrack - halfCard
-  leftSpacer.value.style.width = `${spacerWidth}px`
-  rightSpacer.value.style.width = `${spacerWidth}px`
-
-  // 捲動到中心那張（index 4）
-  const centerCard = track.querySelectorAll('.gallery-card')[4]
-  if (centerCard) {
-    const targetScrollLeft = spacerWidth + 4 * (CARD_WIDTH + GAP) - halfTrack + halfCard
-    track.scrollLeft = targetScrollLeft
-    centerIndex.value = 4
-  }
+  const closest = Math.round((trackCenter - spacerWidth - cardWidth / 2) / (cardWidth + gap))
+  centerIndex.value = Math.max(0, Math.min(galleryItems.value.length - 1, closest))
 }
 
 const galleryItems = ref([
@@ -912,33 +919,12 @@ const galleryItems = ref([
 
 onMounted(async () => {
   await nextTick()
-
-  const doCenter = () => {
-    const track = galleryTrack.value
-    if (!track) return false
-
-    // 設定 spacer 寬度
-    const trackWidth = track.clientWidth
-    if (trackWidth === 0) return false
-
-    const halfTrack = trackWidth / 2
-    const halfCard = CARD_WIDTH / 2
-    const spacerWidth = halfTrack - halfCard
-
-    if (leftSpacer.value) leftSpacer.value.style.width = spacerWidth + 'px'
-    if (rightSpacer.value) rightSpacer.value.style.width = spacerWidth + 'px'
-
-    // 直接設定 scrollLeft 讓 index 4 置中
-    const targetScroll = spacerWidth + (4 * (CARD_WIDTH + GAP)) - halfTrack + halfCard
-    track.scrollLeft = targetScroll
-    centerIndex.value = 4
-    return true
+  const tryCenter = (attempt = 0) => {
+    if (attempt > 5) return
+    const ok = setupSpacersAndCenter()
+    if (!ok) setTimeout(() => tryCenter(attempt + 1), 200)
   }
-
-  // 嘗試多次確保 DOM 已完全渲染
-  if (!doCenter()) {
-    setTimeout(() => { if (!doCenter()) { setTimeout(doCenter, 500) } }, 200)
-  }
+  setTimeout(() => tryCenter(), 100)
 })
 
 // FAQ 展開/收合狀態管理
