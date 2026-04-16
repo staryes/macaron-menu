@@ -729,7 +729,7 @@ const products = ref([
     image: "/balance.png",
     ageTag: "Ages 8–12",
     skills: ["Center of Mass", "Equilibrium", "3D Pen Engineering", "Spatial Reasoning"],
-    amazonUrl: "https://amazon.com/dp/B0GV9CVBJ5",
+    amazonUrl: "https://www.amazon.com/dp/B0GV9CVBJ5?maas=maas_adg_BE3AA8DDFDE8D152411F56AD6DE1278B_afap_abs&ref_=aa_maas&tag=maas",
     includes: [
       "Curriculum guide, 60+ pages (pre-punched for binders)",
       "Template booklet (lay-flat binding for easy tracing)",
