@@ -443,7 +443,7 @@
         <!-- 捲動軌道 -->
         <div
           ref="galleryTrack"
-          @scroll="updateCenter"
+          @scroll="updateScales"
           class="flex gap-4 overflow-x-auto pb-4 snap-x snap-mandatory scroll-smooth"
           style="scrollbar-width: none; -ms-overflow-style: none; padding-left: calc(50vw - 120px); padding-right: calc(50vw - 120px);"
         >
@@ -451,7 +451,11 @@
             v-for="(item, index) in galleryItems"
             :key="index"
             class="gallery-card flex-shrink-0 w-80 snap-start"
-            :class="{ 'is-center': currentCenter === index }"
+            :style="{
+              transform: `scale(${cardScales[index]?.scale ?? 0.9})`,
+              opacity: cardScales[index]?.opacity ?? 0.85,
+              transition: 'transform 0.3s ease, opacity 0.3s ease'
+            }"
           >
             <div class="gallery-img-wrap w-full h-72 md:h-80 overflow-hidden">
               <img
@@ -766,24 +770,27 @@ function scrollGallery(direction) {
   })
 }
 
-const currentCenter = ref(4)
+const cardScales = ref(galleryItems.value.map((_, i) => {
+  const dist = Math.abs(i - 4)
+  return {
+    scale: Math.max(0.82, 1 - dist * 0.06),
+    opacity: Math.max(0.75, 1 - dist * 0.08)
+  }
+}))
 
-function updateCenter() {
+function updateScales() {
   const track = galleryTrack.value
   if (!track) return
+  const cards = Array.from(track.querySelectorAll('.gallery-card'))
   const trackCenter = track.scrollLeft + track.clientWidth / 2
-  const cards = track.querySelectorAll('.gallery-card')
-  let closest = 0
-  let minDist = Infinity
-  cards.forEach((card, i) => {
+
+  cardScales.value = cards.map((card) => {
     const cardCenter = card.offsetLeft + card.offsetWidth / 2
-    const dist = Math.abs(cardCenter - trackCenter)
-    if (dist < minDist) {
-      minDist = dist
-      closest = i
-    }
+    const dist = Math.abs(cardCenter - trackCenter) / (card.offsetWidth + 4)
+    const scale = Math.max(0.82, 1 - dist * 0.10)
+    const opacity = Math.max(0.72, 1 - dist * 0.12)
+    return { scale, opacity }
   })
-  currentCenter.value = closest
 }
 
 onMounted(() => {
@@ -802,6 +809,7 @@ onMounted(() => {
     // 計算讓第 5 張卡片置中所需的 scrollLeft
     const offset = cardRect.left - trackRect.left - (trackRect.width / 2) + (cardRect.width / 2)
     track.scrollLeft += offset
+    updateScales()
   }
 
   // 用三個不同時間點嘗試，確保至少一次成功
@@ -842,6 +850,10 @@ const galleryItems = ref([
   {
     src: "/Gallery/Built_by_kids_02.png",
     alt: "Balancing bird mobile completed — Enki Atelier STEAM kit",
+  },
+  {
+    src: "/Gallery/Backup_01.png",
+    alt: "Two pairs of hands holding completed 3D pen creations",
   },
 ])
 
@@ -985,19 +997,6 @@ h1, h2, h3 {
 /* 隱藏捲軸（Chrome/Safari） */
 #gallery div::-webkit-scrollbar {
   display: none;
-}
-
-/* Gallery 縮放效果：非中心的卡片縮小 */
-.gallery-card {
-  transition: transform 0.4s ease, opacity 0.4s ease;
-  transform: scale(0.94);
-  opacity: 0.88;
-}
-
-/* 中心卡片放大還原（用 JS 動態加 class） */
-.gallery-card.is-center {
-  transform: scale(1);
-  opacity: 1;
 }
 
 /* 霧化邊緣：四周透明，中心清晰 */
