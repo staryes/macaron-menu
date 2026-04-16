@@ -443,7 +443,7 @@
         <!-- 捲動軌道 -->
         <div
           ref="galleryTrack"
-          @scroll="updateScales"
+          @scroll="onScroll"
           class="flex gap-4 overflow-x-auto pb-4 snap-x snap-mandatory scroll-smooth"
           style="scrollbar-width: none; -ms-overflow-style: none; padding-left: calc(50vw - 120px); padding-right: calc(50vw - 120px);"
         >
@@ -451,11 +451,7 @@
             v-for="(item, index) in galleryItems"
             :key="index"
             class="gallery-card flex-shrink-0 w-80 snap-start"
-            :style="{
-              transform: `scale(${cardScales[index]?.scale ?? 0.9})`,
-              opacity: cardScales[index]?.opacity ?? 0.85,
-              transition: 'transform 0.3s ease, opacity 0.3s ease'
-            }"
+            :style="getCardStyle(index)"
           >
             <div class="gallery-img-wrap w-full h-72 md:h-80 overflow-hidden">
               <img
@@ -809,49 +805,53 @@ const galleryItems = ref([
   },
 ])
 
-const cardScales = ref(galleryItems.value.map((_, i) => {
-  const dist = Math.abs(i - 4)
-  return {
-    scale: Math.max(0.82, 1 - dist * 0.06),
-    opacity: Math.max(0.75, 1 - dist * 0.08)
-  }
-}))
+const centerIndex = ref(4)
 
-function updateScales() {
+// 根據與中心 index 的距離計算縮放和透明度
+function getCardStyle(index) {
+  const dist = Math.abs(index - centerIndex.value)
+  const scale = Math.max(0.84, 1 - dist * 0.07)
+  const opacity = Math.max(0.75, 1 - dist * 0.10)
+  return {
+    transform: `scale(${scale})`,
+    opacity,
+    transition: 'transform 0.35s ease, opacity 0.35s ease'
+  }
+}
+
+// 捲動時判斷最接近中心的卡片 index
+function onScroll() {
   const track = galleryTrack.value
   if (!track) return
-  const cards = Array.from(track.querySelectorAll('.gallery-card'))
   const trackCenter = track.scrollLeft + track.clientWidth / 2
-
-  cardScales.value = cards.map((card) => {
+  const cards = Array.from(track.querySelectorAll('.gallery-card'))
+  let closest = 4
+  let minDist = Infinity
+  cards.forEach((card, i) => {
     const cardCenter = card.offsetLeft + card.offsetWidth / 2
-    const dist = Math.abs(cardCenter - trackCenter) / (card.offsetWidth + 4)
-    const scale = Math.max(0.82, 1 - dist * 0.10)
-    const opacity = Math.max(0.72, 1 - dist * 0.12)
-    return { scale, opacity }
+    const dist = Math.abs(cardCenter - trackCenter)
+    if (dist < minDist) {
+      minDist = dist
+      closest = i
+    }
   })
+  centerIndex.value = closest
 }
 
 onMounted(() => {
-  // 等待 DOM 完全渲染後再設定捲動位置
   const setCenter = () => {
     const track = galleryTrack.value
     if (!track) return
-
     const cards = track.querySelectorAll('.gallery-card')
     if (cards.length < 5) return
-
-    const centerCard = cards[4]  // Built_by_kids_01，index 4
+    const centerCard = cards[4]
     const trackRect = track.getBoundingClientRect()
     const cardRect = centerCard.getBoundingClientRect()
-
-    // 計算讓第 5 張卡片置中所需的 scrollLeft
     const offset = cardRect.left - trackRect.left - (trackRect.width / 2) + (cardRect.width / 2)
     track.scrollLeft += offset
-    updateScales()
+    centerIndex.value = 4  // 確保初始縮放以 index 4 為中心
   }
 
-  // 用三個不同時間點嘗試，確保至少一次成功
   setTimeout(setCenter, 100)
   setTimeout(setCenter, 400)
   setTimeout(setCenter, 800)
