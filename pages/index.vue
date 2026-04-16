@@ -2,14 +2,14 @@
   <div class="bg-white text-[#1A1A1A]">
     <!-- Navigation Bar -->
     <nav class="sticky top-0 w-full bg-[#FFF8EB] shadow-sm z-50 border-b border-[#DFC6E0]/40">
-      <div class="max-w-[1450px] mx-auto px-6 py-3 flex justify-between items-center">
+      <div class="max-w-[1450px] mx-auto px-6 py-3 flex items-center justify-between">
 
-        <!-- Logo -->
+        <!-- Logo：靠左 -->
         <div class="flex items-center">
           <img src="/logo.png" alt="Enki Atelier Logo" class="h-16 w-32 object-contain">
         </div>
 
-        <!-- 桌機導覽連結 -->
+        <!-- 桌機導覽連結：md 以上顯示 -->
         <div class="hidden md:flex flex-wrap justify-center gap-6">
           <a href="#hero"    class="nav-link">Home</a>
           <a href="#about"   class="nav-link">About</a>
@@ -21,15 +21,18 @@
           <a href="#contact" class="nav-link">Contact Us</a>
         </div>
 
-        <!-- 手機版漢堡按鈕 -->
+        <!-- 漢堡按鈕：靠右，手機版顯示 -->
         <button
           @click="toggleMenu"
-          class="md:hidden flex flex-col gap-1.5 p-2"
+          class="md:hidden flex flex-col justify-center gap-1.5 p-2 ml-auto"
           aria-label="Toggle menu"
         >
-          <span class="block w-6 h-0.5 bg-[#6B441E] transition-all" :class="{ 'rotate-45 translate-y-2': mobileMenuOpen }"></span>
-          <span class="block w-6 h-0.5 bg-[#6B441E] transition-all" :class="{ 'opacity-0': mobileMenuOpen }"></span>
-          <span class="block w-6 h-0.5 bg-[#6B441E] transition-all" :class="{ '-rotate-45 -translate-y-2': mobileMenuOpen }"></span>
+          <span class="block w-6 h-0.5 bg-[#6B441E] transition-all duration-300"
+                :class="{ 'rotate-45 translate-y-2': mobileMenuOpen }"></span>
+          <span class="block w-6 h-0.5 bg-[#6B441E] transition-all duration-300"
+                :class="{ 'opacity-0': mobileMenuOpen }"></span>
+          <span class="block w-6 h-0.5 bg-[#6B441E] transition-all duration-300"
+                :class="{ '-rotate-45 -translate-y-2': mobileMenuOpen }"></span>
         </button>
       </div>
 
@@ -38,14 +41,14 @@
         v-show="mobileMenuOpen"
         class="md:hidden bg-[#FFF8EB] border-t border-[#DFC6E0]/40 px-6 py-4 flex flex-col gap-4"
       >
-        <a href="#hero"    class="nav-link" @click="mobileMenuOpen = false">Home</a>
-        <a href="#about"   class="nav-link" @click="mobileMenuOpen = false">About</a>
-        <a href="#themes"  class="nav-link" @click="mobileMenuOpen = false">Products</a>
-        <a href="#gallery" class="nav-link" @click="mobileMenuOpen = false">Gallery</a>
-        <a href="#cta"     class="nav-link" @click="mobileMenuOpen = false">Buy Now</a>
-        <a href="#pens"    class="nav-link" @click="mobileMenuOpen = false">Guide</a>
-        <a href="#faq"     class="nav-link" @click="mobileMenuOpen = false">FAQ</a>
-        <a href="#contact" class="nav-link" @click="mobileMenuOpen = false">Contact Us</a>
+        <a href="#hero"    class="nav-link text-base" @click="mobileMenuOpen = false">Home</a>
+        <a href="#about"   class="nav-link text-base" @click="mobileMenuOpen = false">About</a>
+        <a href="#themes"  class="nav-link text-base" @click="mobileMenuOpen = false">Products</a>
+        <a href="#gallery" class="nav-link text-base" @click="mobileMenuOpen = false">Gallery</a>
+        <a href="#cta"     class="nav-link text-base" @click="mobileMenuOpen = false">Buy Now</a>
+        <a href="#pens"    class="nav-link text-base" @click="mobileMenuOpen = false">Guide</a>
+        <a href="#faq"     class="nav-link text-base" @click="mobileMenuOpen = false">FAQ</a>
+        <a href="#contact" class="nav-link text-base" @click="mobileMenuOpen = false">Contact Us</a>
       </div>
     </nav>
     
@@ -84,32 +87,30 @@
 
     <!-- Trust Bar -->
     <div class="bg-[#FFF8EB] border-b border-[#DFC6E0]/30">
-      <div class="max-w-4xl mx-auto px-6 py-6 grid grid-cols-3 divide-x divide-[#DFC6E0]/30">
-        <!-- Expert-Designed -->
-        <div class="flex items-center gap-3 justify-center px-6">
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#6B441E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="flex-shrink-0">
+      <div class="max-w-4xl mx-auto px-6 py-5 grid grid-cols-1 md:grid-cols-3 md:divide-x divide-[#DFC6E0]/30 gap-4 md:gap-0">
+
+        <div class="flex items-center gap-3 justify-start md:justify-center md:px-6">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#6B441E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="flex-shrink-0">
             <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/>
           </svg>
           <div>
             <p class="text-sm font-semibold text-[#6B441E]">Expert-Designed</p>
-            <p class="text-xs text-[#3D3D3D]">PhD engineers & art educator</p>
+            <p class="text-xs text-[#3D3D3D] hidden md:block">PhD engineers & art educator</p>
           </div>
         </div>
 
-        <!-- Real Science, Real Fun -->
-        <div class="flex items-center gap-3 justify-center px-6">
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#6B441E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="flex-shrink-0">
+        <div class="flex items-center gap-3 justify-start md:justify-center md:px-6">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#6B441E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="flex-shrink-0">
             <path d="M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v18m0 0h10a2 2 0 0 0 2-2v-4M9 21H5a2 2 0 0 1-2-2v-4m0 0h18"/>
           </svg>
           <div>
             <p class="text-sm font-semibold text-[#6B441E]">Real Science, Real Fun</p>
-            <p class="text-xs text-[#3D3D3D]">STEAM concepts kids actually enjoy</p>
+            <p class="text-xs text-[#3D3D3D] hidden md:block">STEAM concepts kids actually enjoy</p>
           </div>
         </div>
 
-        <!-- Hands-on & Screen-free -->
-        <div class="flex items-center gap-3 justify-center px-6">
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#6B441E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="flex-shrink-0">
+        <div class="flex items-center gap-3 justify-start md:justify-center md:px-6">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#6B441E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="flex-shrink-0">
             <path d="M18 11V6a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v0"/>
             <path d="M14 10V4a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v2"/>
             <path d="M10 10.5V6a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v8"/>
@@ -117,9 +118,10 @@
           </svg>
           <div>
             <p class="text-sm font-semibold text-[#6B441E]">Hands-on & Screen-free</p>
-            <p class="text-xs text-[#3D3D3D]">Active building, not passive viewing</p>
+            <p class="text-xs text-[#3D3D3D] hidden md:block">Active building, not passive viewing</p>
           </div>
         </div>
+
       </div>
     </div>
 
@@ -488,6 +490,7 @@
                 :src="item.src"
                 :alt="item.alt"
                 class="gallery-img w-full h-full object-cover"
+                :style="{ objectPosition: item.position }"
                 :class="`gallery-filter-${index}`"
                 loading="lazy"
               >
@@ -859,38 +862,47 @@ const galleryItems = ref([
   {
     src: "/Gallery/In_the_lab_01.png",
     alt: "PhD engineer designing rocket trajectory in the lab",
+    position: "center center",
   },
   {
     src: "/Gallery/Workshop_01.png",
     alt: "Hands holding completed 3D pen rocket at workshop",
+    position: "center center",
   },
   {
     src: "/Gallery/Workshop_02.png",
     alt: "Child using 3D pen with safety goggles and curriculum guide",
+    position: "center top",
   },
   {
     src: "/Gallery/Built_by_kids_05.png",
     alt: "Testing a balancing mobile — Enki Atelier STEAM kit",
+    position: "center center",
   },
   {
     src: "/Gallery/Built_by_kids_01.png",
     alt: "3D pen rocket built by a kid — Enki Atelier STEAM kit",
+    position: "center center",
   },
   {
     src: "/Gallery/Workshop_04.png",
     alt: "Hands using 3D pen with finger caps and rocket template",
+    position: "center top",
   },
   {
     src: "/Gallery/Built_by_kids_04.png",
     alt: "Completed rocket and mobile from Enki Atelier kits",
+    position: "center center",
   },
   {
     src: "/Gallery/Built_by_kids_02.png",
     alt: "Balancing bird mobile completed — Enki Atelier STEAM kit",
+    position: "center center",
   },
   {
     src: "/Gallery/Backup_01.png",
     alt: "Two pairs of hands holding completed 3D pen creations",
+    position: "center center",
   },
 ])
 
