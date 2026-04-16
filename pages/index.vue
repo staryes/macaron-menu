@@ -6,7 +6,7 @@
 
         <!-- Logo：靠左 -->
         <div class="flex items-center">
-          <img src="/logo.png" alt="Enki Atelier Logo" class="h-16 w-32 object-contain">
+          <img src="/logo.png" alt="Enki Atelier Logo" class="h-10 w-20 md:h-16 md:w-32 object-contain">
         </div>
 
         <!-- 桌機導覽連結：md 以上顯示 -->
@@ -482,14 +482,14 @@
           <div
             v-for="(item, index) in galleryItems"
             :key="index"
-            class="gallery-card flex-shrink-0 w-60 md:w-80"
+            class="gallery-card flex-shrink-0 w-64 md:w-80"
             :style="getCardStyle(index)"
           >
-            <div class="gallery-img-wrap w-full h-56 md:h-80 overflow-hidden">
+            <div class="gallery-img-wrap w-full aspect-square md:aspect-auto md:h-80 overflow-hidden">
               <img
                 :src="item.src"
                 :alt="item.alt"
-                class="gallery-img w-full h-full object-cover"
+                class="gallery-img w-full h-full object-contain md:object-cover bg-[#F5F0EB]"
                 :style="{ objectPosition: item.position }"
                 :class="`gallery-filter-${index}`"
                 loading="lazy"
