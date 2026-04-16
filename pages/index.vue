@@ -770,6 +770,45 @@ function scrollGallery(direction) {
   })
 }
 
+const galleryItems = ref([
+  {
+    src: "/Gallery/In_the_lab_01.png",
+    alt: "PhD engineer designing rocket trajectory in the lab",
+  },
+  {
+    src: "/Gallery/Workshop_01.png",
+    alt: "Hands holding completed 3D pen rocket at workshop",
+  },
+  {
+    src: "/Gallery/Workshop_02.png",
+    alt: "Child using 3D pen with safety goggles and curriculum guide",
+  },
+  {
+    src: "/Gallery/Built_by_kids_05.png",
+    alt: "Testing a balancing mobile — Enki Atelier STEAM kit",
+  },
+  {
+    src: "/Gallery/Built_by_kids_01.png",
+    alt: "3D pen rocket built by a kid — Enki Atelier STEAM kit",
+  },
+  {
+    src: "/Gallery/Workshop_04.png",
+    alt: "Hands using 3D pen with finger caps and rocket template",
+  },
+  {
+    src: "/Gallery/Built_by_kids_04.png",
+    alt: "Completed rocket and mobile from Enki Atelier kits",
+  },
+  {
+    src: "/Gallery/Built_by_kids_02.png",
+    alt: "Balancing bird mobile completed — Enki Atelier STEAM kit",
+  },
+  {
+    src: "/Gallery/Backup_01.png",
+    alt: "Two pairs of hands holding completed 3D pen creations",
+  },
+])
+
 const cardScales = ref(galleryItems.value.map((_, i) => {
   const dist = Math.abs(i - 4)
   return {
@@ -817,45 +856,6 @@ onMounted(() => {
   setTimeout(setCenter, 400)
   setTimeout(setCenter, 800)
 })
-
-const galleryItems = ref([
-  {
-    src: "/Gallery/In_the_lab_01.png",
-    alt: "PhD engineer designing rocket trajectory in the lab",
-  },
-  {
-    src: "/Gallery/Workshop_01.png",
-    alt: "Hands holding completed 3D pen rocket at workshop",
-  },
-  {
-    src: "/Gallery/Workshop_02.png",
-    alt: "Child using 3D pen with safety goggles and curriculum guide",
-  },
-  {
-    src: "/Gallery/Built_by_kids_05.png",
-    alt: "Testing a balancing mobile — Enki Atelier STEAM kit",
-  },
-  {
-    src: "/Gallery/Built_by_kids_01.png",
-    alt: "3D pen rocket built by a kid — Enki Atelier STEAM kit",
-  },
-  {
-    src: "/Gallery/Workshop_04.png",
-    alt: "Hands using 3D pen with finger caps and rocket template",
-  },
-  {
-    src: "/Gallery/Built_by_kids_04.png",
-    alt: "Completed rocket and mobile from Enki Atelier kits",
-  },
-  {
-    src: "/Gallery/Built_by_kids_02.png",
-    alt: "Balancing bird mobile completed — Enki Atelier STEAM kit",
-  },
-  {
-    src: "/Gallery/Backup_01.png",
-    alt: "Two pairs of hands holding completed 3D pen creations",
-  },
-])
 
 // FAQ 展開/收合狀態管理
 const openFaq = ref(0) // 預設第一題展開
