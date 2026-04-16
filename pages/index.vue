@@ -1,25 +1,52 @@
 <template>
   <div class="bg-white text-[#1A1A1A]">
     <!-- Navigation Bar -->
-    <nav class="sticky top-0 w-full bg-[#FFF8EB] shadow-md z-50">
-        <div class="max-w-[1450px] mx-auto px-6 py-3 flex flex-col md:flex-row justify-between items-center">
-            <!-- Logo and Brand Name -->
-            <div class="flex items-center space-x-3">
-                <img src="/logo.png" alt="Enki Atelier Logo" class="h-16 w-32 object-contain">
-            </div>
-            
-            <!-- Navigation Links (在小螢幕上顯示在 logo 下方，大螢幕上顯示在右側) -->
-            <div class="flex flex-wrap justify-center gap-2 md:gap-6 mt-3 md:mt-0">
-                <a href="#hero" class="hover:text-[#E0A939] text-sm md:text-base">Home</a>
-                <a href="#about" class="hover:text-[#E0A939] text-sm md:text-base">About</a>
-                <a href="#themes" class="hover:text-[#E0A939] text-sm md:text-base">Products</a>
-                <a href="#gallery" class="hover:text-[#E0A939] text-sm md:text-base">Gallery</a>
-                <a href="#cta" class="hover:text-[#E0A939] text-sm md:text-base">Buy Now</a>
-                <a href="#pens" class="hover:text-[#E0A939] text-sm md:text-base">Guide</a>
-                <a href="#faq" class="hover:text-[#E0A939] text-sm md:text-base">FAQ</a>
-                <a href="#contact" class="hover:text-[#E0A939] text-sm md:text-base">Contact Us</a>
-            </div>
+    <nav class="sticky top-0 w-full bg-[#FFF8EB] shadow-sm z-50 border-b border-[#DFC6E0]/40">
+      <div class="max-w-[1450px] mx-auto px-6 py-3 flex justify-between items-center">
+
+        <!-- Logo -->
+        <div class="flex items-center">
+          <img src="/logo.png" alt="Enki Atelier Logo" class="h-16 w-32 object-contain">
         </div>
+
+        <!-- 桌機導覽連結 -->
+        <div class="hidden md:flex flex-wrap justify-center gap-6">
+          <a href="#hero"    class="nav-link">Home</a>
+          <a href="#about"   class="nav-link">About</a>
+          <a href="#themes"  class="nav-link">Products</a>
+          <a href="#gallery" class="nav-link">Gallery</a>
+          <a href="#cta"     class="nav-link">Buy Now</a>
+          <a href="#pens"    class="nav-link">Guide</a>
+          <a href="#faq"     class="nav-link">FAQ</a>
+          <a href="#contact" class="nav-link">Contact Us</a>
+        </div>
+
+        <!-- 手機版漢堡按鈕 -->
+        <button
+          @click="toggleMenu"
+          class="md:hidden flex flex-col gap-1.5 p-2"
+          aria-label="Toggle menu"
+        >
+          <span class="block w-6 h-0.5 bg-[#6B441E] transition-all" :class="{ 'rotate-45 translate-y-2': mobileMenuOpen }"></span>
+          <span class="block w-6 h-0.5 bg-[#6B441E] transition-all" :class="{ 'opacity-0': mobileMenuOpen }"></span>
+          <span class="block w-6 h-0.5 bg-[#6B441E] transition-all" :class="{ '-rotate-45 -translate-y-2': mobileMenuOpen }"></span>
+        </button>
+      </div>
+
+      <!-- 手機版展開選單 -->
+      <div
+        v-show="mobileMenuOpen"
+        class="md:hidden bg-[#FFF8EB] border-t border-[#DFC6E0]/40 px-6 py-4 flex flex-col gap-4"
+      >
+        <a href="#hero"    class="nav-link" @click="mobileMenuOpen = false">Home</a>
+        <a href="#about"   class="nav-link" @click="mobileMenuOpen = false">About</a>
+        <a href="#themes"  class="nav-link" @click="mobileMenuOpen = false">Products</a>
+        <a href="#gallery" class="nav-link" @click="mobileMenuOpen = false">Gallery</a>
+        <a href="#cta"     class="nav-link" @click="mobileMenuOpen = false">Buy Now</a>
+        <a href="#pens"    class="nav-link" @click="mobileMenuOpen = false">Guide</a>
+        <a href="#faq"     class="nav-link" @click="mobileMenuOpen = false">FAQ</a>
+        <a href="#contact" class="nav-link" @click="mobileMenuOpen = false">Contact Us</a>
+      </div>
     </nav>
     
     <!-- Mobile Side Navigation Menu -->
@@ -28,7 +55,7 @@
     <!-- Hero Section -->
     <section id="hero" class="relative h-screen flex items-center">
       <img src="/hero-image.jpg" alt="Enki Atelier Brand Story"
-           class="absolute inset-0 w-full h-full object-cover">
+           class="absolute inset-0 w-full h-full object-cover object-[center_20%] md:object-center">
       <div class="absolute inset-0 bg-gradient-to-r from-[#6B441E]/95 via-[#6B441E]/70 to-transparent"></div>
       <div class="relative z-10 w-full md:w-1/2 lg:w-2/5 space-y-5 px-10 md:px-20">
         <p class="text-[#DFC6E0] text-xs font-medium tracking-[2.5px] uppercase">
@@ -453,10 +480,10 @@
           <div
             v-for="(item, index) in galleryItems"
             :key="index"
-            class="gallery-card flex-shrink-0 w-72 md:w-80"
+            class="gallery-card flex-shrink-0 w-60 md:w-80"
             :style="getCardStyle(index)"
           >
-            <div class="gallery-img-wrap w-full h-72 md:h-80 overflow-hidden">
+            <div class="gallery-img-wrap w-full h-56 md:h-80 overflow-hidden">
               <img
                 :src="item.src"
                 :alt="item.alt"
@@ -697,6 +724,11 @@
 <script setup>
 import { onMounted, nextTick, ref } from 'vue';
 
+const mobileMenuOpen = ref(false)
+function toggleMenu() {
+  mobileMenuOpen.value = !mobileMenuOpen.value
+}
+
 // 產品資料 - 這是我們的產品展示資訊
 // 資料結構：
 // - mainTitle: 產品主標題（純文字）
@@ -890,6 +922,15 @@ onMounted(() => {
 </script>
 
 <style>
+.nav-link {
+  font-size: 0.875rem;
+  color: #3D3D3D;
+  transition: color 0.2s;
+}
+.nav-link:hover {
+  color: #E0A939;
+}
+
 :root {
   --enki-brown:    #6B441E;
   --enki-gold:     #E0A939;
