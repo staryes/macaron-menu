@@ -6,7 +6,7 @@
 
         <!-- Logo：靠左 -->
         <div class="flex items-center">
-          <img src="/logo.png" alt="Enki Atelier Logo" class="h-10 w-20 md:h-16 md:w-32 object-contain">
+          <img src="/logo.png" alt="Enki Atelier Logo" class="object-contain" style="height: 40px; width: 80px;">
         </div>
 
         <!-- 桌機導覽連結：md 以上顯示 -->
@@ -811,11 +811,15 @@ function getCardStyle(index) {
 }
 
 function scrollGallery(direction) {
-  if (!galleryTrack.value) return
-  galleryTrack.value.scrollBy({
-    left: direction * (CARD_WIDTH + GAP),
-    behavior: 'smooth'
-  })
+  const track = galleryTrack.value
+  if (!track) return
+
+  const newIndex = Math.max(0, Math.min(galleryItems.value.length - 1, centerIndex.value + direction))
+  const spacerWidth = parseFloat(leftSpacer.value?.style.width || '0')
+  const targetScroll = spacerWidth + (newIndex * (CARD_WIDTH + GAP)) - (track.clientWidth / 2) + (CARD_WIDTH / 2)
+
+  track.scrollTo({ left: targetScroll, behavior: 'smooth' })
+  centerIndex.value = newIndex
 }
 
 function onScroll() {
@@ -908,8 +912,33 @@ const galleryItems = ref([
 
 onMounted(async () => {
   await nextTick()
-  setTimeout(setupSpacersAndCenter, 150)
-  setTimeout(setupSpacersAndCenter, 500)
+
+  const doCenter = () => {
+    const track = galleryTrack.value
+    if (!track) return false
+
+    // 設定 spacer 寬度
+    const trackWidth = track.clientWidth
+    if (trackWidth === 0) return false
+
+    const halfTrack = trackWidth / 2
+    const halfCard = CARD_WIDTH / 2
+    const spacerWidth = halfTrack - halfCard
+
+    if (leftSpacer.value) leftSpacer.value.style.width = spacerWidth + 'px'
+    if (rightSpacer.value) rightSpacer.value.style.width = spacerWidth + 'px'
+
+    // 直接設定 scrollLeft 讓 index 4 置中
+    const targetScroll = spacerWidth + (4 * (CARD_WIDTH + GAP)) - halfTrack + halfCard
+    track.scrollLeft = targetScroll
+    centerIndex.value = 4
+    return true
+  }
+
+  // 嘗試多次確保 DOM 已完全渲染
+  if (!doCenter()) {
+    setTimeout(() => { if (!doCenter()) { setTimeout(doCenter, 500) } }, 200)
+  }
 })
 
 // FAQ 展開/收合狀態管理
