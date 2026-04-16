@@ -690,7 +690,7 @@
 </template>
 
 <script setup>
-import { onMounted, ref } from 'vue';
+import { onMounted, nextTick, ref } from 'vue';
 
 // 產品資料 - 這是我們的產品展示資訊
 // 資料結構：
@@ -764,15 +764,18 @@ function scrollGallery(direction) {
   })
 }
 
-onMounted(() => {
-  // 頁面載入後自動捲動到第 5 張（index 4，中心主圖）置中
+onMounted(async () => {
+  await nextTick()
   setTimeout(() => {
     if (!galleryTrack.value) return
     const centerIndex = 4
+    const card = galleryTrack.value.children[centerIndex]
+    if (!card) return
     const trackWidth = galleryTrack.value.clientWidth
-    const scrollTo = centerIndex * (CARD_WIDTH + GAP) - (trackWidth / 2) + (CARD_WIDTH / 2)
-    galleryTrack.value.scrollLeft = scrollTo
-  }, 100)
+    const cardLeft = card.offsetLeft
+    const cardWidth = card.offsetWidth
+    galleryTrack.value.scrollLeft = cardLeft - (trackWidth / 2) + (cardWidth / 2)
+  }, 300)
 })
 
 const galleryItems = ref([
@@ -781,8 +784,8 @@ const galleryItems = ref([
     alt: "PhD engineer designing rocket trajectory in the lab",
   },
   {
-    src: "/Gallery/Workshop_04.png",
-    alt: "Hands using 3D pen with finger caps and rocket template",
+    src: "/Gallery/Built_by_kids_02.png",
+    alt: "Balancing bird mobile completed — Enki Atelier STEAM kit",
   },
   {
     src: "/Gallery/Workshop_02.png",
@@ -797,12 +800,12 @@ const galleryItems = ref([
     alt: "3D pen rocket built by a kid — Enki Atelier STEAM kit",
   },
   {
-    src: "/Gallery/Built_by_kids_04.png",
-    alt: "Completed rocket and mobile from Enki Atelier kits",
+    src: "/Gallery/Workshop_04.png",
+    alt: "Hands using 3D pen with finger caps and rocket template",
   },
   {
-    src: "/Gallery/Built_by_kids_02.png",
-    alt: "Balancing bird mobile completed — Enki Atelier STEAM kit",
+    src: "/Gallery/Built_by_kids_04.png",
+    alt: "Completed rocket and mobile from Enki Atelier kits",
   },
   {
     src: "/Gallery/Workshop_01.png",
@@ -954,8 +957,8 @@ h1, h2, h3 {
 
 /* 霧化邊緣：四周透明，中心清晰 */
 .gallery-img-wrap {
-  -webkit-mask-image: radial-gradient(ellipse 80% 80% at center, black 30%, transparent 80%);
-  mask-image: radial-gradient(ellipse 80% 80% at center, black 30%, transparent 80%);
+  -webkit-mask-image: radial-gradient(ellipse 88% 88% at center, black 55%, transparent 92%);
+  mask-image: radial-gradient(ellipse 88% 88% at center, black 55%, transparent 92%);
 }
 
 /* 基礎暖化：所有圖片統一套用 */
