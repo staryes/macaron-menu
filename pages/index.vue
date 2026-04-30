@@ -325,57 +325,44 @@
       <div class="max-w-5xl mx-auto px-6">
 
         <p class="text-xs font-medium tracking-[2px] uppercase text-[#B586AC] mb-2 text-center">What Parents Say</p>
-        <h2 class="text-2xl md:text-3xl font-bold text-[#1A1A1A] text-center mb-12" style="font-family: 'Lora', serif;">
+        <h2 class="text-2xl md:text-3xl font-bold text-[#1A1A1A] text-center mb-16" style="font-family: 'Lora', serif;">
           Heard from the Field
         </h2>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-
-          <!-- TJ, mom -->
-          <div class="bg-[#FFF8EB] rounded-2xl border border-[#DFC6E0]/40 px-7 py-6 flex flex-col gap-4">
-            <svg width="28" height="20" viewBox="0 0 28 20" fill="#DFC6E0" xmlns="http://www.w3.org/2000/svg">
-              <path d="M0 20V12.267C0 5.422 4.156 1.4 12.467 0l1.4 2.333C9.956 3.311 7.8 5.156 7 8.4h5.6V20H0zm14.933 0V12.267C14.933 5.422 19.09 1.4 27.4 0l1.4 2.333c-3.91.978-6.067 2.823-6.867 6.067H27.533V20H14.933z"/>
-            </svg>
-            <blockquote class="text-sm md:text-base text-[#3D3D3D] leading-relaxed italic flex-1" style="font-family: 'Lora', serif;">
-              "It was his first time using a 3D pen to make something, completely new for him. After the event we went out to eat, and he was still playing with the rocket. Truly a wonderful activity!!"
-            </blockquote>
-            <p class="text-xs font-semibold text-[#6B441E] tracking-wide">— TJ, mom</p>
+        <!-- 手機版：輪播 -->
+        <div class="md:hidden"
+             @touchstart="testimonialTouchStart"
+             @touchend="testimonialTouchEnd">
+          <div class="overflow-hidden">
+            <div class="flex transition-transform duration-400 ease-in-out"
+                 :style="{ transform: `translateX(-${testimonialIndex * 100}%)` }">
+              <div v-for="(t, i) in testimonials" :key="i" class="w-full flex-shrink-0 px-2 text-center">
+                <div class="text-[5rem] leading-none text-[#DFC6E0] font-serif mb-4 select-none">&ldquo;</div>
+                <p class="text-base text-[#3D3D3D] leading-relaxed font-light mb-8" style="font-family: 'Lora', serif;">{{ t.quote }}</p>
+                <p class="text-xs font-semibold text-[#6B441E] tracking-widest uppercase">{{ t.author }}</p>
+              </div>
+            </div>
           </div>
-
-          <!-- Amazon Customer J. -->
-          <div class="bg-[#FFF8EB] rounded-2xl border border-[#DFC6E0]/40 px-7 py-6 flex flex-col gap-4">
-            <svg width="28" height="20" viewBox="0 0 28 20" fill="#DFC6E0" xmlns="http://www.w3.org/2000/svg">
-              <path d="M0 20V12.267C0 5.422 4.156 1.4 12.467 0l1.4 2.333C9.956 3.311 7.8 5.156 7 8.4h5.6V20H0zm14.933 0V12.267C14.933 5.422 19.09 1.4 27.4 0l1.4 2.333c-3.91.978-6.067 2.823-6.867 6.067H27.533V20H14.933z"/>
-            </svg>
-            <blockquote class="text-sm md:text-base text-[#3D3D3D] leading-relaxed italic flex-1" style="font-family: 'Lora', serif;">
-              "My daughter was able to understand what she was building and it kept her interest the whole time. I also liked that the designs are more stable than other kits we've tried; the finished pieces hold up well instead of falling apart right away."
-            </blockquote>
-            <p class="text-xs font-semibold text-[#6B441E] tracking-wide">— Verified Amazon Customer, J.</p>
+          <!-- 圓點指示器 -->
+          <div class="flex justify-center gap-2 mt-10">
+            <button v-for="(t, i) in testimonials" :key="i"
+                    @click="testimonialIndex = i"
+                    class="rounded-full transition-all duration-300"
+                    :class="testimonialIndex === i ? 'w-5 h-2 bg-[#6B441E]' : 'w-2 h-2 bg-[#DFC6E0]'"
+                    :aria-label="`Go to testimonial ${i + 1}`">
+            </button>
           </div>
-
-          <!-- Amazon Customer C. -->
-          <div class="bg-[#FFF8EB] rounded-2xl border border-[#DFC6E0]/40 px-7 py-6 flex flex-col gap-4">
-            <svg width="28" height="20" viewBox="0 0 28 20" fill="#DFC6E0" xmlns="http://www.w3.org/2000/svg">
-              <path d="M0 20V12.267C0 5.422 4.156 1.4 12.467 0l1.4 2.333C9.956 3.311 7.8 5.156 7 8.4h5.6V20H0zm14.933 0V12.267C14.933 5.422 19.09 1.4 27.4 0l1.4 2.333c-3.91.978-6.067 2.823-6.867 6.067H27.533V20H14.933z"/>
-            </svg>
-            <blockquote class="text-sm md:text-base text-[#3D3D3D] leading-relaxed italic flex-1" style="font-family: 'Lora', serif;">
-              "As an adult I enjoy the program too. I think it's hard for me to just create with 3D pen, but with the kit it's pretty cool to see what 3D pen can do."
-            </blockquote>
-            <p class="text-xs font-semibold text-[#6B441E] tracking-wide">— Verified Amazon Customer, C.</p>
-          </div>
-
-          <!-- Amazon Customer X. -->
-          <div class="bg-[#FFF8EB] rounded-2xl border border-[#DFC6E0]/40 px-7 py-6 flex flex-col gap-4">
-            <svg width="28" height="20" viewBox="0 0 28 20" fill="#DFC6E0" xmlns="http://www.w3.org/2000/svg">
-              <path d="M0 20V12.267C0 5.422 4.156 1.4 12.467 0l1.4 2.333C9.956 3.311 7.8 5.156 7 8.4h5.6V20H0zm14.933 0V12.267C14.933 5.422 19.09 1.4 27.4 0l1.4 2.333c-3.91.978-6.067 2.823-6.867 6.067H27.533V20H14.933z"/>
-            </svg>
-            <blockquote class="text-sm md:text-base text-[#3D3D3D] leading-relaxed italic flex-1" style="font-family: 'Lora', serif;">
-              "Overall this is a very solid, well designed kit. I tried other STEM or craft kits before, and many of them my kid forgets after one time. I would definitely check out more kits like this in the future."
-            </blockquote>
-            <p class="text-xs font-semibold text-[#6B441E] tracking-wide">— Verified Amazon Customer, X.</p>
-          </div>
-
         </div>
+
+        <!-- 桌機版：兩欄留白排版 -->
+        <div class="hidden md:grid grid-cols-2 gap-x-16 gap-y-14">
+          <div v-for="(t, i) in testimonials" :key="i">
+            <div class="text-[4rem] leading-none text-[#DFC6E0] font-serif mb-4 select-none">&ldquo;</div>
+            <p class="text-base text-[#3D3D3D] leading-relaxed font-light mb-6" style="font-family: 'Lora', serif;">{{ t.quote }}</p>
+            <p class="text-xs font-semibold text-[#6B441E] tracking-widest uppercase">{{ t.author }}</p>
+          </div>
+        </div>
+
       </div>
     </section>
 
@@ -609,7 +596,7 @@
         <div class="space-y-4">
 
           <!-- FAQ 0 -->
-          <div class="faq-item">
+          <div class="faq-item" :class="{ open: openFaq === 0 }">
             <button class="faq-question w-full text-left" @click="toggleFaq(0)">
               Does the rocket actually fly, or is it just a decoration?
             </button>
@@ -625,7 +612,7 @@
           </div>
 
           <!-- FAQ 1 -->
-          <div class="faq-item">
+          <div class="faq-item" :class="{ open: openFaq === 1 }">
             <button class="faq-question w-full text-left" @click="toggleFaq(1)">
               Which 3D pen works with each kit?
             </button>
@@ -648,7 +635,7 @@
           </div>
 
           <!-- FAQ 2 -->
-          <div class="faq-item">
+          <div class="faq-item" :class="{ open: openFaq === 2 }">
             <button class="faq-question w-full text-left" @click="toggleFaq(2)">
               What age are Enki STEAM kits designed for?
             </button>
@@ -664,7 +651,7 @@
           </div>
 
           <!-- FAQ 3 -->
-          <div class="faq-item">
+          <div class="faq-item" :class="{ open: openFaq === 3 }">
             <button class="faq-question w-full text-left" @click="toggleFaq(3)">
               How is this different from regular 3D pen stencils?
             </button>
@@ -682,7 +669,7 @@
           </div>
 
           <!-- FAQ 4 -->
-          <div class="faq-item">
+          <div class="faq-item" :class="{ open: openFaq === 4 }">
             <button class="faq-question w-full text-left" @click="toggleFaq(4)">
               Do kids need prior experience with 3D pens?
             </button>
@@ -696,7 +683,7 @@
           </div>
 
           <!-- FAQ 5 -->
-          <div class="faq-item">
+          <div class="faq-item" :class="{ open: openFaq === 5 }">
             <button class="faq-question w-full text-left" @click="toggleFaq(5)">
               What is included in each kit?
             </button>
@@ -720,7 +707,7 @@
           </div>
 
           <!-- FAQ 6 -->
-          <div class="faq-item">
+          <div class="faq-item" :class="{ open: openFaq === 6 }">
             <button class="faq-question w-full text-left" @click="toggleFaq(6)">
               Is the curriculum guide easy to follow and store?
             </button>
@@ -736,7 +723,7 @@
           </div>
 
           <!-- FAQ 7 -->
-          <div class="faq-item">
+          <div class="faq-item" :class="{ open: openFaq === 7 }">
             <button class="faq-question w-full text-left" @click="toggleFaq(7)">
               Where can I buy Enki kits?
             </button>
@@ -799,6 +786,25 @@ import { onMounted, onUnmounted, nextTick, ref } from 'vue';
 const mobileMenuOpen = ref(false)
 function toggleMenu() {
   mobileMenuOpen.value = !mobileMenuOpen.value
+}
+
+// Testimonials 輪播
+const testimonials = [
+  { quote: "It was his first time using a 3D pen to make something, completely new for him. After the event we went out to eat, and he was still playing with the rocket. Truly a wonderful activity!!", author: "— TJ, mom" },
+  { quote: "My daughter was able to understand what she was building and it kept her interest the whole time. I also liked that the designs are more stable than other kits we've tried; the finished pieces hold up well instead of falling apart right away.", author: "— Verified Amazon Customer, J." },
+  { quote: "As an adult I enjoy the program too. I think it's hard for me to just create with 3D pen, but with the kit it's pretty cool to see what 3D pen can do.", author: "— Verified Amazon Customer, C." },
+  { quote: "Overall this is a very solid, well designed kit. I tried other STEM or craft kits before, and many of them my kid forgets after one time. I would definitely check out more kits like this in the future.", author: "— Verified Amazon Customer, X." },
+]
+const testimonialIndex = ref(0)
+let testimonialTouchStartX = 0
+
+function testimonialTouchStart(e) {
+  testimonialTouchStartX = e.touches[0].clientX
+}
+function testimonialTouchEnd(e) {
+  const dx = e.changedTouches[0].clientX - testimonialTouchStartX
+  if (dx < -40 && testimonialIndex.value < testimonials.length - 1) testimonialIndex.value++
+  if (dx > 40 && testimonialIndex.value > 0) testimonialIndex.value--
 }
 
 // Logo 響應式尺寸
@@ -1087,7 +1093,7 @@ h1, h2, h3 {
   overflow: hidden;
   transition: box-shadow 0.2s;
 }
-.faq-item[open] {
+.faq-item.open {
   box-shadow: 0 2px 12px rgba(107,68,30,0.06);
 }
 .faq-question {
@@ -1112,8 +1118,9 @@ h1, h2, h3 {
   flex-shrink: 0;
   transition: transform 0.2s;
 }
-.faq-item[open] .faq-question::after {
-  transform: rotate(45deg);
+.faq-item.open .faq-question::after {
+  content: '−';
+  transform: none;
 }
 .faq-answer {
   padding: 0.75rem 1.25rem 1.25rem;
