@@ -354,11 +354,11 @@
           </div>
         </div>
 
-        <!-- 桌機版：兩欄留白排版 -->
-        <div class="hidden md:grid grid-cols-2 gap-x-16 gap-y-14">
-          <div v-for="(t, i) in testimonials" :key="i">
-            <div class="text-[4rem] leading-none text-[#DFC6E0] font-serif mb-4 select-none">&ldquo;</div>
-            <p class="text-base text-[#3D3D3D] leading-relaxed font-light mb-6" style="font-family: 'Lora', serif;">{{ t.quote }}</p>
+        <!-- 桌機版：四欄橫排一長條 -->
+        <div class="hidden md:grid grid-cols-4 divide-x divide-[#DFC6E0]/40">
+          <div v-for="(t, i) in testimonials" :key="i" class="px-8 first:pl-0 last:pr-0">
+            <div class="text-[3.5rem] leading-none text-[#DFC6E0] font-serif mb-4 select-none">&ldquo;</div>
+            <p class="text-sm text-[#3D3D3D] leading-relaxed font-light mb-6" style="font-family: 'Lora', serif;">{{ t.quote }}</p>
             <p class="text-xs font-semibold text-[#6B441E] tracking-widest uppercase">{{ t.author }}</p>
           </div>
         </div>
