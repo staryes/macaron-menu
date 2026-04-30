@@ -767,7 +767,7 @@ onUnmounted(() => {
 // - skills: 技能標籤陣列
 const products = ref([
   {
-    mainTitle: "Rocket Launcher STEM Kit for 3D Pens",
+    mainTitle: "Projectile Science STEM Kit for 3D Pens | Rocket Launcher Project",
     subTitle: "Build a Rocket. Discover the Physics of Projectiles.",
     description: "A complete engineering journey designed by PhD engineers to master the physics of projectiles. The full-color, photo-guided curriculum takes kids through real science principles and STEM challenges, transforming a 3D pen into a precise engineering tool. Every build is calibrated for structural stability so the rocket actually launches. Screen-free, hands-on, and built for ages 8 and up.",
     image: "/starter-kit.jpg",
@@ -784,7 +784,7 @@ const products = ref([
     ],
   },
   {
-    mainTitle: "Balancing Bird & Mobile Engineering Kit for 3D Pens",
+    mainTitle: "Balancing Science STEM Kit for 3D Pens | Balancing Bird & 4-in-1 Space Mobile Projects",
     subTitle: "Build to Balance. Discover the Physics of Equilibrium.",
     description: "A complete engineering journey through the physics of equilibrium. The PhD-designed curriculum guides kids through center-of-mass principles and STEM challenges, teaching them to find the precise balance point in every build. Whether constructing a balancing bird or an elegant hanging mobile, every creation is designed to actually stay upright and function as expected.",
     image: "/balance.png",
@@ -802,7 +802,7 @@ const products = ref([
     ],
   },
   {
-    mainTitle: "Spatial Geometry Kit",
+    mainTitle: "Spatial Geometry STEM Kit for 3D Pens",
     subTitle: "Build, Explore, Understand.",
     description: "Transform geometry into a creative adventure. Through handouts, paper molds, and accessories, kids build and explore 3D shapes, making spatial reasoning both fun and educational.",
     image: "/spatial-geometry.png",
