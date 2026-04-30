@@ -802,7 +802,7 @@ const products = ref([
     ],
   },
   {
-    mainTitle: "Spatial Geometry Kit",
+    mainTitle: "Spatial Geometry STEM Kit for 3D Pens",
     subTitle: "Build, Explore, Understand.",
     description: "Transform geometry into a creative adventure. Through handouts, paper molds, and accessories, kids build and explore 3D shapes, making spatial reasoning both fun and educational.",
     image: "/spatial-geometry.png",
