@@ -440,6 +440,19 @@
       </div>
     </section>
 
+    <!-- Testimonial Section -->
+    <section class="py-16 bg-[#FFF8EB]">
+      <div class="max-w-2xl mx-auto px-6 text-center">
+        <svg class="mx-auto mb-6 text-[#DFC6E0]" width="36" height="36" viewBox="0 0 24 24" fill="#DFC6E0" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4.5 9.5C4.5 6.46 6.96 4 10 4h.5v2H10c-1.93 0-3.5 1.57-3.5 3.5V10h3v6H4.5V9.5zm9 0C13.5 6.46 15.96 4 19 4h.5v2H19c-1.93 0-3.5 1.57-3.5 3.5V10h3v6h-5v-6.5z"/>
+        </svg>
+        <blockquote class="text-base md:text-lg text-[#3D3D3D] leading-relaxed italic mb-6" style="font-family: 'Lora', serif;">
+          "It was so much fun! It was a brand new experience for him — the first time he made something with a 3D pen. He loves airplanes and trains, so we'll definitely be buying one for him to try at home. After the event we went out to eat, and he was still playing with the rocket. It's a truly wonderful activity — worth spreading the word!"
+        </blockquote>
+        <p class="text-sm font-semibold text-[#6B441E] tracking-wide">— TJ, mom</p>
+      </div>
+    </section>
+
     <!-- Gallery Section -->
     <section id="gallery" class="py-20 bg-white overflow-hidden">
       <div class="max-w-7xl mx-auto px-6 mb-10">
