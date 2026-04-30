@@ -320,6 +320,65 @@
       </div>
     </section>
 
+    <!-- Testimonials Section -->
+    <section class="py-20 bg-white">
+      <div class="max-w-5xl mx-auto px-6">
+
+        <p class="text-xs font-medium tracking-[2px] uppercase text-[#B586AC] mb-2 text-center">What Parents Say</p>
+        <h2 class="text-2xl md:text-3xl font-bold text-[#1A1A1A] text-center mb-12" style="font-family: 'Lora', serif;">
+          Heard from the Field
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+          <!-- TJ, mom -->
+          <div class="bg-[#FFF8EB] rounded-2xl border border-[#DFC6E0]/40 px-7 py-6 flex flex-col gap-4">
+            <svg width="28" height="20" viewBox="0 0 28 20" fill="#DFC6E0" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0 20V12.267C0 5.422 4.156 1.4 12.467 0l1.4 2.333C9.956 3.311 7.8 5.156 7 8.4h5.6V20H0zm14.933 0V12.267C14.933 5.422 19.09 1.4 27.4 0l1.4 2.333c-3.91.978-6.067 2.823-6.867 6.067H27.533V20H14.933z"/>
+            </svg>
+            <blockquote class="text-sm md:text-base text-[#3D3D3D] leading-relaxed italic flex-1" style="font-family: 'Lora', serif;">
+              "It was his first time using a 3D pen to make something, completely new for him. After the event we went out to eat, and he was still playing with the rocket. Truly a wonderful activity!!"
+            </blockquote>
+            <p class="text-xs font-semibold text-[#6B441E] tracking-wide">— TJ, mom</p>
+          </div>
+
+          <!-- Amazon Customer J. -->
+          <div class="bg-[#FFF8EB] rounded-2xl border border-[#DFC6E0]/40 px-7 py-6 flex flex-col gap-4">
+            <svg width="28" height="20" viewBox="0 0 28 20" fill="#DFC6E0" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0 20V12.267C0 5.422 4.156 1.4 12.467 0l1.4 2.333C9.956 3.311 7.8 5.156 7 8.4h5.6V20H0zm14.933 0V12.267C14.933 5.422 19.09 1.4 27.4 0l1.4 2.333c-3.91.978-6.067 2.823-6.867 6.067H27.533V20H14.933z"/>
+            </svg>
+            <blockquote class="text-sm md:text-base text-[#3D3D3D] leading-relaxed italic flex-1" style="font-family: 'Lora', serif;">
+              "My daughter was able to understand what she was building and it kept her interest the whole time. I also liked that the designs are more stable than other kits we've tried; the finished pieces hold up well instead of falling apart right away."
+            </blockquote>
+            <p class="text-xs font-semibold text-[#6B441E] tracking-wide">— Verified Amazon Customer, J.</p>
+          </div>
+
+          <!-- Amazon Customer C. -->
+          <div class="bg-[#FFF8EB] rounded-2xl border border-[#DFC6E0]/40 px-7 py-6 flex flex-col gap-4">
+            <svg width="28" height="20" viewBox="0 0 28 20" fill="#DFC6E0" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0 20V12.267C0 5.422 4.156 1.4 12.467 0l1.4 2.333C9.956 3.311 7.8 5.156 7 8.4h5.6V20H0zm14.933 0V12.267C14.933 5.422 19.09 1.4 27.4 0l1.4 2.333c-3.91.978-6.067 2.823-6.867 6.067H27.533V20H14.933z"/>
+            </svg>
+            <blockquote class="text-sm md:text-base text-[#3D3D3D] leading-relaxed italic flex-1" style="font-family: 'Lora', serif;">
+              "As an adult I enjoy the program too. I think it's hard for me to just create with 3D pen, but with the kit it's pretty cool to see what 3D pen can do."
+            </blockquote>
+            <p class="text-xs font-semibold text-[#6B441E] tracking-wide">— Verified Amazon Customer, C.</p>
+          </div>
+
+          <!-- Amazon Customer X. -->
+          <div class="bg-[#FFF8EB] rounded-2xl border border-[#DFC6E0]/40 px-7 py-6 flex flex-col gap-4">
+            <svg width="28" height="20" viewBox="0 0 28 20" fill="#DFC6E0" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0 20V12.267C0 5.422 4.156 1.4 12.467 0l1.4 2.333C9.956 3.311 7.8 5.156 7 8.4h5.6V20H0zm14.933 0V12.267C14.933 5.422 19.09 1.4 27.4 0l1.4 2.333c-3.91.978-6.067 2.823-6.867 6.067H27.533V20H14.933z"/>
+            </svg>
+            <blockquote class="text-sm md:text-base text-[#3D3D3D] leading-relaxed italic flex-1" style="font-family: 'Lora', serif;">
+              "Overall this is a very solid, well designed kit. I tried other STEM or craft kits before, and many of them my kid forgets after one time. I would definitely check out more kits like this in the future."
+            </blockquote>
+            <p class="text-xs font-semibold text-[#6B441E] tracking-wide">— Verified Amazon Customer, X.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
     <!-- Buying Guide Section -->
     <section id="pens" class="py-24 bg-[#FFF8EB]">
       <div class="max-w-3xl mx-auto px-6">
@@ -437,19 +496,6 @@
           These are pens we recommend based on compatibility, not paid partnerships.
         </p>
 
-      </div>
-    </section>
-
-    <!-- Testimonial Section -->
-    <section class="py-16 bg-[#FFF8EB]">
-      <div class="max-w-2xl mx-auto px-6 text-center">
-        <svg class="mx-auto mb-6 text-[#DFC6E0]" width="36" height="36" viewBox="0 0 24 24" fill="#DFC6E0" xmlns="http://www.w3.org/2000/svg">
-          <path d="M4.5 9.5C4.5 6.46 6.96 4 10 4h.5v2H10c-1.93 0-3.5 1.57-3.5 3.5V10h3v6H4.5V9.5zm9 0C13.5 6.46 15.96 4 19 4h.5v2H19c-1.93 0-3.5 1.57-3.5 3.5V10h3v6h-5v-6.5z"/>
-        </svg>
-        <blockquote class="text-base md:text-lg text-[#3D3D3D] leading-relaxed italic mb-6" style="font-family: 'Lora', serif;">
-          "It was so much fun! It was a brand new experience for him — the first time he made something with a 3D pen. He loves airplanes and trains, so we'll definitely be buying one for him to try at home. After the event we went out to eat, and he was still playing with the rocket. It's a truly wonderful activity — worth spreading the word!"
-        </blockquote>
-        <p class="text-sm font-semibold text-[#6B441E] tracking-wide">— TJ, mom</p>
       </div>
     </section>
 
