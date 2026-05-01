@@ -340,7 +340,7 @@
                 <div class="text-[5rem] leading-none text-[#DFC6E0] font-serif mb-4 select-none">&ldquo;</div>
                 <p class="text-base text-[#3D3D3D] leading-relaxed font-light mb-8" style="font-family: 'Lora', serif;">{{ t.quote }}</p>
                 <p class="text-xs font-semibold text-[#6B441E] tracking-wide">— {{ t.name }},</p>
-                <p class="text-xs text-[#3D3D3D]/60 mt-0.5">{{ t.role }}</p>
+                <p class="text-xs text-[#3D3D3D]/60 mt-0.5 pl-[1.3em]">{{ t.role }}</p>
               </div>
             </div>
           </div>
@@ -361,7 +361,7 @@
             <div class="text-[3.5rem] leading-none text-[#DFC6E0] font-serif mb-4 select-none">&ldquo;</div>
             <p class="text-sm text-[#3D3D3D] leading-relaxed font-light mb-6" style="font-family: 'Lora', serif;">{{ t.quote }}</p>
             <p class="text-xs font-semibold text-[#6B441E] tracking-wide">— {{ t.name }},</p>
-            <p class="text-xs text-[#3D3D3D]/60 mt-0.5">{{ t.role }}</p>
+            <p class="text-xs text-[#3D3D3D]/60 mt-0.5 pl-[1.3em]">{{ t.role }}</p>
           </div>
         </div>
 
