@@ -339,8 +339,8 @@
               <div v-for="(t, i) in testimonials" :key="i" class="w-full flex-shrink-0 px-2 text-center">
                 <div class="text-[5rem] leading-none text-[#DFC6E0] font-serif mb-4 select-none">&ldquo;</div>
                 <p class="text-base text-[#3D3D3D] leading-relaxed font-light mb-8" style="font-family: 'Lora', serif;">{{ t.quote }}</p>
-                <p class="text-xs font-semibold text-[#6B441E] tracking-wide">— {{ t.name }}</p>
-                <p class="text-xs text-[#B586AC] mt-0.5">{{ t.role }}</p>
+                <p class="text-xs font-semibold text-[#6B441E] tracking-wide">— {{ t.name }},</p>
+                <p class="text-xs text-[#3D3D3D]/60 mt-0.5">{{ t.role }}</p>
               </div>
             </div>
           </div>
@@ -360,8 +360,8 @@
           <div v-for="(t, i) in testimonials" :key="i" class="px-6">
             <div class="text-[3.5rem] leading-none text-[#DFC6E0] font-serif mb-4 select-none">&ldquo;</div>
             <p class="text-sm text-[#3D3D3D] leading-relaxed font-light mb-6" style="font-family: 'Lora', serif;">{{ t.quote }}</p>
-            <p class="text-xs font-semibold text-[#6B441E] tracking-wide">— {{ t.name }}</p>
-            <p class="text-xs text-[#B586AC] mt-0.5">{{ t.role }}</p>
+            <p class="text-xs font-semibold text-[#6B441E] tracking-wide">— {{ t.name }},</p>
+            <p class="text-xs text-[#3D3D3D]/60 mt-0.5">{{ t.role }}</p>
           </div>
         </div>
 
@@ -792,8 +792,8 @@ function toggleMenu() {
 
 // Testimonials 輪播
 const testimonials = [
-  { quote: "It was his first time using a 3D pen to make something, completely new for him. After the event we went out to eat, and he was still playing with the rocket. Truly a wonderful activity!!", name: "TJ", role: "Mom" },
   { quote: "My daughter was able to understand what she was building and it kept her interest the whole time. I also liked that the designs are more stable than other kits we've tried; the finished pieces hold up well instead of falling apart right away.", name: "J.", role: "Verified Amazon Customer" },
+  { quote: "It was his first time using a 3D pen to make something, completely new for him. After the event we went out to eat, and he was still playing with the rocket. Truly a wonderful activity!!", name: "T.", role: "Mom" },
   { quote: "As an adult I enjoy the program too. I think it's hard for me to just create with 3D pen, but with the kit it's pretty cool to see what 3D pen can do.", name: "C.", role: "Verified Amazon Customer" },
   { quote: "Overall this is a very solid, well designed kit. I tried other STEM or craft kits before, and many of them my kid forgets after one time. I would definitely check out more kits like this in the future.", name: "X.", role: "Verified Amazon Customer" },
 ]
