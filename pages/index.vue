@@ -793,7 +793,7 @@ function toggleMenu() {
 // Testimonials 輪播
 const testimonials = [
   { quote: "My daughter was able to understand what she was building and it kept her interest the whole time. I also liked that the designs are more stable than other kits we've tried; the finished pieces hold up well instead of falling apart right away.", name: "J.", role: "Verified Amazon Customer" },
-  { quote: "It was his first time using a 3D pen to make something, completely new for him. After the event we went out to eat, and he was still playing with the rocket. Truly a wonderful activity!!", name: "T.", role: "Mom" },
+  { quote: "It was his first time making something with a 3D pen, completely new for him!! Even after we left, he was still playing with the rocket at the restaurant.", name: "T.", role: "Mom" },
   { quote: "As an adult I enjoy the program too. I think it's hard for me to just create with 3D pen, but with the kit it's pretty cool to see what 3D pen can do.", name: "C.", role: "Verified Amazon Customer" },
   { quote: "Overall this is a very solid, well designed kit. I tried other STEM or craft kits before, and many of them my kid forgets after one time. I would definitely check out more kits like this in the future.", name: "X.", role: "Verified Amazon Customer" },
 ]
