@@ -337,10 +337,9 @@
             <div class="flex transition-transform duration-400 ease-in-out"
                  :style="{ transform: `translateX(-${testimonialIndex * 100}%)` }">
               <div v-for="(t, i) in testimonials" :key="i" class="w-full flex-shrink-0 px-2 text-center">
-                <div class="text-[5rem] leading-none text-[#DFC6E0] font-serif mb-4 select-none">&ldquo;</div>
-                <p class="text-base text-[#3D3D3D] leading-relaxed font-light mb-8" style="font-family: 'Lora', serif;">{{ t.quote }}</p>
-                <p class="text-xs font-semibold text-[#6B441E] tracking-wide">— {{ t.name }},</p>
-                <p class="text-xs text-[#3D3D3D]/60 mt-0.5 pl-[1.3em]">{{ t.role }}</p>
+                <div class="text-[2.5rem] leading-none text-[#DFC6E0]/60 font-serif mb-3 select-none">&ldquo;</div>
+                <p class="text-base text-[#3D3D3D] leading-relaxed font-light mb-6" style="font-family: 'Lora', serif;">{{ t.quote }}</p>
+                <p class="text-xs font-semibold text-[#6B441E] tracking-wide">{{ t.author }}</p>
               </div>
             </div>
           </div>
@@ -355,13 +354,12 @@
           </div>
         </div>
 
-        <!-- 桌機版：四欄橫排一長條 -->
-        <div class="hidden md:grid grid-cols-4 divide-x divide-[#DFC6E0]/40">
-          <div v-for="(t, i) in testimonials" :key="i" class="px-6">
-            <div class="text-[3.5rem] leading-none text-[#DFC6E0] font-serif mb-4 select-none">&ldquo;</div>
-            <p class="text-sm text-[#3D3D3D] leading-relaxed font-light mb-6" style="font-family: 'Lora', serif;">{{ t.quote }}</p>
-            <p class="text-xs font-semibold text-[#6B441E] tracking-wide">— {{ t.name }},</p>
-            <p class="text-xs text-[#3D3D3D]/60 mt-0.5 pl-[1.3em]">{{ t.role }}</p>
+        <!-- 桌機版：兩欄留白排版 -->
+        <div class="hidden md:grid grid-cols-2 gap-x-16 gap-y-12">
+          <div v-for="(t, i) in testimonials" :key="i">
+            <div class="text-[2rem] leading-none text-[#DFC6E0]/60 font-serif mb-3 select-none">&ldquo;</div>
+            <p class="text-base text-[#3D3D3D] leading-relaxed font-light mb-5" style="font-family: 'Lora', serif;">{{ t.quote }}</p>
+            <p class="text-xs font-semibold text-[#6B441E] tracking-wide">{{ t.author }}</p>
           </div>
         </div>
 
@@ -792,10 +790,10 @@ function toggleMenu() {
 
 // Testimonials 輪播
 const testimonials = [
-  { quote: "My daughter was able to understand what she was building and it kept her interest the whole time. I also liked that the designs are more stable than other kits we've tried; the finished pieces hold up well instead of falling apart right away.", name: "J.", role: "Verified Amazon Customer" },
-  { quote: "It was his first time making something with a 3D pen, completely new for him!! Even after we left, he was still playing with the rocket at the restaurant.", name: "T.", role: "Mom" },
-  { quote: "As an adult I enjoy the program too. I think it's hard for me to just create with 3D pen, but with the kit it's pretty cool to see what 3D pen can do.", name: "C.", role: "Verified Amazon Customer" },
-  { quote: "Overall this is a very solid, well designed kit. I tried other STEM or craft kits before, and many of them my kid forgets after one time. I would definitely check out more kits like this in the future.", name: "X.", role: "Verified Amazon Customer" },
+  { quote: "It was his first time making something with a 3D pen, completely new for him!! Even after we left, he was still playing with the rocket at the restaurant.", author: "— TJ, mom" },
+  { quote: "My daughter was able to understand what she was building and it kept her interest the whole time. I also liked that the designs are more stable than other kits we've tried; the finished pieces hold up well instead of falling apart right away.", author: "— J., Verified Amazon Customer" },
+  { quote: "As an adult I enjoy the program too. I think it's hard for me to just create with 3D pen, but with the kit it's pretty cool to see what 3D pen can do.", author: "— C., Verified Amazon Customer" },
+  { quote: "Overall this is a very solid, well designed kit. I tried other STEM or craft kits before, and many of them my kid forgets after one time. I would definitely check out more kits like this in the future.", author: "— X., Verified Amazon Customer" },
 ]
 const testimonialIndex = ref(0)
 let testimonialTouchStartX = 0
