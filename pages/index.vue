@@ -24,6 +24,7 @@
           <a href="#gallery" class="nav-link">Gallery</a>
           <a href="#cta"     class="nav-link">Buy Now</a>
           <a href="#pens"    class="nav-link">Guide</a>
+          <a href="/blog"    class="nav-link">Blog</a>
           <a href="#faq"     class="nav-link">FAQ</a>
           <a href="#contact" class="nav-link">Contact Us</a>
         </div>
@@ -55,6 +56,7 @@
         <a href="#gallery" class="nav-link text-base py-1" @click="mobileMenuOpen = false">Gallery</a>
         <a href="#cta"     class="nav-link text-base py-1" @click="mobileMenuOpen = false">Buy Now</a>
         <a href="#pens"    class="nav-link text-base py-1" @click="mobileMenuOpen = false">Guide</a>
+        <a href="/blog"    class="nav-link text-base py-1" @click="mobileMenuOpen = false">Blog</a>
         <a href="#faq"     class="nav-link text-base py-1" @click="mobileMenuOpen = false">FAQ</a>
         <a href="#contact" class="nav-link text-base py-1" @click="mobileMenuOpen = false">Contact Us</a>
       </div>
@@ -568,6 +570,57 @@
       </div>
     </section>
 
+    <!-- Email Opt-in Section (預設隱藏，移除 style="display:none" 即可開啟) -->
+    <section
+      id="email-optin-section"
+      style="display: none;"
+      class="py-20 bg-[#FFF8EB]"
+    >
+      <div class="max-w-xl mx-auto px-6 text-center">
+        <p class="text-xs font-medium tracking-[2px] uppercase text-[#B586AC] mb-3">Free Resource</p>
+        <h2 class="text-2xl md:text-3xl font-bold text-[#1A1A1A] mb-4" style="font-family: 'Lora', serif;">
+          Get Your Free Starter Guide
+        </h2>
+        <p class="text-base text-[#3D3D3D] leading-relaxed mb-8 max-w-md mx-auto">
+          A beginner-friendly 3D pen project — yours free. Drop your email and we'll send it right over.
+        </p>
+
+        <!-- 表單 -->
+        <div id="optin-form-wrap">
+          <form
+            id="optin-form"
+            @submit.prevent="submitOptin"
+            class="flex flex-col sm:flex-row gap-3 justify-center"
+          >
+            <div class="flex-1 min-w-0">
+              <input
+                v-model="optinEmail"
+                type="email"
+                placeholder="Your email address"
+                class="form-input w-full"
+                :class="{ 'border-red-400': optinError }"
+              >
+              <p v-if="optinError" class="text-xs text-red-500 text-left mt-1">{{ optinError }}</p>
+            </div>
+            <button
+              type="submit"
+              class="flex-shrink-0 px-6 py-3 bg-[#E0A939] text-[#1A1A1A] font-bold rounded-full hover:brightness-105 transition-all whitespace-nowrap"
+            >
+              Send Me the Guide
+            </button>
+          </form>
+        </div>
+
+        <!-- 感謝訊息（送出後顯示） -->
+        <div v-if="optinSubmitted" class="py-4">
+          <p class="text-base text-[#6B441E] font-medium leading-relaxed">
+            You're in! Check your inbox for the free guide.
+            <span class="text-[#3D3D3D] font-normal">(If you don't see it in a few minutes, check your spam folder.)</span>
+          </p>
+        </div>
+      </div>
+    </section>
+
     <!-- Call to Action Section -->
     <section id="cta" class="py-24 bg-[#6B441E] text-center px-4">
       <p class="text-[#DFC6E0] text-xs font-medium tracking-[2px] uppercase mb-4">Start the Journey</p>
@@ -786,6 +839,26 @@ import { onMounted, onUnmounted, nextTick, ref } from 'vue';
 const mobileMenuOpen = ref(false)
 function toggleMenu() {
   mobileMenuOpen.value = !mobileMenuOpen.value
+}
+
+// Email Opt-in
+const optinEmail = ref('')
+const optinError = ref('')
+const optinSubmitted = ref(false)
+
+function submitOptin() {
+  optinError.value = ''
+  const email = optinEmail.value.trim()
+  if (!email) {
+    optinError.value = 'Please enter your email address.'
+    return
+  }
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+  if (!emailRegex.test(email)) {
+    optinError.value = 'Please enter a valid email address.'
+    return
+  }
+  optinSubmitted.value = true
 }
 
 // Testimonials 輪播
