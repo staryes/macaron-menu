@@ -24,6 +24,7 @@
           <a href="#gallery" class="nav-link">Gallery</a>
           <a href="#cta"     class="nav-link">Buy Now</a>
           <a href="#pens"    class="nav-link">Guide</a>
+          <a href="/blog"    class="nav-link">Blog</a>
           <a href="#faq"     class="nav-link">FAQ</a>
           <a href="#contact" class="nav-link">Contact Us</a>
         </div>
@@ -55,6 +56,7 @@
         <a href="#gallery" class="nav-link text-base py-1" @click="mobileMenuOpen = false">Gallery</a>
         <a href="#cta"     class="nav-link text-base py-1" @click="mobileMenuOpen = false">Buy Now</a>
         <a href="#pens"    class="nav-link text-base py-1" @click="mobileMenuOpen = false">Guide</a>
+        <a href="/blog"    class="nav-link text-base py-1" @click="mobileMenuOpen = false">Blog</a>
         <a href="#faq"     class="nav-link text-base py-1" @click="mobileMenuOpen = false">FAQ</a>
         <a href="#contact" class="nav-link text-base py-1" @click="mobileMenuOpen = false">Contact Us</a>
       </div>
@@ -115,8 +117,8 @@
             <path d="M6 18h.01M10 16h.01"/>
           </svg>
           <div>
-            <p class="text-sm font-semibold text-[#6B441E]">Real Science, Real Fun</p>
-            <p class="text-xs text-[#3D3D3D] hidden md:block">STEAM concepts kids actually enjoy</p>
+            <p class="text-sm font-semibold text-[#6B441E]">Standards-Aligned Curriculum</p>
+            <p class="text-xs text-[#3D3D3D] hidden md:block">NGSS & Common Core Science</p>
           </div>
         </div>
 
@@ -195,7 +197,7 @@
 </section>
 
     <!-- Themes Section -->
-    <section id="themes" class="py-24 bg-[#DFC6E0]/60">
+    <section id="themes" class="py-24 bg-[#FFF8EB]">
       <div class="max-w-7xl mx-auto text-center px-4">
         <h2 class="text-2xl md:text-3xl font-bold text-[#1A1A1A] mb-4">Our Products</h2>
         <p class="text-base text-[#3D3D3D] leading-relaxed max-w-2xl mx-auto mt-4 mb-10 text-center">
@@ -568,14 +570,64 @@
       </div>
     </section>
 
+    <!-- Email Opt-in Section (預設隱藏，移除 style="display:none" 即可開啟) -->
+    <section
+      id="email-optin-section"
+      style="display: none;"
+      class="py-20 bg-[#FFF8EB]"
+    >
+      <div class="max-w-xl mx-auto px-6 text-center">
+        <p class="text-xs font-medium tracking-[2px] uppercase text-[#B586AC] mb-3">Free Resource</p>
+        <h2 class="text-2xl md:text-3xl font-bold text-[#1A1A1A] mb-4" style="font-family: 'Lora', serif;">
+          Get Your Free Starter Guide
+        </h2>
+        <p class="text-base text-[#3D3D3D] leading-relaxed mb-8 max-w-md mx-auto">
+          A beginner-friendly 3D pen project — yours free. Drop your email and we'll send it right over.
+        </p>
+
+        <!-- 表單 -->
+        <div id="optin-form-wrap">
+          <form
+            id="optin-form"
+            @submit.prevent="submitOptin"
+            class="flex flex-col sm:flex-row gap-3 justify-center"
+          >
+            <div class="flex-1 min-w-0">
+              <input
+                v-model="optinEmail"
+                type="email"
+                placeholder="Your email address"
+                class="form-input w-full"
+                :class="{ 'border-red-400': optinError }"
+              >
+              <p v-if="optinError" class="text-xs text-red-500 text-left mt-1">{{ optinError }}</p>
+            </div>
+            <button
+              type="submit"
+              class="flex-shrink-0 px-6 py-3 bg-[#E0A939] text-[#1A1A1A] font-bold rounded-full hover:brightness-105 transition-all whitespace-nowrap"
+            >
+              Send Me the Guide
+            </button>
+          </form>
+        </div>
+
+        <!-- 感謝訊息（送出後顯示） -->
+        <div v-if="optinSubmitted" class="py-4">
+          <p class="text-base text-[#6B441E] font-medium leading-relaxed">
+            You're in! Check your inbox for the free guide.
+            <span class="text-[#3D3D3D] font-normal">(If you don't see it in a few minutes, check your spam folder.)</span>
+          </p>
+        </div>
+      </div>
+    </section>
+
     <!-- Call to Action Section -->
     <section id="cta" class="py-24 bg-[#6B441E] text-center px-4">
-      <p class="text-[#DFC6E0] text-xs font-medium tracking-[2px] uppercase mb-4">Start the Journey</p>
       <h2 class="text-3xl md:text-4xl font-bold text-white mb-4" style="font-family: 'Lora', serif;">
-        Get Started Today!
+        Build Something Real.
       </h2>
-      <p class="text-white/65 text-lg mb-8 max-w-md mx-auto">
-        Empower kids with creative STEAM learning activities.
+      <p class="text-white/75 text-lg mb-8 max-w-lg mx-auto leading-relaxed">
+        Full curriculum, all materials, photo-guided instructions. For kids who want to understand why it works — not just that it does.
       </p>
       <a href="https://www.amazon.com/stores/page/518CC82B-0DF3-4C27-8BB5-D45F16EC48A3?channel=Official%20Website" target="_blank" rel="noopener noreferrer"
          class="inline-block px-8 py-4 bg-[#E0A939] text-[#1A1A1A] font-bold rounded-full hover:brightness-105 transition-all text-base">
@@ -788,12 +840,33 @@ function toggleMenu() {
   mobileMenuOpen.value = !mobileMenuOpen.value
 }
 
+// Email Opt-in
+const optinEmail = ref('')
+const optinError = ref('')
+const optinSubmitted = ref(false)
+
+function submitOptin() {
+  optinError.value = ''
+  const email = optinEmail.value.trim()
+  if (!email) {
+    optinError.value = 'Please enter your email address.'
+    return
+  }
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+  if (!emailRegex.test(email)) {
+    optinError.value = 'Please enter a valid email address.'
+    return
+  }
+  optinSubmitted.value = true
+}
+
 // Testimonials 輪播
 const testimonials = [
   { quote: "It was his first time making something with a 3D pen, completely new for him!! Even after we left, he was still playing with the rocket at the restaurant.", author: "— TJ, mom" },
+  { quote: "What I really loved was watching how it got them thinking — trying out their own tweaks, comparing what worked and what didn't. I could see their confidence growing with each try. It's rare to find something that keeps them curious, keeps them safe, and lets you enjoy being right there with them.", author: "— K., Verified Amazon Customer" },
   { quote: "My daughter was able to understand what she was building and it kept her interest the whole time. I also liked that the designs are more stable than other kits we've tried; the finished pieces hold up well instead of falling apart right away.", author: "— J., Verified Amazon Customer" },
-  { quote: "As an adult I enjoy the program too. I think it's hard for me to just create with 3D pen, but with the kit it's pretty cool to see what 3D pen can do.", author: "— C., Verified Amazon Customer" },
-  { quote: "Overall this is a very solid, well designed kit. I tried other STEM or craft kits before, and many of them my kid forgets after one time. I would definitely check out more kits like this in the future.", author: "— X., Verified Amazon Customer" },
+  { quote: "I'm an engineer. We were honestly surprised how much we can do with it. This kit does not feel like the usual craft-style 3D pen projects — it's more open-ended, but still clearly about science. I tried other STEM kits before, and many of them my kid forgets after one time.", author: "— X., Verified Amazon Customer" },
+  { quote: "Standard stencils are basically just glorified coloring books — my kids lost interest fast. This kit changed everything. If you want actual quality time instead of just 'busy work,' this is the one to get.", author: "— Ja., Verified Amazon Customer" },
 ]
 const testimonialIndex = ref(0)
 let testimonialTouchStartX = 0
