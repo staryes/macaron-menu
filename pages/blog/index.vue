@@ -60,7 +60,6 @@
     <!-- Page Header -->
     <section class="py-16 bg-[#FFF8EB] border-b border-[#DFC6E0]/40">
       <div class="max-w-3xl mx-auto px-6 text-center">
-        <p class="text-xs font-medium tracking-[2px] uppercase text-[#B586AC] mb-3">From the Studio</p>
         <h1 class="text-3xl md:text-4xl font-bold text-[#1A1A1A] mb-4" style="font-family: 'Lora', serif;">
           From the Studio
         </h1>
