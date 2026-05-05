@@ -863,10 +863,10 @@ function submitOptin() {
 // Testimonials 輪播
 const testimonials = [
   { quote: "It was his first time making something with a 3D pen, completely new for him!! Even after we left, he was still playing with the rocket at the restaurant.", author: "— TJ, mom" },
-  { quote: "What I really loved was watching how it got them thinking — trying out their own tweaks, comparing what worked and what didn't. I could see their confidence growing with each try. It's rare to find something that keeps them curious, keeps them safe, and lets you enjoy being right there with them.", author: "— Kiki, Verified Amazon Customer" },
+  { quote: "What I really loved was watching how it got them thinking — trying out their own tweaks, comparing what worked and what didn't. I could see their confidence growing with each try. It's rare to find something that keeps them curious, keeps them safe, and lets you enjoy being right there with them.", author: "— K., Verified Amazon Customer" },
   { quote: "My daughter was able to understand what she was building and it kept her interest the whole time. I also liked that the designs are more stable than other kits we've tried; the finished pieces hold up well instead of falling apart right away.", author: "— J., Verified Amazon Customer" },
   { quote: "I'm an engineer. We were honestly surprised how much we can do with it. This kit does not feel like the usual craft-style 3D pen projects — it's more open-ended, but still clearly about science. I tried other STEM kits before, and many of them my kid forgets after one time.", author: "— X., Verified Amazon Customer" },
-  { quote: "Standard stencils are basically just glorified coloring books — my kids lost interest fast. This kit changed everything. If you want actual quality time instead of just 'busy work,' this is the one to get.", author: "— Jason, Verified Amazon Customer" },
+  { quote: "Standard stencils are basically just glorified coloring books — my kids lost interest fast. This kit changed everything. If you want actual quality time instead of just 'busy work,' this is the one to get.", author: "— Ja., Verified Amazon Customer" },
 ]
 const testimonialIndex = ref(0)
 let testimonialTouchStartX = 0
