@@ -867,6 +867,7 @@ const testimonials = [
   { quote: "My daughter was able to understand what she was building and it kept her interest the whole time. I also liked that the designs are more stable than other kits we've tried; the finished pieces hold up well instead of falling apart right away.", author: "— J., Verified Amazon Customer" },
   { quote: "I'm an engineer. We were honestly surprised how much we can do with it. This kit does not feel like the usual craft-style 3D pen projects — it's more open-ended, but still clearly about science. I tried other STEM kits before, and many of them my kid forgets after one time.", author: "— X., Verified Amazon Customer" },
   { quote: "Standard stencils are basically just glorified coloring books — my kids lost interest fast. This kit changed everything. If you want actual quality time instead of just 'busy work,' this is the one to get.", author: "— Ja., Verified Amazon Customer" },
+  { quote: "My daughter and I had a much more detailed investigation after it didn't balance at first — figuring out where to add weight to make it work. What most people call 'trouble-shooting' I call 'creative problem solving.' That's actually where the learning takes place.", author: "— A., Verified Amazon Customer" },
 ]
 const testimonialIndex = ref(0)
 let testimonialTouchStartX = 0
