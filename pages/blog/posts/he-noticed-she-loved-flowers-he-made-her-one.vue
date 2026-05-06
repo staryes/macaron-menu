@@ -62,9 +62,9 @@
       <div class="max-w-[680px] mx-auto px-6">
         <p class="text-xs font-medium tracking-[2px] uppercase text-[#B586AC] mb-4">From the Studio</p>
         <h1 class="text-3xl md:text-4xl font-bold text-[#1A1A1A] leading-tight mb-4" style="font-family: 'Lora', serif;">
-          I Thought the 3D Pen Was for My Kid. Then I Picked It Up.
+          He Noticed She Loved Flowers. He Made Her One.
         </h1>
-        <p class="text-sm text-[#B586AC]">Published on May 5, 2026</p>
+        <p class="text-sm text-[#B586AC]">May 5, 2026</p>
       </div>
     </header>
 
@@ -72,8 +72,68 @@
     <article class="py-12 bg-white">
       <div class="max-w-[680px] mx-auto px-6 post-body">
 
-        <!-- CONTENT PENDING: 文章內文待確認後填入 -->
-        <!-- 預計段落數：約 8 個 H2 section，共約 800 字 -->
+        <p>I asked my son at dinner. What should we make for your teacher for
+        Teacher Appreciation Week?</p>
+
+        <p>He thought about it for maybe two seconds.</p>
+
+        <p>"A snake," he said.</p>
+
+        <p>A desert snake, specifically. His class had been in a desert unit for a
+        few weeks. Sand dunes, camels, rattlesnakes. He wanted to make one with the
+        3D pen and give it to her.</p>
+
+        <p>I asked my son if he thought his teacher would want a rattlesnake on her desk.</p>
+
+        <p>He considered this. Maybe not a rattlesnake. A friendlier desert snake.</p>
+
+        <p>We kept going. A cactus next, still desert. Then a small car, because
+        she'd mentioned once that she liked cars. Then a teddy bear, because she
+        had one on her shelf and he thought it might want company.</p>
+
+        <p>Then he said, "She told us she really likes flowers."</p>
+
+        <p>That was the one.</p>
+
+        <h2>Why not just bring real ones</h2>
+
+        <p>We've brought his teacher real flowers before. She loves them. But a 3D
+        pen flower lasts, and you get to choose the color. He already knew she'd
+        like blue. You can't always find the right blue at a florist.</p>
+
+        <p>He wanted to make something she'd keep.</p>
+
+        <h2>The making</h2>
+
+        <p>The thing about making a gift for a specific person is that you think
+        differently about it. When he makes things for himself, wonky is fine. When
+        it was for his teacher, he redid the petals twice because they didn't look
+        right to him. Not because I said anything. He just looked at them, decided
+        they weren't good enough, and started again.</p>
+
+        <p>At one point the filament cooled unevenly on one petal and left a rough
+        edge. He asked me if we should scrap it and start over. I said it was up
+        to him. He held it up and looked at it for a second.</p>
+
+        <blockquote>"Real petals aren't perfect either," he said, and kept it.</blockquote>
+
+        <p>I wrote that down later so I wouldn't forget it.</p>
+
+        <h2>This morning</h2>
+
+        <figure>
+          <img src="/blog/2026-05-05-flowers-finished-01.png" alt="A blue 3D pen flower made by a child for his teacher — Teacher Appreciation Week">
+        </figure>
+
+        <p>The flower is done. The stem has a slight bend in it and one of the petals
+        is a little thicker than the others. He wrapped it in colored paper and wrote
+        her name on a piece of tape.</p>
+
+        <p>He brought it in this morning.</p>
+
+        <p>If you're thinking about trying this with your own kid, we make 3D pen
+        project guides for exactly this kind of thing.
+        <a href="/#themes" class="post-link">You can find them in our shop.</a></p>
 
       </div>
     </article>
@@ -116,7 +176,7 @@
         <h2 class="text-xl font-bold text-[#1A1A1A] mb-8" style="font-family: 'Lora', serif;">
           More from the Studio
         </h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="flex flex-col gap-0 max-w-2xl">
           <!-- 待新增第二篇文章後填入 -->
         </div>
       </div>
@@ -139,9 +199,9 @@
 import { ref, onMounted, onUnmounted } from 'vue'
 
 useHead({
-  title: 'I Thought the 3D Pen Was for My Kid. Then I Picked It Up. — Enki Atelier',
+  title: 'He Noticed She Loved Flowers. He Made Her One. — Enki Atelier',
   meta: [
-    { name: 'description', content: 'A parent picks up a 3D pen for the first time and discovers something unexpected. From the Enki Atelier studio.' }
+    { name: 'description', content: 'My son wanted to make his teacher a desert snake with his 3D pen. Then a cactus. Then a car. Then flowers. A Teacher Appreciation Week story.' }
   ]
 })
 
@@ -162,7 +222,6 @@ onUnmounted(() => {
   window.removeEventListener('resize', updateLogoSize)
 })
 
-// Email Opt-in
 const optinEmail = ref('')
 const optinError = ref('')
 const optinSubmitted = ref(false)
@@ -189,29 +248,21 @@ function submitOptin() {
   color: #3D3D3D;
   transition: color 0.2s;
 }
-.nav-link:hover {
-  color: #E0A939;
-}
-.nav-link-active {
-  color: #6B441E;
-  font-weight: 600;
-}
+.nav-link:hover { color: #E0A939; }
+.nav-link-active { color: #6B441E; font-weight: 600; }
 
 html {
   font-family: 'DM Sans', sans-serif;
   scroll-padding-top: 80px;
 }
 
-/* ─── Post Body Typography ─── */
 .post-body {
   font-family: 'DM Sans', sans-serif;
   font-size: 1rem;
   color: #3D3D3D;
   line-height: 1.8;
 }
-.post-body p {
-  margin-bottom: 1.6em;
-}
+.post-body p { margin-bottom: 1.6em; }
 .post-body h2 {
   font-family: 'Lora', serif;
   font-size: 1.4rem;
@@ -221,10 +272,7 @@ html {
   margin-bottom: 0.8em;
   line-height: 1.35;
 }
-.post-body strong {
-  font-weight: 600;
-  color: #1A1A1A;
-}
+.post-body strong { font-weight: 600; color: #1A1A1A; }
 .post-body blockquote {
   border-left: 4px solid #6B441E;
   padding-left: 1.25rem;
@@ -248,9 +296,47 @@ html {
   color: #B586AC;
   margin-bottom: 2em;
 }
-.post-body figure {
-  margin: 0;
+.post-body figure { margin: 0; }
+.post-link {
+  color: #6B441E;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color 0.2s;
 }
+.post-link:hover { color: #E0A939; }
+
+.blog-card {
+  border-left: 4px solid #6B441E;
+  padding: 1.25rem 0 1.25rem 1.5rem;
+  border-bottom: 0.5px solid rgba(223,198,224,0.4);
+}
+.blog-card:last-child { border-bottom: none; }
+.blog-card-tag {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #B586AC;
+  margin-bottom: 0.4rem;
+}
+.blog-card-title {
+  font-family: 'Lora', serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #1A1A1A;
+  line-height: 1.45;
+  margin-bottom: 0.6rem;
+}
+.blog-card-title a { color: inherit; text-decoration: none; transition: color 0.2s; }
+.blog-card-title a:hover { color: #6B441E; }
+.blog-card-cta {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #6B441E;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.blog-card-cta:hover { color: #E0A939; }
 
 .form-input {
   border: 1.5px solid rgba(223,198,224,0.6);
@@ -267,11 +353,7 @@ html {
 }
 
 @media (max-width: 640px) {
-  .post-body h2 {
-    font-size: 1.2rem;
-  }
-  .post-body {
-    font-size: 0.95rem;
-  }
+  .post-body h2 { font-size: 1.2rem; }
+  .post-body { font-size: 0.95rem; }
 }
 </style>
