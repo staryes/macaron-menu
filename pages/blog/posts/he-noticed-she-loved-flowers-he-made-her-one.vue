@@ -105,6 +105,12 @@
 
         <h2>The making</h2>
 
+        <p>Before he touched the pen, he drew out the petal shapes on paper. He'd
+        seen the project templates in our kits and wanted to do the same thing for
+        himself. He wanted to figure out what he was building before he
+        committed to the filament. The template he drew was very much his own. The petals were
+        all different shapes and sizes.</p>
+
         <p>The thing about making a gift for a specific person is that you think
         differently about it. When he makes things for himself, wonky is fine. When
         it was for his teacher, he redid the petals twice because they didn't look
