@@ -121,9 +121,10 @@
 
         <h2>This morning</h2>
 
-        <p>The flower is done. It's small, fits in the palm of your hand. The stem
-        has a slight bend in it and one of the petals is a little thicker than the
-        others. He wrapped it in tissue paper and wrote her name on a piece of tape.</p>
+        <p>The flower is done. The stem has a slight bend in it and one of the petals
+        is a little thicker than the others. He wrapped it in colored paper — the kind
+        that makes even a simple thing look like it was meant — and wrote her name on
+        a piece of tape.</p>
 
         <p>He brought it in this morning.</p>
 
