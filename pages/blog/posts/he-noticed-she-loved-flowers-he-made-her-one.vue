@@ -173,13 +173,7 @@
           More from the Studio
         </h2>
         <div class="flex flex-col gap-0 max-w-2xl">
-          <article class="blog-card">
-            <p class="blog-card-tag">From the Studio</p>
-            <h3 class="blog-card-title">
-              <a href="/blog/posts/first-3d-pen">I Thought the 3D Pen Was for My Kid. Then I Picked It Up.</a>
-            </h3>
-            <a href="/blog/posts/first-3d-pen" class="blog-card-cta">Read More →</a>
-          </article>
+          <!-- 待新增第二篇文章後填入 -->
         </div>
       </div>
     </section>

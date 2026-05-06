@@ -85,17 +85,6 @@
             <a href="/blog/posts/he-noticed-she-loved-flowers-he-made-her-one" class="blog-card-cta">Read More →</a>
           </article>
 
-          <!-- Article Card: first-3d-pen -->
-          <article class="blog-card">
-            <p class="blog-card-tag">From the Studio</p>
-            <h2 class="blog-card-title">
-              <a href="/blog/posts/first-3d-pen">I Thought the 3D Pen Was for My Kid. Then I Picked It Up.</a>
-            </h2>
-            <p class="blog-card-date"><!-- 待內容確認後填入 --></p>
-            <p class="blog-card-excerpt"><!-- 待內容確認後填入 --></p>
-            <a href="/blog/posts/first-3d-pen" class="blog-card-cta">Read More →</a>
-          </article>
-
         </div>
       </div>
     </section>
