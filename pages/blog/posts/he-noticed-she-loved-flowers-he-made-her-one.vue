@@ -72,7 +72,7 @@
     <article class="py-12 bg-white">
       <div class="max-w-[680px] mx-auto px-6 post-body">
 
-        <p>I asked him at dinner. What should we make for your teacher for
+        <p>I asked my son at dinner. What should we make for your teacher for
         Teacher Appreciation Week?</p>
 
         <p>He thought about it for maybe two seconds.</p>
@@ -83,7 +83,7 @@
         few weeks. Sand dunes, camels, rattlesnakes. He wanted to make one with the
         3D pen and give it to her.</p>
 
-        <p>I asked him if he thought his teacher would want a rattlesnake on her desk.</p>
+        <p>I asked my son if he thought his teacher would want a rattlesnake on her desk.</p>
 
         <p>He considered this. Maybe not a rattlesnake. A friendlier desert snake.</p>
 
@@ -126,9 +126,8 @@
         </figure>
 
         <p>The flower is done. The stem has a slight bend in it and one of the petals
-        is a little thicker than the others. He wrapped it in colored paper — the kind
-        that makes even a simple thing look like it was meant — and wrote her name on
-        a piece of tape.</p>
+        is a little thicker than the others. He wrapped it in colored paper and wrote
+        her name on a piece of tape.</p>
 
         <p>He brought it in this morning.</p>
 
