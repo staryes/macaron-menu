@@ -137,10 +137,6 @@
 
         <p>He brought it in this morning.</p>
 
-        <p>If you're thinking about trying this with your own kid, we make 3D pen
-        project guides for exactly this kind of thing.
-        <a href="/#themes" class="post-link">You can find them in our shop.</a></p>
-
       </div>
     </article>
 
