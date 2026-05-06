@@ -121,6 +121,10 @@
 
         <h2>This morning</h2>
 
+        <figure>
+          <img src="/blog/2026-05-05-flowers-finished-01.png" alt="A blue 3D pen flower made by a child for his teacher — Teacher Appreciation Week">
+        </figure>
+
         <p>The flower is done. The stem has a slight bend in it and one of the petals
         is a little thicker than the others. He wrapped it in colored paper — the kind
         that makes even a simple thing look like it was meant — and wrote her name on
