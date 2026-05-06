@@ -74,6 +74,17 @@
       <div class="max-w-3xl mx-auto px-6">
         <div class="flex flex-col gap-0">
 
+          <!-- Article Card: he-noticed-she-loved-flowers -->
+          <article class="blog-card">
+            <p class="blog-card-tag">From the Studio</p>
+            <h2 class="blog-card-title">
+              <a href="/blog/posts/he-noticed-she-loved-flowers-he-made-her-one">He Noticed She Loved Flowers. He Made Her One.</a>
+            </h2>
+            <p class="blog-card-date">May 5, 2026</p>
+            <p class="blog-card-excerpt">My son wanted to make his teacher a desert snake with his 3D pen. Then a cactus. Then a car. Then flowers.</p>
+            <a href="/blog/posts/he-noticed-she-loved-flowers-he-made-her-one" class="blog-card-cta">Read More →</a>
+          </article>
+
           <!-- Article Card: first-3d-pen -->
           <article class="blog-card">
             <p class="blog-card-tag">From the Studio</p>
