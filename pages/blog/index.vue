@@ -85,6 +85,17 @@
             <a href="/blog/posts/he-noticed-she-loved-flowers-he-made-her-one" class="blog-card-cta">Read More →</a>
           </article>
 
+          <!-- Article Card: why-some-kids-need-to-make-something-first -->
+          <article class="blog-card">
+            <p class="blog-card-tag">From the Studio</p>
+            <h2 class="blog-card-title">
+              <a href="/blog/posts/why-some-kids-need-to-make-something-first">Why Some Kids Need to Make Something First, and What Emotional Regulation Has to Do With It</a>
+            </h2>
+            <p class="blog-card-date">May 1, 2026</p>
+            <p class="blog-card-excerpt">The same child who can't sit still for five minutes will sometimes work through a full project without looking up once. What's happening in those forty minutes is worth understanding.</p>
+            <a href="/blog/posts/why-some-kids-need-to-make-something-first" class="blog-card-cta">Read More →</a>
+          </article>
+
         </div>
       </div>
     </section>
