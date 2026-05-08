@@ -11,6 +11,7 @@ export default defineNuxtConfig({
           content: 'PhD-designed STEAM kits for kids ages 6–12. Build rockets, explore physics, and develop engineering skills through hands-on 3D pen projects. Screen-free. Genuinely educational.'
         },
         { name: 'keywords', content: '3D pen activities for kids, STEAM kit ages 6-12, kids engineering kit, 3D pen curriculum, hands-on STEM activities, physics activities for kids' },
+        { name: 'p:domain_verify', content: '79db93aeddb9b8b436e33951bcf4ca44' },
         // Open Graph（Facebook / LINE 分享預覽）
         { property: 'og:type', content: 'website' },
         { property: 'og:url', content: 'https://enkiatelier.com' },
