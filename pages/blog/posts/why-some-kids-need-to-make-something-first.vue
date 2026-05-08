@@ -61,9 +61,9 @@
     <header class="py-14 bg-[#FFF8EB] border-b border-[#DFC6E0]/40">
       <div class="max-w-[680px] mx-auto px-6">
         <h1 class="text-3xl md:text-4xl font-bold text-[#1A1A1A] leading-tight mb-4" style="font-family: 'Lora', serif;">
-          He Noticed She Loved Flowers. He Made Her One.
+          Why Some Kids Need to Make Something First, and What Emotional Regulation Has to Do With It
         </h1>
-        <p class="text-sm text-[#B586AC]">May 5, 2026</p>
+        <p class="text-sm text-[#B586AC]">May 1, 2026</p>
       </div>
     </header>
 
@@ -71,70 +71,119 @@
     <article class="py-12 bg-white">
       <div class="max-w-[680px] mx-auto px-6 post-body">
 
-        <p>I asked my son at dinner. What should we make for your teacher for
-        Teacher Appreciation Week?</p>
+        <p>A parent at one of our workshops said something I've heard from a lot of
+        different parents, in a lot of different words. Her son had been impossible
+        all afternoon. Then he sat down to build something, and didn't move for
+        forty minutes.</p>
 
-        <p>He thought about it for maybe two seconds.</p>
+        <p>"I don't understand it," she said. "He can't sit still for five minutes,
+        but give him something to make and he just disappears into it."</p>
 
-        <p>"A snake," he said.</p>
+        <p>She wasn't wrong to find it strange. It looks like a contradiction. The
+        same child who can't get through dinner without getting up three times will
+        sometimes work through a full project without looking up once. What's
+        happening in those forty minutes is worth understanding, because it's not
+        a coincidence, and it doesn't happen by accident.</p>
 
-        <p>A desert snake, specifically. His class had been in a desert unit for a
-        few weeks. Sand dunes, camels, rattlesnakes. He wanted to make one with the
-        3D pen and give it to her.</p>
+        <p>May is Mental Health Awareness Month. Most of the conversation this month
+        focuses on awareness and access to professional support. What families can
+        do at home to actively support children's mental health gets less attention.
+        Emotional regulation sits at the center of that question: the capacity to
+        manage one's internal state well enough to focus, tolerate frustration, and
+        stay with something difficult. Children who develop this skill early carry
+        it into every area of their lives. Making things is one of the most direct
+        ways to build it.</p>
 
-        <p>I asked my son if he thought his teacher would want a rattlesnake on her desk.</p>
+        <h2>The nervous system is looking for something to hold onto</h2>
 
-        <p>He considered this. Maybe not a rattlesnake. A friendlier desert snake.</p>
+        <p>When a child is dysregulated, wound up, scattered, on edge, their nervous
+        system is scanning for input it can organize around. Physical, hands-on work
+        with immediate sensory feedback gives it exactly that: the warmth and slight
+        resistance of the material, the visible result of each movement, the
+        predictable loop of action and outcome. The body settles. The brain
+        follows.</p>
 
-        <p>We kept going. A cactus next, still desert. Then a small car, because
-        she'd mentioned once that she liked cars. Then a teddy bear, because she
-        had one on her shelf and he thought it might want company.</p>
+        <p>For some children, this effect is especially pronounced. Children whose
+        nervous systems require more sensory input to find equilibrium, or who have
+        a harder time filtering out the noise of a busy day, often become
+        surprisingly focused once their hands are fully engaged. The activity isn't
+        competing with their energy. It's giving it somewhere to go.</p>
 
-        <p>Then he said, "She told us she really likes flowers."</p>
+        <h2>What parents call "focused," researchers call flow</h2>
 
-        <p>That was the one.</p>
+        <p>Csikszentmihalyi described flow as complete absorption in an activity
+        where skill and challenge are well matched, feedback is immediate, and the
+        sense of time dissolves. It's been studied extensively in adults, but
+        children enter it too, and they enter it through exactly the kind of
+        activity that looks like play.</p>
 
-        <h2>Why not just bring real ones</h2>
+        <p>Most of the conditions for flow appear in hands-on making almost by
+        default. Building a structure that has to balance. Running a circuit and
+        watching it light up. Shaping something with a 3D pen. The task is physical
+        and visible. Progress is immediate. Difficulty scales naturally with
+        developing skill. The feedback is real-time, and that feedback loop is what
+        keeps attention engaged rather than drifting.</p>
 
-        <p>We've brought his teacher real flowers before. She loves them. But a 3D
-        pen flower lasts, and you get to choose the color. He already knew she'd
-        like blue. You can't always find the right blue at a florist.</p>
+        <p>When a parent says "he's so focused when he's building," they're
+        describing a child in flow. That's not a personality quirk. Given the right
+        activity, it shows up reliably.</p>
 
-        <p>He wanted to make something she'd keep.</p>
+        <h2>Why this matters beyond the forty minutes</h2>
 
-        <h2>The making</h2>
+        <p>Flow and the regulation that makes it possible aren't just pleasant while
+        they're happening. The research on self-regulation in children consistently
+        shows it is one of the strongest predictors of later academic performance
+        and long-term wellbeing. In several studies, the correlation is stronger
+        than IQ or socioeconomic background.</p>
 
-        <p>Before he touched the pen, he drew out the petal shapes on paper. He'd
-        seen the project templates in our kits and wanted to do the same thing for
-        himself. He wanted to figure out what he was building before he
-        committed to the filament. The template he drew was very much his own. The petals were
-        all different shapes and sizes.</p>
+        <p>A 2011 study by Moffitt and colleagues followed participants across 32
+        years and found that childhood self-control predicted adult health, financial
+        stability, and a range of other outcomes more reliably than intelligence or
+        family circumstances. Blair and Razza (2007) found that effortful control
+        and executive function in kindergarten-age children were significantly
+        associated with emerging math and literacy ability. The correlation was
+        stronger than general intelligence measures.</p>
 
-        <p>The thing about making a gift for a specific person is that you think
-        differently about it. When he makes things for himself, wonky is fine. When
-        it was for his teacher, he redid the petals twice because they didn't look
-        right to him. Not because I said anything. He just looked at them, decided
-        they weren't good enough, and started again.</p>
+        <p>Making things is one of the most accessible ways for a young child to
+        practice exactly this capacity. Sustained attention. Tolerance for
+        frustration. The ability to return to a task after the structure collapses,
+        the circuit doesn't close, or the filament does something unexpected. No
+        one is teaching those things explicitly. The activity demands them, and the
+        child rises to meet it.</p>
 
-        <p>At one point the filament cooled unevenly on one petal and left a rough
-        edge. He asked me if we should scrap it and start over. I said it was up
-        to him. He held it up and looked at it for a second.</p>
+        <h2>The homework after the making</h2>
 
-        <blockquote>"Real petals aren't perfect either," he said, and kept it.</blockquote>
+        <p>Something I've observed consistently, in workshop settings and in
+        conversations with parents: when a child spends thirty or forty minutes in
+        focused making before a transition to more cognitively demanding work, the
+        transition tends to go better. Not always, and not as a formula. But often
+        enough to be worth noting.</p>
 
-        <p>I wrote that down later so I wouldn't forget it.</p>
+        <p>The child who has just come out of flow is not the same child who walked
+        in still carrying the residue of the school day. Something has reset. The
+        regulated state doesn't disappear the moment the project is set down. It
+        carries, at least partially, into what comes next.</p>
 
-        <h2>This morning</h2>
+        <p>Parents sometimes describe this as their child being "easier to reach"
+        after making something. More willing to try a hard problem. Less likely to
+        shut down at the first sign of difficulty. That's not coincidence. That's
+        what a regulated nervous system looks like from the outside.</p>
 
-        <figure>
-          <img src="/blog/2026-05-05-flowers-finished-01.png" alt="A blue 3D pen flower made by a child for his teacher — Teacher Appreciation Week">
-        </figure>
+        <h2>What this looks like in practice</h2>
 
-        <p>The flower is done. The stem has a slight bend in it and one of the petals
-        is a little thicker than the others. He wrapped it in colored paper and wrote
-        her name on a piece of tape.</p>
+        <p>The activity doesn't need to be long. For many children, twenty to thirty
+        minutes of absorbed making is enough to produce a noticeable shift. Duration
+        matters less than the quality of engagement: a task with a clear goal, real
+        sensory feedback, and enough structure to prevent frustration without
+        removing the sense of genuine problem-solving.</p>
 
-        <p>He brought it in this morning.</p>
+        <p>This is something we think about carefully when designing projects. The
+        goal isn't just a finished object. It's the particular kind of focused
+        engagement that produces the object, and what that engagement does for the
+        child in the time after.</p>
+
+        <p>If you're looking for projects designed with that balance in mind,
+        <a href="/#themes" class="post-link">you can find them in our shop.</a></p>
 
       </div>
     </article>
@@ -178,7 +227,13 @@
           More from the Studio
         </h2>
         <div class="flex flex-col gap-0 max-w-2xl">
-          <!-- 待新增第二篇文章後填入 -->
+          <article class="blog-card">
+            <h3 class="blog-card-title">
+              <a href="/blog/posts/he-noticed-she-loved-flowers-he-made-her-one">He Noticed She Loved Flowers. He Made Her One.</a>
+            </h3>
+            <p class="blog-card-date">May 5, 2026</p>
+            <a href="/blog/posts/he-noticed-she-loved-flowers-he-made-her-one" class="blog-card-cta">Read More →</a>
+          </article>
         </div>
       </div>
     </section>
@@ -200,9 +255,9 @@
 import { ref, onMounted, onUnmounted } from 'vue'
 
 useHead({
-  title: 'He Noticed She Loved Flowers. He Made Her One. — Enki Atelier',
+  title: 'Why Some Kids Need to Make Something First, and What Emotional Regulation Has to Do With It — Enki Atelier',
   meta: [
-    { name: 'description', content: 'My son wanted to make his teacher a desert snake with his 3D pen. Then a cactus. Then a car. Then flowers. A Teacher Appreciation Week story.' }
+    { name: 'description', content: 'Why does your child focus better when building? The neuroscience of making, emotional regulation, and why the calm that follows carries into everything else.' }
   ]
 })
 
@@ -326,10 +381,11 @@ html {
   font-weight: 700;
   color: #1A1A1A;
   line-height: 1.45;
-  margin-bottom: 0.6rem;
+  margin-bottom: 0.4rem;
 }
 .blog-card-title a { color: inherit; text-decoration: none; transition: color 0.2s; }
 .blog-card-title a:hover { color: #6B441E; }
+.blog-card-date { font-size: 0.8rem; color: #B586AC; margin-bottom: 0.6rem; }
 .blog-card-cta {
   font-size: 0.85rem;
   font-weight: 600;
