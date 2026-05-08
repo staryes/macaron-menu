@@ -61,8 +61,6 @@
     <header class="py-14 bg-[#FFF8EB] border-b border-[#DFC6E0]/40">
       <div class="max-w-[680px] mx-auto px-6">
         <p class="text-xs font-medium tracking-[2px] uppercase text-[#B586AC] mb-4">
-          <!-- REPLACE: category / tag -->
-          From the Studio
         </p>
         <h1 class="text-3xl md:text-4xl font-bold text-[#1A1A1A] leading-tight mb-4" style="font-family: 'Lora', serif;">
           <!-- REPLACE: 文章標題 -->

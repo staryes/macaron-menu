@@ -76,7 +76,6 @@
 
           <!-- Article Card: he-noticed-she-loved-flowers -->
           <article class="blog-card">
-            <p class="blog-card-tag">From the Studio</p>
             <h2 class="blog-card-title">
               <a href="/blog/posts/he-noticed-she-loved-flowers-he-made-her-one">He Noticed She Loved Flowers. He Made Her One.</a>
             </h2>
@@ -87,7 +86,6 @@
 
           <!-- Article Card: why-some-kids-need-to-make-something-first -->
           <article class="blog-card">
-            <p class="blog-card-tag">From the Studio</p>
             <h2 class="blog-card-title">
               <a href="/blog/posts/why-some-kids-need-to-make-something-first">Why Some Kids Need to Make Something First, and What Emotional Regulation Has to Do With It</a>
             </h2>

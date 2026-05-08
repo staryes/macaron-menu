@@ -60,7 +60,6 @@
     <!-- Article Header -->
     <header class="py-14 bg-[#FFF8EB] border-b border-[#DFC6E0]/40">
       <div class="max-w-[680px] mx-auto px-6">
-        <p class="text-xs font-medium tracking-[2px] uppercase text-[#B586AC] mb-4">From the Studio</p>
         <h1 class="text-3xl md:text-4xl font-bold text-[#1A1A1A] leading-tight mb-4" style="font-family: 'Lora', serif;">
           Why Some Kids Need to Make Something First, and What Emotional Regulation Has to Do With It
         </h1>
@@ -229,7 +228,6 @@
         </h2>
         <div class="flex flex-col gap-0 max-w-2xl">
           <article class="blog-card">
-            <p class="blog-card-tag">From the Studio</p>
             <h3 class="blog-card-title">
               <a href="/blog/posts/he-noticed-she-loved-flowers-he-made-her-one">He Noticed She Loved Flowers. He Made Her One.</a>
             </h3>
