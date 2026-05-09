@@ -71,7 +71,7 @@
     <article class="py-12 bg-white">
       <div class="max-w-[680px] mx-auto px-6 post-body">
 
-        <p>I asked him at dinner. What should we make for your teacher for
+        <p>I asked my son at dinner. What should we make for your teacher for
         Teacher Appreciation Week?</p>
 
         <p>He thought about it for maybe two seconds.</p>
@@ -82,7 +82,7 @@
         few weeks. Sand dunes, camels, rattlesnakes. He wanted to make one with the
         3D pen and give it to her.</p>
 
-        <p>I asked him if he thought his teacher would want a rattlesnake on her desk.</p>
+        <p>I asked my son if he thought his teacher would want a rattlesnake on her desk.</p>
 
         <p>He considered this. Maybe not a rattlesnake. A friendlier desert snake.</p>
 
@@ -104,6 +104,12 @@
 
         <h2>The making</h2>
 
+        <p>Before he touched the pen, he drew out the petal shapes on paper. He'd
+        seen the project templates in our kits and wanted to do the same thing for
+        himself. He wanted to figure out what he was building before he committed
+        to the filament. The template he drew was very much his own. The petals
+        were all different shapes and sizes.</p>
+
         <p>The thing about making a gift for a specific person is that you think
         differently about it. When he makes things for himself, wonky is fine. When
         it was for his teacher, he redid the petals twice because they didn't look
@@ -124,15 +130,11 @@
           <img src="/blog/2026-05-05-flowers-finished-01.png" alt="A blue 3D pen flower made by a child for his teacher — Teacher Appreciation Week">
         </figure>
 
-        <p>The flower is done. It's small, fits in the palm of your hand. The stem
-        has a slight bend in it and one of the petals is a little thicker than the
-        others. He wrapped it in tissue paper and wrote her name on a piece of tape.</p>
+        <p>The flower is done. The stem has a slight bend in it and one of the
+        petals is a little thicker than the others. He wrapped it in colored paper
+        and wrote her name on a piece of tape.</p>
 
         <p>He brought it in this morning.</p>
-
-        <p>If you're thinking about trying this with your own kid, we make 3D pen
-        project guides for exactly this kind of thing.
-        <a href="/#themes" class="post-link">You can find them in our shop.</a></p>
 
       </div>
     </article>
