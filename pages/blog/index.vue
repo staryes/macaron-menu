@@ -94,6 +94,16 @@
             <a href="/blog/posts/why-some-kids-need-to-make-something-first" class="blog-card-cta">Read More →</a>
           </article>
 
+          <!-- Article Card: marble run -->
+          <article class="blog-card">
+            <h2 class="blog-card-title">
+              <a href="/blog/posts/he-designed-his-own-marble-run-it-started-as-a-cardboard-box">He Designed His Own Marble Run. It Started as a Cardboard Box.</a>
+            </h2>
+            <p class="blog-card-date">April 17, 2026</p>
+            <p class="blog-card-excerpt">My son had a pile of delivery boxes and wanted to build a marble run. He designed the scoring zones himself, and a trap where marbles score negative points. He was very proud of the trap.</p>
+            <a href="/blog/posts/he-designed-his-own-marble-run-it-started-as-a-cardboard-box" class="blog-card-cta">Read More →</a>
+          </article>
+
         </div>
       </div>
     </section>
