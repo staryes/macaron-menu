@@ -294,6 +294,6 @@ html { font-family: 'DM Sans', sans-serif; scroll-padding-top: 80px; }
 
 @media (max-width: 640px) {
   .post-body h2 { font-size: 1.25rem; }
-  .post-body { font-size: 1rem; }
+  .post-body { font-size: 1.03125rem; }
 }
 </style>

@@ -366,6 +366,6 @@ html {
 
 @media (max-width: 640px) {
   .post-body h2 { font-size: 1.2rem; }
-  .post-body { font-size: 1rem; }
+  .post-body { font-size: 1.03125rem; }
 }
 </style>
