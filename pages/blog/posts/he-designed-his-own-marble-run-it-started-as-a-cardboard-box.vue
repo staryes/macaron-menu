@@ -63,7 +63,7 @@
         <h1 class="text-3xl md:text-4xl font-bold text-[#1A1A1A] leading-tight mb-4" style="font-family: 'Lora', serif;">
           He Designed His Own Marble Run. It Started as a Cardboard Box.
         </h1>
-        <p class="text-sm text-[#B586AC]">April 17, 2026 · 男孩的媽媽</p>
+        <p class="text-sm text-[#B586AC]">April 17, 2026 · Enki Atelier</p>
       </div>
     </header>
 
