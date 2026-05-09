@@ -63,7 +63,7 @@
         <h1 class="text-3xl md:text-4xl font-bold text-[#1A1A1A] leading-tight mb-4" style="font-family: 'Lora', serif;">
           He Noticed She Loved Flowers. He Made Her One.
         </h1>
-        <p class="text-sm text-[#B586AC]">May 5, 2026</p>
+        <p class="text-sm text-[#B586AC]">May 5, 2026 · 男孩的媽媽</p>
       </div>
     </header>
 

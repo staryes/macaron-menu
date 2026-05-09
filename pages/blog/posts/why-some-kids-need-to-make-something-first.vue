@@ -63,7 +63,7 @@
         <h1 class="text-3xl md:text-4xl font-bold text-[#1A1A1A] leading-tight mb-4" style="font-family: 'Lora', serif;">
           Why Some Kids Need to Make Something First, and What Emotional Regulation Has to Do With It
         </h1>
-        <p class="text-sm text-[#B586AC]">May 1, 2026</p>
+        <p class="text-sm text-[#B586AC]">May 1, 2026 · 科學家</p>
       </div>
     </header>
 
