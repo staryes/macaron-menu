@@ -111,7 +111,7 @@
 
         <h2>What parents call "focused," researchers call flow</h2>
 
-        <p>Csikszentmihalyi described flow as complete absorption in an activity
+        <p>Psychologist Mihaly Csikszentmihalyi described flow as complete absorption in an activity
         where skill and challenge are well matched, feedback is immediate, and the
         sense of time dissolves. It's been studied extensively in adults, but
         children enter it too, and they enter it through exactly the kind of
@@ -136,10 +136,10 @@
         and long-term wellbeing. In several studies, the correlation is stronger
         than IQ or socioeconomic background.</p>
 
-        <p>A 2011 study by Moffitt and colleagues followed participants across 32
+        <p>A 2011 study by psychologist Dr. Terrie Moffitt and colleagues followed participants across 32
         years and found that childhood self-control predicted adult health, financial
         stability, and a range of other outcomes more reliably than intelligence or
-        family circumstances. Blair and Razza (2007) found that effortful control
+        family circumstances. Dr. Clancy Blair and Dr. Rachel Razza (2007) found that effortful control
         and executive function in kindergarten-age children were significantly
         associated with emerging math and literacy ability. The correlation was
         stronger than general intelligence measures.</p>
@@ -234,6 +234,13 @@
             <p class="blog-card-date">May 5, 2026</p>
             <a href="/blog/posts/he-noticed-she-loved-flowers-he-made-her-one" class="blog-card-cta">Read More →</a>
           </article>
+          <article class="blog-card">
+            <h3 class="blog-card-title">
+              <a href="/blog/posts/he-designed-his-own-marble-run-it-started-as-a-cardboard-box">He Designed His Own Marble Run. It Started as a Cardboard Box.</a>
+            </h3>
+            <p class="blog-card-date">April 17, 2026</p>
+            <a href="/blog/posts/he-designed-his-own-marble-run-it-started-as-a-cardboard-box" class="blog-card-cta">Read More →</a>
+          </article>
         </div>
       </div>
     </section>
@@ -314,14 +321,14 @@ html {
 
 .post-body {
   font-family: 'DM Sans', sans-serif;
-  font-size: 1rem;
+  font-size: 1.0625rem;
   color: #3D3D3D;
   line-height: 1.8;
 }
 .post-body p { margin-bottom: 1.6em; }
 .post-body h2 {
   font-family: 'Lora', serif;
-  font-size: 1.4rem;
+  font-size: 1.45rem;
   font-weight: 700;
   color: #1A1A1A;
   margin-top: 2.4em;
@@ -411,6 +418,6 @@ html {
 
 @media (max-width: 640px) {
   .post-body h2 { font-size: 1.2rem; }
-  .post-body { font-size: 0.95rem; }
+  .post-body { font-size: 1rem; }
 }
 </style>

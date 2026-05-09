@@ -61,9 +61,9 @@
     <header class="py-14 bg-[#FFF8EB] border-b border-[#DFC6E0]/40">
       <div class="max-w-[680px] mx-auto px-6">
         <h1 class="text-3xl md:text-4xl font-bold text-[#1A1A1A] leading-tight mb-4" style="font-family: 'Lora', serif;">
-          He Noticed She Loved Flowers. He Made Her One.
+          He Designed His Own Marble Run. It Started as a Cardboard Box.
         </h1>
-        <p class="text-sm text-[#B586AC]">May 5, 2026</p>
+        <p class="text-sm text-[#B586AC]">April 17, 2026</p>
       </div>
     </header>
 
@@ -71,68 +71,54 @@
     <article class="py-12 bg-white">
       <div class="max-w-[680px] mx-auto px-6 post-body">
 
-        <p>I asked him at dinner. What should we make for your teacher for
-        Teacher Appreciation Week?</p>
+        <p>The first toy I remember making was a piece of cardboard with two holes
+        punched through the center and a loop of string threaded through both. Pull
+        the string taut, release, pull again. The disc spun and hummed. That was
+        the whole thing, and it was enough to occupy an entire afternoon.</p>
 
-        <p>He thought about it for maybe two seconds.</p>
+        <p>There was also a gun made from chopsticks and rubber bands, and a small
+        raft cut from strips of bamboo. None of them took long. None of them cost
+        anything. And all of them got modified, because when you make something
+        yourself, you can always change it.</p>
 
-        <p>"A snake," he said.</p>
+        <h2>The marble run</h2>
 
-        <p>A desert snake, specifically. His class had been in a desert unit for a
-        few weeks. Sand dunes, camels, rattlesnakes. He wanted to make one with the
-        3D pen and give it to her.</p>
+        <p>My son doesn't have bamboo lying around. But he had a pile of delivery
+        boxes, and he wanted to build a marble run. We spent most of a Saturday
+        cutting channels and ramps and walls, testing marbles, arguing about the
+        angles, cutting again.</p>
 
-        <p>I asked him if he thought his teacher would want a rattlesnake on her desk.</p>
+        <p>He could have asked for one. They sell them. But this one had scoring
+        zones he designed himself, and a trap: a section where marbles fall in and
+        score negative points. He was very proud of the trap.</p>
 
-        <p>He considered this. Maybe not a rattlesnake. A friendlier desert snake.</p>
+        <p>It didn't look like something you would buy. The tape was visible. One
+        wall was slightly crooked. It broke in two places during testing and we
+        fixed it with more tape. He kept going back to modify something.</p>
 
-        <p>We kept going. A cactus next, still desert. Then a small car, because
-        she'd mentioned once that she liked cars. Then a teddy bear, because she
-        had one on her shelf and he thought it might want company.</p>
+        <p>The boxes were going to recycling anyway. When he was done, they went
+        back. Around Earth Day, you notice things like that: where things come
+        from, where they go.</p>
 
-        <p>Then he said, "She told us she really likes flowers."</p>
+        <h2>What you do with something you made</h2>
 
-        <p>That was the one.</p>
+        <p>He fixed it when it broke. Not because I told him to. Because he knew
+        which wall had come loose. He'd been the one to put it there.</p>
 
-        <h2>Why not just bring real ones</h2>
+        <p>Earth Day tends to focus on where things go when you're done. Less on
+        whether you understood what you were holding: where it came from, how it
+        fit together, what to do when something gives. The marble run came from
+        boxes. He knew all of that. When it was done, it went back.</p>
 
-        <p>We've brought his teacher real flowers before. She loves them. But a 3D
-        pen flower lasts, and you get to choose the color. He already knew she'd
-        like blue. You can't always find the right blue at a florist.</p>
+        <h2>It transfers</h2>
 
-        <p>He wanted to make something she'd keep.</p>
+        <p>The chopstick gun and the bamboo raft had their version of this. So does
+        a 3D pen. A child who picks one up and starts building something, adjusts
+        when it doesn't work, starts a piece over because it doesn't look right,
+        is doing the same thing. I recognize it.</p>
 
-        <h2>The making</h2>
-
-        <p>The thing about making a gift for a specific person is that you think
-        differently about it. When he makes things for himself, wonky is fine. When
-        it was for his teacher, he redid the petals twice because they didn't look
-        right to him. Not because I said anything. He just looked at them, decided
-        they weren't good enough, and started again.</p>
-
-        <p>At one point the filament cooled unevenly on one petal and left a rough
-        edge. He asked me if we should scrap it and start over. I said it was up
-        to him. He held it up and looked at it for a second.</p>
-
-        <p>"Real petals aren't perfect either," he said, and kept it.</p>
-
-        <p>I wrote that down later so I wouldn't forget it.</p>
-
-        <h2>This morning</h2>
-
-        <figure>
-          <img src="/blog/2026-05-05-flowers-finished-01.png" alt="A blue 3D pen flower made by a child for his teacher — Teacher Appreciation Week">
-        </figure>
-
-        <p>The flower is done. It's small, fits in the palm of your hand. The stem
-        has a slight bend in it and one of the petals is a little thicker than the
-        others. He wrapped it in tissue paper and wrote her name on a piece of tape.</p>
-
-        <p>He brought it in this morning.</p>
-
-        <p>If you're thinking about trying this with your own kid, we make 3D pen
-        project guides for exactly this kind of thing.
-        <a href="/#themes" class="post-link">You can find them in our shop.</a></p>
+        <p>If you're looking for projects that start the same way,
+        <a href="/#themes" class="post-link">you can find them in our shop.</a></p>
 
       </div>
     </article>
@@ -185,10 +171,10 @@
           </article>
           <article class="blog-card">
             <h3 class="blog-card-title">
-              <a href="/blog/posts/he-designed-his-own-marble-run-it-started-as-a-cardboard-box">He Designed His Own Marble Run. It Started as a Cardboard Box.</a>
+              <a href="/blog/posts/he-noticed-she-loved-flowers-he-made-her-one">He Noticed She Loved Flowers. He Made Her One.</a>
             </h3>
-            <p class="blog-card-date">April 17, 2026</p>
-            <a href="/blog/posts/he-designed-his-own-marble-run-it-started-as-a-cardboard-box" class="blog-card-cta">Read More →</a>
+            <p class="blog-card-date">May 5, 2026</p>
+            <a href="/blog/posts/he-noticed-she-loved-flowers-he-made-her-one" class="blog-card-cta">Read More →</a>
           </article>
         </div>
       </div>
@@ -211,9 +197,9 @@
 import { ref, onMounted, onUnmounted } from 'vue'
 
 useHead({
-  title: 'He Noticed She Loved Flowers. He Made Her One. — Enki Atelier',
+  title: 'He Designed His Own Marble Run. It Started as a Cardboard Box. — Enki Atelier',
   meta: [
-    { name: 'description', content: 'My son wanted to make his teacher a desert snake with his 3D pen. Then a cactus. Then a car. Then flowers. A Teacher Appreciation Week story.' }
+    { name: 'description', content: 'A mom on childhood toys made from string and bamboo, a marble run built from cardboard, and what Earth Day is really asking us to notice.' }
   ]
 })
 
@@ -255,18 +241,10 @@ function submitOptin() {
 </script>
 
 <style>
-.nav-link {
-  font-size: 0.875rem;
-  color: #3D3D3D;
-  transition: color 0.2s;
-}
+.nav-link { font-size: 0.875rem; color: #3D3D3D; transition: color 0.2s; }
 .nav-link:hover { color: #E0A939; }
 .nav-link-active { color: #6B441E; font-weight: 600; }
-
-html {
-  font-family: 'DM Sans', sans-serif;
-  scroll-padding-top: 80px;
-}
+html { font-family: 'DM Sans', sans-serif; scroll-padding-top: 80px; }
 
 .post-body {
   font-family: 'DM Sans', sans-serif;
@@ -296,76 +274,26 @@ html {
   line-height: 1.7;
   border-radius: 0;
 }
-.post-body img {
-  width: 100%;
-  height: auto;
-  border-radius: 0.75rem;
-  margin: 2em 0 0.5em;
-}
-.post-body figcaption {
-  text-align: center;
-  font-size: 0.8rem;
-  color: #B586AC;
-  margin-bottom: 2em;
-}
+.post-body img { width: 100%; height: auto; border-radius: 0.75rem; margin: 2em 0 0.5em; }
+.post-body figcaption { text-align: center; font-size: 0.8rem; color: #B586AC; margin-bottom: 2em; }
 .post-body figure { margin: 0; }
-.post-link {
-  color: #6B441E;
-  text-decoration: underline;
-  text-underline-offset: 3px;
-  transition: color 0.2s;
-}
+.post-link { color: #6B441E; text-decoration: underline; text-underline-offset: 3px; transition: color 0.2s; }
 .post-link:hover { color: #E0A939; }
 
-.blog-card {
-  border-left: 4px solid #6B441E;
-  padding: 1.25rem 0 1.25rem 1.5rem;
-  border-bottom: 0.5px solid rgba(223,198,224,0.4);
-}
+.blog-card { border-left: 4px solid #6B441E; padding: 1.25rem 0 1.25rem 1.5rem; border-bottom: 0.5px solid rgba(223,198,224,0.4); }
 .blog-card:last-child { border-bottom: none; }
-.blog-card-tag {
-  font-size: 0.7rem;
-  font-weight: 600;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: #B586AC;
-  margin-bottom: 0.4rem;
-}
-.blog-card-title {
-  font-family: 'Lora', serif;
-  font-size: 1.1rem;
-  font-weight: 700;
-  color: #1A1A1A;
-  line-height: 1.45;
-  margin-bottom: 0.6rem;
-}
+.blog-card-title { font-family: 'Lora', serif; font-size: 1.1rem; font-weight: 700; color: #1A1A1A; line-height: 1.45; margin-bottom: 0.4rem; }
 .blog-card-title a { color: inherit; text-decoration: none; transition: color 0.2s; }
 .blog-card-title a:hover { color: #6B441E; }
-.blog-card-cta {
-  font-size: 0.85rem;
-  font-weight: 600;
-  color: #6B441E;
-  text-decoration: none;
-  transition: color 0.2s;
-}
+.blog-card-date { font-size: 0.8rem; color: #B586AC; margin-bottom: 0.6rem; }
+.blog-card-cta { font-size: 0.85rem; font-weight: 600; color: #6B441E; text-decoration: none; transition: color 0.2s; }
 .blog-card-cta:hover { color: #E0A939; }
 
-.form-input {
-  border: 1.5px solid rgba(223,198,224,0.6);
-  border-radius: 0.6rem;
-  padding: 0.6rem 0.85rem;
-  display: block;
-  width: 100%;
-  font-family: 'DM Sans', sans-serif;
-}
-.form-input:focus {
-  border-color: #6B441E;
-  box-shadow: 0 0 0 3px rgba(107,68,30,0.1);
-  outline: none;
-}
+.form-input { border: 1.5px solid rgba(223,198,224,0.6); border-radius: 0.6rem; padding: 0.6rem 0.85rem; display: block; width: 100%; font-family: 'DM Sans', sans-serif; }
+.form-input:focus { border-color: #6B441E; box-shadow: 0 0 0 3px rgba(107,68,30,0.1); outline: none; }
 
 @media (max-width: 640px) {
-  .post-body h2 { font-size: 1.2rem; }
+  .post-body h2 { font-size: 1.25rem; }
   .post-body { font-size: 1rem; }
 }
 </style>
