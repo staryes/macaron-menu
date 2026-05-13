@@ -83,6 +83,10 @@
 
         <h2>The marble run</h2>
 
+        <figure>
+          <img src="/blog/2026-04-17-marble-run-01.png" alt="A child's handmade cardboard marble run, shown with simple string and chopstick toy materials">
+        </figure>
+
         <p>My son doesn't have bamboo lying around. But he had a pile of delivery
         boxes, and he wanted to build a marble run. We spent most of a Saturday
         cutting channels and ramps and walls, testing marbles, arguing about the
