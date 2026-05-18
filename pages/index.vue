@@ -168,7 +168,7 @@
         </p>
         <p>
           It started with a Halloween costume. Our kid wanted legs that could collect candy on their own.
-          We spent a weekend trying to figure it out together anyway. That weekend stuck with us.
+          We spent a weekend trying to figure it out together anyway, and that weekend stuck with us.
         </p>
       </div>
 
@@ -176,12 +176,12 @@
       <div class="space-y-5">
         <p>
           Every Enki kit is designed by <strong class="text-[#6B441E]">PhD engineers and an art educator
-          who are also parents.</strong> Not as a credential, but because it changes how you think about
+          who are also parents</strong>, not as a credential, but because it changes how you think about
           what "too hard" means for a seven-year-old, and where the real engagement lives inside a
           learning curve.
         </p>
         <p>
-          Kids are born curious. They don't need to be convinced to explore. They just need
+          Kids are born curious. They don't need to be convinced to explore, they just need
           the right invitation. The rocket actually launches. The bird actually balances. That moment of
           "wait, it worked" is what keeps kids coming back, and it is where the real learning happens.
         </p>
