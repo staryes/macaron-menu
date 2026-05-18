@@ -615,32 +615,32 @@
 
           <div class="bg-white rounded-2xl p-6 border border-[#DFC6E0]/30">
             <p class="text-sm font-semibold text-[#6B441E] mb-1">PhD-Designed</p>
-            <p class="text-sm text-[#3D3D3D] leading-relaxed">Created by a team of PhD engineers and an art educator who are also parents — people who understand what genuine learning looks like.</p>
+            <p class="text-sm text-[#3D3D3D] leading-relaxed">The kits are designed by PhD engineers and an art educator who are also parents. Not because credentials matter, but because it changes how you think about what's too hard for a seven-year-old.</p>
           </div>
 
           <div class="bg-white rounded-2xl p-6 border border-[#DFC6E0]/30">
-            <p class="text-sm font-semibold text-[#6B441E] mb-1">Standards-Aligned Curriculum</p>
-            <p class="text-sm text-[#3D3D3D] leading-relaxed">Curriculum is inspired by NGSS and Common Core Science goals, so the concepts children encounter are grounded in real learning frameworks.</p>
+            <p class="text-sm font-semibold text-[#6B441E] mb-1">Inspired by NGSS &amp; Common Core</p>
+            <p class="text-sm text-[#3D3D3D] leading-relaxed">The science in each kit draws on NGSS and Common Core concepts. It maps to what educators already know matters, not invented curriculum.</p>
           </div>
 
           <div class="bg-white rounded-2xl p-6 border border-[#DFC6E0]/30">
-            <p class="text-sm font-semibold text-[#6B441E] mb-1">Real-Photo Step-by-Step Guides</p>
-            <p class="text-sm text-[#3D3D3D] leading-relaxed">Every curriculum guide features high-definition photos taken in our own studio — not illustrations, but actual build photos children can follow independently.</p>
+            <p class="text-sm font-semibold text-[#6B441E] mb-1">Real Photos, Not Illustrations</p>
+            <p class="text-sm text-[#3D3D3D] leading-relaxed">Every guide uses real photos taken in our own lab. Each step shows exactly what you're building, so children can follow along without interpreting diagrams.</p>
           </div>
 
           <div class="bg-white rounded-2xl p-6 border border-[#DFC6E0]/30">
-            <p class="text-sm font-semibold text-[#6B441E] mb-1">Studio-Tested Builds</p>
-            <p class="text-sm text-[#3D3D3D] leading-relaxed">Every build is designed and tested to actually work — the rocket launches, the bird balances, the space mobile hangs exactly right. Engineering integrity is built in from the start.</p>
+            <p class="text-sm font-semibold text-[#6B441E] mb-1">Tested Before It Ships</p>
+            <p class="text-sm text-[#3D3D3D] leading-relaxed">We build every project before anything goes out. The rocket launches, the bird balances, the mobile holds. We don't send out projects that don't work.</p>
           </div>
 
           <div class="bg-white rounded-2xl p-6 border border-[#DFC6E0]/30">
-            <p class="text-sm font-semibold text-[#6B441E] mb-1">Safety-Conscious Materials</p>
-            <p class="text-sm text-[#3D3D3D] leading-relaxed">Includes safety goggles, silicone finger protectors in child and adult sizes, a dual-surface silicone mat, and clear guidance on safe tool use.</p>
+            <p class="text-sm font-semibold text-[#6B441E] mb-1">Safety Built In</p>
+            <p class="text-sm text-[#3D3D3D] leading-relaxed">Every kit includes safety goggles, silicone finger caps in child and adult sizes, and a dual-surface silicone work mat. Clear instructions on when and how to use each tool.</p>
           </div>
 
           <div class="bg-white rounded-2xl p-6 border border-[#DFC6E0]/30">
-            <p class="text-sm font-semibold text-[#6B441E] mb-1">Designed for Ages 6–12</p>
-            <p class="text-sm text-[#3D3D3D] leading-relaxed">Current kits are rated for ages 8 and up based on complexity. The Enki series is designed to grow with children from early exploration through more advanced challenges.</p>
+            <p class="text-sm font-semibold text-[#6B441E] mb-1">Ages 8 and Up, Growing</p>
+            <p class="text-sm text-[#3D3D3D] leading-relaxed">Current kits are rated for ages 8 and up. We're building toward younger age groups. One pen works across all kits in the series as children move through them.</p>
           </div>
 
         </div>
