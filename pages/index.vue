@@ -50,15 +50,14 @@
         v-show="mobileMenuOpen"
         class="md:hidden border-t border-[#DFC6E0]/40 bg-[#FFF8EB] px-6 py-4 flex flex-col gap-4"
       >
-        <a href="#hero"    class="nav-link text-base py-1" @click="mobileMenuOpen = false">Home</a>
-        <a href="#about"   class="nav-link text-base py-1" @click="mobileMenuOpen = false">About</a>
-        <a href="#themes"  class="nav-link text-base py-1" @click="mobileMenuOpen = false">Products</a>
-        <a href="#gallery" class="nav-link text-base py-1" @click="mobileMenuOpen = false">Gallery</a>
-        <a href="#cta"     class="nav-link text-base py-1" @click="mobileMenuOpen = false">Buy Now</a>
-        <a href="#pens"    class="nav-link text-base py-1" @click="mobileMenuOpen = false">Guide</a>
-        <a href="/blog"    class="nav-link text-base py-1" @click="mobileMenuOpen = false">Blog</a>
-        <a href="#faq"     class="nav-link text-base py-1" @click="mobileMenuOpen = false">FAQ</a>
-        <a href="#contact" class="nav-link text-base py-1" @click="mobileMenuOpen = false">Contact Us</a>
+        <a href="#hero"        class="nav-link text-base py-1" @click="mobileMenuOpen = false">Home</a>
+        <a href="#philosophy"  class="nav-link text-base py-1" @click="mobileMenuOpen = false">Our Philosophy</a>
+        <a href="#themes"      class="nav-link text-base py-1" @click="mobileMenuOpen = false">Kits</a>
+        <a href="#gallery"     class="nav-link text-base py-1" @click="mobileMenuOpen = false">Gallery</a>
+        <a href="#pens"        class="nav-link text-base py-1" @click="mobileMenuOpen = false">3D Pen Guide</a>
+        <a href="/blog"        class="nav-link text-base py-1" @click="mobileMenuOpen = false">Blog</a>
+        <a href="#faq"         class="nav-link text-base py-1" @click="mobileMenuOpen = false">FAQ</a>
+        <a href="#contact"     class="nav-link text-base py-1" @click="mobileMenuOpen = false">Contact Us</a>
       </div>
 
     </nav>
@@ -169,7 +168,7 @@
         </p>
         <p>
           It started with a Halloween costume. Our kid wanted legs that could collect candy on their own.
-          We spent a weekend trying to figure it out together anyway — and that weekend stuck with us.
+          We spent a weekend trying to figure it out together anyway. That weekend stuck with us.
         </p>
       </div>
 
@@ -177,12 +176,12 @@
       <div class="space-y-5">
         <p>
           Every Enki kit is designed by <strong class="text-[#6B441E]">PhD engineers and an art educator
-          who are also parents</strong> — not as a credential, but because it changes how you think about
+          who are also parents.</strong> Not as a credential, but because it changes how you think about
           what "too hard" means for a seven-year-old, and where the real engagement lives inside a
           learning curve.
         </p>
         <p>
-          Kids are born curious. They don't need to be convinced to explore — they just need
+          Kids are born curious. They don't need to be convinced to explore. They just need
           the right invitation. The rocket actually launches. The bird actually balances. That moment of
           "wait, it worked" is what keeps kids coming back, and it is where the real learning happens.
         </p>
@@ -257,14 +256,14 @@
     </section>
 
     <!-- Themes Section -->
-    <section id="themes" class="py-24 bg-[#FFF8EB]">
+    <section id="themes" class="py-24 bg-white">
       <div class="max-w-7xl mx-auto text-center px-4">
         <p class="text-xs font-medium tracking-[2px] uppercase text-[#B586AC] mb-3">Explore the Kits</p>
         <h2 class="text-2xl md:text-3xl font-bold text-[#1A1A1A] mb-4" style="font-family: 'Lora', serif;">Learn Something Real. Build Something That Works.</h2>
         <p class="text-base text-[#3D3D3D] leading-relaxed max-w-2xl mx-auto mt-4 mb-10 text-center">
-          Each kit is built around a scientific concept — not just a craft. Children follow a
-          photo-guided curriculum, build working models, and discover the science behind what they make.
-          Designed to work with many common 3D pens. Pen sold separately so families can use the tool they already have.
+          Every kit includes a full-color curriculum guide printed in the USA with real step-by-step photos
+          from our own studio, pre-punched for three-ring binders. Designed to work with many common 3D pens.
+          Pen sold separately so families can use the tool they already have.
         </p>
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 items-stretch">
           <div
@@ -392,7 +391,7 @@
     </section>
 
     <!-- How It Works Section -->
-    <section id="how-it-works" class="py-24 bg-white">
+    <section id="how-it-works" class="py-24 bg-[#FFF8EB]">
       <div class="max-w-5xl mx-auto px-6">
         <p class="text-xs font-medium tracking-[2px] uppercase text-[#B586AC] mb-3 text-center">The Learning Experience</p>
         <h2 class="text-2xl md:text-3xl font-bold text-[#1A1A1A] mb-14 text-center" style="font-family: 'Lora', serif;">
@@ -603,7 +602,7 @@
     </section>
 
     <!-- Trust Signals Section -->
-    <section class="py-20 bg-[#FFF8EB]">
+    <section class="py-20 bg-white">
       <div class="max-w-5xl mx-auto px-6 text-center">
         <p class="text-xs font-medium tracking-[2px] uppercase text-[#B586AC] mb-3">Why Parents Trust Enki</p>
         <h2 class="text-2xl md:text-3xl font-bold text-[#1A1A1A] mb-12" style="font-family: 'Lora', serif;">
@@ -646,7 +645,7 @@
     </section>
 
     <!-- Gallery Section -->
-    <section id="gallery" class="py-20 bg-white overflow-hidden">
+    <section id="gallery" class="py-20 bg-[#FFF8EB] overflow-hidden">
       <div class="max-w-7xl mx-auto px-6 mb-10">
         <p class="text-xs font-medium tracking-[2px] uppercase text-[#B586AC] mb-2 text-center">
           Learning You Can See
@@ -973,7 +972,7 @@
     </section>
 
     <!-- Contact Us Section -->
-    <section id="contact" class="py-20 bg-white">
+    <section id="contact" class="py-20 bg-[#FFF8EB]">
       <div class="max-w-4xl mx-auto text-center px-4">
         <h2 class="text-2xl md:text-3xl font-bold text-[#1A1A1A] mb-6">Contact Us</h2>
         <p class="text-base md:text-lg text-[#3D3D3D] mb-6">Have questions? Get in touch with us!</p>
