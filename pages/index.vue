@@ -120,8 +120,8 @@
             <path d="M6 18h.01M10 16h.01"/>
           </svg>
           <div>
-            <p class="text-sm font-semibold text-[#6B441E]">Standards-Aligned Curriculum</p>
-            <p class="text-xs text-[#3D3D3D] hidden md:block">NGSS & Common Core Science</p>
+            <p class="text-sm font-semibold text-[#6B441E]">Curriculum-Grounded</p>
+            <p class="text-xs text-[#3D3D3D] hidden md:block">Inspired by NGSS & Common Core</p>
           </div>
         </div>
 
@@ -212,7 +212,7 @@
             </div>
             <div>
               <h3 class="text-base font-bold text-[#1A1A1A] mb-2" style="font-family: 'Lora', serif;">Real Science, Not Just Shapes</h3>
-              <p class="text-sm text-[#3D3D3D] leading-relaxed">Each kit is built around a scientific concept children can observe, test, and understand — not just trace and decorate.</p>
+              <p class="text-sm text-[#3D3D3D] leading-relaxed">The rocket actually launches. The bird actually balances. Every project is built around a concept children can test, observe, and ask questions about.</p>
             </div>
           </div>
 
@@ -224,7 +224,7 @@
             </div>
             <div>
               <h3 class="text-base font-bold text-[#1A1A1A] mb-2" style="font-family: 'Lora', serif;">Designed for Making, Not Just Following</h3>
-              <p class="text-sm text-[#3D3D3D] leading-relaxed">Children don't simply trace templates. They build, adjust, test, and improve — the process is the point.</p>
+              <p class="text-sm text-[#3D3D3D] leading-relaxed">Most pen stencil kits are done in 20 minutes and go nowhere. Ours are built around iteration — kids build, try it, fix it, and come back to it.</p>
             </div>
           </div>
 
@@ -236,7 +236,7 @@
             </div>
             <div>
               <h3 class="text-base font-bold text-[#1A1A1A] mb-2" style="font-family: 'Lora', serif;">Art + Engineering Together</h3>
-              <p class="text-sm text-[#3D3D3D] leading-relaxed">Every project combines structure, creativity, visual design, and problem-solving — because real making doesn't separate the two.</p>
+              <p class="text-sm text-[#3D3D3D] leading-relaxed">The bird is a physics experiment. The rocket is also a sculpture. We didn't separate the visual thinking from the scientific thinking, because children don't either.</p>
             </div>
           </div>
 
@@ -248,7 +248,7 @@
             </div>
             <div>
               <h3 class="text-base font-bold text-[#1A1A1A] mb-2" style="font-family: 'Lora', serif;">Built by Educators and Engineers</h3>
-              <p class="text-sm text-[#3D3D3D] leading-relaxed">Our kits are designed by PhD engineers and educators with equal care for learning outcomes and the joy of making.</p>
+              <p class="text-sm text-[#3D3D3D] leading-relaxed">Our team includes PhD engineers and an art educator who are also parents. That combination changes how you think about what "too hard" means for a seven-year-old.</p>
             </div>
           </div>
 
