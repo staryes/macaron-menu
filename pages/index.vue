@@ -19,11 +19,11 @@
         <!-- 桌機連結：絕對置中 -->
         <div class="hidden md:flex absolute left-1/2 -translate-x-1/2 gap-6">
           <a href="#hero"    class="nav-link">Home</a>
-          <a href="#about"   class="nav-link">About</a>
-          <a href="#themes"  class="nav-link">Products</a>
+          <a href="#philosophy" class="nav-link">Our Philosophy</a>
+          <a href="#themes"  class="nav-link">Kits</a>
           <a href="#gallery" class="nav-link">Gallery</a>
           <a href="#cta"     class="nav-link">Buy Now</a>
-          <a href="#pens"    class="nav-link">Guide</a>
+          <a href="#pens"    class="nav-link">3D Pen Guide</a>
           <a href="/blog"    class="nav-link">Blog</a>
           <a href="#faq"     class="nav-link">FAQ</a>
           <a href="#contact" class="nav-link">Contact Us</a>
@@ -78,21 +78,24 @@
         <h1 class="text-4xl md:text-5xl font-bold text-white leading-tight" style="font-family: 'Lora', serif;">
           Big Ideas Start<br>with Little Hands.
         </h1>
-        <p class="text-base md:text-lg font-medium text-white/80 tracking-wide">
-          Science Kits for Kids Who Like to Build.
+        <p class="text-base md:text-lg font-medium text-white/80 leading-relaxed max-w-[480px]">
+          Thoughtfully designed 3D pen STEAM kits that help children build, test, and understand real scientific ideas through hands-on making.
         </p>
-        <p class="text-base md:text-lg text-white/70 leading-relaxed max-w-[480px]">
-          Hands-on STEM kits with real science and art, designed by engineers and educators
-          who refused to settle for "good enough."
+        <p class="text-sm md:text-base text-white/60 leading-relaxed max-w-[480px]">
+          Designed by PhD engineers and educators to make learning feel playful, rigorous, and real.
         </p>
         <div class="flex flex-wrap gap-3 pt-2">
           <a href="#themes" class="inline-block px-6 py-3 bg-[#E0A939] text-[#1A1A1A] font-bold rounded-full hover:brightness-105 transition-all">
-            Explore Kits
+            Explore Our Kits
           </a>
-          <a href="#about" class="inline-block px-6 py-3 border border-white/40 text-white/85 rounded-full hover:bg-white/10 transition-all">
-            Our Story →
+          <a href="#philosophy" class="inline-block px-6 py-3 border border-white/40 text-white/85 rounded-full hover:bg-white/10 transition-all">
+            Our Design Philosophy
           </a>
         </div>
+        <a href="https://www.amazon.com/stores/EnkiAtelier/page/518CC82B-0DF3-4C27-8BB5-D45F16EC48A3" target="_blank" rel="noopener noreferrer"
+           class="inline-block text-sm text-white/45 hover:text-white/70 transition-colors pt-1">
+          Shop on Amazon →
+        </a>
       </div>
     </section>
 
@@ -138,8 +141,8 @@
       </div>
     </div>
 
-<!-- About Section -->
-<section id="about" class="py-24 bg-white">
+<!-- Why Enki Exists / About Section -->
+<section id="philosophy" class="py-24 bg-white">
   <div class="max-w-5xl mx-auto px-6">
 
     <!-- 引言 -->
@@ -153,26 +156,24 @@
     <!-- 兩欄內文 -->
     <div class="grid md:grid-cols-2 gap-10 text-[#3D3D3D] leading-relaxed text-base">
 
-      <!-- 左欄：起源故事 -->
+      <!-- 左欄：起源故事 + 品牌使命 -->
       <div class="space-y-5">
         <p>
+          We started Enki Atelier because we wanted children's making projects to feel more meaningful:
+          not just cute crafts, and not just abstract lessons, but real objects children can build, test,
+          revise, and feel proud of.
+        </p>
+        <p>
+          Our kits bring together science, engineering, art, and storytelling so children can experience
+          ideas with their hands.
+        </p>
+        <p>
           It started with a Halloween costume. Our kid wanted legs that could collect candy on their own.
-          We're a little fuzzy on the exact mechanics they had in mind, but we spent a weekend trying to
-          figure it out together anyway.
-        </p>
-        <p>
-          That weekend stuck with us. We started looking for kits that could give them more of that —
-          the building, the figuring-out, the not-quite-working-but-trying-again. We couldn't find what
-          we wanted. The 3D pen sets were fine for doodling and then stopped. The STEM kits "for girls"
-          were just the regular ones in different packaging. Nothing was wrong with them exactly.
-          They just didn't go anywhere.
-        </p>
-        <p>
-          So we made what we wanted to exist.
+          We spent a weekend trying to figure it out together anyway — and that weekend stuck with us.
         </p>
       </div>
 
-      <!-- 右欄：理念與使命 -->
+      <!-- 右欄：設計理念 -->
       <div class="space-y-5">
         <p>
           Every Enki kit is designed by <strong class="text-[#6B441E]">PhD engineers and an art educator
@@ -182,9 +183,8 @@
         </p>
         <p>
           Kids are born curious. They don't need to be convinced to explore — they just need
-          the right invitation. What we build isn't just real science content. It is genuinely
-          fun. The rocket actually launches. The bird actually balances. That moment of "wait,
-          it worked" is what keeps kids coming back, and it is where the real learning happens.
+          the right invitation. The rocket actually launches. The bird actually balances. That moment of
+          "wait, it worked" is what keeps kids coming back, and it is where the real learning happens.
         </p>
         <p class="text-sm text-[#B586AC] italic leading-relaxed mt-4">
           The name comes from Enki, the Sumerian god of wisdom and craft. Old, a little obscure,
@@ -196,15 +196,75 @@
   </div>
 </section>
 
+    <!-- What Makes Our Kits Different Section -->
+    <section id="difference" class="py-24 bg-[#FFF8EB]">
+      <div class="max-w-5xl mx-auto px-6">
+        <h2 class="text-2xl md:text-3xl font-bold text-[#1A1A1A] mb-14 text-center" style="font-family: 'Lora', serif;">
+          What Makes Our Kits Different
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+
+          <div class="flex gap-5">
+            <div class="w-10 h-10 flex-shrink-0 rounded-full bg-[#6B441E]/10 flex items-center justify-center mt-0.5">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#6B441E" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9 3h6M9 3v8l-4 9h14l-4-9V3"/><path d="M6 18h.01M10 16h.01"/>
+              </svg>
+            </div>
+            <div>
+              <h3 class="text-base font-bold text-[#1A1A1A] mb-2" style="font-family: 'Lora', serif;">Real Science, Not Just Shapes</h3>
+              <p class="text-sm text-[#3D3D3D] leading-relaxed">Each kit is built around a scientific concept children can observe, test, and understand — not just trace and decorate.</p>
+            </div>
+          </div>
+
+          <div class="flex gap-5">
+            <div class="w-10 h-10 flex-shrink-0 rounded-full bg-[#6B441E]/10 flex items-center justify-center mt-0.5">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#6B441E" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+              </svg>
+            </div>
+            <div>
+              <h3 class="text-base font-bold text-[#1A1A1A] mb-2" style="font-family: 'Lora', serif;">Designed for Making, Not Just Following</h3>
+              <p class="text-sm text-[#3D3D3D] leading-relaxed">Children don't simply trace templates. They build, adjust, test, and improve — the process is the point.</p>
+            </div>
+          </div>
+
+          <div class="flex gap-5">
+            <div class="w-10 h-10 flex-shrink-0 rounded-full bg-[#6B441E]/10 flex items-center justify-center mt-0.5">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#6B441E" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/>
+              </svg>
+            </div>
+            <div>
+              <h3 class="text-base font-bold text-[#1A1A1A] mb-2" style="font-family: 'Lora', serif;">Art + Engineering Together</h3>
+              <p class="text-sm text-[#3D3D3D] leading-relaxed">Every project combines structure, creativity, visual design, and problem-solving — because real making doesn't separate the two.</p>
+            </div>
+          </div>
+
+          <div class="flex gap-5">
+            <div class="w-10 h-10 flex-shrink-0 rounded-full bg-[#6B441E]/10 flex items-center justify-center mt-0.5">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#6B441E" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/>
+              </svg>
+            </div>
+            <div>
+              <h3 class="text-base font-bold text-[#1A1A1A] mb-2" style="font-family: 'Lora', serif;">Built by Educators and Engineers</h3>
+              <p class="text-sm text-[#3D3D3D] leading-relaxed">Our kits are designed by PhD engineers and educators with equal care for learning outcomes and the joy of making.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
     <!-- Themes Section -->
     <section id="themes" class="py-24 bg-[#FFF8EB]">
       <div class="max-w-7xl mx-auto text-center px-4">
-        <h2 class="text-2xl md:text-3xl font-bold text-[#1A1A1A] mb-4">Our Products</h2>
+        <p class="text-xs font-medium tracking-[2px] uppercase text-[#B586AC] mb-3">Explore the Kits</p>
+        <h2 class="text-2xl md:text-3xl font-bold text-[#1A1A1A] mb-4" style="font-family: 'Lora', serif;">Learn Something Real. Build Something That Works.</h2>
         <p class="text-base text-[#3D3D3D] leading-relaxed max-w-2xl mx-auto mt-4 mb-10 text-center">
-          Every kit comes with a full-color curriculum guide, printed in the USA with
-          real-lab step-by-step photos taken in our own studio. All guides are
-          pre-punched for three-ring binders so kids can build a personal science
-          library as the series grows.
+          Each kit is built around a scientific concept — not just a craft. Children follow a
+          photo-guided curriculum, build working models, and discover the science behind what they make.
+          Designed to work with many common 3D pens. Pen sold separately so families can use the tool they already have.
         </p>
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 items-stretch">
           <div
@@ -299,14 +359,23 @@
                   :href="product.amazonUrl"
                   target="_blank"
                   rel="noopener noreferrer"
-                  class="flex items-center justify-center gap-2 w-full py-2.5 bg-[#6B441E] text-white text-sm font-semibold rounded-full hover:bg-[#6B441E]/85 transition-colors"
+                  class="flex items-center justify-center gap-2 w-full py-2.5 bg-[#6B441E] text-white text-sm font-semibold rounded-full hover:bg-[#6B441E]/85 transition-colors mb-2"
                 >
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  Explore This Kit
+                </a>
+                <a
+                  v-if="product.amazonUrl"
+                  :href="product.amazonUrl"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="flex items-center justify-center gap-2 w-full py-2 text-[#6B441E] text-xs font-medium hover:text-[#E0A939] transition-colors"
+                >
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
                     <polyline points="15 3 21 3 21 9"/>
                     <line x1="10" y1="14" x2="21" y2="3"/>
                   </svg>
-                  Buy on Amazon
+                  View on Amazon
                 </a>
                 <div
                   v-else
@@ -318,6 +387,51 @@
 
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="py-24 bg-white">
+      <div class="max-w-5xl mx-auto px-6">
+        <p class="text-xs font-medium tracking-[2px] uppercase text-[#B586AC] mb-3 text-center">The Learning Experience</p>
+        <h2 class="text-2xl md:text-3xl font-bold text-[#1A1A1A] mb-14 text-center" style="font-family: 'Lora', serif;">
+          How It Works
+        </h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+
+          <div class="text-center">
+            <div class="w-14 h-14 mx-auto mb-5 rounded-full bg-[#FFF8EB] border-2 border-[#E0A939] flex items-center justify-center">
+              <span class="text-xl font-bold text-[#6B441E]" style="font-family: 'Lora', serif;">1</span>
+            </div>
+            <h3 class="text-base font-bold text-[#1A1A1A] mb-2" style="font-family: 'Lora', serif;">Read</h3>
+            <p class="text-sm text-[#3D3D3D] leading-relaxed">Follow a visual, photo-based curriculum that explains the science behind each build.</p>
+          </div>
+
+          <div class="text-center">
+            <div class="w-14 h-14 mx-auto mb-5 rounded-full bg-[#FFF8EB] border-2 border-[#E0A939] flex items-center justify-center">
+              <span class="text-xl font-bold text-[#6B441E]" style="font-family: 'Lora', serif;">2</span>
+            </div>
+            <h3 class="text-base font-bold text-[#1A1A1A] mb-2" style="font-family: 'Lora', serif;">Build</h3>
+            <p class="text-sm text-[#3D3D3D] leading-relaxed">Use a 3D pen to create parts and structures step by step, with real photos guiding every stage.</p>
+          </div>
+
+          <div class="text-center">
+            <div class="w-14 h-14 mx-auto mb-5 rounded-full bg-[#FFF8EB] border-2 border-[#E0A939] flex items-center justify-center">
+              <span class="text-xl font-bold text-[#6B441E]" style="font-family: 'Lora', serif;">3</span>
+            </div>
+            <h3 class="text-base font-bold text-[#1A1A1A] mb-2" style="font-family: 'Lora', serif;">Test</h3>
+            <p class="text-sm text-[#3D3D3D] leading-relaxed">See the science in action through launch, balance, movement, or structure. The build actually works.</p>
+          </div>
+
+          <div class="text-center">
+            <div class="w-14 h-14 mx-auto mb-5 rounded-full bg-[#FFF8EB] border-2 border-[#E0A939] flex items-center justify-center">
+              <span class="text-xl font-bold text-[#6B441E]" style="font-family: 'Lora', serif;">4</span>
+            </div>
+            <h3 class="text-base font-bold text-[#1A1A1A] mb-2" style="font-family: 'Lora', serif;">Reflect</h3>
+            <p class="text-sm text-[#3D3D3D] leading-relaxed">Adjust, improve, and understand why the design works — and what would happen if you changed it.</p>
+          </div>
+
         </div>
       </div>
     </section>
@@ -488,17 +602,60 @@
       </div>
     </section>
 
+    <!-- Trust Signals Section -->
+    <section class="py-20 bg-[#FFF8EB]">
+      <div class="max-w-5xl mx-auto px-6 text-center">
+        <p class="text-xs font-medium tracking-[2px] uppercase text-[#B586AC] mb-3">Why Parents Trust Enki</p>
+        <h2 class="text-2xl md:text-3xl font-bold text-[#1A1A1A] mb-12" style="font-family: 'Lora', serif;">
+          Thoughtfully Developed for Curious Children
+        </h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 text-left">
+
+          <div class="bg-white rounded-2xl p-6 border border-[#DFC6E0]/30">
+            <p class="text-sm font-semibold text-[#6B441E] mb-1">PhD-Designed</p>
+            <p class="text-sm text-[#3D3D3D] leading-relaxed">Created by a team of PhD engineers and an art educator who are also parents — people who understand what genuine learning looks like.</p>
+          </div>
+
+          <div class="bg-white rounded-2xl p-6 border border-[#DFC6E0]/30">
+            <p class="text-sm font-semibold text-[#6B441E] mb-1">Standards-Aligned Curriculum</p>
+            <p class="text-sm text-[#3D3D3D] leading-relaxed">Curriculum is inspired by NGSS and Common Core Science goals, so the concepts children encounter are grounded in real learning frameworks.</p>
+          </div>
+
+          <div class="bg-white rounded-2xl p-6 border border-[#DFC6E0]/30">
+            <p class="text-sm font-semibold text-[#6B441E] mb-1">Real-Photo Step-by-Step Guides</p>
+            <p class="text-sm text-[#3D3D3D] leading-relaxed">Every curriculum guide features high-definition photos taken in our own studio — not illustrations, but actual build photos children can follow independently.</p>
+          </div>
+
+          <div class="bg-white rounded-2xl p-6 border border-[#DFC6E0]/30">
+            <p class="text-sm font-semibold text-[#6B441E] mb-1">Studio-Tested Builds</p>
+            <p class="text-sm text-[#3D3D3D] leading-relaxed">Every build is designed and tested to actually work — the rocket launches, the bird balances. Engineering integrity is built in from the start.</p>
+          </div>
+
+          <div class="bg-white rounded-2xl p-6 border border-[#DFC6E0]/30">
+            <p class="text-sm font-semibold text-[#6B441E] mb-1">Safety-Conscious Materials</p>
+            <p class="text-sm text-[#3D3D3D] leading-relaxed">Includes safety goggles, silicone finger protectors in child and adult sizes, a dual-surface silicone mat, and clear guidance on safe tool use.</p>
+          </div>
+
+          <div class="bg-white rounded-2xl p-6 border border-[#DFC6E0]/30">
+            <p class="text-sm font-semibold text-[#6B441E] mb-1">Designed for Ages 6–12</p>
+            <p class="text-sm text-[#3D3D3D] leading-relaxed">Current kits are rated for ages 8 and up based on complexity. The Enki series is designed to grow with children from early exploration through more advanced challenges.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
     <!-- Gallery Section -->
     <section id="gallery" class="py-20 bg-white overflow-hidden">
       <div class="max-w-7xl mx-auto px-6 mb-10">
         <p class="text-xs font-medium tracking-[2px] uppercase text-[#B586AC] mb-2 text-center">
-          In the Wild
+          Learning You Can See
         </p>
         <h2
           class="text-3xl md:text-4xl font-bold text-[#1A1A1A] text-center"
           style="font-family: 'Lora', serif;"
         >
-          Real Kids. Real Builds.
+          What Children Can Build
         </h2>
       </div>
 
@@ -624,15 +781,25 @@
     <!-- Call to Action Section -->
     <section id="cta" class="py-24 bg-[#6B441E] text-center px-4">
       <h2 class="text-3xl md:text-4xl font-bold text-white mb-4" style="font-family: 'Lora', serif;">
-        Build Something Real.
+        Ready to Explore Hands-on STEAM Learning?
       </h2>
-      <p class="text-white/75 text-lg mb-8 max-w-lg mx-auto leading-relaxed">
-        Full curriculum, all materials, photo-guided instructions. For kids who want to understand why it works — not just that it does.
+      <p class="text-white/75 text-lg mb-10 max-w-lg mx-auto leading-relaxed">
+        Discover kits designed to help children build real objects, test real ideas, and feel proud of what they make.
       </p>
-      <a href="https://www.amazon.com/stores/page/518CC82B-0DF3-4C27-8BB5-D45F16EC48A3?channel=Official%20Website" target="_blank" rel="noopener noreferrer"
-         class="inline-block px-8 py-4 bg-[#E0A939] text-[#1A1A1A] font-bold rounded-full hover:brightness-105 transition-all text-base">
-        Buy on Amazon
-      </a>
+      <div class="flex flex-wrap gap-4 justify-center">
+        <a href="#themes"
+           class="inline-block px-8 py-4 bg-[#E0A939] text-[#1A1A1A] font-bold rounded-full hover:brightness-105 transition-all text-base">
+          Explore Our Kits
+        </a>
+        <a href="https://www.amazon.com/stores/page/518CC82B-0DF3-4C27-8BB5-D45F16EC48A3?channel=Official%20Website" target="_blank" rel="noopener noreferrer"
+           class="inline-block px-8 py-4 border border-white/40 text-white/85 font-semibold rounded-full hover:bg-white/10 transition-all text-base">
+          Shop on Amazon
+        </a>
+        <a href="#contact"
+           class="inline-block px-8 py-4 text-white/60 font-medium hover:text-white/90 transition-all text-base">
+          Contact Us
+        </a>
+      </div>
     </section>
 
     <!-- FAQ Section -->
@@ -646,6 +813,9 @@
         </div>
 
         <div class="space-y-4">
+
+          <!-- Category: Learning & Safety -->
+          <p class="text-xs font-semibold tracking-[2px] uppercase text-[#B586AC] pt-2 pl-1">Learning &amp; Safety</p>
 
           <!-- FAQ 0 -->
           <div class="faq-item" :class="{ open: openFaq === 0 }">
@@ -662,6 +832,9 @@
               </p>
             </Transition>
           </div>
+
+          <!-- Category: Compatibility -->
+          <p class="text-xs font-semibold tracking-[2px] uppercase text-[#B586AC] pt-4 pl-1">Compatibility</p>
 
           <!-- FAQ 1 -->
           <div class="faq-item" :class="{ open: openFaq === 1 }">
@@ -685,6 +858,9 @@
               </p>
             </Transition>
           </div>
+
+          <!-- Category: Before You Buy -->
+          <p class="text-xs font-semibold tracking-[2px] uppercase text-[#B586AC] pt-4 pl-1">Before You Buy</p>
 
           <!-- FAQ 2 -->
           <div class="faq-item" :class="{ open: openFaq === 2 }">
@@ -1028,32 +1204,32 @@ function onScroll() {
 const galleryItems = ref([
   {
     src: "/Gallery/In_the_lab_01.png",
-    alt: "PhD engineer designing rocket trajectory in the lab",
+    alt: "Testing launch angles — Enki Atelier studio developing the Rocket Launcher Kit",
     position: "center center",
   },
   {
     src: "/Gallery/Workshop_01.png",
-    alt: "Hands holding completed 3D pen rocket at workshop",
+    alt: "Turning flat lines into working objects — a completed 3D pen rocket at workshop",
     position: "center center",
   },
   {
     src: "/Gallery/Workshop_02.png",
-    alt: "Child using 3D pen with safety goggles and curriculum guide",
+    alt: "Building stable 3D structures — child following the Enki curriculum with safety goggles",
     position: "center top",
   },
   {
     src: "/Gallery/Built_by_kids_05.png",
-    alt: "Testing a balancing mobile — Enki Atelier STEAM kit",
+    alt: "Discovering balance points — testing a completed hanging mobile from the Balancing kit",
     position: "center center",
   },
   {
     src: "/Gallery/Built_by_kids_01.png",
-    alt: "3D pen rocket built by a kid — Enki Atelier STEAM kit",
+    alt: "From idea to object — a 3D pen rocket built and launched by a child",
     position: "center center",
   },
   {
     src: "/Gallery/Workshop_04.png",
-    alt: "Hands using 3D pen with finger caps and rocket template",
+    alt: "Hands-on making — using a 3D pen with finger caps and the Enki curriculum template",
     position: "center top",
   },
   {
