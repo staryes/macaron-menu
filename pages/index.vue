@@ -155,20 +155,22 @@
     <!-- 兩欄內文 -->
     <div class="grid md:grid-cols-2 gap-10 text-[#3D3D3D] leading-relaxed text-base">
 
-      <!-- 左欄：起源故事 + 品牌使命 -->
+      <!-- 左欄：起源故事 -->
       <div class="space-y-5">
         <p>
-          We started Enki Atelier because we wanted children's making projects to feel more meaningful:
-          not just cute crafts, and not just abstract lessons, but real objects children can build, test,
-          revise, and feel proud of.
-        </p>
-        <p>
-          Our kits bring together science, engineering, art, and storytelling so children can experience
-          ideas with their hands.
-        </p>
-        <p>
           It started with a Halloween costume. Our kid wanted legs that could collect candy on their own.
-          We spent a weekend trying to figure it out together anyway, and that weekend stuck with us.
+          We're a little fuzzy on the exact mechanics they had in mind, but we spent a weekend trying to
+          figure it out together anyway.
+        </p>
+        <p>
+          That weekend stuck with us. We started looking for kits that could give them more of that,
+          the building, the figuring-out, the not-quite-working-but-trying-again. We couldn't find what
+          we wanted. The 3D pen sets were fine for doodling and then stopped. The STEM kits "for girls"
+          were just the regular ones in different packaging. Nothing was wrong with them exactly.
+          They just didn't go anywhere.
+        </p>
+        <p>
+          So we made what we wanted to exist.
         </p>
       </div>
 
@@ -182,8 +184,9 @@
         </p>
         <p>
           Kids are born curious. They don't need to be convinced to explore, they just need
-          the right invitation. The rocket actually launches. The bird actually balances. That moment of
-          "wait, it worked" is what keeps kids coming back, and it is where the real learning happens.
+          the right invitation. The rocket actually launches. The bird actually balances. The mobile
+          hangs and turns exactly as it should. That moment of "wait, it worked" is what keeps kids
+          coming back, and it is where the real learning happens.
         </p>
         <p class="text-sm text-[#B586AC] italic leading-relaxed mt-4">
           The name comes from Enki, the Sumerian god of wisdom and craft. Old, a little obscure,
@@ -235,7 +238,7 @@
             </div>
             <div>
               <h3 class="text-base font-bold text-[#1A1A1A] mb-2" style="font-family: 'Lora', serif;">Art + Engineering Together</h3>
-              <p class="text-sm text-[#3D3D3D] leading-relaxed">The bird is a physics experiment. The rocket is also a sculpture. We didn't separate the visual thinking from the scientific thinking, because children don't either.</p>
+              <p class="text-sm text-[#3D3D3D] leading-relaxed">A space mobile is a kinetic sculpture and a lesson in equilibrium at the same time. We don't ask children to choose between making something beautiful and understanding why it works.</p>
             </div>
           </div>
 
@@ -420,7 +423,7 @@
               <span class="text-xl font-bold text-[#6B441E]" style="font-family: 'Lora', serif;">3</span>
             </div>
             <h3 class="text-base font-bold text-[#1A1A1A] mb-2" style="font-family: 'Lora', serif;">Test</h3>
-            <p class="text-sm text-[#3D3D3D] leading-relaxed">See the science in action through launch, balance, movement, or structure. The build actually works.</p>
+            <p class="text-sm text-[#3D3D3D] leading-relaxed">See the science in action: the rocket launches, the bird balances, the space mobile hangs and turns. The build actually works.</p>
           </div>
 
           <div class="text-center">
@@ -627,7 +630,7 @@
 
           <div class="bg-white rounded-2xl p-6 border border-[#DFC6E0]/30">
             <p class="text-sm font-semibold text-[#6B441E] mb-1">Studio-Tested Builds</p>
-            <p class="text-sm text-[#3D3D3D] leading-relaxed">Every build is designed and tested to actually work — the rocket launches, the bird balances. Engineering integrity is built in from the start.</p>
+            <p class="text-sm text-[#3D3D3D] leading-relaxed">Every build is designed and tested to actually work — the rocket launches, the bird balances, the space mobile hangs exactly right. Engineering integrity is built in from the start.</p>
           </div>
 
           <div class="bg-white rounded-2xl p-6 border border-[#DFC6E0]/30">
