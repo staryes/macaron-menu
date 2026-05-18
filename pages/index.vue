@@ -163,7 +163,7 @@
           figure it out together anyway.
         </p>
         <p>
-          That weekend stuck with us. We started looking for kits that could give them more of that,
+          That weekend stuck with us. We started looking for kits that could give them more of that —
           the building, the figuring-out, the not-quite-working-but-trying-again. We couldn't find what
           we wanted. The 3D pen sets were fine for doodling and then stopped. The STEM kits "for girls"
           were just the regular ones in different packaging. Nothing was wrong with them exactly.
@@ -174,19 +174,19 @@
         </p>
       </div>
 
-      <!-- 右欄：設計理念 -->
+      <!-- 右欄：理念與使命 -->
       <div class="space-y-5">
         <p>
           Every Enki kit is designed by <strong class="text-[#6B441E]">PhD engineers and an art educator
-          who are also parents</strong>, not as a credential, but because it changes how you think about
+          who are also parents</strong> — not as a credential, but because it changes how you think about
           what "too hard" means for a seven-year-old, and where the real engagement lives inside a
           learning curve.
         </p>
         <p>
-          Kids are born curious. They don't need to be convinced to explore, they just need
-          the right invitation. The rocket actually launches. The bird actually balances. The mobile
-          hangs and turns exactly as it should. That moment of "wait, it worked" is what keeps kids
-          coming back, and it is where the real learning happens.
+          Kids are born curious. They don't need to be convinced to explore — they just need
+          the right invitation. What we build isn't just real science content. It is genuinely
+          fun. The rocket actually launches. The bird actually balances. That moment of "wait,
+          it worked" is what keeps kids coming back, and it is where the real learning happens.
         </p>
         <p class="text-sm text-[#B586AC] italic leading-relaxed mt-4">
           The name comes from Enki, the Sumerian god of wisdom and craft. Old, a little obscure,
