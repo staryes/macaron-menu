@@ -434,24 +434,6 @@
 
       </div>
 
-      <!-- Compact Trust Signals (merged) -->
-      <div class="max-w-5xl mx-auto px-6 md:px-12 mt-14 pt-10 border-t border-[#DFC6E0]/30">
-        <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
-          <div>
-            <p class="text-sm font-semibold text-[#6B441E] mb-1">PhD-Designed</p>
-            <p class="text-sm text-[#3D3D3D] leading-relaxed">Designed by PhD engineers and an art educator who are also parents, not just as a credential, but because it changes how you think about what's too hard for a seven-year-old.</p>
-          </div>
-          <div>
-            <p class="text-sm font-semibold text-[#6B441E] mb-1">Tested Before It Ships</p>
-            <p class="text-sm text-[#3D3D3D] leading-relaxed">We build every project before anything goes out. The rocket launches, the bird balances, the mobile holds. We don't send out projects that don't work.</p>
-          </div>
-          <div>
-            <p class="text-sm font-semibold text-[#6B441E] mb-1">Real Photos, Not Illustrations</p>
-            <p class="text-sm text-[#3D3D3D] leading-relaxed">Every guide uses real photos from our own lab. Each step shows exactly what you're building, so children can follow without interpreting diagrams.</p>
-          </div>
-        </div>
-      </div>
-
     </section>
 
     <!-- Buying Guide Section -->
@@ -655,6 +637,24 @@
         ></span>
       </div>
     </section>
+
+    <!-- Trust Band (before purchase CTA) -->
+    <div class="bg-[#FFF8EB] border-t border-[#DFC6E0]/30 border-b border-[#DFC6E0]/30">
+      <div class="max-w-5xl mx-auto px-6 py-8 grid grid-cols-1 md:grid-cols-3 md:divide-x divide-[#DFC6E0]/30 gap-6 md:gap-0">
+        <div class="md:px-8">
+          <p class="text-sm font-semibold text-[#6B441E] mb-1">PhD-Designed</p>
+          <p class="text-xs text-[#3D3D3D] leading-relaxed">Designed by PhD engineers and an art educator, both of whom are also parents.</p>
+        </div>
+        <div class="md:px-8">
+          <p class="text-sm font-semibold text-[#6B441E] mb-1">Tested Before It Ships</p>
+          <p class="text-xs text-[#3D3D3D] leading-relaxed">We build every project in-house before anything goes out. The rocket launches. The mobile holds.</p>
+        </div>
+        <div class="md:px-8">
+          <p class="text-sm font-semibold text-[#6B441E] mb-1">Real Photos, Not Illustrations</p>
+          <p class="text-xs text-[#3D3D3D] leading-relaxed">Every curriculum guide uses real photos from our own lab, not diagrams or drawings.</p>
+        </div>
+      </div>
+    </div>
 
     <!-- Email Opt-in Section (預設隱藏，移除 style="display:none" 即可開啟) -->
     <section
