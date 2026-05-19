@@ -195,71 +195,67 @@
       </div>
 
     </div>
+
+    <!-- What Makes Our Kits Different (merged into philosophy section) -->
+    <div class="border-t border-[#DFC6E0]/30 mt-14 pt-14">
+      <h3 class="text-lg font-bold text-[#1A1A1A] mb-10" style="font-family: 'Lora', serif;">What Makes Our Kits Different</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+        <div class="flex gap-4">
+          <div class="w-9 h-9 flex-shrink-0 rounded-full bg-[#6B441E]/10 flex items-center justify-center mt-0.5">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#6B441E" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M9 3h6M9 3v8l-4 9h14l-4-9V3"/><path d="M6 18h.01M10 16h.01"/>
+            </svg>
+          </div>
+          <div>
+            <p class="text-sm font-bold text-[#1A1A1A] mb-1">Real Science, Not Just Shapes</p>
+            <p class="text-sm text-[#3D3D3D] leading-relaxed">The rocket actually launches. The bird actually balances. Every project is built around a concept children can test, observe, and ask questions about.</p>
+          </div>
+        </div>
+
+        <div class="flex gap-4">
+          <div class="w-9 h-9 flex-shrink-0 rounded-full bg-[#6B441E]/10 flex items-center justify-center mt-0.5">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#6B441E" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+            </svg>
+          </div>
+          <div>
+            <p class="text-sm font-bold text-[#1A1A1A] mb-1">Designed for Making, Not Just Following</p>
+            <p class="text-sm text-[#3D3D3D] leading-relaxed">Most pen stencil kits are done in 20 minutes and go nowhere. Ours are built around iteration — kids build, try it, fix it, and come back to it.</p>
+          </div>
+        </div>
+
+        <div class="flex gap-4">
+          <div class="w-9 h-9 flex-shrink-0 rounded-full bg-[#6B441E]/10 flex items-center justify-center mt-0.5">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#6B441E" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/>
+            </svg>
+          </div>
+          <div>
+            <p class="text-sm font-bold text-[#1A1A1A] mb-1">Art + Engineering Together</p>
+            <p class="text-sm text-[#3D3D3D] leading-relaxed">A space mobile is a kinetic sculpture and a lesson in equilibrium at the same time. We don't ask children to choose between making something beautiful and understanding why it works.</p>
+          </div>
+        </div>
+
+        <div class="flex gap-4">
+          <div class="w-9 h-9 flex-shrink-0 rounded-full bg-[#6B441E]/10 flex items-center justify-center mt-0.5">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#6B441E" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/>
+            </svg>
+          </div>
+          <div>
+            <p class="text-sm font-bold text-[#1A1A1A] mb-1">Built by Educators and Engineers</p>
+            <p class="text-sm text-[#3D3D3D] leading-relaxed">Our team includes PhD engineers and an art educator who are also parents. That combination changes how you think about what "too hard" means for a seven-year-old.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
   </div>
 </section>
 
-    <!-- What Makes Our Kits Different Section -->
-    <section id="difference" class="py-24 bg-[#FFF8EB]">
-      <div class="max-w-5xl mx-auto px-6">
-        <h2 class="text-2xl md:text-3xl font-bold text-[#1A1A1A] mb-14 text-center" style="font-family: 'Lora', serif;">
-          What Makes Our Kits Different
-        </h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
-
-          <div class="flex gap-5">
-            <div class="w-10 h-10 flex-shrink-0 rounded-full bg-[#6B441E]/10 flex items-center justify-center mt-0.5">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#6B441E" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M9 3h6M9 3v8l-4 9h14l-4-9V3"/><path d="M6 18h.01M10 16h.01"/>
-              </svg>
-            </div>
-            <div>
-              <h3 class="text-base font-bold text-[#1A1A1A] mb-2" style="font-family: 'Lora', serif;">Real Science, Not Just Shapes</h3>
-              <p class="text-sm text-[#3D3D3D] leading-relaxed">The rocket actually launches. The bird actually balances. Every project is built around a concept children can test, observe, and ask questions about.</p>
-            </div>
-          </div>
-
-          <div class="flex gap-5">
-            <div class="w-10 h-10 flex-shrink-0 rounded-full bg-[#6B441E]/10 flex items-center justify-center mt-0.5">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#6B441E" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
-              </svg>
-            </div>
-            <div>
-              <h3 class="text-base font-bold text-[#1A1A1A] mb-2" style="font-family: 'Lora', serif;">Designed for Making, Not Just Following</h3>
-              <p class="text-sm text-[#3D3D3D] leading-relaxed">Most pen stencil kits are done in 20 minutes and go nowhere. Ours are built around iteration — kids build, try it, fix it, and come back to it.</p>
-            </div>
-          </div>
-
-          <div class="flex gap-5">
-            <div class="w-10 h-10 flex-shrink-0 rounded-full bg-[#6B441E]/10 flex items-center justify-center mt-0.5">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#6B441E" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                <circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/>
-              </svg>
-            </div>
-            <div>
-              <h3 class="text-base font-bold text-[#1A1A1A] mb-2" style="font-family: 'Lora', serif;">Art + Engineering Together</h3>
-              <p class="text-sm text-[#3D3D3D] leading-relaxed">A space mobile is a kinetic sculpture and a lesson in equilibrium at the same time. We don't ask children to choose between making something beautiful and understanding why it works.</p>
-            </div>
-          </div>
-
-          <div class="flex gap-5">
-            <div class="w-10 h-10 flex-shrink-0 rounded-full bg-[#6B441E]/10 flex items-center justify-center mt-0.5">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#6B441E" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/>
-              </svg>
-            </div>
-            <div>
-              <h3 class="text-base font-bold text-[#1A1A1A] mb-2" style="font-family: 'Lora', serif;">Built by Educators and Engineers</h3>
-              <p class="text-sm text-[#3D3D3D] leading-relaxed">Our team includes PhD engineers and an art educator who are also parents. That combination changes how you think about what "too hard" means for a seven-year-old.</p>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
     <!-- Themes Section -->
-    <section id="themes" class="py-24 bg-white">
+    <section id="themes" class="py-24 bg-[#FFF8EB]">
       <div class="max-w-7xl mx-auto text-center px-4">
         <p class="text-xs font-medium tracking-[2px] uppercase text-[#B586AC] mb-3">Explore the Kits</p>
         <h2 class="text-2xl md:text-3xl font-bold text-[#1A1A1A] mb-4" style="font-family: 'Lora', serif;">Learn Something Real. Build Something That Works.</h2>
@@ -393,51 +389,6 @@
       </div>
     </section>
 
-    <!-- How It Works Section -->
-    <section id="how-it-works" class="py-24 bg-[#FFF8EB]">
-      <div class="max-w-5xl mx-auto px-6">
-        <p class="text-xs font-medium tracking-[2px] uppercase text-[#B586AC] mb-3 text-center">The Learning Experience</p>
-        <h2 class="text-2xl md:text-3xl font-bold text-[#1A1A1A] mb-14 text-center" style="font-family: 'Lora', serif;">
-          How It Works
-        </h2>
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
-
-          <div class="text-center">
-            <div class="w-14 h-14 mx-auto mb-5 rounded-full bg-[#FFF8EB] border-2 border-[#E0A939] flex items-center justify-center">
-              <span class="text-xl font-bold text-[#6B441E]" style="font-family: 'Lora', serif;">1</span>
-            </div>
-            <h3 class="text-base font-bold text-[#1A1A1A] mb-2" style="font-family: 'Lora', serif;">Read</h3>
-            <p class="text-sm text-[#3D3D3D] leading-relaxed">Follow a visual, photo-based curriculum that explains the science behind each build.</p>
-          </div>
-
-          <div class="text-center">
-            <div class="w-14 h-14 mx-auto mb-5 rounded-full bg-[#FFF8EB] border-2 border-[#E0A939] flex items-center justify-center">
-              <span class="text-xl font-bold text-[#6B441E]" style="font-family: 'Lora', serif;">2</span>
-            </div>
-            <h3 class="text-base font-bold text-[#1A1A1A] mb-2" style="font-family: 'Lora', serif;">Build</h3>
-            <p class="text-sm text-[#3D3D3D] leading-relaxed">Use a 3D pen to create parts and structures step by step, with real photos guiding every stage.</p>
-          </div>
-
-          <div class="text-center">
-            <div class="w-14 h-14 mx-auto mb-5 rounded-full bg-[#FFF8EB] border-2 border-[#E0A939] flex items-center justify-center">
-              <span class="text-xl font-bold text-[#6B441E]" style="font-family: 'Lora', serif;">3</span>
-            </div>
-            <h3 class="text-base font-bold text-[#1A1A1A] mb-2" style="font-family: 'Lora', serif;">Test</h3>
-            <p class="text-sm text-[#3D3D3D] leading-relaxed">See the science in action: the rocket launches, the bird balances, the space mobile hangs and turns. The build actually works.</p>
-          </div>
-
-          <div class="text-center">
-            <div class="w-14 h-14 mx-auto mb-5 rounded-full bg-[#FFF8EB] border-2 border-[#E0A939] flex items-center justify-center">
-              <span class="text-xl font-bold text-[#6B441E]" style="font-family: 'Lora', serif;">4</span>
-            </div>
-            <h3 class="text-base font-bold text-[#1A1A1A] mb-2" style="font-family: 'Lora', serif;">Reflect</h3>
-            <p class="text-sm text-[#3D3D3D] leading-relaxed">Adjust, improve, and understand why the design works — and what would happen if you changed it.</p>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
     <!-- Testimonials Section -->
     <section class="py-20 bg-white">
       <div class="max-w-7xl mx-auto px-6 md:px-12">
@@ -482,6 +433,25 @@
         </div>
 
       </div>
+
+      <!-- Compact Trust Signals (merged) -->
+      <div class="max-w-5xl mx-auto px-6 md:px-12 mt-14 pt-10 border-t border-[#DFC6E0]/30">
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+          <div>
+            <p class="text-sm font-semibold text-[#6B441E] mb-1">PhD-Designed</p>
+            <p class="text-sm text-[#3D3D3D] leading-relaxed">Designed by PhD engineers and an art educator who are also parents, not just as a credential, but because it changes how you think about what's too hard for a seven-year-old.</p>
+          </div>
+          <div>
+            <p class="text-sm font-semibold text-[#6B441E] mb-1">Tested Before It Ships</p>
+            <p class="text-sm text-[#3D3D3D] leading-relaxed">We build every project before anything goes out. The rocket launches, the bird balances, the mobile holds. We don't send out projects that don't work.</p>
+          </div>
+          <div>
+            <p class="text-sm font-semibold text-[#6B441E] mb-1">Real Photos, Not Illustrations</p>
+            <p class="text-sm text-[#3D3D3D] leading-relaxed">Every guide uses real photos from our own lab. Each step shows exactly what you're building, so children can follow without interpreting diagrams.</p>
+          </div>
+        </div>
+      </div>
+
     </section>
 
     <!-- Buying Guide Section -->
@@ -604,51 +574,8 @@
       </div>
     </section>
 
-    <!-- Trust Signals Section -->
-    <section class="py-20 bg-white">
-      <div class="max-w-5xl mx-auto px-6 text-center">
-        <p class="text-xs font-medium tracking-[2px] uppercase text-[#B586AC] mb-3">Why Parents Trust Enki</p>
-        <h2 class="text-2xl md:text-3xl font-bold text-[#1A1A1A] mb-12" style="font-family: 'Lora', serif;">
-          Thoughtfully Developed for Curious Children
-        </h2>
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 text-left">
-
-          <div class="bg-white rounded-2xl p-6 border border-[#DFC6E0]/30">
-            <p class="text-sm font-semibold text-[#6B441E] mb-1">PhD-Designed</p>
-            <p class="text-sm text-[#3D3D3D] leading-relaxed">The kits are designed by PhD engineers and an art educator who are also parents. Not because credentials matter, but because it changes how you think about what's too hard for a seven-year-old.</p>
-          </div>
-
-          <div class="bg-white rounded-2xl p-6 border border-[#DFC6E0]/30">
-            <p class="text-sm font-semibold text-[#6B441E] mb-1">Inspired by NGSS &amp; Common Core</p>
-            <p class="text-sm text-[#3D3D3D] leading-relaxed">The science in each kit draws on NGSS and Common Core concepts. It maps to what educators already know matters, not invented curriculum.</p>
-          </div>
-
-          <div class="bg-white rounded-2xl p-6 border border-[#DFC6E0]/30">
-            <p class="text-sm font-semibold text-[#6B441E] mb-1">Real Photos, Not Illustrations</p>
-            <p class="text-sm text-[#3D3D3D] leading-relaxed">Every guide uses real photos taken in our own lab. Each step shows exactly what you're building, so children can follow along without interpreting diagrams.</p>
-          </div>
-
-          <div class="bg-white rounded-2xl p-6 border border-[#DFC6E0]/30">
-            <p class="text-sm font-semibold text-[#6B441E] mb-1">Tested Before It Ships</p>
-            <p class="text-sm text-[#3D3D3D] leading-relaxed">We build every project before anything goes out. The rocket launches, the bird balances, the mobile holds. We don't send out projects that don't work.</p>
-          </div>
-
-          <div class="bg-white rounded-2xl p-6 border border-[#DFC6E0]/30">
-            <p class="text-sm font-semibold text-[#6B441E] mb-1">Safety Built In</p>
-            <p class="text-sm text-[#3D3D3D] leading-relaxed">Every kit includes safety goggles, silicone finger caps in child and adult sizes, and a dual-surface silicone work mat. Clear instructions on when and how to use each tool.</p>
-          </div>
-
-          <div class="bg-white rounded-2xl p-6 border border-[#DFC6E0]/30">
-            <p class="text-sm font-semibold text-[#6B441E] mb-1">Ages 8 and Up, Growing</p>
-            <p class="text-sm text-[#3D3D3D] leading-relaxed">Current kits are rated for ages 8 and up. We're building toward younger age groups. One pen works across all kits in the series as children move through them.</p>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
     <!-- Gallery Section -->
-    <section id="gallery" class="py-20 bg-[#FFF8EB] overflow-hidden">
+    <section id="gallery" class="py-20 bg-white overflow-hidden">
       <div class="max-w-7xl mx-auto px-6 mb-10">
         <p class="text-xs font-medium tracking-[2px] uppercase text-[#B586AC] mb-2 text-center">
           Learning You Can See
