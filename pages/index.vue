@@ -19,11 +19,11 @@
         <!-- 桌機連結：絕對置中 -->
         <div class="hidden md:flex absolute left-1/2 -translate-x-1/2 gap-6">
           <a href="#hero"    class="nav-link">Home</a>
-          <a href="#about"   class="nav-link">About</a>
-          <a href="#themes"  class="nav-link">Products</a>
+          <a href="#philosophy" class="nav-link">Our Philosophy</a>
+          <a href="#themes"  class="nav-link">Kits</a>
           <a href="#gallery" class="nav-link">Gallery</a>
           <a href="#cta"     class="nav-link">Buy Now</a>
-          <a href="#pens"    class="nav-link">Guide</a>
+          <a href="#pens"    class="nav-link">3D Pen Guide</a>
           <a href="/blog"    class="nav-link">Blog</a>
           <a href="#faq"     class="nav-link">FAQ</a>
           <a href="#contact" class="nav-link">Contact Us</a>
@@ -50,15 +50,14 @@
         v-show="mobileMenuOpen"
         class="md:hidden border-t border-[#DFC6E0]/40 bg-[#FFF8EB] px-6 py-4 flex flex-col gap-4"
       >
-        <a href="#hero"    class="nav-link text-base py-1" @click="mobileMenuOpen = false">Home</a>
-        <a href="#about"   class="nav-link text-base py-1" @click="mobileMenuOpen = false">About</a>
-        <a href="#themes"  class="nav-link text-base py-1" @click="mobileMenuOpen = false">Products</a>
-        <a href="#gallery" class="nav-link text-base py-1" @click="mobileMenuOpen = false">Gallery</a>
-        <a href="#cta"     class="nav-link text-base py-1" @click="mobileMenuOpen = false">Buy Now</a>
-        <a href="#pens"    class="nav-link text-base py-1" @click="mobileMenuOpen = false">Guide</a>
-        <a href="/blog"    class="nav-link text-base py-1" @click="mobileMenuOpen = false">Blog</a>
-        <a href="#faq"     class="nav-link text-base py-1" @click="mobileMenuOpen = false">FAQ</a>
-        <a href="#contact" class="nav-link text-base py-1" @click="mobileMenuOpen = false">Contact Us</a>
+        <a href="#hero"        class="nav-link text-base py-1" @click="mobileMenuOpen = false">Home</a>
+        <a href="#philosophy"  class="nav-link text-base py-1" @click="mobileMenuOpen = false">Our Philosophy</a>
+        <a href="#themes"      class="nav-link text-base py-1" @click="mobileMenuOpen = false">Kits</a>
+        <a href="#gallery"     class="nav-link text-base py-1" @click="mobileMenuOpen = false">Gallery</a>
+        <a href="#pens"        class="nav-link text-base py-1" @click="mobileMenuOpen = false">3D Pen Guide</a>
+        <a href="/blog"        class="nav-link text-base py-1" @click="mobileMenuOpen = false">Blog</a>
+        <a href="#faq"         class="nav-link text-base py-1" @click="mobileMenuOpen = false">FAQ</a>
+        <a href="#contact"     class="nav-link text-base py-1" @click="mobileMenuOpen = false">Contact Us</a>
       </div>
 
     </nav>
@@ -78,21 +77,24 @@
         <h1 class="text-4xl md:text-5xl font-bold text-white leading-tight" style="font-family: 'Lora', serif;">
           Big Ideas Start<br>with Little Hands.
         </h1>
-        <p class="text-base md:text-lg font-medium text-white/80 tracking-wide">
-          Science Kits for Kids Who Like to Build.
+        <p class="text-base md:text-lg font-medium text-white/80 leading-relaxed max-w-[480px]">
+          Thoughtfully designed 3D pen STEAM kits that help children build, test, and understand real scientific ideas through hands-on making.
         </p>
-        <p class="text-base md:text-lg text-white/70 leading-relaxed max-w-[480px]">
-          Hands-on STEM kits with real science and art, designed by engineers and educators
-          who refused to settle for "good enough."
+        <p class="text-sm md:text-base text-white/60 leading-relaxed max-w-[480px]">
+          Designed by PhD engineers and educators to make learning feel playful, rigorous, and real.
         </p>
         <div class="flex flex-wrap gap-3 pt-2">
           <a href="#themes" class="inline-block px-6 py-3 bg-[#E0A939] text-[#1A1A1A] font-bold rounded-full hover:brightness-105 transition-all">
-            Explore Kits
+            Explore Our Kits
           </a>
-          <a href="#about" class="inline-block px-6 py-3 border border-white/40 text-white/85 rounded-full hover:bg-white/10 transition-all">
-            Our Story →
+          <a href="#philosophy" class="inline-block px-6 py-3 border border-white/40 text-white/85 rounded-full hover:bg-white/10 transition-all">
+            Our Design Philosophy
           </a>
         </div>
+        <a href="https://www.amazon.com/stores/EnkiAtelier/page/518CC82B-0DF3-4C27-8BB5-D45F16EC48A3" target="_blank" rel="noopener noreferrer"
+           class="inline-block text-sm text-white/45 hover:text-white/70 transition-colors pt-1">
+          Shop on Amazon →
+        </a>
       </div>
     </section>
 
@@ -117,8 +119,8 @@
             <path d="M6 18h.01M10 16h.01"/>
           </svg>
           <div>
-            <p class="text-sm font-semibold text-[#6B441E]">Standards-Aligned Curriculum</p>
-            <p class="text-xs text-[#3D3D3D] hidden md:block">NGSS & Common Core Science</p>
+            <p class="text-sm font-semibold text-[#6B441E]">Curriculum-Grounded</p>
+            <p class="text-xs text-[#3D3D3D] hidden md:block">Inspired by NGSS & Common Core</p>
           </div>
         </div>
 
@@ -138,8 +140,8 @@
       </div>
     </div>
 
-<!-- About Section -->
-<section id="about" class="py-24 bg-white">
+<!-- Why Enki Exists / About Section -->
+<section id="philosophy" class="py-24 bg-white">
   <div class="max-w-5xl mx-auto px-6">
 
     <!-- 引言 -->
@@ -193,18 +195,74 @@
       </div>
 
     </div>
+
+    <!-- What Makes Our Kits Different (merged into philosophy section) -->
+    <div class="border-t border-[#DFC6E0]/30 mt-14 pt-14">
+      <h3 class="text-lg font-bold text-[#1A1A1A] mb-10" style="font-family: 'Lora', serif;">What Makes Our Kits Different</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+        <div class="flex gap-4">
+          <div class="w-9 h-9 flex-shrink-0 rounded-full bg-[#6B441E]/10 flex items-center justify-center mt-0.5">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#6B441E" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M9 3h6M9 3v8l-4 9h14l-4-9V3"/><path d="M6 18h.01M10 16h.01"/>
+            </svg>
+          </div>
+          <div>
+            <p class="text-sm font-bold text-[#1A1A1A] mb-1">Real Science, Not Just Shapes</p>
+            <p class="text-sm text-[#3D3D3D] leading-relaxed">The rocket actually launches. The bird actually balances. Every project is built around a concept children can test, observe, and ask questions about.</p>
+          </div>
+        </div>
+
+        <div class="flex gap-4">
+          <div class="w-9 h-9 flex-shrink-0 rounded-full bg-[#6B441E]/10 flex items-center justify-center mt-0.5">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#6B441E" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+            </svg>
+          </div>
+          <div>
+            <p class="text-sm font-bold text-[#1A1A1A] mb-1">Designed for Making, Not Just Following</p>
+            <p class="text-sm text-[#3D3D3D] leading-relaxed">Most pen stencil kits are done in 20 minutes and go nowhere. Ours are built around iteration — kids build, try it, fix it, and come back to it.</p>
+          </div>
+        </div>
+
+        <div class="flex gap-4">
+          <div class="w-9 h-9 flex-shrink-0 rounded-full bg-[#6B441E]/10 flex items-center justify-center mt-0.5">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#6B441E" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/>
+            </svg>
+          </div>
+          <div>
+            <p class="text-sm font-bold text-[#1A1A1A] mb-1">Art + Engineering Together</p>
+            <p class="text-sm text-[#3D3D3D] leading-relaxed">A space mobile is a kinetic sculpture and a lesson in equilibrium at the same time. We don't ask children to choose between making something beautiful and understanding why it works.</p>
+          </div>
+        </div>
+
+        <div class="flex gap-4">
+          <div class="w-9 h-9 flex-shrink-0 rounded-full bg-[#6B441E]/10 flex items-center justify-center mt-0.5">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#6B441E" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/>
+            </svg>
+          </div>
+          <div>
+            <p class="text-sm font-bold text-[#1A1A1A] mb-1">Built by Educators and Engineers</p>
+            <p class="text-sm text-[#3D3D3D] leading-relaxed">Our team includes PhD engineers and an art educator who are also parents. That combination changes how you think about what "too hard" means for a seven-year-old.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
   </div>
 </section>
 
     <!-- Themes Section -->
     <section id="themes" class="py-24 bg-[#FFF8EB]">
       <div class="max-w-7xl mx-auto text-center px-4">
-        <h2 class="text-2xl md:text-3xl font-bold text-[#1A1A1A] mb-4">Our Products</h2>
+        <p class="text-xs font-medium tracking-[2px] uppercase text-[#B586AC] mb-3">Explore the Kits</p>
+        <h2 class="text-2xl md:text-3xl font-bold text-[#1A1A1A] mb-4" style="font-family: 'Lora', serif;">Learn Something Real. Build Something That Works.</h2>
         <p class="text-base text-[#3D3D3D] leading-relaxed max-w-2xl mx-auto mt-4 mb-10 text-center">
-          Every kit comes with a full-color curriculum guide, printed in the USA with
-          real-lab step-by-step photos taken in our own studio. All guides are
-          pre-punched for three-ring binders so kids can build a personal science
-          library as the series grows.
+          Every kit includes a full-color curriculum guide printed in the USA with real step-by-step photos
+          from our own studio, pre-punched for three-ring binders. Designed to work with many common 3D pens.
+          Pen sold separately so families can use the tool they already have.
         </p>
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 items-stretch">
           <div
@@ -299,14 +357,23 @@
                   :href="product.amazonUrl"
                   target="_blank"
                   rel="noopener noreferrer"
-                  class="flex items-center justify-center gap-2 w-full py-2.5 bg-[#6B441E] text-white text-sm font-semibold rounded-full hover:bg-[#6B441E]/85 transition-colors"
+                  class="flex items-center justify-center gap-2 w-full py-2.5 bg-[#6B441E] text-white text-sm font-semibold rounded-full hover:bg-[#6B441E]/85 transition-colors mb-2"
                 >
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  Explore This Kit
+                </a>
+                <a
+                  v-if="product.amazonUrl"
+                  :href="product.amazonUrl"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="flex items-center justify-center gap-2 w-full py-2 text-[#6B441E] text-xs font-medium hover:text-[#E0A939] transition-colors"
+                >
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
                     <polyline points="15 3 21 3 21 9"/>
                     <line x1="10" y1="14" x2="21" y2="3"/>
                   </svg>
-                  Buy on Amazon
+                  View on Amazon
                 </a>
                 <div
                   v-else
@@ -366,120 +433,44 @@
         </div>
 
       </div>
+
     </section>
 
     <!-- Buying Guide Section -->
-    <section id="pens" class="py-24 bg-[#FFF8EB]">
-      <div class="max-w-3xl mx-auto px-6">
+    <section id="pens" class="py-14 bg-[#FFF8EB]">
+      <div class="max-w-4xl mx-auto px-6">
 
-        <!-- 標題 -->
-        <div class="text-center mb-10">
-          <p class="text-xs font-medium tracking-[2px] uppercase text-[#B586AC] mb-2">Buying Guide</p>
-          <h2 class="text-3xl md:text-4xl font-bold text-[#1A1A1A] mb-5" style="font-family: 'Lora', serif;">
-            Choosing a 3D Pen for Your Enki Kit
+        <div class="text-center mb-8">
+          <p class="text-xs font-medium tracking-[2px] uppercase text-[#B586AC] mb-2">3D Pen Guide</p>
+          <h2 class="text-xl md:text-2xl font-bold text-[#1A1A1A] mb-3" style="font-family: 'Lora', serif;">
+            Which 3D Pen Works With Each Kit?
           </h2>
-          <p class="text-base text-[#3D3D3D] leading-relaxed max-w-xl mx-auto">
-            Our kits are curriculum and material sets. You bring the 3D pen, and one pen
-            works across all kits in the Enki series. Pen requirements vary by kit, so
-            use the guide below to find the right match.
+          <p class="text-sm text-[#3D3D3D] leading-relaxed max-w-xl mx-auto">
+            One pen works across all kits. Requirements differ by kit.
           </p>
         </div>
 
-        <!-- 兩個套件說明卡 -->
-        <div class="space-y-5 mb-10">
-
-          <!-- Rocket Kit -->
-          <div class="bg-white rounded-2xl border border-[#DFC6E0]/50 p-6">
-            <div class="flex items-start gap-4">
-              <div class="w-10 h-10 rounded-xl bg-[#FFF8EB] border border-[#6B441E]/15 flex items-center justify-center flex-shrink-0">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#6B441E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M12 2c-4 3-5 7-5 10h10c0-3-1-7-5-10z"/>
-                  <circle cx="12" cy="9" r="1.5" fill="#6B441E" stroke="none"/>
-                  <path d="M7 12l-3 5h4"/>
-                  <path d="M17 12l3 5h-4"/>
-                  <path d="M10 17a2 2 0 0 0 4 0"/>
-                </svg>
-              </div>
-              <div class="flex-1">
-                <h3 class="text-base font-bold text-[#1A1A1A] mb-1" style="font-family: 'Lora', serif;">
-                  Rocket Launcher Kit
-                </h3>
-                <p class="text-sm text-[#3D3D3D] mb-3">
-                  Requires a pen that uses <strong class="text-[#6B441E]">PLA or ABS filament</strong>.
-                  Low-temp PCL pens cannot provide the rigidity needed for the elastic launch mechanism.
-                </p>
-                <p class="text-xs text-[#B586AC] mb-3">
-                  Compatible with: MYNT3D Super, MYNT3D Pro, SCRIB3D P1, 7TECH 3D Pen,
-                  TECBOSS 3D Pen, Dikale 3D Pen, and most standard PLA or ABS pens
-                </p>
-                <div class="flex flex-wrap gap-2">
-                  <a href="https://amzn.to/4pl0gYW" target="_blank" rel="noopener noreferrer"
-                     class="text-xs px-3 py-1.5 bg-[#6B441E] text-white rounded-full hover:bg-[#6B441E]/85 transition-colors">
-                    MYNT3D Super
-                  </a>
-                  <a href="https://amzn.to/49lsYD6" target="_blank" rel="noopener noreferrer"
-                     class="text-xs px-3 py-1.5 bg-[#6B441E] text-white rounded-full hover:bg-[#6B441E]/85 transition-colors">
-                    MYNT3D Pro
-                  </a>
-                  <a href="https://amzn.to/3MVjs2e" target="_blank" rel="noopener noreferrer"
-                     class="text-xs px-3 py-1.5 bg-[#6B441E] text-white rounded-full hover:bg-[#6B441E]/85 transition-colors">
-                    SCRIB3D P1
-                  </a>
-                </div>
-              </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+          <div class="bg-white rounded-xl border border-[#DFC6E0]/40 p-5">
+            <p class="text-sm font-bold text-[#1A1A1A] mb-1">Rocket Launcher Kit</p>
+            <p class="text-xs text-[#3D3D3D] leading-relaxed mb-3">Requires <strong class="text-[#6B441E]">PLA or ABS</strong> filament. Low-temp PCL pens don't provide the rigidity needed for the launch mechanism.</p>
+            <div class="flex flex-wrap gap-1.5">
+              <a href="https://amzn.to/4pl0gYW" target="_blank" rel="noopener noreferrer" class="text-xs px-2.5 py-1 bg-[#6B441E] text-white rounded-full hover:bg-[#6B441E]/85 transition-colors">MYNT3D Super</a>
+              <a href="https://amzn.to/49lsYD6" target="_blank" rel="noopener noreferrer" class="text-xs px-2.5 py-1 bg-[#6B441E] text-white rounded-full hover:bg-[#6B441E]/85 transition-colors">MYNT3D Pro</a>
+              <a href="https://amzn.to/3MVjs2e" target="_blank" rel="noopener noreferrer" class="text-xs px-2.5 py-1 bg-[#6B441E] text-white rounded-full hover:bg-[#6B441E]/85 transition-colors">SCRIB3D P1</a>
             </div>
           </div>
-
-          <!-- Balancing Bird Kit -->
-          <div class="bg-white rounded-2xl border border-[#DFC6E0]/50 p-6">
-            <div class="flex items-start gap-4">
-              <div class="w-10 h-10 rounded-xl bg-[#FFF8EB] border border-[#6B441E]/15 flex items-center justify-center flex-shrink-0">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#6B441E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                  <line x1="12" y1="3" x2="12" y2="21"/>
-                  <polyline points="4 7 12 3 20 7"/>
-                  <line x1="4" y1="21" x2="20" y2="21"/>
-                  <path d="M4 7l-2 5.5a4 4 0 0 0 8 0z"/>
-                  <path d="M16 7l-2 5.5a4 4 0 0 0 8 0z"/>
-                </svg>
-              </div>
-              <div class="flex-1">
-                <h3 class="text-base font-bold text-[#1A1A1A] mb-1" style="font-family: 'Lora', serif;">
-                  Balancing Bird &amp; Mobile Kit
-                </h3>
-                <p class="text-sm text-[#3D3D3D] mb-3">
-                  Works with <strong class="text-[#6B441E]">any standard 3D pen</strong>, including
-                  low-temp PCL options. A flexible starting point for families new to 3D pens.
-                </p>
-                <p class="text-xs text-[#B586AC] mb-3">
-                  Compatible with: most PLA, ABS, and PCL pens including low-temp models.
-                  Works with 3Doodler Start+, MYNT3D Super, MYNT3D Pro, SCRIB3D P1,
-                  7TECH 3D Pen, TECBOSS 3D Pen, Dikale 3D Pen, and most standard 3D pens
-                </p>
-                <div class="flex flex-wrap gap-2">
-                  <a href="https://amzn.to/4aIF63E" target="_blank" rel="noopener noreferrer"
-                     class="text-xs px-3 py-1.5 bg-[#6B441E] text-white rounded-full hover:bg-[#6B441E]/85 transition-colors">
-                    3Doodler Start+
-                  </a>
-                  <a href="https://amzn.to/4pl0gYW" target="_blank" rel="noopener noreferrer"
-                     class="text-xs px-3 py-1.5 bg-[#6B441E] text-white rounded-full hover:bg-[#6B441E]/85 transition-colors">
-                    MYNT3D Super
-                  </a>
-                  <a href="https://amzn.to/49lsYD6" target="_blank" rel="noopener noreferrer"
-                     class="text-xs px-3 py-1.5 bg-[#6B441E] text-white rounded-full hover:bg-[#6B441E]/85 transition-colors">
-                    MYNT3D Pro
-                  </a>
-                  <a href="https://amzn.to/3MVjs2e" target="_blank" rel="noopener noreferrer"
-                     class="text-xs px-3 py-1.5 bg-[#6B441E] text-white rounded-full hover:bg-[#6B441E]/85 transition-colors">
-                    SCRIB3D P1
-                  </a>
-                </div>
-              </div>
+          <div class="bg-white rounded-xl border border-[#DFC6E0]/40 p-5">
+            <p class="text-sm font-bold text-[#1A1A1A] mb-1">Balancing Bird &amp; Mobile Kit</p>
+            <p class="text-xs text-[#3D3D3D] leading-relaxed mb-3">Works with <strong class="text-[#6B441E]">any standard 3D pen</strong>, including low-temp PCL. A good starting point for families new to 3D pens.</p>
+            <div class="flex flex-wrap gap-1.5">
+              <a href="https://amzn.to/4aIF63E" target="_blank" rel="noopener noreferrer" class="text-xs px-2.5 py-1 bg-[#6B441E] text-white rounded-full hover:bg-[#6B441E]/85 transition-colors">3Doodler Start+</a>
+              <a href="https://amzn.to/4pl0gYW" target="_blank" rel="noopener noreferrer" class="text-xs px-2.5 py-1 bg-[#6B441E] text-white rounded-full hover:bg-[#6B441E]/85 transition-colors">MYNT3D Super</a>
+              <a href="https://amzn.to/49lsYD6" target="_blank" rel="noopener noreferrer" class="text-xs px-2.5 py-1 bg-[#6B441E] text-white rounded-full hover:bg-[#6B441E]/85 transition-colors">MYNT3D Pro</a>
             </div>
           </div>
-
         </div>
 
-        <!-- 免責聲明 -->
         <p class="text-xs text-[#3D3D3D]/50 text-center italic">
           We may receive commissions if you purchase through our links.
           These are pens we recommend based on compatibility, not paid partnerships.
@@ -492,13 +483,13 @@
     <section id="gallery" class="py-20 bg-white overflow-hidden">
       <div class="max-w-7xl mx-auto px-6 mb-10">
         <p class="text-xs font-medium tracking-[2px] uppercase text-[#B586AC] mb-2 text-center">
-          In the Wild
+          Learning You Can See
         </p>
         <h2
           class="text-3xl md:text-4xl font-bold text-[#1A1A1A] text-center"
           style="font-family: 'Lora', serif;"
         >
-          Real Kids. Real Builds.
+          What Children Can Build
         </h2>
       </div>
 
@@ -570,6 +561,24 @@
       </div>
     </section>
 
+    <!-- Trust Band (before purchase CTA) -->
+    <div class="bg-[#FFF8EB] border-t border-[#DFC6E0]/30 border-b border-[#DFC6E0]/30">
+      <div class="max-w-5xl mx-auto px-6 py-8 grid grid-cols-1 md:grid-cols-3 md:divide-x divide-[#DFC6E0]/30 gap-6 md:gap-0">
+        <div class="md:px-8">
+          <p class="text-sm font-semibold text-[#6B441E] mb-1">PhD-Designed</p>
+          <p class="text-xs text-[#3D3D3D] leading-relaxed">Designed by PhD engineers and an art educator who care deeply about how children learn.</p>
+        </div>
+        <div class="md:px-8">
+          <p class="text-sm font-semibold text-[#6B441E] mb-1">Tested Before It Ships</p>
+          <p class="text-xs text-[#3D3D3D] leading-relaxed">We build every project in-house before anything goes out. The rocket launches. The mobile holds.</p>
+        </div>
+        <div class="md:px-8">
+          <p class="text-sm font-semibold text-[#6B441E] mb-1">Real Photos, Not Illustrations</p>
+          <p class="text-xs text-[#3D3D3D] leading-relaxed">Every curriculum guide uses real photos from our own lab, not diagrams or drawings.</p>
+        </div>
+      </div>
+    </div>
+
     <!-- Email Opt-in Section (預設隱藏，移除 style="display:none" 即可開啟) -->
     <section
       id="email-optin-section"
@@ -624,15 +633,25 @@
     <!-- Call to Action Section -->
     <section id="cta" class="py-24 bg-[#6B441E] text-center px-4">
       <h2 class="text-3xl md:text-4xl font-bold text-white mb-4" style="font-family: 'Lora', serif;">
-        Build Something Real.
+        Ready to Explore Hands-on STEAM Learning?
       </h2>
-      <p class="text-white/75 text-lg mb-8 max-w-lg mx-auto leading-relaxed">
-        Full curriculum, all materials, photo-guided instructions. For kids who want to understand why it works — not just that it does.
+      <p class="text-white/75 text-lg mb-10 max-w-lg mx-auto leading-relaxed">
+        Discover kits designed to help children build real objects, test real ideas, and feel proud of what they make.
       </p>
-      <a href="https://www.amazon.com/stores/page/518CC82B-0DF3-4C27-8BB5-D45F16EC48A3?channel=Official%20Website" target="_blank" rel="noopener noreferrer"
-         class="inline-block px-8 py-4 bg-[#E0A939] text-[#1A1A1A] font-bold rounded-full hover:brightness-105 transition-all text-base">
-        Buy on Amazon
-      </a>
+      <div class="flex flex-wrap gap-4 justify-center">
+        <a href="#themes"
+           class="inline-block px-8 py-4 bg-[#E0A939] text-[#1A1A1A] font-bold rounded-full hover:brightness-105 transition-all text-base">
+          Explore Our Kits
+        </a>
+        <a href="https://www.amazon.com/stores/page/518CC82B-0DF3-4C27-8BB5-D45F16EC48A3?channel=Official%20Website" target="_blank" rel="noopener noreferrer"
+           class="inline-block px-8 py-4 border border-white/40 text-white/85 font-semibold rounded-full hover:bg-white/10 transition-all text-base">
+          Shop on Amazon
+        </a>
+        <a href="#contact"
+           class="inline-block px-8 py-4 text-white/60 font-medium hover:text-white/90 transition-all text-base">
+          Contact Us
+        </a>
+      </div>
     </section>
 
     <!-- FAQ Section -->
@@ -646,6 +665,9 @@
         </div>
 
         <div class="space-y-4">
+
+          <!-- Category: Learning & Safety -->
+          <p class="text-xs font-semibold tracking-[2px] uppercase text-[#B586AC] pt-2 pl-1">Learning &amp; Safety</p>
 
           <!-- FAQ 0 -->
           <div class="faq-item" :class="{ open: openFaq === 0 }">
@@ -662,6 +684,9 @@
               </p>
             </Transition>
           </div>
+
+          <!-- Category: Compatibility -->
+          <p class="text-xs font-semibold tracking-[2px] uppercase text-[#B586AC] pt-4 pl-1">Compatibility</p>
 
           <!-- FAQ 1 -->
           <div class="faq-item" :class="{ open: openFaq === 1 }">
@@ -685,6 +710,9 @@
               </p>
             </Transition>
           </div>
+
+          <!-- Category: Before You Buy -->
+          <p class="text-xs font-semibold tracking-[2px] uppercase text-[#B586AC] pt-4 pl-1">Before You Buy</p>
 
           <!-- FAQ 2 -->
           <div class="faq-item" :class="{ open: openFaq === 2 }">
@@ -797,7 +825,7 @@
     </section>
 
     <!-- Contact Us Section -->
-    <section id="contact" class="py-20 bg-white">
+    <section id="contact" class="py-20 bg-[#FFF8EB]">
       <div class="max-w-4xl mx-auto text-center px-4">
         <h2 class="text-2xl md:text-3xl font-bold text-[#1A1A1A] mb-6">Contact Us</h2>
         <p class="text-base md:text-lg text-[#3D3D3D] mb-6">Have questions? Get in touch with us!</p>
@@ -1028,32 +1056,32 @@ function onScroll() {
 const galleryItems = ref([
   {
     src: "/Gallery/In_the_lab_01.png",
-    alt: "PhD engineer designing rocket trajectory in the lab",
+    alt: "Testing launch angles — Enki Atelier studio developing the Rocket Launcher Kit",
     position: "center center",
   },
   {
     src: "/Gallery/Workshop_01.png",
-    alt: "Hands holding completed 3D pen rocket at workshop",
+    alt: "Turning flat lines into working objects — a completed 3D pen rocket at workshop",
     position: "center center",
   },
   {
     src: "/Gallery/Workshop_02.png",
-    alt: "Child using 3D pen with safety goggles and curriculum guide",
+    alt: "Building stable 3D structures — child following the Enki curriculum with safety goggles",
     position: "center top",
   },
   {
     src: "/Gallery/Built_by_kids_05.png",
-    alt: "Testing a balancing mobile — Enki Atelier STEAM kit",
+    alt: "Discovering balance points — testing a completed hanging mobile from the Balancing kit",
     position: "center center",
   },
   {
     src: "/Gallery/Built_by_kids_01.png",
-    alt: "3D pen rocket built by a kid — Enki Atelier STEAM kit",
+    alt: "From idea to object — a 3D pen rocket built and launched by a child",
     position: "center center",
   },
   {
     src: "/Gallery/Workshop_04.png",
-    alt: "Hands using 3D pen with finger caps and rocket template",
+    alt: "Hands-on making — using a 3D pen with finger caps and the Enki curriculum template",
     position: "center top",
   },
   {
