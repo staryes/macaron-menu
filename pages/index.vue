@@ -438,7 +438,7 @@
 
     <!-- Buying Guide Section -->
     <section id="pens" class="py-14 bg-[#FFF8EB]">
-      <div class="max-w-3xl mx-auto px-6">
+      <div class="max-w-4xl mx-auto px-6">
 
         <div class="text-center mb-8">
           <p class="text-xs font-medium tracking-[2px] uppercase text-[#B586AC] mb-2">3D Pen Guide</p>
