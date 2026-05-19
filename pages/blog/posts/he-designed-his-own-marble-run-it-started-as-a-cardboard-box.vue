@@ -84,7 +84,7 @@
         <h2>The marble run</h2>
 
         <figure>
-          <img src="/blog/2026-04-17-marble-run-01.png" alt="A child's handmade cardboard marble run, shown with simple string and chopstick toy materials">
+          <img src="/blog/2026-04-17-marble-run-01.png" alt="A child's handmade cardboard marble run — creative making project inspired by 3D pen STEAM kits" loading="lazy" decoding="async" width="1400" height="933">
         </figure>
 
         <p>My son doesn't have bamboo lying around. But he had a pile of delivery
