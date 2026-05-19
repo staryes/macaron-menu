@@ -202,9 +202,24 @@ import { ref, onMounted, onUnmounted } from 'vue'
 
 useHead({
   title: 'He Designed His Own Marble Run. It Started as a Cardboard Box. — Enki Atelier',
+  link: [{ rel: 'canonical', href: 'https://enkiatelier.com/blog/posts/he-designed-his-own-marble-run-it-started-as-a-cardboard-box' }],
   meta: [
     { name: 'description', content: 'A mom on childhood toys made from string and bamboo, a marble run built from cardboard, and what Earth Day is really asking us to notice.' }
-  ]
+  ],
+  script: [{
+    type: 'application/ld+json',
+    innerHTML: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "He Designed His Own Marble Run. It Started as a Cardboard Box.",
+      "datePublished": "2026-04-17",
+      "author": { "@type": "Organization", "name": "Enki Atelier", "url": "https://enkiatelier.com" },
+      "publisher": { "@type": "Organization", "name": "Enki Atelier", "logo": { "@type": "ImageObject", "url": "https://enkiatelier.com/logo.png" } },
+      "url": "https://enkiatelier.com/blog/posts/he-designed-his-own-marble-run-it-started-as-a-cardboard-box",
+      "description": "A mom on childhood toys made from string and bamboo, a marble run built from cardboard, and what Earth Day is really asking us to notice.",
+      "image": "https://enkiatelier.com/blog/2026-04-17-marble-run-01.png"
+    })
+  }]
 })
 
 const mobileMenuOpen = ref(false)

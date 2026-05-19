@@ -214,9 +214,24 @@ import { ref, onMounted, onUnmounted } from 'vue'
 
 useHead({
   title: 'He Noticed She Loved Flowers. He Made Her One. — Enki Atelier',
+  link: [{ rel: 'canonical', href: 'https://enkiatelier.com/blog/posts/he-noticed-she-loved-flowers-he-made-her-one' }],
   meta: [
     { name: 'description', content: 'My son wanted to make his teacher a desert snake with his 3D pen. Then a cactus. Then a car. Then flowers. A Teacher Appreciation Week story.' }
-  ]
+  ],
+  script: [{
+    type: 'application/ld+json',
+    innerHTML: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "He Noticed She Loved Flowers. He Made Her One.",
+      "datePublished": "2026-05-05",
+      "author": { "@type": "Organization", "name": "Enki Atelier", "url": "https://enkiatelier.com" },
+      "publisher": { "@type": "Organization", "name": "Enki Atelier", "logo": { "@type": "ImageObject", "url": "https://enkiatelier.com/logo.png" } },
+      "url": "https://enkiatelier.com/blog/posts/he-noticed-she-loved-flowers-he-made-her-one",
+      "description": "My son wanted to make his teacher a desert snake with his 3D pen. Then a cactus. Then a car. Then flowers.",
+      "image": "https://enkiatelier.com/blog/2026-05-05-flowers-finished-01.png"
+    })
+  }]
 })
 
 const mobileMenuOpen = ref(false)
