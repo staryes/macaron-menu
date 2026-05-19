@@ -27,9 +27,10 @@ export default defineNuxtConfig({
       link: [
         { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
         { rel: 'canonical', href: 'https://enkiatelier.com/' },
+        { rel: 'preload', as: 'image', href: '/hero-image.jpg', fetchpriority: 'high' },
         { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
         { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' },
-        { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=DM+Sans:wght@300;400;500&display=swap' }
+        { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap' }
       ],
       noscript: [
         {
@@ -40,9 +41,9 @@ export default defineNuxtConfig({
       ],
       script: [
         {
-          // Google Tag Manager
-          innerHTML: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-NJW95CPZ');`,
-          tagPriority: 'critical',
+          // Google Tag Manager — defer to avoid blocking LCP
+          innerHTML: `window.addEventListener('load',function(){(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-NJW95CPZ')});`,
+          defer: true,
         },
         {
           type: 'application/ld+json',
@@ -121,6 +122,7 @@ export default defineNuxtConfig({
           // Google tag (gtag.js) — Google Ads AW-17856636143
           src: 'https://www.googletagmanager.com/gtag/js?id=AW-17856636143',
           async: true,
+          defer: true,
         },
         {
           innerHTML: `

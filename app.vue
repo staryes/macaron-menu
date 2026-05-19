@@ -32,6 +32,7 @@ useHead({
     },
     {
       src: 'https://cdn.tailwindcss.com',
+      defer: true,
     }
   ]
 });
