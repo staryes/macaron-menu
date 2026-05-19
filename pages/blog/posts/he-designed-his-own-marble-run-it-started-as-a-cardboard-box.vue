@@ -204,7 +204,16 @@ useHead({
   title: 'He Designed His Own Marble Run. It Started as a Cardboard Box. — Enki Atelier',
   link: [{ rel: 'canonical', href: 'https://enkiatelier.com/blog/posts/he-designed-his-own-marble-run-it-started-as-a-cardboard-box' }],
   meta: [
-    { name: 'description', content: 'A mom on childhood toys made from string and bamboo, a marble run built from cardboard, and what Earth Day is really asking us to notice.' }
+    { name: 'description', content: 'A mom on childhood toys made from string and bamboo, a marble run built from cardboard, and what Earth Day is really asking us to notice.' },
+    { property: 'og:title', content: 'He Designed His Own Marble Run. It Started as a Cardboard Box.' },
+    { property: 'og:description', content: 'A cardboard marble run with scoring zones he designed himself, and a trap. On making things from what you have, fixing them when they break, and what that teaches.' },
+    { property: 'og:url', content: 'https://enkiatelier.com/blog/posts/he-designed-his-own-marble-run-it-started-as-a-cardboard-box' },
+    { property: 'og:type', content: 'article' },
+    { property: 'og:image', content: 'https://enkiatelier.com/blog/2026-04-17-marble-run-01.png' },
+    { name: 'twitter:card', content: 'summary_large_image' },
+    { name: 'twitter:title', content: 'He Designed His Own Marble Run. It Started as a Cardboard Box.' },
+    { name: 'twitter:description', content: 'A cardboard marble run, a trap that scores negative points, and what making something yourself teaches about fixing what breaks.' },
+    { name: 'twitter:image', content: 'https://enkiatelier.com/blog/2026-04-17-marble-run-01.png' },
   ],
   script: [{
     type: 'application/ld+json',

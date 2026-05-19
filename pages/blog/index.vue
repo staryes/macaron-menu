@@ -173,10 +173,19 @@
 import { ref, onMounted, onUnmounted } from 'vue'
 
 useHead({
-  title: 'From the Studio — Enki Atelier Blog',
+  title: '3D Pen Project Ideas & STEAM Stories — Enki Atelier Blog',
   link: [{ rel: 'canonical', href: 'https://enkiatelier.com/blog' }],
   meta: [
-    { name: 'description', content: '3D pen tips, project stories, and ideas for curious kids and adults. From the Enki Atelier studio.' }
+    { name: 'description', content: 'Explore hands-on 3D pen project ideas, STEAM learning tips, and making stories for curious kids and parents. From the Enki Atelier studio.' },
+    { property: 'og:title', content: '3D Pen Project Ideas & STEAM Stories — Enki Atelier Blog' },
+    { property: 'og:description', content: 'Explore hands-on 3D pen project ideas, STEAM learning tips, and making stories for curious kids and parents. From the Enki Atelier studio.' },
+    { property: 'og:url', content: 'https://enkiatelier.com/blog' },
+    { property: 'og:type', content: 'website' },
+    { property: 'og:image', content: 'https://enkiatelier.com/hero-image.jpg' },
+    { name: 'twitter:card', content: 'summary_large_image' },
+    { name: 'twitter:title', content: '3D Pen Project Ideas & STEAM Stories — Enki Atelier Blog' },
+    { name: 'twitter:description', content: 'Hands-on 3D pen project ideas and STEAM making stories for curious kids and parents.' },
+    { name: 'twitter:image', content: 'https://enkiatelier.com/hero-image.jpg' },
   ]
 })
 

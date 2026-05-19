@@ -262,10 +262,33 @@
 import { ref, onMounted, onUnmounted } from 'vue'
 
 useHead({
-  title: 'Why Some Kids Need to Make Something First, and What Emotional Regulation Has to Do With It — Enki Atelier',
+  title: 'Why Some Kids Focus Better When Building — Enki Atelier',
+  link: [{ rel: 'canonical', href: 'https://enkiatelier.com/blog/posts/why-some-kids-need-to-make-something-first' }],
   meta: [
-    { name: 'description', content: 'Why does your child focus better when building? The neuroscience of making, emotional regulation, and why the calm that follows carries into everything else.' }
-  ]
+    { name: 'description', content: 'Why does your child focus better when building? The neuroscience of making, emotional regulation, and why the calm that follows carries into everything else.' },
+    { property: 'og:title', content: 'Why Some Kids Focus Better When Building — Enki Atelier' },
+    { property: 'og:description', content: 'The science behind why hands-on making calms the nervous system, triggers flow, and builds emotional regulation in children. A look at what happens in those forty minutes.' },
+    { property: 'og:url', content: 'https://enkiatelier.com/blog/posts/why-some-kids-need-to-make-something-first' },
+    { property: 'og:type', content: 'article' },
+    { property: 'og:image', content: 'https://enkiatelier.com/hero-image.jpg' },
+    { name: 'twitter:card', content: 'summary_large_image' },
+    { name: 'twitter:title', content: 'Why Some Kids Focus Better When Building — Enki Atelier' },
+    { name: 'twitter:description', content: 'The neuroscience of hands-on making, emotional regulation, and what happens in those forty focused minutes.' },
+    { name: 'twitter:image', content: 'https://enkiatelier.com/hero-image.jpg' },
+  ],
+  script: [{
+    type: 'application/ld+json',
+    innerHTML: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "Why Some Kids Need to Make Something First, and What Emotional Regulation Has to Do With It",
+      "datePublished": "2026-05-01",
+      "author": { "@type": "Organization", "name": "Enki Atelier", "url": "https://enkiatelier.com" },
+      "publisher": { "@type": "Organization", "name": "Enki Atelier", "logo": { "@type": "ImageObject", "url": "https://enkiatelier.com/logo.png" } },
+      "url": "https://enkiatelier.com/blog/posts/why-some-kids-need-to-make-something-first",
+      "description": "Why does your child focus better when building? The neuroscience of making, emotional regulation, and why the calm that follows carries into everything else."
+    })
+  }]
 })
 
 const mobileMenuOpen = ref(false)

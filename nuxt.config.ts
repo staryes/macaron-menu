@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   app: {
     head: {
-      title: 'Enki Atelier — 3D Pen STEAM Kits for Kids | Hands-On Science for Ages 6–12',
+      title: '3D Pen STEAM Kits for Kids | Hands-On Science — Enki Atelier',
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -12,17 +12,21 @@ export default defineNuxtConfig({
         },
         { name: 'keywords', content: '3D pen STEAM kit, 3D pen STEM activities for kids, hands-on science kit ages 6-12, 3D pen curriculum, kids engineering kit, rocket launcher STEM kit, balancing bird 3D pen kit, physics activities for kids' },
         { name: 'p:domain_verify', content: '79db93aeddb9b8b436e33951bcf4ca44' },
-        // Open Graph（Facebook / LINE 分享預覽）
+        // Open Graph
         { property: 'og:type', content: 'website' },
         { property: 'og:url', content: 'https://enkiatelier.com' },
-        { property: 'og:title', content: 'Enki Atelier — 3D Pen STEAM Kits for Kids | Hands-On Science Ages 6–12' },
+        { property: 'og:title', content: '3D Pen STEAM Kits for Kids | Hands-On Science — Enki Atelier' },
         { property: 'og:description', content: 'PhD-designed 3D pen STEAM kits that help children build real rockets, mobiles, and balancing birds while learning physics, equilibrium, and engineering. Screen-free, curriculum-backed, ages 6–12.' },
-        { property: 'og:image', content: 'https://enkiatelier.com/og-image.jpg' },
+        { property: 'og:image', content: 'https://enkiatelier.com/hero-image.jpg' },
+        { property: 'og:image:width', content: '1440' },
+        { property: 'og:image:height', content: '900' },
+        { property: 'og:image:alt', content: 'Child building a 3D pen STEAM project with Enki Atelier kit' },
         // Twitter Card
         { name: 'twitter:card', content: 'summary_large_image' },
-        { name: 'twitter:title', content: 'Enki Atelier — STEAM Kits for Kids Who Like to Build' },
-        { name: 'twitter:description', content: 'PhD-designed hands-on STEAM kits for kids ages 6–12. Build rockets, explore physics, develop real engineering skills.' },
-        { name: 'twitter:image', content: 'https://enkiatelier.com/og-image.jpg' },
+        { name: 'twitter:title', content: '3D Pen STEAM Kits for Kids | Hands-On Science — Enki Atelier' },
+        { name: 'twitter:description', content: 'PhD-designed 3D pen STEAM kits for kids ages 6–12. Build rockets, balancing birds, and space mobiles while learning real science. Screen-free, hands-on.' },
+        { name: 'twitter:image', content: 'https://enkiatelier.com/hero-image.jpg' },
+        { name: 'twitter:image:alt', content: 'Child building a 3D pen STEAM project with Enki Atelier kit' },
       ],
       link: [
         { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
