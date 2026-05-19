@@ -437,117 +437,40 @@
     </section>
 
     <!-- Buying Guide Section -->
-    <section id="pens" class="py-24 bg-[#FFF8EB]">
+    <section id="pens" class="py-14 bg-[#FFF8EB]">
       <div class="max-w-3xl mx-auto px-6">
 
-        <!-- 標題 -->
-        <div class="text-center mb-10">
-          <p class="text-xs font-medium tracking-[2px] uppercase text-[#B586AC] mb-2">Buying Guide</p>
-          <h2 class="text-3xl md:text-4xl font-bold text-[#1A1A1A] mb-5" style="font-family: 'Lora', serif;">
-            Choosing a 3D Pen for Your Enki Kit
+        <div class="text-center mb-8">
+          <p class="text-xs font-medium tracking-[2px] uppercase text-[#B586AC] mb-2">3D Pen Guide</p>
+          <h2 class="text-xl md:text-2xl font-bold text-[#1A1A1A] mb-3" style="font-family: 'Lora', serif;">
+            Which 3D Pen Works With Each Kit?
           </h2>
-          <p class="text-base text-[#3D3D3D] leading-relaxed max-w-xl mx-auto">
-            Our kits are curriculum and material sets. You bring the 3D pen, and one pen
-            works across all kits in the Enki series. Pen requirements vary by kit, so
-            use the guide below to find the right match.
+          <p class="text-sm text-[#3D3D3D] leading-relaxed max-w-xl mx-auto">
+            One pen works across all kits. Requirements differ by kit.
           </p>
         </div>
 
-        <!-- 兩個套件說明卡 -->
-        <div class="space-y-5 mb-10">
-
-          <!-- Rocket Kit -->
-          <div class="bg-white rounded-2xl border border-[#DFC6E0]/50 p-6">
-            <div class="flex items-start gap-4">
-              <div class="w-10 h-10 rounded-xl bg-[#FFF8EB] border border-[#6B441E]/15 flex items-center justify-center flex-shrink-0">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#6B441E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M12 2c-4 3-5 7-5 10h10c0-3-1-7-5-10z"/>
-                  <circle cx="12" cy="9" r="1.5" fill="#6B441E" stroke="none"/>
-                  <path d="M7 12l-3 5h4"/>
-                  <path d="M17 12l3 5h-4"/>
-                  <path d="M10 17a2 2 0 0 0 4 0"/>
-                </svg>
-              </div>
-              <div class="flex-1">
-                <h3 class="text-base font-bold text-[#1A1A1A] mb-1" style="font-family: 'Lora', serif;">
-                  Rocket Launcher Kit
-                </h3>
-                <p class="text-sm text-[#3D3D3D] mb-3">
-                  Requires a pen that uses <strong class="text-[#6B441E]">PLA or ABS filament</strong>.
-                  Low-temp PCL pens cannot provide the rigidity needed for the elastic launch mechanism.
-                </p>
-                <p class="text-xs text-[#B586AC] mb-3">
-                  Compatible with: MYNT3D Super, MYNT3D Pro, SCRIB3D P1, 7TECH 3D Pen,
-                  TECBOSS 3D Pen, Dikale 3D Pen, and most standard PLA or ABS pens
-                </p>
-                <div class="flex flex-wrap gap-2">
-                  <a href="https://amzn.to/4pl0gYW" target="_blank" rel="noopener noreferrer"
-                     class="text-xs px-3 py-1.5 bg-[#6B441E] text-white rounded-full hover:bg-[#6B441E]/85 transition-colors">
-                    MYNT3D Super
-                  </a>
-                  <a href="https://amzn.to/49lsYD6" target="_blank" rel="noopener noreferrer"
-                     class="text-xs px-3 py-1.5 bg-[#6B441E] text-white rounded-full hover:bg-[#6B441E]/85 transition-colors">
-                    MYNT3D Pro
-                  </a>
-                  <a href="https://amzn.to/3MVjs2e" target="_blank" rel="noopener noreferrer"
-                     class="text-xs px-3 py-1.5 bg-[#6B441E] text-white rounded-full hover:bg-[#6B441E]/85 transition-colors">
-                    SCRIB3D P1
-                  </a>
-                </div>
-              </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+          <div class="bg-white rounded-xl border border-[#DFC6E0]/40 p-5">
+            <p class="text-sm font-bold text-[#1A1A1A] mb-1">Rocket Launcher Kit</p>
+            <p class="text-xs text-[#3D3D3D] leading-relaxed mb-3">Requires <strong class="text-[#6B441E]">PLA or ABS</strong> filament. Low-temp PCL pens don't provide the rigidity needed for the launch mechanism.</p>
+            <div class="flex flex-wrap gap-1.5">
+              <a href="https://amzn.to/4pl0gYW" target="_blank" rel="noopener noreferrer" class="text-xs px-2.5 py-1 bg-[#6B441E] text-white rounded-full hover:bg-[#6B441E]/85 transition-colors">MYNT3D Super</a>
+              <a href="https://amzn.to/49lsYD6" target="_blank" rel="noopener noreferrer" class="text-xs px-2.5 py-1 bg-[#6B441E] text-white rounded-full hover:bg-[#6B441E]/85 transition-colors">MYNT3D Pro</a>
+              <a href="https://amzn.to/3MVjs2e" target="_blank" rel="noopener noreferrer" class="text-xs px-2.5 py-1 bg-[#6B441E] text-white rounded-full hover:bg-[#6B441E]/85 transition-colors">SCRIB3D P1</a>
             </div>
           </div>
-
-          <!-- Balancing Bird Kit -->
-          <div class="bg-white rounded-2xl border border-[#DFC6E0]/50 p-6">
-            <div class="flex items-start gap-4">
-              <div class="w-10 h-10 rounded-xl bg-[#FFF8EB] border border-[#6B441E]/15 flex items-center justify-center flex-shrink-0">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#6B441E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                  <line x1="12" y1="3" x2="12" y2="21"/>
-                  <polyline points="4 7 12 3 20 7"/>
-                  <line x1="4" y1="21" x2="20" y2="21"/>
-                  <path d="M4 7l-2 5.5a4 4 0 0 0 8 0z"/>
-                  <path d="M16 7l-2 5.5a4 4 0 0 0 8 0z"/>
-                </svg>
-              </div>
-              <div class="flex-1">
-                <h3 class="text-base font-bold text-[#1A1A1A] mb-1" style="font-family: 'Lora', serif;">
-                  Balancing Bird &amp; Mobile Kit
-                </h3>
-                <p class="text-sm text-[#3D3D3D] mb-3">
-                  Works with <strong class="text-[#6B441E]">any standard 3D pen</strong>, including
-                  low-temp PCL options. A flexible starting point for families new to 3D pens.
-                </p>
-                <p class="text-xs text-[#B586AC] mb-3">
-                  Compatible with: most PLA, ABS, and PCL pens including low-temp models.
-                  Works with 3Doodler Start+, MYNT3D Super, MYNT3D Pro, SCRIB3D P1,
-                  7TECH 3D Pen, TECBOSS 3D Pen, Dikale 3D Pen, and most standard 3D pens
-                </p>
-                <div class="flex flex-wrap gap-2">
-                  <a href="https://amzn.to/4aIF63E" target="_blank" rel="noopener noreferrer"
-                     class="text-xs px-3 py-1.5 bg-[#6B441E] text-white rounded-full hover:bg-[#6B441E]/85 transition-colors">
-                    3Doodler Start+
-                  </a>
-                  <a href="https://amzn.to/4pl0gYW" target="_blank" rel="noopener noreferrer"
-                     class="text-xs px-3 py-1.5 bg-[#6B441E] text-white rounded-full hover:bg-[#6B441E]/85 transition-colors">
-                    MYNT3D Super
-                  </a>
-                  <a href="https://amzn.to/49lsYD6" target="_blank" rel="noopener noreferrer"
-                     class="text-xs px-3 py-1.5 bg-[#6B441E] text-white rounded-full hover:bg-[#6B441E]/85 transition-colors">
-                    MYNT3D Pro
-                  </a>
-                  <a href="https://amzn.to/3MVjs2e" target="_blank" rel="noopener noreferrer"
-                     class="text-xs px-3 py-1.5 bg-[#6B441E] text-white rounded-full hover:bg-[#6B441E]/85 transition-colors">
-                    SCRIB3D P1
-                  </a>
-                </div>
-              </div>
+          <div class="bg-white rounded-xl border border-[#DFC6E0]/40 p-5">
+            <p class="text-sm font-bold text-[#1A1A1A] mb-1">Balancing Bird &amp; Mobile Kit</p>
+            <p class="text-xs text-[#3D3D3D] leading-relaxed mb-3">Works with <strong class="text-[#6B441E]">any standard 3D pen</strong>, including low-temp PCL. A good starting point for families new to 3D pens.</p>
+            <div class="flex flex-wrap gap-1.5">
+              <a href="https://amzn.to/4aIF63E" target="_blank" rel="noopener noreferrer" class="text-xs px-2.5 py-1 bg-[#6B441E] text-white rounded-full hover:bg-[#6B441E]/85 transition-colors">3Doodler Start+</a>
+              <a href="https://amzn.to/4pl0gYW" target="_blank" rel="noopener noreferrer" class="text-xs px-2.5 py-1 bg-[#6B441E] text-white rounded-full hover:bg-[#6B441E]/85 transition-colors">MYNT3D Super</a>
+              <a href="https://amzn.to/49lsYD6" target="_blank" rel="noopener noreferrer" class="text-xs px-2.5 py-1 bg-[#6B441E] text-white rounded-full hover:bg-[#6B441E]/85 transition-colors">MYNT3D Pro</a>
             </div>
           </div>
-
         </div>
 
-        <!-- 免責聲明 -->
         <p class="text-xs text-[#3D3D3D]/50 text-center italic">
           We may receive commissions if you purchase through our links.
           These are pens we recommend based on compatibility, not paid partnerships.
@@ -643,7 +566,7 @@
       <div class="max-w-5xl mx-auto px-6 py-8 grid grid-cols-1 md:grid-cols-3 md:divide-x divide-[#DFC6E0]/30 gap-6 md:gap-0">
         <div class="md:px-8">
           <p class="text-sm font-semibold text-[#6B441E] mb-1">PhD-Designed</p>
-          <p class="text-xs text-[#3D3D3D] leading-relaxed">Designed by PhD engineers and an art educator, both of whom are also parents.</p>
+          <p class="text-xs text-[#3D3D3D] leading-relaxed">Designed by PhD engineers and an art educator who care deeply about how children learn.</p>
         </div>
         <div class="md:px-8">
           <p class="text-sm font-semibold text-[#6B441E] mb-1">Tested Before It Ships</p>
