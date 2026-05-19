@@ -127,7 +127,7 @@
         <h2>This morning</h2>
 
         <figure>
-          <img src="/blog/2026-05-05-flowers-finished-01.png" alt="A blue 3D pen flower made by a child for his teacher — Teacher Appreciation Week">
+          <img src="/blog/2026-05-05-flowers-finished-01.png" alt="A blue 3D pen flower made by a child for Teacher Appreciation Week — Enki Atelier" loading="lazy" decoding="async" width="1400" height="933">
         </figure>
 
         <p>The flower is done. The stem has a slight bend in it and one of the

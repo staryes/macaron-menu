@@ -71,7 +71,7 @@
 
     <!-- Hero Section -->
     <section id="hero" class="relative h-screen flex items-center">
-      <img src="/hero-image.jpg" alt="Enki Atelier Brand Story"
+      <img src="/hero-image.jpg" alt="Child building a 3D pen STEAM project with an Enki Atelier kit"
            class="absolute inset-0 w-full h-full object-cover object-[center_20%] md:object-center"
            fetchpriority="high"
            loading="eager"
@@ -84,7 +84,7 @@
           STEAM Kits · Ages 6–12 · PhD-Designed
         </p>
         <h1 class="text-4xl md:text-5xl font-bold text-white leading-tight" style="font-family: 'Lora', serif;">
-          Big Ideas Start<br>with Little Hands.
+          3D Pen STEAM Kits<br>for Curious Kids.
         </h1>
         <p class="text-base md:text-lg font-medium text-white/80 leading-relaxed max-w-[480px]">
           Thoughtfully designed 3D pen STEAM kits that help children build, test, and understand real scientific ideas through hands-on making.
@@ -683,7 +683,7 @@
         <div class="space-y-4">
 
           <!-- Category: Learning & Safety -->
-          <p class="text-xs font-semibold tracking-[2px] uppercase text-[#B586AC] pt-2 pl-1">Learning &amp; Safety</p>
+          <h3 class="text-xs font-semibold tracking-[2px] uppercase text-[#B586AC] pt-2 pl-1">Learning &amp; Safety</h3>
 
           <!-- FAQ 0 -->
           <div class="faq-item" :class="{ open: openFaq === 0 }">
@@ -702,7 +702,7 @@
           </div>
 
           <!-- Category: Compatibility -->
-          <p class="text-xs font-semibold tracking-[2px] uppercase text-[#B586AC] pt-4 pl-1">Compatibility</p>
+          <h3 class="text-xs font-semibold tracking-[2px] uppercase text-[#B586AC] pt-4 pl-1">Compatibility</h3>
 
           <!-- FAQ 1 -->
           <div class="faq-item" :class="{ open: openFaq === 1 }">
@@ -722,13 +722,13 @@
                 3D pen, including low-temp PCL pens. This makes it a flexible choice for
                 families who already own a pen of any type.
                 <br><br>
-                See the pen comparison guide on this page for more details.
+                See the <a href="#pens" class="text-[#6B441E] underline hover:text-[#E0A939] transition-colors">3D pen compatibility guide</a> on this page for more details.
               </p>
             </Transition>
           </div>
 
           <!-- Category: Before You Buy -->
-          <p class="text-xs font-semibold tracking-[2px] uppercase text-[#B586AC] pt-4 pl-1">Before You Buy</p>
+          <h3 class="text-xs font-semibold tracking-[2px] uppercase text-[#B586AC] pt-4 pl-1">Before You Buy</h3>
 
           <!-- FAQ 2 -->
           <div class="faq-item" :class="{ open: openFaq === 2 }">
@@ -826,7 +826,7 @@
             <Transition name="faq">
               <p v-show="openFaq === 7" class="faq-answer">
                 Enki kits are available on Amazon. You can find links to each kit in the
-                Products section above, or visit our
+                <a href="#themes" class="text-[#6B441E] underline hover:text-[#E0A939] transition-colors">Kits section</a> above, or visit our
                 <a href="https://www.amazon.com/stores/EnkiAtelier/page/518CC82B-0DF3-4C27-8BB5-D45F16EC48A3?lp_asin=B0GV9CVBJ5&ref_=ast_bln"
                    target="_blank" rel="noopener noreferrer"
                    class="text-[#6B441E] underline hover:text-[#E0A939] transition-colors">
@@ -1072,32 +1072,32 @@ function onScroll() {
 const galleryItems = ref([
   {
     src: "/Gallery/In_the_lab_01.png",
-    alt: "Testing launch angles — Enki Atelier studio developing the Rocket Launcher Kit",
+    alt: "Testing launch angles for a 3D pen rocket launcher — Enki Atelier STEAM kit development",
     position: "center center",
   },
   {
     src: "/Gallery/Workshop_01.png",
-    alt: "Turning flat lines into working objects — a completed 3D pen rocket at workshop",
+    alt: "Child holding a completed 3D pen rocket — hands-on STEAM kit project by Enki Atelier",
     position: "center center",
   },
   {
     src: "/Gallery/Workshop_02.png",
-    alt: "Building stable 3D structures — child following the Enki curriculum with safety goggles",
+    alt: "Child using a 3D pen STEAM kit with safety goggles, following the Enki photo curriculum",
     position: "center top",
   },
   {
     src: "/Gallery/Built_by_kids_05.png",
-    alt: "Discovering balance points — testing a completed hanging mobile from the Balancing kit",
+    alt: "Testing balance points — child completing the Enki Balancing Bird and Space Mobile STEAM kit",
     position: "center center",
   },
   {
     src: "/Gallery/Built_by_kids_01.png",
-    alt: "From idea to object — a 3D pen rocket built and launched by a child",
+    alt: "3D pen rocket built by a child from the Enki Atelier Rocket Launcher STEM kit",
     position: "center center",
   },
   {
     src: "/Gallery/Workshop_04.png",
-    alt: "Hands-on making — using a 3D pen with finger caps and the Enki curriculum template",
+    alt: "Hands-on 3D pen building — child tracing the Enki curriculum template with finger caps",
     position: "center top",
   },
   {
