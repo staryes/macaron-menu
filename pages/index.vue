@@ -13,6 +13,10 @@
             alt="Enki Atelier Logo"
             class="object-contain"
             :style="{ height: logoHeight, width: 'auto', maxHeight: '100%' }"
+            width="200"
+            height="64"
+            loading="eager"
+            decoding="async"
           >
         </a>
 
@@ -68,7 +72,12 @@
     <!-- Hero Section -->
     <section id="hero" class="relative h-screen flex items-center">
       <img src="/hero-image.jpg" alt="Enki Atelier Brand Story"
-           class="absolute inset-0 w-full h-full object-cover object-[center_20%] md:object-center">
+           class="absolute inset-0 w-full h-full object-cover object-[center_20%] md:object-center"
+           fetchpriority="high"
+           loading="eager"
+           decoding="async"
+           width="1440"
+           height="900">
       <div class="absolute inset-0 bg-gradient-to-r from-[#6B441E]/95 via-[#6B441E]/70 to-transparent"></div>
       <div class="relative z-10 w-full md:w-1/2 lg:w-2/5 space-y-5 px-10 md:px-20">
         <p class="text-[#DFC6E0] text-xs font-medium tracking-[2.5px] uppercase">
@@ -284,6 +293,10 @@
                 :alt="`${product.mainTitle} — hands-on STEAM kit for kids ages 6-12 | Enki Atelier`"
                 class="w-full h-full object-contain transition-transform duration-300"
                 :class="{ 'group-hover:scale-105': product.amazonUrl }"
+                loading="lazy"
+                decoding="async"
+                width="400"
+                height="256"
               >
             </component>
 
@@ -542,6 +555,9 @@
                 :style="{ objectPosition: item.position }"
                 :class="`gallery-filter-${index}`"
                 loading="lazy"
+                decoding="async"
+                width="320"
+                height="320"
               >
             </div>
           </div>
@@ -1315,5 +1331,24 @@ h1, h2, h3 {
 /* In_the_lab_01：色調尚可，輕微暖化 */
 .gallery-filter-7 {
   filter: brightness(1.02) saturate(0.9) sepia(0.08);
+}
+
+/* ─── prefers-reduced-motion ─── */
+@media (prefers-reduced-motion: reduce) {
+  .gallery-card {
+    transform: none !important;
+    opacity: 1 !important;
+    transition: none !important;
+  }
+  .gallery-img {
+    transition: none !important;
+  }
+  .faq-enter-active,
+  .faq-leave-active {
+    transition: none !important;
+  }
+  .flex.transition-transform {
+    transition: none !important;
+  }
 }
 </style> 
