@@ -1,9 +1,18 @@
+# HTTP → HTTPS (bare domain)
+[[redirects]]
+  from = "http://enkiatelier.com/*"
+  to   = "https://enkiatelier.com/:splat"
+  status = 301
+  force  = true
+
+# www → non-www (HTTPS)
 [[redirects]]
   from = "https://www.enkiatelier.com/*"
   to   = "https://enkiatelier.com/:splat"
   status = 301
   force  = true
 
+# www → non-www (HTTP, catches both issues at once)
 [[redirects]]
   from = "http://www.enkiatelier.com/*"
   to   = "https://enkiatelier.com/:splat"

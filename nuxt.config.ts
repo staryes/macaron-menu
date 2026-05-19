@@ -51,11 +51,21 @@ export default defineNuxtConfig({
             "@context": "https://schema.org",
             "@graph": [
               {
+                "@type": "WebSite",
+                "name": "Enki Atelier",
+                "url": "https://enkiatelier.com",
+                "potentialAction": {
+                  "@type": "SearchAction",
+                  "target": "https://enkiatelier.com/?q={search_term_string}",
+                  "query-input": "required name=search_term_string"
+                }
+              },
+              {
                 "@type": "Organization",
                 "name": "Enki Atelier",
                 "url": "https://enkiatelier.com",
                 "logo": "https://enkiatelier.com/logo.png",
-                "description": "PhD-designed STEAM kits for kids ages 6–12. Hands-on engineering and physics activities using 3D pens.",
+                "description": "PhD-designed 3D pen STEAM kits for kids ages 6–12. Hands-on engineering and physics activities.",
                 "sameAs": [
                   "https://www.instagram.com/enkiatelier",
                   "https://www.facebook.com/enkiatelier",

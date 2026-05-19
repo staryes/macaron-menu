@@ -174,6 +174,7 @@ import { ref, onMounted, onUnmounted } from 'vue'
 
 useHead({
   title: 'From the Studio — Enki Atelier Blog',
+  link: [{ rel: 'canonical', href: 'https://enkiatelier.com/blog' }],
   meta: [
     { name: 'description', content: '3D pen tips, project stories, and ideas for curious kids and adults. From the Enki Atelier studio.' }
   ]
