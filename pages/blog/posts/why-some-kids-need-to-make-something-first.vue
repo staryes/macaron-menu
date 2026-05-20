@@ -285,6 +285,7 @@ useHead({
       "@type": "BlogPosting",
       "headline": "Why Some Kids Need to Make Something First, and What Emotional Regulation Has to Do With It",
       "datePublished": "2026-05-01",
+      "dateModified": "2026-05-20",
       "author": { "@type": "Organization", "name": "Enki Atelier", "url": "https://enkiatelier.com" },
       "publisher": { "@type": "Organization", "name": "Enki Atelier", "logo": { "@type": "ImageObject", "url": "https://enkiatelier.com/logo.png" } },
       "url": "https://enkiatelier.com/blog/posts/why-some-kids-need-to-make-something-first",
