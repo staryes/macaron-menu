@@ -36,7 +36,7 @@
         <!-- 漢堡按鈕：絕對靠右 -->
         <button
           @click="toggleMenu"
-          class="md:hidden absolute right-4 top-1/2 -translate-y-1/2 p-2"
+          class="md:hidden absolute right-4 top-1/2 -translate-y-1/2 p-3 min-w-[48px] min-h-[48px] flex items-center justify-center"
           aria-label="Toggle menu"
         >
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#6B441E" stroke-width="2" stroke-linecap="round">
@@ -622,6 +622,8 @@
                 v-model="optinEmail"
                 type="email"
                 placeholder="Your email address"
+                autocomplete="email"
+                inputmode="email"
                 class="form-input w-full"
                 :class="{ 'border-red-400': optinError }"
               >
@@ -848,10 +850,10 @@
 
         <form action="https://formspree.io/f/mrbpyakl" method="POST" class="bg-white p-4 md:p-6 rounded-lg shadow-lg max-w-md mx-auto border border-[#DFC6E0]/30">
           <label class="block text-left mb-2 text-[#3D3D3D] font-semibold">Name:</label>
-          <input type="text" name="name" required class="form-input w-full mb-4">
+          <input type="text" name="name" required autocomplete="name" class="form-input w-full mb-4">
 
           <label class="block text-left mb-2 text-[#3D3D3D] font-semibold">Email:</label>
-          <input type="email" name="email" required class="form-input w-full mb-4">
+          <input type="email" name="email" required autocomplete="email" inputmode="email" class="form-input w-full mb-4">
 
           <label class="block text-left mb-2 text-[#3D3D3D] font-semibold">Message:</label>
           <textarea name="message" required class="form-input w-full mb-4 h-24"></textarea>

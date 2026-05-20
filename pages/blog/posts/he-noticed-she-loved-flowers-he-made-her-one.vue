@@ -28,7 +28,7 @@
 
         <button
           @click="toggleMenu"
-          class="md:hidden absolute right-4 top-1/2 -translate-y-1/2 p-2"
+          class="md:hidden absolute right-4 top-1/2 -translate-y-1/2 p-3 min-w-[48px] min-h-[48px] flex items-center justify-center"
           aria-label="Toggle menu"
         >
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#6B441E" stroke-width="2" stroke-linecap="round">
@@ -152,6 +152,8 @@
               v-model="optinEmail"
               type="email"
               placeholder="Your email — get the free starter guide"
+              autocomplete="email"
+              inputmode="email"
               class="form-input w-full"
               :class="{ 'border-red-400': optinError }"
             >
@@ -216,7 +218,16 @@ useHead({
   title: 'He Noticed She Loved Flowers. He Made Her One. — Enki Atelier',
   link: [{ rel: 'canonical', href: 'https://enkiatelier.com/blog/posts/he-noticed-she-loved-flowers-he-made-her-one' }],
   meta: [
-    { name: 'description', content: 'My son wanted to make his teacher a desert snake with his 3D pen. Then a cactus. Then a car. Then flowers. A Teacher Appreciation Week story.' }
+    { name: 'description', content: 'My son wanted to make his teacher a desert snake with his 3D pen. Then a cactus. Then a car. Then flowers. A Teacher Appreciation Week story.' },
+    { property: 'og:title', content: 'He Noticed She Loved Flowers. He Made Her One. — Enki Atelier' },
+    { property: 'og:description', content: 'A 3D pen flower for Teacher Appreciation Week. A child who drew his own template, redid the petals twice, and kept the one that wasn\'t perfect.' },
+    { property: 'og:url', content: 'https://enkiatelier.com/blog/posts/he-noticed-she-loved-flowers-he-made-her-one' },
+    { property: 'og:type', content: 'article' },
+    { property: 'og:image', content: 'https://enkiatelier.com/blog/2026-05-05-flowers-finished-01.png' },
+    { name: 'twitter:card', content: 'summary_large_image' },
+    { name: 'twitter:title', content: 'He Noticed She Loved Flowers. He Made Her One.' },
+    { name: 'twitter:description', content: 'A 3D pen flower for Teacher Appreciation Week, made by a child who drew his own template and kept the imperfect petal.' },
+    { name: 'twitter:image', content: 'https://enkiatelier.com/blog/2026-05-05-flowers-finished-01.png' },
   ],
   script: [{
     type: 'application/ld+json',
