@@ -224,6 +224,7 @@ useHead({
       "@type": "BlogPosting",
       "headline": "He Designed His Own Marble Run. It Started as a Cardboard Box.",
       "datePublished": "2026-04-17",
+      "dateModified": "2026-05-20",
       "author": { "@type": "Organization", "name": "Enki Atelier", "url": "https://enkiatelier.com" },
       "publisher": { "@type": "Organization", "name": "Enki Atelier", "logo": { "@type": "ImageObject", "url": "https://enkiatelier.com/logo.png" } },
       "url": "https://enkiatelier.com/blog/posts/he-designed-his-own-marble-run-it-started-as-a-cardboard-box",

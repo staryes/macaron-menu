@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   app: {
     head: {
-      title: 'Enki Atelier — 3D Pen STEAM Kits for Kids | Hands-On Science for Ages 6–12',
+      title: '3D Pen STEAM Kits for Kids | Hands-On Science — Enki Atelier',
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -12,17 +12,21 @@ export default defineNuxtConfig({
         },
         { name: 'keywords', content: '3D pen STEAM kit, 3D pen STEM activities for kids, hands-on science kit ages 6-12, 3D pen curriculum, kids engineering kit, rocket launcher STEM kit, balancing bird 3D pen kit, physics activities for kids' },
         { name: 'p:domain_verify', content: '79db93aeddb9b8b436e33951bcf4ca44' },
-        // Open Graph（Facebook / LINE 分享預覽）
+        // Open Graph
         { property: 'og:type', content: 'website' },
         { property: 'og:url', content: 'https://enkiatelier.com' },
-        { property: 'og:title', content: 'Enki Atelier — 3D Pen STEAM Kits for Kids | Hands-On Science Ages 6–12' },
+        { property: 'og:title', content: '3D Pen STEAM Kits for Kids | Hands-On Science — Enki Atelier' },
         { property: 'og:description', content: 'PhD-designed 3D pen STEAM kits that help children build real rockets, mobiles, and balancing birds while learning physics, equilibrium, and engineering. Screen-free, curriculum-backed, ages 6–12.' },
-        { property: 'og:image', content: 'https://enkiatelier.com/og-image.jpg' },
+        { property: 'og:image', content: 'https://enkiatelier.com/hero-image.jpg' },
+        { property: 'og:image:width', content: '1440' },
+        { property: 'og:image:height', content: '900' },
+        { property: 'og:image:alt', content: 'Child building a 3D pen STEAM project with Enki Atelier kit' },
         // Twitter Card
         { name: 'twitter:card', content: 'summary_large_image' },
-        { name: 'twitter:title', content: 'Enki Atelier — STEAM Kits for Kids Who Like to Build' },
-        { name: 'twitter:description', content: 'PhD-designed hands-on STEAM kits for kids ages 6–12. Build rockets, explore physics, develop real engineering skills.' },
-        { name: 'twitter:image', content: 'https://enkiatelier.com/og-image.jpg' },
+        { name: 'twitter:title', content: '3D Pen STEAM Kits for Kids | Hands-On Science — Enki Atelier' },
+        { name: 'twitter:description', content: 'PhD-designed 3D pen STEAM kits for kids ages 6–12. Build rockets, balancing birds, and space mobiles while learning real science. Screen-free, hands-on.' },
+        { name: 'twitter:image', content: 'https://enkiatelier.com/hero-image.jpg' },
+        { name: 'twitter:image:alt', content: 'Child building a 3D pen STEAM project with Enki Atelier kit' },
       ],
       link: [
         { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
@@ -122,8 +126,48 @@ export default defineNuxtConfig({
                       "@type": "Answer",
                       "text": "The Rocket Launcher Kit includes a curriculum guide, silicone mat, safety goggles, Finger caps, tweezers, scissors, and 90+ components. The Balancing Bird Kit includes a 60+ page curriculum guide, lay-flat template booklet, PET sheet, bird stand, acrylic rods, fishing line, and components. Neither kit includes a 3D pen."
                     }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "How long does a typical project take to complete?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Most children finish the core build in 2 to 3 hours when following the curriculum guide. The curriculum is designed so each session has a clear stopping point, and children can spread the project over two sessions if preferred."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "Can Enki kits be used in classrooms or group settings?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Yes. The kits are used in home, workshop, and classroom environments. For group settings, one kit per child or pair is recommended so each child completes the full build sequence. Contact Enki Atelier directly for educator inquiries."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "How much adult supervision is needed?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Adult supervision is recommended throughout the project, especially for first-time users. The 3D pen tip reaches high temperatures during use. The kit includes safety goggles and silicone finger protectors, and the curriculum guide includes a safety section. Most 8–12 year olds can follow steps with periodic adult check-ins."
+                    }
                   }
                 ]
+              },
+              {
+                "@type": "ContactPage",
+                "@id": "https://enkiatelier.com/#contact",
+                "name": "Contact Enki Atelier",
+                "url": "https://enkiatelier.com/#contact",
+                "description": "Contact Enki Atelier with questions about 3D pen STEAM kits, compatibility, education programs, or product support.",
+                "isPartOf": { "@id": "https://enkiatelier.com" }
+              },
+              {
+                "@type": "AboutPage",
+                "@id": "https://enkiatelier.com/#philosophy",
+                "name": "Our Design Philosophy — Enki Atelier",
+                "url": "https://enkiatelier.com/#philosophy",
+                "description": "Learn how Enki Atelier designs thoughtful STEAM kits that blend science, engineering, art, and hands-on discovery for curious kids.",
+                "isPartOf": { "@id": "https://enkiatelier.com" }
               }
             ]
           })

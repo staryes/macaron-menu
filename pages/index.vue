@@ -489,6 +489,10 @@
           These are pens we recommend based on compatibility, not paid partnerships.
         </p>
 
+        <p class="text-xs text-[#3D3D3D]/40 text-center mt-3">
+          Reviewed by the Enki Atelier team · Last updated May 2026
+        </p>
+
       </div>
     </section>
 
@@ -838,7 +842,67 @@
             </Transition>
           </div>
 
+          <!-- FAQ 8 -->
+          <div class="faq-item" :class="{ open: openFaq === 8 }">
+            <button class="faq-question w-full text-left" @click="toggleFaq(8)">
+              How long does a typical project take to complete?
+            </button>
+            <Transition name="faq">
+              <p v-show="openFaq === 8" class="faq-answer">
+                Most children finish the core build in 2 to 3 hours when following the curriculum guide.
+                Some children prefer to work across two sessions. The curriculum is designed so each
+                session has a clear stopping point. Additional experiments and modifications can extend
+                the experience further, which is intentional — the kits are built to encourage iteration,
+                not just one-time completion.
+              </p>
+            </Transition>
+          </div>
+
+          <!-- FAQ 9 -->
+          <div class="faq-item" :class="{ open: openFaq === 9 }">
+            <button class="faq-question w-full text-left" @click="toggleFaq(9)">
+              Can Enki kits be used in classrooms or group settings?
+            </button>
+            <Transition name="faq">
+              <p v-show="openFaq === 9" class="faq-answer">
+                Yes. The kits are used in home settings, workshops, and classroom environments. The
+                curriculum is designed to support independent work with adult guidance, making it suitable
+                for small group sessions with one educator supervising several builders. For group settings,
+                we recommend one kit per child or pair, as each child benefits from completing the full
+                build sequence themselves. For educator inquiries, please contact us directly.
+              </p>
+            </Transition>
+          </div>
+
+          <!-- FAQ 10 -->
+          <div class="faq-item" :class="{ open: openFaq === 10 }">
+            <button class="faq-question w-full text-left" @click="toggleFaq(10)">
+              How much adult supervision is needed?
+            </button>
+            <Transition name="faq">
+              <p v-show="openFaq === 10" class="faq-answer">
+                Adult supervision is recommended throughout the project, especially for first-time 3D pen
+                users and younger builders. The 3D pen tip reaches high temperatures during use. The kit
+                includes safety goggles and silicone finger protectors to reduce risk, and the curriculum
+                guide includes a safety section on how to handle the pen correctly. Most 8–12 year olds
+                can follow the steps with periodic adult check-ins rather than continuous hands-on help.
+              </p>
+            </Transition>
+          </div>
+
         </div>
+
+        <!-- Safety notice -->
+        <div class="mt-10 pt-8 border-t border-[#DFC6E0]/30">
+          <p class="text-xs text-[#3D3D3D]/60 leading-relaxed max-w-2xl">
+            <strong class="text-[#3D3D3D]/80">Safety note:</strong>
+            Enki kits are designed for ages 8 and up with adult supervision. The 3D pen tip reaches high
+            temperatures during use. All kits include safety goggles and silicone finger protectors.
+            Small parts are included — not suitable for children under 3. Please review the safety
+            section of the curriculum guide before starting.
+          </p>
+        </div>
+
       </div>
     </section>
 

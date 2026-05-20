@@ -236,6 +236,7 @@ useHead({
       "@type": "BlogPosting",
       "headline": "He Noticed She Loved Flowers. He Made Her One.",
       "datePublished": "2026-05-05",
+      "dateModified": "2026-05-20",
       "author": { "@type": "Organization", "name": "Enki Atelier", "url": "https://enkiatelier.com" },
       "publisher": { "@type": "Organization", "name": "Enki Atelier", "logo": { "@type": "ImageObject", "url": "https://enkiatelier.com/logo.png" } },
       "url": "https://enkiatelier.com/blog/posts/he-noticed-she-loved-flowers-he-made-her-one",
