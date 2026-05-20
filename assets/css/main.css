@@ -3,6 +3,30 @@ body {
   font-family: Arial, sans-serif;
 }
 
+/* ── Mobile Friendliness ── */
+
+/* Prevent horizontal scroll */
+html, body {
+  overflow-x: clip;
+  max-width: 100%;
+}
+
+/* Responsive images */
+img, video, svg, canvas {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Minimum tap target for form inputs and buttons */
+input, select, textarea {
+  min-height: 48px;
+  font-size: 1rem; /* Prevents iOS auto-zoom */
+}
+
+button {
+  min-height: 44px;
+}
+
 /* 添加錨點滾動填充 */
 html {
   scroll-padding-top: 40px; /* 根據導航欄的高度調整 */
